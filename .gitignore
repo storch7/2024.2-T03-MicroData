@@ -1,0 +1,46 @@
+# Node.js
+node_modules/
+npm-debug.log
+yarn-debug.log
+yarn-error.log
+
+# Python
+venv/
+env/
+
+# Logs
+logs/
+*.log
+*.log.*
+
+# Ambiente e configuração local
+.env
+.env.local
+.env.*.local
+
+# Compilação e saída
+dist/
+build/
+out/
+
+# Diretórios do sistema
+.DS_Store
+Thumbs.db
+
+# IDEs e editores
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+
+# Arquivos de dependências locais
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# Arquivos de cache e temporários
+.cache/
+.terraform/
+
