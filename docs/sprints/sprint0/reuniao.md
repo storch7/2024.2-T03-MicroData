@@ -1,14 +1,12 @@
 # Reunião Primeiro Contato 
 
-| **Tipo**                  | **Descrição**                                     |
-|---------------------------|---------------------------------------------------|
-| Data da Reunião           | 06/11/2024                                        |
-| Horário da Reunião        | 16h às 17h                                        |
-| Modalidade                | Remoto                                      |
-| Participantes             | Breno Fernandes, Guilherme Storch, Renan Vieira, Breno Lucena, João Lucas, Rafael Matuda, Vilma Alves de Miranda, Douglas Santana |
-| Objetivo da Reunião       | Primeira Reunião de Alinhamento com o Cliente     |
-
-
+| **Informações Gerais** |
+|------------------------|
+| **Data da Reunião**: 06/11/2024 |
+| **Horário da Reunião**: 16h às 17h |
+| **Modalidade**: Remoto |
+| **Participantes**: Breno Fernandes, Guilherme Storch, Renan Vieira, Breno Lucena, João Lucas, Rafael Matuda, Vilma Alves de Miranda, Douglas Santana |
+| **Objetivo da Reunião**: Primeira Reunião de Alinhamento com o Cliente |
 
 ## Objetivos da Reunião
 
