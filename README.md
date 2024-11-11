@@ -10,41 +10,49 @@ TRata-se de um sistema de gestão e controle de dados microbiológicos do Labora
 ## Equipe
 
 
-<div style="display: flex; flex-direction: row; gap: 50px; flex-wrap: wrap; justify-content: center; text-align: center;" >
-    <div>
-        <a href="https://github.com/Brenofrds">
-                <img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/132412607?v=4" width="120px;"/>
-                <h5 class="text-center">Breno Fernandes</h5>
-        </a>
-    </div>
-    <div>
-        <a href="https://github.com/BrenoLUCO">
-                <img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/82223777?v=4" width="120px;"/>
-                <h5 class="text-center">Breno Lucena</h5>
-        </a>
-    </div>
-    <div>
-        <a href="https://github.com/storch7">
-                <img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/90935577?v=4" width="120px;"/>
-                <h5 class="text-center">Guilherme Storch</h5>
-        </a>
-    </div>
-    <div>
-        <a href="https://github.com/jlucasiqueira">
-                <img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/143570377?v=4" width="120px;"/>
-                <h5 class="text-center">João Lucas</h5>
-        </a>
-    </div>
-    <div>
-        <a href="https://github.com/rmatuda">
-            <img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/134009750?v=4" width="120px;"/>
-                <h5 class="text-center">Rafael Matuda </h5>
-        </a>
-    </div>
-    <div>
-        <a href="https://github.com/R-enanVieira">
-                <img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/65179736?v=4" width="120px;"/>
-                <h5 class="text-center">Renan Vieira</h5>
-        </a>
-    </div>
-</div>
+<table>
+  <tr>
+    <td align="center">
+      <a href="https://github.com/Brenofrds">
+        <img src="https://avatars.githubusercontent.com/u/132412607?v=4" alt="Breno Fernandes" style="border-radius: 50%; box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);" width="120px">
+        <br />
+        <a href="https://github.com/Brenofrds">Breno Fernandes</a>
+      </a>
+    </td>
+    <td align="center">
+      <a href="https://github.com/BrenoLUCO">
+        <img src="https://avatars.githubusercontent.com/u/82223777?v=4" alt="Breno Lucena" style="border-radius: 50%; box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);" width="120px">
+        <br />
+        <a href="https://github.com/BrenoLUCO">Breno Lucena</a>
+      </a>
+    </td>
+    <td align="center">
+      <a href="https://github.com/storch7">
+        <img src="https://avatars.githubusercontent.com/u/90935577?v=4" alt="Guilherme Storch" style="border-radius: 50%; box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);" width="120px">
+        <br />
+        <a href="https://github.com/storch7">Guilherme Storch</a>
+      </a>
+    </td>
+    <td align="center">
+      <a href="https://github.com/jlucasiqueira">
+        <img src="https://avatars.githubusercontent.com/u/143570377?v=4" alt="João Lucas" style="border-radius: 50%; box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);" width="120px">
+        <br />
+        <a href="https://github.com/jlucasiqueira">João Lucas</a>
+      </a>
+    </td>
+    <td align="center">
+      <a href="https://github.com/rmatuda">
+        <img src="https://avatars.githubusercontent.com/u/134009750?v=4" alt="Rafael Matuda" style="border-radius: 50%; box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);" width="120px">
+        <br />
+        <a href="https://github.com/rmatuda">Rafael Matuda</a>
+      </a>
+    </td>
+    <td align="center">
+      <a href="https://github.com/R-enanVieira">
+        <img src="https://avatars.githubusercontent.com/u/65179736?v=4" alt="Renan Vieira" style="border-radius: 50%; box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);" width="120px">
+        <br />
+        <a href="https://github.com/R-enanVieira">Renan Vieira</a>
+      </a>
+    </td>
+  </tr>
+</table>
