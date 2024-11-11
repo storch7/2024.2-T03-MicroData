@@ -3,12 +3,14 @@
 <img src='https://www.brasal.com.br/refrigerantes//_next/static/media/header-refrigerator.7a5ec4bc.jpg'/>
 
 
-## O projeto
+## Resumo do projeto
 Este repositório guarda o projeto da Equipe 2, da T03 da disciplina de Requisitos de software para o período de 2024.2. 
-TRata-se de um sistema de gestão e controle de dados microbiológicos do Laboratório de Asseguração da Qualidade da Brasal Refrigerantes (Coca-COla Company).
+TRata-se de um sistema de gestão e controle de dados microbiológicos do Laboratório de Asseguração da Qualidade da Brasal Refrigerantes (Coca-Cola Company).
+
+## Mais informações
+Acesse a documentação do projeto: [GH Pages](https://mdsreq-fga-unb.github.io/2024.2-T03-MicroData/)
 
 ## Equipe
-
 
 <table>
   <tr>
