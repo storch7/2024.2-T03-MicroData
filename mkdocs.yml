@@ -12,6 +12,7 @@ nav:
   - Intrudução: index.md
   - Visão do Produto e Projeto:
     - Visão do Produto: visao_produto_projeto/visao_do_produto.md
+  - Estrategias de Engenharia: estrategias_de_engenharia/estrategias.md
   - Sprints:
     - Sprint 0: sprints/sprint0/reuniao.md
 
