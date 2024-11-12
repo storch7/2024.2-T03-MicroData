@@ -1,5 +1,11 @@
 # Estratégias de Engenharia
 
+##  Histórico de Versão
+
+| **Data** | **Versão** | **Descrição** | **Autor** |
+| :--------: | :--------: | :--------:  | :--------: | 
+|      11/11/2024      |      1.0      |      Criação do documento       |     Guilherme Storch     |
+
 ## Estratégia Priorizada
 
 | Tópico | Decisão |
