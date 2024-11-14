@@ -8,13 +8,13 @@ theme:
   palette:
     primary: red
 
-nav: 
-  - Intrudução: index.md
-  - Visão do Produto e Projeto:
-    - Visão do Produto: visao_produto_projeto/visao_do_produto.md
+nav:
+  - Cenário atual do cliente e do Negócio: index.md
+  - Solução Proposta: visao_produto_projeto/visao_do_produto.md
   - Estratégias de Engenharia: estrategias_de_engenharia/estrategias.md
-  - Sprints:
-    - Sprint 0: sprints/sprint0/reuniao.md
+  - Cronograma e Entregas: cronograma_entregas/cronograma.md
+  - Interação entre equipe e Cliente: interacao_equipe_cliente/interacao.md
+  - Lições Aprendidas: licoes_aprendidas/licoes.md
   - Entregas: entregas/entregas.md
 
 
