@@ -33,12 +33,16 @@ O quadro a seguir compara os processos de desenvolvimento **RAD** e **Scrum** em
 
 ## Justificativa
 
-- **Abordagem Ágil**: Pelo levantamento inicial de informações, a abordagem ágil se coloca como uma das abordagens com melhor aplicabilidade para o contexto estudado, levando em consideração a possibilidade de permitir feedbacks antecipados e a liberação do projeto mais cedo para o cliente. Somado a isso, a instabilidade de alguns dos requisitos iniciais levam a crer que esta abordagem possa ser a mais adequada para este cenário de estudos.
+Escolhemos o RAD (Rapid Application Development) como metodologia devido à sua forte ênfase na coleta contínua de feedbacks com o cliente, um fator essencial para o sucesso do nosso projeto. Essa abordagem nos ajuda a lidar com diversos desafios, como a flexibilidade nos requisitos, permitindo ajustes rápidos e adaptativos conforme surgem novas demandas ou mudanças durante o desenvolvimento.
 
-- **Ciclo de Vida Ágil**: Reflete a escolha da abordagem de gerenciamento para o projeto. Permite mais feedbacks antecipados e se adapta melhor a mudanças pontuais devido a instabilidade de alguns dos requisitos.
+O envolvimento ativo do cliente é outro ponto central, já que o RAD promove interações frequentes por meio de protótipos iterativos. Isso nos permite validar funcionalidades em tempo real, garantindo que o projeto esteja sempre alinhado às expectativas do cliente e reduzindo o risco de mal-entendidos ou entregas desalinhadas.
 
+Além disso, a coleta constante de feedback reduz riscos ao identificar possíveis problemas ou lacunas ainda nas fases iniciais, facilitando correções rápidas e prevenindo retrabalho mais complexo. Essa característica é particularmente útil para projetos com escopo indefinido, onde os requisitos podem evoluir ao longo do tempo. Com o RAD, conseguimos transformar a incerteza em oportunidade, iterando de forma ágil e colaborativa.
+
+Assim, o RAD foi escolhido por sua capacidade de alinhar o processo de desenvolvimento às necessidades do cliente, promovendo entregas eficientes, adaptabilidade às mudanças e maior qualidade nos resultados.
 ##  Histórico de Versão
 
 | **Data** | **Versão** | **Descrição** | **Autor** |
 | :--------: | :--------: | :--------:  | :--------: | 
 |      11/11/2024      |      1.0      |      Criação do documento       |     Guilherme Storch     |
+|      18/11/2024      |      1.1      |       realizando ajustes      |     Breno Fernandes     |
