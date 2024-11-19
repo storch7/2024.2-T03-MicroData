@@ -34,6 +34,6 @@ Como o processo atual de registro se resume a uma série de planilhas de levanta
 
 São os possíveis perfis que utilizarão a ferramenta:  
 
-Equipe operacional da microbiologia: composta pelos assistentes, inspetores e líderes da área, formados majoritariamente por profissionais da área química ou da saúde; 
+- **Equipe operacional da microbiologia**: composta pelos assistentes, inspetores e líderes da área, formados majoritariamente por profissionais da área química ou da saúde; 
 
-Auditores externos: responsáveis por avaliar as condições do processo produtivo e averiguar se as informações coletadas pelo programa atendem as normas de segurança de alimentos e ao padrão do processo de produção estabelecido peça LATAM. 
+- **Auditores externos**: responsáveis por avaliar as condições do processo produtivo e averiguar se as informações coletadas pelo programa atendem as normas de segurança de alimentos e ao padrão do processo de produção estabelecido peça LATAM. 
