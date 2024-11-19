@@ -9,7 +9,8 @@ theme:
     primary: red
 
 nav:
-  - Cenário atual do cliente e do Negócio: index.md
+  - Introdução: index.md
+  - Cenário atual do cliente e do Negócio: cenario_cliente/cenario.md
   - Solução Proposta: visao_produto_projeto/visao_do_produto.md
   - Estratégias de Engenharia: estrategias_de_engenharia/estrategias.md
   - Cronograma e Entregas: cronograma_entregas/cronograma.md
