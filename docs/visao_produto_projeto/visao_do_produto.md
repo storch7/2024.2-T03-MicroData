@@ -31,17 +31,21 @@ Figura 1: Diagrama de Ishikawa.
 
 ## Objetivos do Produto
 
-**Objetivo Principal #1: Centralizar os dados de monitoramento microbiológico**
+**Objetivo Principal: Centralizar os dados de monitoramento microbiológico**
 
 - **Centralização Completa**: Consolidar todas as informações microbiológicas em uma plataforma única, eliminando a fragmentação atual em múltiplas planilhas e proporcionando um repositório único e organizado de dados.
+
+
+## Objetivos Secundários
+
+**Facilitar a visualização dos dados para análise rápida**
+
 - **Armazenamento Seguro e Acessível**: Garantir que os dados estejam seguros e acessíveis para a equipe de microbiologia, facilitando o registro e consulta de informações de maneira prática e eficiente.
 
-**Objetivo Principal #2: Facilitar a visualização dos dados para análise rápida**
 
 - **Painel de Visualização**: Oferecer um dashboard intuitivo e interativo que apresenta dados microbiológicos de maneira clara e acessível, permitindo uma visão geral rápida do status de monitoramento.
 - **Comparação de Dados**: Permitir a comparação de dados entre diferentes períodos e locais, auxiliando na análise detalhada e na avaliação da consistência e qualidade microbiológica ao longo do tempo.
 
-**Objetivos Secundários**
 
 - **Apoio Estratégico na Tomada de Decisão**: Facilitar a tomada de decisão, proporcionando uma visualização mais detalhada e estruturada dos dados microbiológicos. A longo prazo, isso permitirá à equipe identificar tendências e tomar decisões mais informadas e estratégicas para a melhoria contínua do processo de monitoramento.
 
