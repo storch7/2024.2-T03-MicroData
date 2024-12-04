@@ -4,7 +4,8 @@
 
 | **Data** | **Versão** | **Descrição** | **Autor** |
 | :------: | :--------: | :----------:  | :-------: |
-| 18/11/2025| 1.0| Correções da avaliação | Guilherme Storch |
+| 18/11/2024 | 1.0| Correções da avaliação | Guilherme Storch |
+| 04/12/2024 | 1.1| Descaracterização do cleinte no texto | Guilherme Storch | 
 
 
 ## Introdução ao Negócio e Contexto 
