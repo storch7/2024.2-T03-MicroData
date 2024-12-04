@@ -5,7 +5,7 @@
 | **Data** | **Versão** | **Descrição** | **Autor** |
 | :--------: | :--------: | :--------:  | :--------: | 
 |      10/11/2024      |      1.0      |      Criação do documento       |     Breno Fernandes, Breno Lucena, Storch, João, Rafael e Renan     |
-| 4/12/2024 | 1.1 | Descaracterização do cleinte no texto	| Guilherme Storch | 
+| 4/12/2024 | 1.1 | Descaracterização do clinte no texto	| Guilherme Storch | 
 
 ## Problema
 
