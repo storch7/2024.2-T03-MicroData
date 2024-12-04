@@ -16,7 +16,6 @@ A empresa tida como cliente deste projeto é responsável pelo envase, engarrafa
 
 As empresas do setor tiveram um período de adaptação para se familiarizar com um novo programa de monitoramento mi microbiológico lançado recentemente. Dada a urgência dessa readequação, atualmente há poucos sistemas que se propõem a realizar o registro de informações conforme os novos moldes estabelecidos. Além disso, o uso de planilhas para o registro de dados é predominante, em função da familiaridade dos executores do programa com essa ferramenta. Atualmente, não há produtos de software disponíveis no mercado que atendam integralmente aos novos padrões de processo estabelecidos pelo programa de monitoramento ambiental.  
 
-<img src = '../assets/diagrama.png'/>
 
 Figura 1: Diagrama de Ishikawa
 
