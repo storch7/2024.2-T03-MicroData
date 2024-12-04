@@ -5,22 +5,23 @@
 | **Data** | **Versão** | **Descrição** | **Autor** |
 | :--------: | :--------: | :--------:  | :--------: | 
 |      10/11/2024      |      1.0      |      Criação do documento       |     Breno Fernandes, Breno Lucena, Storch, João, Rafael e Renan     |
+| 4/12/2024 | 1.1 | Descaracterização do cleinte no texto	| Guilherme Storch | 
 
 ## Problema
 
-O problema enfrentado pelo LAQ (Laboratório de Asseguração da Qualidade) da Brasal Refrigerantes é a dificuldade em gerenciar e monitorar adequadamente as informações microbiológicas no ambiente de produção, devido à dependência de planilhas e à falta de um sistema centralizado.
+OO problema enfrentado pelo setor responsável pela Setor de Qualidade é a dificuldade em gerenciar e monitorar adequadamente as informações microbiológicas no ambiente de produção, devido à dependência de planilhas e à falta de um sistema centralizado.
 
 1. **Por que o monitoramento é difícil de gerenciar?**  
-   Porque os dados estão fragmentados em diversas planilhas, dificultando o acesso e a análise.
+  Porque os dados estão distribuídos em várias planilhas, o que dificulta a integração e consolidação das informações necessárias para análise.
 
 2. **Por que os dados estão fragmentados?**  
   Porque, embora o Excel, ferramenta utilizada pelo cliente, tenha potencial para realizar um monitoramento mais complexo, a forma como as planilhas e os dados estão estruturados internamente não permite explorar plenamente essa funcionalidade.
 
 3. **Por que o Excel é usado como sistema principal?**  
-   Porque a equipe tem familiaridade com a ferramenta e não possui uma alternativa especializada disponível.
+   Porque é uma ferramenta amplamente conhecida e utilizada pela equipe, o que reduz a curva de aprendizado, mas, ao mesmo tempo, limita a exploração de soluções mais robustas e especializadas.
 
 4. **Por que não há uma alternativa especializada?**  
-   Porque o núcleo de sistemas da empresa não consegue atender à demanda específica do LAQ, e o desenvolvimento de uma ferramenta dedicada seria inviável devido à alta carga de trabalho.
+   Porque o núcleo interno de sistemas não possui capacidade operacional para atender a demandas específicas do setor, e o desenvolvimento de uma solução dedicada é inviável devido à escassez de recursos humanos e tecnológicos.
 
 **Causa do Problema**  
 A causa do problema é a falta de clareza das informações de monitoramento microbiológico.
