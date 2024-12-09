@@ -1,12 +1,5 @@
 # MicroData
 
-## Histórico de Versão
-
-| **Data** | **Versão** | **Descrição** | **Autor** |
-| :--------: | :--------: | :--------:  | :--------: | 
-| 08/11/2024 | 1.0 | Criação do Documento  | Renan Vieira |
-| 03/12/2024 | 1.1 | Modificações gerais | Guilherme Storch |
-
 Este projeto se propõe a sistematizar um programa da área de microbiologia de um laboratório de uma empresa produtora de bebidas. O sistema impacta a eficiência dos processos e a qualidade dos resultados. Foi observado que a ausência de uma estrutura organizada e integrada para o armazenamento e análise de dados afeta a tomada de decisões.
 
 Os problemas identificados vão desde o alto consumo e custo de materiais de coleta até limitações no software que é utilizado, que restringem a visualização de dados e dificultam a tomada de decisões. Nosso objetivo é propor uma solução que melhore a precisão e a acessibilidade das informações do processo, permitindo uma gestão mais eficaz e uma comunicação mais clara em situações de auditoria.
@@ -52,3 +45,10 @@ Os problemas identificados vão desde o alto consumo e custo de materiais de col
         </a>
     </div>
 </div>
+
+## Histórico de Versão
+
+| **Data** | **Versão** | **Descrição** | **Autor** |
+| :--------: | :--------: | :--------:  | :--------: | 
+| 08/11/2024 | 1.0 | Criação do Documento  | Renan Vieira |
+| 03/12/2024 | 1.1 | Modificações gerais | Guilherme Storch |

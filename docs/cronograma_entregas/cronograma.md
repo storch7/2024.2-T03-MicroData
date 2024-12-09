@@ -1,12 +1,5 @@
 # Cronograma e Entregas
 
-##  Histórico de Versão
-
-| **Data** | **Versão** | **Descrição** | **Autor** |
-| :--------: | :--------: | :--------:  | :--------: | 
-|      15/11/2024      |      1.0      |      Criação do Cronograma       |     Rafael Matuda    |
-
-
 ## Cronograma
 
 | Sprints              | Início          | Fim            | Descrição                          | Entrega Prevista              | Status        |
@@ -45,3 +38,9 @@
 |                       |                 |                                       | 
 
 O cronograma acima poderá sofrer alterações ao longo do desenvolvimento do projeto da Brasal Refrigerantes.
+
+##  Histórico de Versão
+
+| **Data** | **Versão** | **Descrição** | **Autor** |
+| :--------: | :--------: | :--------:  | :--------: | 
+|      15/11/2024      |      1.0      |      Criação do Cronograma       |     Rafael Matuda    |

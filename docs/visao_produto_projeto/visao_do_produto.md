@@ -1,12 +1,5 @@
 # VISÃO DO PRODUTO
 
-##  Histórico de Versão
-
-| **Data** | **Versão** | **Descrição** | **Autor** |
-| :--------: | :--------: | :--------:  | :--------: | 
-|      10/11/2024      |      1.0      |      Criação do documento       |     Breno Fernandes, Breno Lucena, Storch, João, Rafael e Renan     |
-| 4/12/2024 | 1.1 | Descaracterização do clinte no texto	| Guilherme Storch | 
-
 ## Problema
 
 OO problema enfrentado pelo setor responsável pela Setor de Qualidade é a dificuldade em gerenciar e monitorar adequadamente as informações microbiológicas no ambiente de produção, devido à dependência de planilhas e à falta de um sistema centralizado.
@@ -61,3 +54,10 @@ Figura 1: Diagrama de Ishikawa.
 | **Banco de Dados** |   PostgreSQL  |
 | **Reuniões** |     Teams      |
 | **Prototipagem** |   Figma    |
+
+##  Histórico de Versão
+
+| **Data** | **Versão** | **Descrição** | **Autor** |
+| :--------: | :--------: | :--------:  | :--------: | 
+|      10/11/2024      |      1.0      |      Criação do documento       |     Breno Fernandes, Breno Lucena, Storch, João, Rafael e Renan     |
+| 4/12/2024 | 1.1 | Descaracterização do clinte no texto	| Guilherme Storch | 

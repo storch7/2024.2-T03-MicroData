@@ -1,13 +1,5 @@
 # Lições Aprendidas
 
-##  Histórico de Versão
-
-| **Data** | **Versão** | **Descrição** | **Autor** |
-| :------: | :--------: | :----------:  | :-------: |
-| 20/11/2024| 1.0| Adição das lições | João Lucas Araujo |
-
-# Lições Aprendidas na Unidade 1  
-
 ## Lições aprendidas e dificuldades com ações para superá-las: 
 
 ### 1. Gestão de Tempo e Contato com o Cliente:
@@ -19,5 +11,11 @@
 
 - Desafio: Nem todos os membros tinham a mesma compreensão da proposta do sistema.
 - Ação de melhoria: Trabalhar melhor os ritos do Scrum de forma que, ao final dos ciclos de atividade, quaisquer dúvidas e dificuldades sejam levados em discussão.
+
+##  Histórico de Versão
+
+| **Data** | **Versão** | **Descrição** | **Autor** |
+| :------: | :--------: | :----------:  | :-------: |
+| 20/11/2024| 1.0| Adição das lições | João Lucas Araujo |
 
 
