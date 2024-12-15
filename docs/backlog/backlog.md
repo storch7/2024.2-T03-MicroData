@@ -78,6 +78,8 @@ Para que um item do Product Backlog Item seja candidato para entrar na esteria d
 - A funcionalidade foi integrada ao sistema principal?
 - Os critérios de aceitação foram cumpridos?
 
+## Priorização
+
 ## MVP do projeto Microdata
 
 ## Especificação dos requisitos da primeira entrega
