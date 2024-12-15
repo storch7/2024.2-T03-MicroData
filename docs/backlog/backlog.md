@@ -356,6 +356,107 @@ Foi levado em consideração o quadro de priorização para a definição do MVP
 
 ---
 
+### Épico 6: Recuperar Senha
+
+#### Cenário 1: Solicitação de Recuperação de Senha
+- **Dado que** o usuário está na tela de login e não se lembra da senha,
+- **Quando** ele clicar na opção "Esqueceu a senha?" e inserir o e-mail cadastrado,
+- **Então** o sistema deverá:
+  - Verificar se o e-mail está cadastrado,
+  - Enviar um e-mail com instruções e um link para redefinir a senha,
+  - Exibir a mensagem: "Um e-mail com instruções para redefinir sua senha foi enviado."
+
+---
+
+#### Cenário 2: Tentativa de Recuperação com E-mail Não Cadastrado
+- **Dado que** o usuário está na tela de recuperação de senha,
+- **Quando** ele inserir um e-mail que não está cadastrado no sistema,
+- **Então** o sistema deverá:
+  - Exibir a mensagem: "E-mail não encontrado. Verifique as informações ou cadastre-se."
+
+---
+
+#### Cenário 3: Redefinição de Senha por Link Enviado
+- **Dado que** o usuário recebeu o link de redefinição de senha no e-mail,
+- **Quando** ele clicar no link e acessar a página de redefinição,
+- **Então** o sistema deverá:
+  - Permitir que o usuário insira uma nova senha,
+  - Validar os requisitos da nova senha (ex.: tamanho mínimo, letras maiúsculas, caracteres especiais, etc.),
+  - Confirmar a alteração da senha,
+  - Exibir a mensagem: "Sua senha foi redefinida com sucesso."
+
+---
+
+#### Cenário 4: Expiração do Link de Redefinição
+- **Dado que** o usuário recebeu o link de redefinição de senha,
+- **Quando** ele tentar utilizá-lo após o período de validade (ex.: 24 horas),
+- **Então** o sistema deverá:
+  - Exibir a mensagem: "O link expirou. Solicite uma nova redefinição de senha."
+
+---
+
+### Épico 7: Cadastrar Microorganismos Observados
+
+#### Cenário 1: O Usuário Realiza o Primeiro Cadastro de um Microorganismo no Banco
+- **Dado que** um usuário deseja cadastrar um microorganismo no banco,
+- **Quando** ele tenta realizar um registro,
+- **Então** o sistema deverá:
+  - Exigir o preenchimento dos seguintes campos obrigatórios:
+    - Nome do microorganismo,
+    - Descrição,
+    - Limites de contagem,
+    - Níveis de alerta.
+  - Validar que todos os campos obrigatórios foram preenchidos corretamente,
+  - Exibir a mensagem de sucesso: "Microorganismo cadastrado com sucesso."
+
+---
+
+#### Cenário 2: O Usuário Tenta Realizar o Cadastro de um Microorganismo Já Cadastrado
+- **Dado que** um usuário tenta cadastrar um microorganismo que já está registrado no banco,
+- **Quando** ele tenta realizar o registro,
+- **Então** o sistema deverá:
+  - Verificar se já existe um registro com o mesmo nome no banco de dados,
+  - Exibir uma mensagem de notificação: "Este microorganismo já está cadastrado no sistema. Verifique os dados ou atualize o registro existente."
+
+---
+
+### Épico 8: Listar Microorganismos Observados
+
+#### Cenário 1: O Usuário Acessa os Registros de Microorganismos
+- **Dado que** um usuário deseja acessar os registros de microorganismos,
+- **Quando** ele acessar a página de informações,
+- **Então** o sistema deverá:
+  - Exibir uma listagem contendo os microorganismos cadastrados no banco,
+  - Apresentar os seguintes campos principais para cada microorganismo:
+    - Nome do microorganismo,
+    - Descrição,
+    - Limites de contagem,
+    - Níveis de alerta.
+
+---
+
+### Épico 9: Editar Microorganismos Observados
+
+#### Cenário 1: O Usuário Tenta Editar uma Informação de um Microorganismo Cadastrado
+- **Dado que** um usuário acessa a informação de um microorganismo,
+- **Quando** ele tenta realizar uma modificação nas informações,
+- **Então** o sistema deverá:
+  - Exibir um alerta de confirmação sobre a edição de dados, como: "Tem certeza de que deseja editar as informações deste microorganismo?",
+  - Permitir que o usuário confirme ou cancele a ação,
+  - Caso confirmado, salvar as alterações e exibir a mensagem: "Informações atualizadas com sucesso."
+
+---
+
+#### Cenário 2: O Usuário Tenta Desativar um Microorganismo
+- **Dado que** um usuário acessa a informação de um microorganismo,
+- **Quando** ele tenta desativar o microorganismo observado,
+- **Então** o sistema deverá:
+  - Exibir um alerta de confirmação sobre a desativação, como: "Tem certeza de que deseja desativar este microorganismo? Esta ação não pode ser desfeita.",
+  - Após a confirmação, desativar o microorganismo e exibir a mensagem: "Microorganismo desativado com sucesso.",
+  - Bloquear futuras edições nas informações do microorganismo desativado.
+
+---
+
 ## REFERÊNCIAS
 
 > Atlassian. "Guia sobre MVP". Atlassian. Acesso em 15 dez. 2024. Disponível em: https://www.atlassian.com/agile/product-management/mvp
