@@ -15,11 +15,11 @@ nav:
     - Solução Proposta: visao_produto_projeto/visao_do_produto.md
     - Estratégias de Engenharia: estrategias_de_engenharia/estrategias.md
     - Engenharia de Requisitos: engenharia_requisitos/requisitos.md
-    - Cronograma e Entregas: cronograma_entregas/cronograma.md
-    - Interação entre Equipe e Cliente: interacao_equipe_cliente/interacao.md
-    - Lições Aprendidas: licoes_aprendidas/licoes.md
-    - Entrega: entregas/entregas.md
     - Requisitos de Software: requisitos/requisitos.md
     - Backlog do Produto: backlog/backlog.md
+    - Interação entre Equipe e Cliente: interacao_equipe_cliente/interacao.md
+    - Cronograma e Entregas: cronograma_entregas/cronograma.md
+  - Entregas: entregas/entregas.md
+  - Lições Aprendidas: licoes_aprendidas/licoes.md
 
 
