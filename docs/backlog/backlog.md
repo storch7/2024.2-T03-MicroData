@@ -26,38 +26,47 @@ A Definição de Pronto (DoD), é uma lista de critérios que estabelece quando 
 MVP (Minimum Viable Product, ou Produto Mínimo Viável) é uma versão inicial de um produto que contém apenas as funcionalidades essenciais para resolver o problema principal dos usuários. Seu objetivo é validar hipóteses e obter feedback do mercado de maneira rápida e econômica, antes de investir em desenvolvimento completo. O MVP permite que equipes de desenvolvimento entendam o que realmente gera valor para o cliente e ajustem o produto com base em dados reais, minimizando riscos e desperdícios.
 
 ## Backlog do projeto Microdata
-A especificação de funcionalidades segue o framework de User Stories (Histórias de usuário).
-Segue a tabela com os temas e suas respectivas user stories:
+A especificação de funcionalidades segue o framework de User Stories (Histórias de usuário); cada épico levantado no backlog deu origem a uma história de usuário e seu respectivo índice. Segue abaixo a tabela com os temas, épicos e suas respectivas user stories:
 
-| **Tema**                  | **User Story**                                                                                   |
-|---------------------------|-------------------------------------------------------------------------------------------------|
-| **Acesso e Login**        | Eu como usuário quero cadastrar uma conta para guardar minhas informações no sistema.           |
-|                           | Eu como usuário quero realizar login na conta cadastrada para ter acesso aos recursos e funcionalidades da plataforma. |
-|                           | Eu como usuário quero visualizar meus dados cadastrais para verificar as informações imputadas no sistema. |
-|                           | Eu como usuário poderia editar meus dados cadastrais para gerenciamento de erros de registro e atualização de informações. |
-|                           | Eu como usuário poderia desativar o meu cadastro no sistema para os casos de desligamento com a empresa/área. |
-|                           | Eu como usuário devo conseguir recuperar uma senha cadastrada para eventuais situações de esquecimento das informações de acesso. |
-| **Microrganismos**        | Eu como usuário, quero cadastrar no sistema um microrganismo observado pelo programa para que eu possa registrar informações detalhadas e manter um histórico organizado para análise. |
-|                           | Eu como usuário, quero listar os microrganismos observados pelo programa a fim de visualizar os microrganismos cadastrados no sistema. |
-|                           | Eu como usuário, quero editar os registros de microrganismos cadastrados a fim de gerenciamento de erros de registro e atualização de informações. |
-|                           | Eu como usuário quero poder desativar algum microrganismo cadastrado no sistema a fim de remover aqueles que já tiveram seus dados adquiridos pela análise microbiológica. |
-|                           | Eu como usuário, quero poder ver níveis de alerta a respeito da contagem de microrganismos a fim de ser notificado quando a contagem não está de acordo com o resultado esperado. |
-|                           | Eu como usuário, quero buscar microrganismos cadastrados no sistema para encontrar rapidamente o local desejado de forma eficiente. |
-| **Pontos Avaliados**      | Eu como usuário, quero cadastrar no sistema os locais de realização de coleta microbiológica a fim de acompanhar as contagens de microrganismos presentes em cada local. |
-|                           | Eu como usuário, quero poder listar todos os locais de coleta cadastrados no sistema a fim de visualizar os registros de pontos do monitoramento. |
-|                           | Eu como usuário, quero poder editar os locais de coleta cadastrados no sistema a fim de adicionar ou retirar dados pertinentes para a análise microbiológica. |
-|                           | Eu como usuário, quero desativar locais de coleta cadastrados no sistema para remover aqueles que não serão mais utilizados na coleta microbiológica. |
-|                           | Eu como usuário, quero buscar locais cadastrados no sistema para encontrar rapidamente o local desejado de forma eficiente. |
-| **Resultados do Monitoramento** | Eu como usuário, quero registrar a contagem de microrganismos de uma dada coleta para que eu possa registrar informações detalhadas e manter um histórico organizado para análise. |
-|                           | Eu como usuário, quero listar as contagens de microrganismos registradas para que eu possa visualizar e analisar os dados coletados de forma organizada e detalhada. |
-|                           | Eu como usuário quero editar o registro de contagem de microrganismos já existente para que eu possa corrigir erros ou atualizar informações relevantes para manter os dados precisos e confiáveis. |
-|                           | Eu como usuário, quero aplicar filtros aos resultados de coleta microbiológica para que eu possa localizar informações específicas de forma eficiente e realizar análises mais detalhadas. |
-| **Dashboard**             | Eu como usuário, quero visualizar no dashboard os resultados de coleta para cada ponto, a fim de acompanhar a situação microbiológica de forma consolidada. |
-|                           | Eu como usuário, quero que o dashboard destaque os pontos que excederam o limite de contagem, para priorizar ações corretivas. |
-|                           | Eu como usuário, quero visualizar os resultados agrupados por nível de alerta (normal, atenção, crítico), para facilitar a análise dos dados críticos. |
-|                           | Eu como usuário, quero filtrar no dashboard os resultados por tipo de microrganismo, para avaliar padrões de contagem específicos. |
-|                           | Eu como usuário, quero filtrar no dashboard os resultados por local de coleta, para analisar os dados de uma área específica. |
-|                           | Eu como usuário, quero filtrar os resultados no dashboard por período de tempo, para entender as variações ao longo de diferentes intervalos. |
+| INDEX  | TEMA                               | ÉPICO                                             | US                                                                                                                                         |
+|--------|------------------------------------|--------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------|
+| RF-01  | ACESSO E LOGIN                    | CADASTRAR USUÁRIO                                | Eu como usuário quero cadastrar uma conta para de minhas informações no sistema.                                                         |
+| RF-02  | ACESSO E LOGIN                    | LOGAR USUÁRIO                                    | Eu como usuário quero realizar login na conta cadastrada para ter acesso aos recursos e funcionalidades da plataforma.                    |
+| RF-03  | ACESSO E LOGIN                    | VISUALIZAR USUÁRIO                               | Eu como usuário quero visualizar meus dados cadastrais para verificar as informações imputadas no sistema.                                |
+| RF-04  | ACESSO E LOGIN                    | EDITAR USUÁRIO                                   | Eu como usuário poderia editar meus dados cadastrais para gerenciamento de erros de registro e atualização de informações.                |
+| RF-05  | ACESSO E LOGIN                    | DESATIVAR USUÁRIO                                | Eu como usuário poderia desativar o meu cadastro no sistema para os casos de desligamento com a empresa / área.                          |
+| RF-06  | ACESSO E LOGIN                    | RECUPERAR SENHA DE USUÁRIO                       | Eu como usuário devo conseguir recuperar uma senha cadastrada para eventuais situações de esquecimento das informações de acesso.         |
+| RF-07  | MICROORGANISMOS                   | CADASTRAR MICROORGANISMOS OBSERVADOS            | Eu como usuário, quero cadastrar no sistema um microrganismo observado pelo programa para que eu possa registrar informações detalhadas. |
+| RF-08  | MICROORGANISMOS                   | LISTAR MICROORGANISMOS OBSERVADOS               | Eu como usuário, quero listar os microorganismos observados pelo programa a fim de visualizar os microrganismos cadastrados no sistema.  |
+| RF-09  | MICROORGANISMOS                   | EDITAR MICROORGANISMOS OBSERVADOS               | Eu como usuário, quero editar os registros de microorganismos cadastrados a fim de gerenciamento de erros de registro.                   |
+| RF-10  | MICROORGANISMOS                   | DESATIVAR MICROORGANISMOS OBSERVADOS            | Eu como usuário quero poder desativar algum microorganismo cadastrado no sistema a fim de remover aqueles que já tiveram seus dados adquiridos. |
+| RF-11  | MICROORGANISMOS                   | INSERIR NIVEIS DE ALERTA DA CONTAGEM            | Eu como usuário, quero poder ver níveis de alerta a respeito da contagem de microorganismos a fim de ser notificado de resultados inesperados. |
+| RF-12  | MICROORGANISMOS                   | BUSCAR MICROORGANISMOS OBSERVADOS               | Eu como usuário, quero buscar microoranismos cadastrados no sistema para encontrar rapidamente o local desejado de forma eficiente.       |
+| RF-13  | PONTOS (LOCAIS) AVALIADOS         | CADASTRAR LOCAIS DE COLETA AVALIADOS            | Eu como usuário, quero cadastrar os locais de coleta microbiológica a fim de acompanhar as contagens de microrganismos presentes.         |
+| RF-14  | PONTOS (LOCAIS) AVALIADOS         | LISTAR LOCAIS DE COLETA AVALIADOS               | Eu como usuário, quero listar todos os locais de coleta cadastrados no sistema a fim de visualizar os registros de pontos do monitoramento. |
+| RF-15  | PONTOS (LOCAIS) AVALIADOS         | EDITAR LOCAIS DE COLETA AVALIADOS               | Eu como usuário, quero editar os locais de coleta cadastrados no sistema a fim de adicionar ou retirar dados pertinentes.                 |
+| RF-16  | PONTOS (LOCAIS) AVALIADOS         | DESATIVAR LOCAIS DE COLETA AVALIADOS            | Eu como usuário, quero desativar locais de coleta cadastrados no sistema para remover aqueles que não serão mais utilizados.              |
+| RF-17  | PONTOS (LOCAIS) AVALIADOS         | BUSCAR LOCAIS DE COLETA AVALIADOS               | Eu como usuário, quero buscar locais cadastrados no sistema para encontrar rapidamente o local desejado de forma eficiente.               |
+| RF-18  | RESULTADOS DO MONITORAMENTO       | ADICIONAR A CONTAGEM DE MICROORGANISMOS         | Eu como usuário, quero registrar a contagem de microrganismos de uma dada coleta para registrar informações detalhadas.                   |
+| RF-19  | RESULTADOS DO MONITORAMENTO       | LISTAR A CONTAGEM DE MICROORGANISMOS            | Eu como usuário, quero listar as contagens de microrganismos registradas para análise organizada.                                         |
+| RF-20  | RESULTADOS DO MONITORAMENTO       | EDITAR O REGISTRO DE CONTAGEM                   | Eu como usuário quero editar o registro de contagem de microrganismos para corrigir erros ou atualizar informações relevantes.           |
+| RF-21  | RESULTADOS DO MONITORAMENTO       | INSERIR AÇÕES CORRETIVAS                        | Eu como usuário devo inserir ações corretivas para resultados acima do limite de contagem para registro de controle mais efetivo.        |
+| RF-22  | RESULTADOS DO MONITORAMENTO       | FILTRAR UM RESULTADO DE COLETA                  | Eu como usuário, quero aplicar filtros aos resultados de coleta microbiológica para localizar informações específicas.                   |
+| RF-23  | DASHBOARD                         | VISUALIZAR RESULTADOS DOS PONTOS               | Como usuário, quero visualizar no dashboard os resultados de coleta para cada ponto.                                                     |
+| RF-24  | DASHBOARD                         | VISUALIZAR PONTOS ACIMA DO LIMITE               | Como usuário, quero que o dashboard destaque os pontos que excederem o limite de contagem.                                               |
+| RF-25  | DASHBOARD                         | VISUALIZAR RESULTADOS POR NÍVEL DE ALERTA       | Como usuário, quero visualizar os resultados agrupados por nível de alerta para facilitar a análise.                                     |
+| RF-26  | DASHBOARD                         | FILTRAR RESULTADOS POR MICROORGANISMO          | Como usuário, quero filtrar os resultados por micro-organismo, para avaliar padrões específicos.                                         |
+| RF-27  | DASHBOARD                         | FILTRAR RESULTADOS POR LOCAL                   | Como usuário, quero filtrar os resultados por local de coleta, para analisar os dados de uma área específica.                            |
+| RF-28  | DASHBOARD                         | FILTRAR RESULTADOS POR PERÍODO                 | Como usuário, quero filtrar os resultados por período de tempo, para entender variações ao longo de intervalos.                          |
+| RF-29  | LOCALIZAÇÃO DE INFORMAÇÕES        | INSERIR A PLANTA BAIXA                          | Como usuário, eu quero inserir a planta baixa para referência dos locais de coleta.                                                     |
+| RF-30  | LOCALIZAÇÃO DE INFORMAÇÕES        | EXCLUIR A PLANTA BAIXA                          | Como usuário, eu quero excluir uma planta baixa cadastrada para atualizar ou remover informações desatualizadas.                        |
+| RF-31  | LOCALIZAÇÃO DE INFORMAÇÕES        | DELIMITAR OS LOCAIS DE COLETA                  | Como usuário eu quero delimitar os locais de coleta na planta baixa.                                                                     |
+| RF-32  | LOCALIZAÇÃO DE INFORMAÇÕES        | APRESENTAR LOCAIS ATIVOS                        | Como usuário, eu quero visualizar locais ativos em um determinado período na planta baixa.                                               |
+| RF-33  | LOCALIZAÇÃO DE INFORMAÇÕES        | LISTAR MICROORGANISMOS POR OPERADOR            | Como usuário, eu quero listar a contagem de microrganismos identificados por operador.                                                   |
+| RF-34  | LOCALIZAÇÃO DE INFORMAÇÕES        | HISTÓRICO DE MODIFICAÇÕES                       | Como auditor ou usuário, eu quero visualizar o histórico de modificações para rastreabilidade.                                           |
+| RF-35  | LOCALIZAÇÃO DE INFORMAÇÕES        | INSERIR IMAGEM DE LOCAIS                        | Como operador ou administrador, eu quero inserir uma imagem do local de coleta para facilitar o dia a dia.                              |
+| RF-36  | LOCALIZAÇÃO DE INFORMAÇÕES        | EXCLUIR IMAGEM DE LOCAIS                        | Como operador ou administrador, eu quero excluir uma imagem para remover informações incorretas ou desatualizadas.                      |
+
 
 ## Definition of Ready (DoR) do PBI
 Para que um item do Product Backlog Item seja candidato para entrar na esteria do processo de desenvolvimento, os seguintes elementos devem ser considerados: 
@@ -86,19 +95,19 @@ Para que um item do Product Backlog Item seja candidato para entrar na esteria d
 
 ## REFERÊNCIAS
 
-Atlassian. "Guia sobre MVP". Atlassian. Acesso em 15 dez. 2024. Disponível em: https://www.atlassian.com/agile/product-management/mvp
+> Atlassian. "Guia sobre MVP". Atlassian. Acesso em 15 dez. 2024. Disponível em: https://www.atlassian.com/agile/product-management/mvp
 
-ATLASSIAN. Product backlog in Scrum: Everything you need to know. Atlassian, 2024. Disponível em: https://www.atlassian.com/agile/scrum/backlogs. Acesso em: 15 dez. 2024.
+> ATLASSIAN. Product backlog in Scrum: Everything you need to know. Atlassian, 2024. Disponível em: https://www.atlassian.com/agile/scrum/backlogs. Acesso em: 15 dez. 2024.
 
-GEORGE. Declaração de Requisitos: Temas, Épicos e User Stories. Unidade 2 – Aula. Slides apresentados em Unb, Requisitos de Software, 2024.
+> GEORGE. Declaração de Requisitos: Temas, Épicos e User Stories. Unidade 2 – Aula. Slides apresentados em Unb, Requisitos de Software, 2024.
 
-Mind the Product. "O que é MVP?". Mind the Product. Acesso em 15 dez. 2024. Disponível em: https://www.mindtheproduct.com/what-is-an-mvp-minimum-viable-product/
+> Mind the Product. "O que é MVP?". Mind the Product. Acesso em 15 dez. 2024. Disponível em: https://www.mindtheproduct.com/what-is-an-mvp-minimum-viable-product/
 
-Ries, Eric. The Lean Startup: How Today's Entrepreneurs Use Continuous Innovation to Create Radically Successful Businesses. Crown Business, 2011.
+> Ries, Eric. The Lean Startup: How Today's Entrepreneurs Use Continuous Innovation to Create Radically Successful Businesses. Crown Business, 2011.
 
-SCHWABER, Ken; SUTHERLAND, Jeff. Guia do Scrum: O guia definitivo para o Scrum: As regras do jogo. Scrum Guides, 2020. Disponível em: https://scrumguides.org. Acesso em: 15 dez. 2024.
+> SCHWABER, Ken; SUTHERLAND, Jeff. Guia do Scrum: O guia definitivo para o Scrum: As regras do jogo. Scrum Guides, 2020. Disponível em: https://scrumguides.org. Acesso em: 15 dez. 2024.
 
-SCRUM ALLIANCE. What is a product backlog? Scrum Alliance, 2024. Disponível em: https://www.scrumalliance.org. Acesso em: 15 dez. 2024.
+> SCRUM ALLIANCE. What is a product backlog? Scrum Alliance, 2024. Disponível em: https://www.scrumalliance.org. Acesso em: 15 dez. 2024.
 
 ##  Histórico de Versão
 
