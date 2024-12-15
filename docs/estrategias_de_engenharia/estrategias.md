@@ -29,8 +29,6 @@ O quadro a seguir compara os processos de desenvolvimento **RAD** e **Scrum** em
 | **Suporte a Equipes de Desenvolvimento**      | Ideal para equipes menores e colaborativas, com papéis flexíveis e forte dependência de feedback do cliente e protótipos rápidos. | Alto; suporta equipes organizadas com papéis claros como Product Owner e Scrum Master |
 
 
-
-
 ## Justificativa
 
 Escolhemos o RAD (Rapid Application Development) como metodologia devido à sua forte ênfase na coleta contínua de feedbacks com o cliente, um fator essencial para o sucesso do nosso projeto. Essa abordagem nos ajuda a lidar com diversos desafios, como a flexibilidade nos requisitos, permitindo ajustes rápidos e adaptativos conforme surgem novas demandas ou mudanças durante o desenvolvimento.
@@ -40,6 +38,14 @@ O envolvimento ativo do cliente é outro ponto central, já que o RAD promove in
 Além disso, a coleta constante de feedback reduz riscos ao identificar possíveis problemas ou lacunas ainda nas fases iniciais, facilitando correções rápidas e prevenindo retrabalho mais complexo. Essa característica é particularmente útil para projetos com escopo indefinido, onde os requisitos podem evoluir ao longo do tempo. Com o RAD, conseguimos transformar a incerteza em oportunidade, iterando de forma ágil e colaborativa.
 
 Assim, o RAD foi escolhido por sua capacidade de alinhar o processo de desenvolvimento às necessidades do cliente, promovendo entregas eficientes, adaptabilidade às mudanças e maior qualidade nos resultados.
+
+## Referências
+
+[^1]: Guru99. *O que é o modelo RAD? Fases, Vantagens e Desvantagens* Disponível em: [https://www.guru99.com](https://www.guru99.com/pt/what-is-rad-rapid-software-development-model-advantages-disadvantages.html).
+
+[^2]: Atlassian. *O que é Scrum? (e como começar)*. Disponível em: [https://www.atlassian.com/br/agile/scrum](https://www.atlassian.com/br/agile/scrum).
+
+
 ##  Histórico de Versão
 
 | **Data** | **Versão** | **Descrição** | **Autor** |
