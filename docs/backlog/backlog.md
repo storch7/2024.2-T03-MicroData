@@ -102,6 +102,7 @@ Cada funicionalodade foi classificada com esser parâmetro em uma escala de 1 a 
 
 ### Quadro de priorização
 Abaixo segue a tabela de priorização conforme os pontos avaliados anteriormente. A complexidade total é o resultado da soma das classificações levantadas pelo grupo:
+
 | INDEX  | VALOR DE NEGÓCIO | COMPLEXIDADE TÉCNICA | INDEPENDÊNCIA | URGÊNCIA | TOTAL (SOMA) |
 |--------|-------------------|----------------------|---------------|----------|--------------|
 | US-01  | 3                 | 5                    | 5             | 4        | 17           |
