@@ -87,7 +87,59 @@ Para que um item do Product Backlog Item seja candidato para entrar na esteria d
 - A funcionalidade foi integrada ao sistema principal?
 - Os critérios de aceitação foram cumpridos?
 
-## Priorização
+## Priorização do Backlog do Produto
+O grupo realizou a priorização do backlog do projeto com base em três critérios principais: **valor de negócio**, **complexidade técnica** e i**ndependência de funcionalidades**.  Essa abordagem visa maximizar os resultados e otimizar o uso dos recursos disponíveis.
+
+### Valor de negócio 
+Foi considerado para assegurar que as entregas mais importantes para os objetivos do sistema fossem priorizadas. Cada funicionalodade foi classificada com esser parâmetro em uma escala de 1 a 5, onde 1 é considerado com baixo valor para o negócio e 5 alto valor para o negócio.
+
+### Complexidade técnica
+Foi avaliada para equilibrar o esforço necessário com os prazos disponíveis, garantindo a viabilidade do desenvolvimento. Cada funicionalodade foi classificada com esser parâmetro em uma escala de 1 a 5, onde 1 é considerado com baixa complecidade técnica e 5 alta complexidade técnica.
+
+### Independência
+Foi analisada para otimizar o fluxo de trabalho, priorizando tarefas que não dependem de outras entregas e que podem ser desenvolvidas de forma mais ágil e eficiente. Cada requisito foi confeccionado de forma a ser avaliado a característica de independência de requisitos e funionalidades, mas tratando-se do MVP do projeto, um pequeno conjunto de funcionalidades foi levantado de forma a garantir um fluxo de informações relacionadas e que fizesse sentido para o negócio do cliente ao passo que foi necessário o uso dessa classificação para priorização do MVP.
+Cada funicionalodade foi classificada com esser parâmetro em uma escala de 1 a 5, onde 1 é considerado "muito dependente de funcionalidades anteires" e e 5 "pouco dependente de funcionalidades anteriores".
+
+### Quadro de priorização
+Abaixo segue a tabela de priorização conforme os pontos avaliados anteriormente. A complexidade total é o resultado da soma das classificações levantadas pelo grupo:
+| INDEX  | VALOR DE NEGÓCIO | COMPLEXIDADE TÉCNICA | INDEPENDÊNCIA | URGÊNCIA | TOTAL (SOMA) |
+|--------|-------------------|----------------------|---------------|----------|--------------|
+| US-01  | 3                 | 5                    | 5             | 4        | 17           |
+| US-02  | 3                 | 5                    | 4             | 4        | 16           |
+| US-03  | 3                 | 5                    | 4             | 4        | 16           |
+| US-04  | 2                 | 5                    | 3             | 3        | 13           |
+| US-05  | 3                 | 5                    | 3             | 4        | 15           |
+| US-06  | 3                 | 5                    | 4             | 4        | 16           |
+| US-07  | 5                 | 5                    | 5             | 5        | 20           |
+| US-08  | 5                 | 4                    | 4             | 5        | 19           |
+| US-09  | 5                 | 4                    | 3             | 4        | 16           |
+| US-10  | 5                 | 5                    | 3             | 3        | 16           |
+| US-11  | 5                 | 5                    | 2             | 4        | 16           |
+| US-12  | 5                 | 3                    | 2             | 1        | 11           |
+| US-13  | 5                 | 5                    | 5             | 4        | 19           |
+| US-14  | 5                 | 4                    | 4             | 4        | 17           |
+| US-15  | 4                 | 4                    | 3             | 4        | 15           |
+| US-16  | 4                 | 3                    | 3             | 4        | 14           |
+| US-17  | 5                 | 4                    | 3             | 4        | 16           |
+| US-18  | 5                 | 5                    | 3             | 4        | 17           |
+| US-19  | 5                 | 5                    | 2             | 5        | 17           |
+| US-20  | 4                 | 4                    | 2             | 4        | 14           |
+| US-21  | 5                 | 5                    | 1             | 5        | 16           |
+| US-22  | 5                 | 4                    | 2             | 3        | 14           |
+| US-23  | 5                 | 5                    | 1             | 5        | 16           |
+| US-24  | 5                 | 5                    | 1             | 5        | 16           |
+| US-25  | 5                 | 5                    | 1             | 3        | 14           |
+| US-26  | 5                 | 4                    | 1             | 3        | 13           |
+| US-27  | 5                 | 5                    | 1             | 3        | 14           |
+| US-28  | 5                 | 5                    | 1             | 5        | 16           |
+| US-29  | 2                 | 5                    | 3             | 1        | 11           |
+| US-30  | 2                 | 5                    | 2             | 1        | 10           |
+| US-31  | 2                 | 5                    | 2             | 1        | 10           |
+| US-32  | 2                 | 5                    | 2             | 1        | 10           |
+| US-33  | 4                 | 2                    | 2             | 2        | 10           |
+| US-34  | 3                 | 5                    | 3             | 2        | 13           |
+| US-35  | 3                 | 5                    | 3             | 2        | 13           |
+| US-36  | 3                 | 5                    | 3             | 2        | 13           |
 
 ## MVP do projeto Microdata
 
