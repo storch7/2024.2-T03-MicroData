@@ -110,7 +110,7 @@ Abaixo segue a tabela de priorização conforme os pontos avaliados anteriorment
 | US-01  | 3                 | 5                    | 5             | 4        | 17           |
 | US-02  | 3                 | 5                    | 4             | 4        | 16           |
 | US-03  | 3                 | 5                    | 4             | 4        | 16           |
-| US-04  | 2                 | 5                    | 3             | 3        | 13           |
+| US-04  | 2                 | 5                    | 4             | 3        | 14           |
 | US-05  | 3                 | 5                    | 3             | 4        | 15           |
 | US-06  | 3                 | 5                    | 4             | 4        | 16           |
 | US-07  | 5                 | 5                    | 5             | 5        | 20           |
@@ -145,6 +145,36 @@ Abaixo segue a tabela de priorização conforme os pontos avaliados anteriorment
 | US-36  | 3                 | 5                    | 3             | 2        | 13           |
 
 ## MVP do projeto Microdata
+Foi levado em consideração o quadro de priorização para a definição do MVP do projeto. As hisorias de Usuário que tiveram o somatório de pontos de avaliação igual ou superior a 14 (>=14) são candidatas para o MVP do projeto; as hisorias com somatório inferior a 14 (<14) permanecem como backlog do projeto e poderão ser desenvolvidas em ocasiões futuras. São as histórias do MVP do projeto Microdata:
+| INDEX  | US                                                                                                      |
+|--------|-------------------------------------------------------------------------------------------------------------|
+| US-01  | Eu como usuário quero cadastrar uma conta para de minhas informações no sistema.                             |
+| US-02  | Eu como usuário quero realizar login na conta cadastrada para ter acesso aos recursos e funcionalidades da plataforma. |
+| US-03  | Eu como usuário quero visualizar meus dados cadastrais para verificar as informações imputadas no sistema.   |
+| US-04  | Eu como usuário poderia editar meus dados cadastrais para gerenciamento de erros de registro e atualização de informações. |
+| US-05  | Eu como usuário poderia desativar o meu cadastro no sistema para os casos de desligamento com a empresa / área. |
+| US-06  | Eu como usuário devo conseguir recuperar uma senha cadastrada para eventuais situações de esquecimento das informações de acesso. |
+| US-07  | Eu como usuário, quero cadastrar no sistema um microrganismo observado pelo programa para que eu possa registrar informações detalhadas e manter um histórico organizado para análise. |
+| US-08  | Eu como usuário, quero listar os microrganismos observados pelo programa a fim de visualizar os microrganismos cadastrados no sistema. |
+| US-09  | Eu como usuário, quero editar os registros de microrganismos cadastrados a fim de gerenciamento de erros de registro e atualização de informações. |
+| US-10  | Eu como usuário quero poder desativar algum microrganismo cadastrado no sistema a fim de remover aqueles que já tiveram seus dados adquiridos pela análise microbiológica. |
+| US-11  | Eu como usuário, quero poder ver níveis de alerta a respeito da contagem de microrganismos a fim de ser notificado quando a contagem não está de acordo com o resultado esperado. |
+| US-13  | Eu como usuário, quero cadastrar no sistema os locais de realização de coleta microbiológica a fim de acompanhar as contagens de microrganismos presentes em cada local. |
+| US-14  | Eu como usuário, quero poder listar todos os locais de coleta cadastrados no sistema a fim de visualizar os registros de pontos do monitoramento. |
+| US-15  | Eu como usuário, quero poder editar os locais de coleta cadastrados no sistema a fim de adicionar ou retirar dados pertinentes para a análise microbiológica. |
+| US-16  | Eu como usuário, quero desativar locais de coleta cadastrados no sistema para remover aqueles que não serão mais utilizados na coleta microbiológica. |
+| US-17  | Eu como usuário, quero buscar locais cadastrados no sistema para encontrar rapidamente o local desejado de forma eficiente. |
+| US-18  | Eu como usuário, quero registrar a contagem de microrganismos de uma dada coleta para que eu possa registrar informações detalhadas e manter um histórico organizado para análise. |
+| US-19  | Eu como um usuário, quero listar as contagens de microrganismos registradas para que eu possa visualizar e analisar os dados coletados de forma organizada e detalhada. |
+| US-20  | Eu como um usuário quero editar o registro de contagem de microrganismos já existente para que eu possa corrigir erros ou atualizar informações relevantes para manter os dados precisos e confiáveis. |
+| US-21  | Eu como usuário devo inserir as ações corretivas para os resultados acima do limite de contagem de microrganismos para o registro de ações de controle mais efetivo e um processo de tomada de decisão mais eficiente. |
+| US-22  | Eu como um usuário, quero aplicar filtros aos resultados de coleta microbiológica para que eu possa localizar informações específicas de forma eficiente e realizar análises mais detalhadas. |
+| US-23  | Como usuário, quero visualizar no dashboard os resultados de coleta para cada ponto, a fim de acompanhar a situação microbiológica de forma consolidada. |
+| US-24  | Como usuário, quero que o dashboard destaque os pontos que excederem o limite de contagem, para priorizar ações corretivas. |
+| US-25  | Como usuário, quero visualizar os resultados agrupados por nível de alerta (normal, atenção, crítico), para facilitar a análise dos dados críticos. |
+| US-26  | Como usuário, quero filtrar no dashboard os resultados por tipo de micro-organismo, para avaliar padrões de contagem específicos. |
+| US-27  | Como usuário, quero filtrar no dashboard os resultados por local de coleta, para analisar os dados de uma área específica. |
+| US-28  | Como usuário, quero filtrar os resultados no dashboard por período de tempo, para entender as variações ao longo de diferentes intervalos. |
 
 ## Especificação dos requisitos da primeira entrega
 

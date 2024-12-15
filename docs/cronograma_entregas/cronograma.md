@@ -37,7 +37,7 @@
 |Avaliação Unidade 4    | 18/02           |Pendente                               |
 |                       |                 |                                       | 
 
-O cronograma acima poderá sofrer alterações ao longo do desenvolvimento do projeto da Brasal Refrigerantes.
+O cronograma acima poderá sofrer alterações ao longo do desenvolvimento do projeto.
 
 ##  Histórico de Versão
 
