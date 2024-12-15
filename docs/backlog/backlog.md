@@ -70,6 +70,7 @@ A especificação de funcionalidades segue o framework de User Stories (Históri
 
 ## Definition of Ready (DoR) do PBI
 Para que um item do Product Backlog Item seja candidato para entrar na esteria do processo de desenvolvimento, os seguintes elementos devem ser considerados: 
+
 - O item é independente de outros PBIs ou recursos externos? *
 - O valor do item está claramente documentado?
 - A equipe conseguiu estimar o esforço necessário?
@@ -79,7 +80,8 @@ Para que um item do Product Backlog Item seja candidato para entrar na esteria d
 
 
 ## Definition of Done (DoD) do PBI
-- Para que um Product Backlog Item seja considerado finalizado após o processo de desenvolvimento, os seguintes elementos devem ser avaliados:
+Para que um Product Backlog Item seja considerado finalizado após o processo de desenvolvimento, os seguintes elementos devem ser avaliados:
+
 - O código foi revisado e atende aos padrões?
 - Os testes foram desenvolvidos e aprovados?
 - O cliente/PO validou o item? *
