@@ -179,7 +179,22 @@ Foi levado em consideração o quadro de priorização para a definição do MVP
 
 ## Especificação dos Requisitos
 
+### Cartões (User Stories)
+Os **Cartões** representam histórias de usuário, descritas de forma simples e direta, para comunicar a intenção de uma funcionalidade. Eles seguem o formato:
+
+Como [ role ], eu quero [ atividade ] para que [ valor de negócio ].
+
+### Confirmação (Cenários)
+Os **Cenários** detalham os Critérios de Aceitação, que definem as condições necessárias para validar que a funcionalidade atende às expectativas do cliente. Eles utilizam o formato:
+
+Dado que [ condição inicial ],
+Quando [ ação realizada ],
+Então [ resultado esperado ].
+
+
 ### Épico 1: Cadastrar Usuários
+
+**US-01:** Eu como usuário quero cadastrar uma conta para de minhas informações no sistema.
 
 #### Cenário 1: Cadastro Completo com Sucesso
 - **Dado que** o usuário está na página de cadastro,
@@ -239,6 +254,8 @@ Foi levado em consideração o quadro de priorização para a definição do MVP
 
 ### Épico 2: Logar Usuário
 
+**US-02:** Eu como usuário quero realizar login na conta cadastrada para ter acesso aos recursos e funcionalidades da plataforma.
+
 #### Cenário 1: Login Bem-Sucedido
 - **Dado que** o usuário está na página de login,
 - **Quando** ele informar e-mail e senha corretos de uma conta existente,
@@ -282,6 +299,8 @@ Foi levado em consideração o quadro de priorização para a definição do MVP
 
 ### Épico 3: Visualizar Usuário
 
+**US-03:** Eu como usuário quero visualizar meus dados cadastrais para verificar as informações imputadas no sistema.
+
 #### Cenário 1: Usuário Visualiza Seus Dados Cadastrais
 - **Dado que** o usuário possui uma conta cadastrada e está autenticado na plataforma,
 - **Quando** ele acessar a seção "Perfil" ou "Minha Conta",
@@ -302,6 +321,8 @@ Foi levado em consideração o quadro de priorização para a definição do MVP
 ---
 
 ### Épico 4: Editar Usuário
+
+**US-04:** Eu como usuário poderia editar meus dados cadastrais para gerenciamento de erros de registro e atualização de informações.
 
 #### Cenário 1: Edição de Nome e Cargo com Sucesso
 - **Dado que** o usuário esteja autenticado e na página de edição de perfil,
@@ -327,6 +348,8 @@ Foi levado em consideração o quadro de priorização para a definição do MVP
 ---
 
 ### Épico 5: Desativar Usuário
+
+**US-05:** Eu como usuário poderia desativar o meu cadastro no sistema para os casos de desligamento com a empresa / área.
 
 #### Cenário 1: Solicitação de Desativação
 - **Dado que** o usuário está autenticado no sistema,
@@ -357,6 +380,8 @@ Foi levado em consideração o quadro de priorização para a definição do MVP
 ---
 
 ### Épico 6: Recuperar Senha
+
+**US-06:** Eu como usuário devo conseguir recuperar uma senha cadastrada para eventuais situações de esquecimento das informações de acesso.
 
 #### Cenário 1: Solicitação de Recuperação de Senha
 - **Dado que** o usuário está na tela de login e não se lembra da senha,
@@ -397,6 +422,8 @@ Foi levado em consideração o quadro de priorização para a definição do MVP
 
 ### Épico 7: Cadastrar Microorganismos Observados
 
+**US-07:** Eu como usuário, quero cadastrar no sistema um microrganismo observado pelo programa para que eu possa registrar informações detalhadas e manter um histórico organizado para análise.
+
 #### Cenário 1: O Usuário Realiza o Primeiro Cadastro de um Microorganismo no Banco
 - **Dado que** um usuário deseja cadastrar um microorganismo no banco,
 - **Quando** ele tenta realizar um registro,
@@ -422,6 +449,8 @@ Foi levado em consideração o quadro de priorização para a definição do MVP
 
 ### Épico 8: Listar Microorganismos Observados
 
+**US-08:** Eu como usuário, quero listar os microorganismos observados pelo programa a fim de visualizar os microrganismos cadastrados no sistema.
+
 #### Cenário 1: O Usuário Acessa os Registros de Microorganismos
 - **Dado que** um usuário deseja acessar os registros de microorganismos,
 - **Quando** ele acessar a página de informações,
@@ -436,6 +465,8 @@ Foi levado em consideração o quadro de priorização para a definição do MVP
 ---
 
 ### Épico 9: Editar Microorganismos Observados
+
+**US-09:** Eu como usuário, quero editar os registros de microorganismos cadastrados a fim de gerenciamento de erros de registro e atualização de informações.
 
 #### Cenário 1: O Usuário Tenta Editar uma Informação de um Microorganismo Cadastrado
 - **Dado que** um usuário acessa a informação de um microorganismo,
