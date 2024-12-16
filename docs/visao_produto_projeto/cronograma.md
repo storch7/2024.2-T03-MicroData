@@ -5,14 +5,14 @@
 | Sprints              | Início          | Fim            | Descrição                          | Entrega Prevista              | Status        |
 |----------------------|-----------------|----------------|------------------------------------|-------------------------|---------------|
 | Sprint 1             | 06/11           | 13/11         | Primeiro Contato com o Cliente     | 06/11                   | Concluído     |
-| Sprint 2             | 13/11           | 20/11         | Ajuste de Documentação             | 14/11                   | Concluído     |
-| Sprint 3             | 20/11           | 27/11         |Levantamento de Funcionalidades     |                         | Concluído     |
-| Sprint 4             | 27/11           | 04/12         |Verificação e Validação de Funcionalidades Levantadas|                         | Concluído      |
-| Sprint 5             | 04/12           | 11/12         |Declaração de Requisitos            |                         | Concluído      |
-| Sprint 6             | 11/12           | 18/12         |Delimitação do MVP                  |                         | Concluído      |
+| Sprint 2             | 13/11           | 20/11         | Ajuste de Documentação             | 13/11                   | Concluído     |
+| Sprint 3             | 20/11           | 27/11         |Levantamento de Funcionalidades     | 27/11                   | Concluído     |
+| Sprint 4             | 27/11           | 04/12         |Verificação e Validação de Funcionalidades Levantadas| 04/12       | Concluído      |
+| Sprint 5             | 04/12           | 11/12         |Declaração de Requisitos            |11/12                    | Concluído      |
+| Sprint 6             | 11/12           | 18/12         |Delimitação do MVP                  |18/12                    | Concluído      |
 | **Férias de Fim de Ano** | **20/12**        | **06/01**|   
 | Sprint 9             | 12/02           | 19/02         |Entrega do MVP e início do processo de protipação|            | Pendente      |            
-| Sprint 10            | 08/01           | 15/01         |CADASTRO E LOGIN + MICROORGANISMOS  |1. US01<br>2. US02<br>3. US07<br>4. US08<br>  |Pendente      |
+| Sprint 10            | 08/01           | 15/01         |CADASTRO E LOGIN + MICROORGANISMOS  |1. US01<br>2. US02<br>3. US07<br>4. US08<br> 5. US13<br> 6. US14<br> |Pendente      |
 | Sprint 11            | 15/01           | 22/01         |MICROORGANISMOS                     |1. US09<br>2. US10<br>3. US11<br> 4. US12<br>   | Pendente      |
 | Sprint 12            | 22/01           | 29/01         |PONTOS (LOCAIS) AVALIADOS           |1. US13<br>2. US14<br>3. US15<br> 4. US16<br>5. US17<br>| Pendente      |
 | Sprint 13            | 29/01           | 05/02         |RESULTADOS                          |1. US18<br>2. US19<br>3. US20<br> 4. US21<br>5. US22<br>| Pendente      |
@@ -30,7 +30,7 @@
 |-----------------------|-----------------|---------------------------------------|
 |Entrega Unidade 1      | 12/11           |Concluído                              |
 |Avaliação Unidade 1    | 14/11           |Concluído                              |
-|Entrega Unidade 2      | 17/12           |Pendente                               |
+|Entrega Unidade 2      | 17/12           |Concluído                              |
 |Avaliação Unidade 2    | 19/12           |Pendente                               |
 |Entrega Unidade 3      | 21/01           |Pendente                               |
 |Avaliação Unidade 3    | 23/01           |Pendente                               |
@@ -43,7 +43,7 @@ O cronograma acima poderá sofrer alterações ao longo do desenvolvimento do pr
 
 ## Processo de Avaliação pelo Definition of Ready (DoR)
 
-Os requisitos selecionados para a primeira entrega foram avaliados com base no **Definition of Ready (DoR)**, garantindo que estão prontos para serem desenvolvidos. Abaixo estão os critérios do DoR utilizados para essa avaliação:
+Os requisitos selecionados para a primeira entrega foram avaliados com base no **Definition of Ready (DoR)**, para garantia de que estejam prontos para serem desenvolvidos. Abaixo estão os critérios do DoR utilizados para essa avaliação:
 
 ### Critérios do DoR:
 1. **O item é independente de outros PBIs ou recursos externos?**
@@ -55,7 +55,7 @@ Os requisitos selecionados para a primeira entrega foram avaliados com base no *
 
 ### Resultado da Avaliação
 
-Todos os requisitos foram avaliados positivamente para cada critério do DoR e estão prontos para serem desenvolvidos na primeira entrega.
+Todos os requisitos foram avaliados positivamente para cada critério do DoR, com exceção da validação do protótipo, que é parte integrande da próxima etapa do processo RAD.
 
 ---
 
@@ -74,7 +74,7 @@ Todos os requisitos foram avaliados positivamente para cada critério do DoR e e
 
 ## Conclusão
 
-Todos os requisitos (User Stories) passaram pelos critérios do Definition of Ready (DoR), com seus valores de negócio documentados, esforços estimados e critérios de aceitação validados. Assim, esses itens estão prontos para serem desenvolvidos no primeiro ciclo de entrega. Além disso, a equipe está utilizando esta sprint para passar pelo processo de prototipagem, refinando as soluções antes de iniciar o desenvolvimento completo.
+Todos os requisitos (User Stories) passaram pelos critérios do Definition of Ready (DoR), com seus valores de negócio documentados, esforços estimados e critérios de aceitação validados. Para que se dê o início das atividades de desenvolvimento, o projeto precisa do desenvolvimento dos protótipos e das devidas validações com o cliente.
 
 
 ##  Histórico de Versão
