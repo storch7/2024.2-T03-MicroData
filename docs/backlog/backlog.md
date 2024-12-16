@@ -177,6 +177,23 @@ Foi levado em consideração o quadro de priorização para a definição do MVP
 | US-27  | Como usuário, quero filtrar no dashboard os resultados por local de coleta, para analisar os dados de uma área específica. |
 | US-28  | Como usuário, quero filtrar os resultados no dashboard por período de tempo, para entender as variações ao longo de diferentes intervalos. |
 
+Em contrapartida, as funcionalidades que foram consideradas Incrementos são:
+
+
+| US    | Descrição                                                                                                      |
+|-------|--------------------------------------------------------------------------------------------------------------|
+| US-12 | Eu como usuário, quero buscar microrganismos cadastrados no sistema para encontrar rapidamente o local desejado de forma eficiente. |
+| US-29 | Como usuário do sistema, eu quero inserir a planta baixa do processo para que os usuários possam utilizá-la como referência para os locais de coleta. |
+| US-30 | Como usuário do sistema, eu quero excluir uma planta baixa cadastrada para que eu possa atualizar ou remover informações desatualizadas do sistema. |
+| US-31 | Como usuário eu quero delimitar os locais de coleta avaliados na planta baixa da área para que as coletas sejam realizadas em pontos específicos previamente definidos. |
+| US-32 | Como usuário do sistema, eu quero visualizar os locais de coleta ativos em um determinado período de tempo na planta baixa para que eu possa acompanhar e analisar os dados coletados historicamente. |
+| US-33 | Como usuário, eu quero listar a contagem de microrganismos identificados por operador para que seja possível avaliar a conformidade e desempenho de cada operador individualmente. |
+| US-34 | Como auditor ou usuário, eu quero visualizar o histórico de modificações de resultados para que haja rastreabilidade e transparência nas alterações realizadas no sistema. |
+| US-35 | Como operador ou administrador do sistema, eu quero inserir uma imagem do local de coleta cadastrado para que as coletas possam ser identificadas visualmente e facilitadas no dia a dia. |
+| US-36 | Como operador ou administrador do sistema, eu quero excluir a imagem de um local de coleta cadastrado para que eu possa remover imagens incorretas ou desatualizadas. |
+
+ 
+
 ## Especificação dos Requisitos
 
 Abaixo estão os cartões e as confirmações das histórias selecionadas para o primeiro ciclo de desenvolvimento do projeto:
