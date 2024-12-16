@@ -3,7 +3,7 @@
 Requisitos funcionais descrevem as funcionalidades que um sistema deve oferecer para atender às necessidades dos usuários e alcançar os objetivos do projeto. Eles especificam o que o sistema deve fazer, detalhando os serviços, ações ou processos que ele deve executar para possibilitar a realização das tarefas desejadas. Esses requisitos estão diretamente relacionados ao comportamento do sistema, incluindo sua interação com os usuários e outros sistemas, e são essenciais para definir o escopo do projeto e orientar o desenvolvimento.
 
 Os requisitos funcionais do projeto MicroData são, por épico:
-### Acesso E Login
+### Acesso e Login
 - **Rf-01**: Cadastrar Usuário  
 - **Rf-02**: Logar Usuário  
 - **Rf-03**: Visualizar Usuário  
@@ -68,7 +68,7 @@ Os requisitos não funcionais referem-se às qualidades que o sistema deve apres
 
 ##Confiabilidade
 
-**RNF-03:** O sistema deve permanecer em execução 24h por dia.
+**RNF-06:** O sistema deve permanecer em execução 24h por dia.
 
 ##  Histórico de Versão
 

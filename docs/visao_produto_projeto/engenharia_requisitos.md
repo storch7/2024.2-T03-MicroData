@@ -57,7 +57,7 @@
 
 **Reunião de Encerramento**: Conduzir uma reunião final para revisar o trabalho realizado, garantir que todos os requisitos foram atendidos e fechar oficialmente a fase de requisitos do projeto.
 
-## ENgenharia de Requisitos e o RAD
+## Engenharia de Requisitos e o RAD
 
 <table border="1" cellspacing="0" cellpadding="5">
   <thead>

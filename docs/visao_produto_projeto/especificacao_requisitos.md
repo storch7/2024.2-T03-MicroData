@@ -299,6 +299,37 @@ Abaixo estão os cartões e as confirmações das histórias selecionadas para o
 
 ---
 
+## Épico 13: Cadastrar Locais de Coleta Avaliados
+
+**US-13:** Eu como usuário, quero cadastrar os locais de coleta microbiológica a fim de acompanhar as contagens de microrganismos presentes.
+
+### Cenário 1:  usuário cadastra um ponto de coleta pela primeira vez
+- **Dado** que o usuário cadastra um local de coleta
+- **Quando** acessa a página de registro 
+- **Então** o sistema deve apresentar um formulário para preenchimento das informações de: sala, área, Local/ Processo, Método (Campo de Descrição), Frequência (Semanal, Quinzenal, Mensal), Momento da coleta (Campo de descrição), Zoneamento por proximidade (Zona 1, Zona 2, Zona 3 ou Zona 4), Zoneamento Higiênico (Alto risco, Médio risco ou Baixo risco), Ativo? (Boolean, preenchido automaticamente no mmento do registro), Data de cadastro (preenchido automaticamente no mmento do registro)
+- **E** receber uma mensagem de confirmação de registro caso a requisição tenha sucesso.
+---
+### Cenário 2: O usuário cadastra um ponto de coleta e ocorre falha no registro
+- **Dado** que o usuário cadastra um local de coleta
+- **Quando** acessa a página de registro e ocorre falha na requisição 
+- **Então** o sistema deve apresentar uma mensagem de erro informando a falha da requisição.
+---
+### Cenário 3: O usuário cadastra um ponto anteriormente registrado
+- **Dado** o usuário cadastra um local de coleta anteriormente registrado 
+- **Quando** tenta concluir o registro 
+- **Então** o sistema deve apresentar uma notificação informando que o registro já existe na base de dados.
+---
+
+## Épico 14: Listar Locais de Coleta Avaliados
+
+**US-14:** Eu como usuário, quero listar todos os locais de coleta cadastrados no sistema a fim de visualizar os registros de pontos do monitoramento.
+
+### Cenário 1: O usuário acessa a página de registros para procurar por um ponto em específico
+- **Dado** que um usuário acessa a página de registros
+- **Quando** tenta buscar por um ponto de coleta
+- **Então** o sistema deve apresentar uma listagem com todos os pontos registrados ativos até então.
+---
+
 ##  Histórico de Versão
 
 | **Data** | **Versão** | **Descrição** | **Autor** |
