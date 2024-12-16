@@ -9,15 +9,14 @@
 | Sprint 3             | 20/11           | 27/11         |Levantamento de Funcionalidades     | 27/11                   | Concluído     |
 | Sprint 4             | 27/11           | 04/12         |Verificação e Validação de Funcionalidades Levantadas| 04/12       | Concluído      |
 | Sprint 5             | 04/12           | 11/12         |Declaração de Requisitos            |11/12                    | Concluído      |
-| Sprint 6             | 11/12           | 18/12         |Delimitação do MVP                  |18/12                    | Concluído      |
+| Sprint 6             | 11/12           | 18/12         |Delimitação do MVP, Entrega do MVP e início do processo de protipação             |18/12                    | Concluído      |
 | **Férias de Fim de Ano** | **20/12**        | **06/01**|   
-| Sprint 9             | 12/02           | 19/02         |Entrega do MVP e início do processo de protipação|            | Pendente      |            
-| Sprint 10            | 08/01           | 15/01         |CADASTRO E LOGIN + MICROORGANISMOS  |1. US01<br>2. US02<br>3. US07<br>4. US08<br> 5. US13<br> 6. US14<br> |Pendente      |
-| Sprint 11            | 15/01           | 22/01         |MICROORGANISMOS                     |1. US09<br>2. US10<br>3. US11<br> 4. US12<br>   | Pendente      |
-| Sprint 12            | 22/01           | 29/01         |PONTOS (LOCAIS) AVALIADOS           |1. US15<br> 2. US16<br>3. US17<br>| Pendente      |
-| Sprint 13            | 29/01           | 05/02         |RESULTADOS                          |1. US18<br>2. US19<br>3. US20<br> 4. US21<br>5. US22<br>| Pendente      |
-| Sprint 14            | 05/02           | 12/02         |DASHBOARD                          |1. US23<br>2. US24<br>3. US25<br>| Pendente      |
-| Sprint 15            | 12/02           | 19/02         |DASHBOARD                           |1. US26<br>2. US27<br>3. US28<br>  | Pendente      |
+| Sprint 07            | 08/01           | 15/01         |CADASTRO E LOGIN + MICROORGANISMOS + PONTOS (LOCAIS) AVALIADOS  |1. US-07<br>2. US-13<br>3. US-08<br>4. US-01<br> 5. US-02<br> 6. US-14<br> |Pendente      |
+| Sprint 08            | 15/01           | 22/01         |CADASTRO E LOGIN + MICROORGANISMOS + PONTOS (LOCAIS) AVALIADOS        |   | Pendente      |
+| Sprint 09            | 22/01           | 29/01         |CADASTRO E LOGIN + MICROORGANISMOS + PONTOS (LOCAIS) AVALIADOS || Pendente      |
+| Sprint 10            | 29/01           | 05/02         |RESULTADOS                          || Pendente      |
+| Sprint 11            | 05/02           | 12/02         |DASHBOARD                          || Pendente      |
+| Sprint 12            | 12/02           | 19/02         |DASHBOARD                           |  | Pendente      |
 
 
 
