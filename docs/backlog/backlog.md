@@ -179,18 +179,7 @@ Foi levado em consideração o quadro de priorização para a definição do MVP
 
 ## Especificação dos Requisitos
 
-### Cartões (User Stories)
-Os **Cartões** representam histórias de usuário, descritas de forma simples e direta, para comunicar a intenção de uma funcionalidade. Eles seguem o formato:
-
-Como [ role ], eu quero [ atividade ] para que [ valor de negócio ].
-
-### Confirmação (Cenários)
-Os **Cenários** detalham os Critérios de Aceitação, que definem as condições necessárias para validar que a funcionalidade atende às expectativas do cliente. Eles utilizam o formato:
-
-Dado que [ condição inicial ],
-Quando [ ação realizada ],
-Então [ resultado esperado ].
-
+Abaixo estão os cartões e as confirmações das histórias selecionadas para o primeiro ciclo de desenvolvimento do projeto:
 
 ### Épico 1: Cadastrar Usuários
 
