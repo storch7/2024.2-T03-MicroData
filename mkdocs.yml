@@ -13,12 +13,13 @@ nav:
   - Cenário atual do cliente e do Negócio: cenario_cliente/cenario.md
   - Visão do Produto e Projeto:
     - Solução Proposta: visao_produto_projeto/visao_do_produto.md
-    - Estratégias de Engenharia: estrategias_de_engenharia/estrategias.md
-    - Engenharia de Requisitos: engenharia_requisitos/requisitos.md
-    - Requisitos de Software: requisitos/requisitos.md
-    - Backlog do Produto: backlog/backlog.md
-    - Interação entre Equipe e Cliente: interacao_equipe_cliente/interacao.md
-    - Cronograma e Entregas: cronograma_entregas/cronograma.md
+    - Estratégias de Engenharia: visao_produto_projeto/estrategias.md
+    - Engenharia de Requisitos: visao_produto_projeto/engenharia_requisitos.md
+    - Requisitos de Software: visao_produto_projeto/requisitos_software.md
+    - Backlog do Produto: visao_produto_projeto/backlog_produto.md
+    - Interação entre Equipe e Cliente: visao_produto_projeto/interacao.md
+    - Cronograma e Entregas: visao_produto_projeto/cronograma.md
+    - Especificação dos Requisitos: visao_produto_projeto/especificacao_requisitos.md
   - Entregas: entregas/entregas.md
   - Lições Aprendidas: licoes_aprendidas/licoes.md
 
