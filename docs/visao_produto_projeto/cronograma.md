@@ -39,6 +39,44 @@
 
 O cronograma acima poderá sofrer alterações ao longo do desenvolvimento do projeto.
 
+# Avaliação dos Requisitos - Primeira Entrega
+
+## Processo de Avaliação pelo Definition of Ready (DoR)
+
+Os requisitos selecionados para a primeira entrega foram avaliados com base no **Definition of Ready (DoR)**, garantindo que estão prontos para serem desenvolvidos. Abaixo estão os critérios do DoR utilizados para essa avaliação:
+
+### Critérios do DoR:
+1. **O item é independente de outros PBIs ou recursos externos?**
+2. **O valor do item está claramente documentado?**
+3. **A equipe conseguiu estimar o esforço necessário?**
+4. **O item é pequeno o suficiente para ser concluído na Sprint?**
+5. **Os critérios de aceitação são claros e testáveis?**
+6. **Protótipo pronto e validado pelo cliente?**
+
+### Resultado da Avaliação
+
+Todos os requisitos foram avaliados positivamente para cada critério do DoR e estão prontos para serem desenvolvidos na primeira entrega.
+
+---
+
+## Tabela de Requisitos Avaliados
+
+| **INDEX** | **Independente?** | **Valor Documentado?** | **Esforço Estimado?** | **Tamanho Adequado?** | **Critérios Claros?** | **Protótipo Validado?** | **Status** |
+|-----------|-------------------|-------------------------|-----------------------|-----------------------|-----------------------|-------------------------|-----------|
+| **US-07** | ✅                 | ✅                       | ✅                     | ✅                     | ✅                     |                        | pendente    |
+| **US-13** | ✅                 | ✅                       | ✅                     | ✅                     |                      |                       | pendente    |
+| **US-08** | ✅                 | ✅                       | ✅                     | ✅                     | ✅                     |                       | pendente    |
+| **US-01** | ✅                 | ✅                       | ✅                     | ✅                     | ✅                     |                        | pendente    |
+| **US-02** | ✅                 | ✅                       | ✅                     | ✅                     | ✅                     |                        | pendente    |
+| **US-14** | ✅                 | ✅                       | ✅                     | ✅                     |                      |                        | Pendente     |
+
+---
+
+## Conclusão
+
+Todos os **requisitos (User Stories)** passaram pelos critérios do **Definition of Ready (DoR)**, com seus valores de negócio documentados, esforços estimados e critérios de aceitação validados. Assim, esses itens estão prontos para serem desenvolvidos no primeiro ciclo de entrega.
+
+
 ##  Histórico de Versão
 
 | **Data** | **Versão** | **Descrição** | **Autor** |

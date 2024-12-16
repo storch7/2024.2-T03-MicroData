@@ -107,8 +107,8 @@ Abaixo segue a tabela de priorização conforme os pontos avaliados anteriorment
 
 | INDEX  | VALOR DE NEGÓCIO | COMPLEXIDADE TÉCNICA | INDEPENDÊNCIA | URGÊNCIA | TOTAL (SOMA) |
 |--------|-------------------|----------------------|---------------|----------|--------------|
-| US-01  | 3                 | 5                    | 5             | 4        | 17           |
-| US-02  | 3                 | 5                    | 4             | 4        | 16           |
+| US-01  | 4                 | 5                    | 5             | 4        | 18           |
+| US-02  | 4                 | 5                    | 4             | 4        | 17           |
 | US-03  | 3                 | 5                    | 4             | 4        | 16           |
 | US-04  | 2                 | 5                    | 4             | 3        | 14           |
 | US-05  | 3                 | 5                    | 3             | 4        | 15           |
