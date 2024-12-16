@@ -61,7 +61,7 @@ Todos os requisitos foram avaliados positivamente para cada critério do DoR e e
 
 ## Tabela de Requisitos Avaliados
 
-| **INDEX** | **Independente?** | **Valor Documentado?** | **Esforço Estimado?** | **Tamanho Adequado?** | **Critérios Claros?** | **Protótipo Validado?** | **Status** |
+| **INDEX** | **Independente?** | **Valor especificado?** | **Esforço Estimado?** | **Tamanho Adequado?** | **Critérios Claros?** | **Protótipo Validado?** | **Status** |
 |-----------|-------------------|-------------------------|-----------------------|-----------------------|-----------------------|-------------------------|-----------|
 | **US-07** | ✅                 | ✅                       | ✅                     | ✅                     | ✅                     |                        | pendente    |
 | **US-13** | ✅                 | ✅                       | ✅                     | ✅                     |                      |                       | pendente    |

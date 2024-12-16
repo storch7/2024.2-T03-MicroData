@@ -72,7 +72,7 @@ A especificação de funcionalidades segue o framework de User Stories (Históri
 Para que um item do Product Backlog Item seja candidato para entrar na esteria do processo de desenvolvimento, os seguintes elementos devem ser considerados: 
 
 - O item é independente de outros PBIs ou recursos externos? *
-- O valor do item está claramente documentado?
+- O valor do item está claramente especificado?
 - A equipe conseguiu estimar o esforço necessário?
 - O item é pequeno o suficiente para ser concluído na Sprint?
 - Os critérios de aceitação são claros e testáveis?

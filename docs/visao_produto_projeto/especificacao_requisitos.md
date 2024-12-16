@@ -298,3 +298,9 @@ Abaixo estão os cartões e as confirmações das histórias selecionadas para o
   - Bloquear futuras edições nas informações do microorganismo desativado.
 
 ---
+
+##  Histórico de Versão
+
+| **Data** | **Versão** | **Descrição** | **Autor** |
+| :--------: | :--------: | :--------:  | :--------: | 
+|      15/12/2024      |      1.0      |      Criação do documento       |     Breno Fernandes     |
