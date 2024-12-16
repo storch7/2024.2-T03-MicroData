@@ -2,7 +2,11 @@
 
 ## Unidade 1
 
-- **Vídeo de Apresentação**: O vídeo de apresentação da unidade pode ser acessado no endereço < https://youtu.be/IyeuU7ALdTI >
+- **Vídeo de Apresentação**: O vídeo de apresentação da **Unidade 1** pode ser acessado no endereço: < https://youtu.be/IyeuU7ALdTI >
+---
+## Unidade 2
+
+- **Vídeo de Apresentação**: O vídeo de apresentação da **Unidade 2** pode ser acessado no endereço: < https://youtu.be/uh6cnl3GSMU >
 
 ##  Histórico de Versão
 
