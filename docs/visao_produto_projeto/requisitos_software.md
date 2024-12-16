@@ -1,9 +1,9 @@
-#Requisitos Funcionais
-
+# REQUISITOS DE SOFTWARE
+## Lista de Requisitos Funcionais
 Requisitos funcionais descrevem as funcionalidades que um sistema deve oferecer para atender às necessidades dos usuários e alcançar os objetivos do projeto. Eles especificam o que o sistema deve fazer, detalhando os serviços, ações ou processos que ele deve executar para possibilitar a realização das tarefas desejadas. Esses requisitos estão diretamente relacionados ao comportamento do sistema, incluindo sua interação com os usuários e outros sistemas, e são essenciais para definir o escopo do projeto e orientar o desenvolvimento.
 
 Os requisitos funcionais do projeto MicroData são, por épico:
-## Acesso E Login
+### Acesso E Login
 - **Rf-01**: Cadastrar Usuário  
 - **Rf-02**: Logar Usuário  
 - **Rf-03**: Visualizar Usuário  
@@ -11,7 +11,7 @@ Os requisitos funcionais do projeto MicroData são, por épico:
 - **Rf-05**: Desativar Usuário  
 - **Rf-06**: Recuperar Senha De Usuário  
 
-## Microorganismos
+### Microorganismos
 - **Rf-07**: Cadastrar Microorganismos Observados  
 - **Rf-08**: Listar Microorganismos Observados  
 - **Rf-09**: Editar Microorganismos Observados  
@@ -19,21 +19,21 @@ Os requisitos funcionais do projeto MicroData são, por épico:
 - **Rf-11**: Inserir Níveis De Alerta Da Contagem De Microorganismos  
 - **Rf-12**: Buscar Microorganismos Observados  
 
-## Pontos (Locais) Avaliados
+### Pontos (Locais) Avaliados
 - **Rf-13**: Cadastrar Locais De Coleta Avaliados  
 - **Rf-14**: Listar Locais De Coleta Avaliados  
 - **Rf-15**: Editar Locais De Coleta Avaliados  
 - **Rf-16**: Desativar Locais De Coleta Avaliados  
 - **Rf-17**: Buscar Locais De Coleta Avaliados  
 
-## Resultados Do Monitoramento
+### Resultados Do Monitoramento
 - **Rf-18**: Adicionar A Contagem De Microorganismos  
 - **Rf-19**: Listar A Contagem De Microorganismos  
 - **Rf-20**: Editar O Registro De Contagem De Microorganismos  
 - **Rf-21**: Inserir Ações Corretivas De Resultados Acima Do Limite De Contagem Estabelecido  
 - **Rf-22**: Filtrar Um Resultado De Coleta Microbiológica  
 
-## Dashboard
+### Dashboard
 - **Rf-23**: Visualizar Resultados Da Coleta Dos Pontos No Dashboard  
 - **Rf-24**: Visualizar Pontos Acima Do Limite De Contagem No Dashboard  
 - **Rf-25**: Visualizar Resultados Em Função Do Nível De Alerta No Dashboard  
@@ -41,7 +41,7 @@ Os requisitos funcionais do projeto MicroData são, por épico:
 - **Rf-27**: Filtrar Resultados Por Local De Coleta  
 - **Rf-28**: Filtrar Resultados Por Período De Tempo Estudado  
 
-## Localização de Informações e Rastreabilidade
+### Localização de Informações e Rastreabilidade
 - **Rf-29**: Inserir A Planta Baixa Do Processo  
 - **Rf-30**: Excluir A Planta Baixa Cadastrada  
 - **Rf-31**: Delimitar Os Locais De Coleta Avaliados Na Planta Baixa Da Área  
@@ -51,7 +51,7 @@ Os requisitos funcionais do projeto MicroData são, por épico:
 - **Rf-35**: Inserir A Imagem Do Locais De Coleta Cadastrado  
 - **Rf-36**: Excluir A Imagem Do Locais De Coleta Cadastrado   
 
-#Requisitos Não-Funcionais
+## Lista de Requisitos Não-Funcionais
 
 Os requisitos não funcionais referem-se às qualidades que o sistema deve apresentar, enfatizando seu comportamento em vez das funcionalidades específicas. Estruturados segundo o modelo URPS+, esses requisitos englobam categorias como Usabilidade, Confiabilidade, Desempenho e Suportabilidade, o que ajuda na análise e na priorização das características que afetam a qualidade do software. Assim, garantem que o sistema esteja alinhado com os padrões desejados por clientes e usuários.
 

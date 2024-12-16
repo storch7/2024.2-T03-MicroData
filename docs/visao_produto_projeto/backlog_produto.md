@@ -1,13 +1,11 @@
 # BACKLOG DO PRODUTO
 
-## Definições
-
-### Backlog
+## Backlog Geral
 O Backlog do Produto é uma lista ordenada de tudo o que é necessário para o desenvolvimento de um produto. Ele serve como a única fonte de trabalho autorizada para a equipe Scrum e é constantemente atualizado pelo Product Owner para refletir as necessidades, mudanças e prioridades do produto. Os itens mais importantes e de maior valor para o cliente são posicionados no topo, enquanto os menos urgentes ficam na parte inferior.
 
 Esse backlog inclui desde funcionalidades e correções até requisitos técnicos e melhorias. Durante a evolução do projeto, os itens do backlog podem ser adicionados, modificados, ou removidos conforme o aprendizado e as condições mudam. Sua manutenção é essencial para garantir que a equipe esteja sempre alinhada com os objetivos do produto e da organização.
 
-### User Stories
+### Definição: User Stories
 Uma história de usuário é uma descrição simples e informal de uma funcionalidade do ponto de vista do usuário final. Ela é utilizada em metodologias ágeis para comunicar o que é necessário desenvolver de forma clara e objetiva, focando nos benefícios que a funcionalidade trará para o usuário. O Cartão, a Conversação e a Confirmação são os três elementos fundamentais para a estruturação de histórias de usuário no contexto de metodologias ágeis.
 
 O **Cartão** é uma descrição breve e clara da intenção da história de usuário, geralmente escrita em 2 ou 3 frases. Ele segue um formato padrão: "Como [ role ], eu quero [ atividade ] para que [ valor de negócio ]". Esse formato ajuda a identificar quem está solicitando a funcionalidade [ role ], o que será realizado [ atividade ] e por que isso é importante [ valor de negócio ].
@@ -58,35 +56,7 @@ A especificação de funcionalidades segue o framework de User Stories (Históri
 | RF-35  | LOCALIZAÇÃO DE INFORMAÇÕES        | INSERIR IMAGEM DE LOCAIS                        | Como operador ou administrador, eu quero inserir uma imagem do local de coleta para facilitar o dia a dia.                              |
 | RF-36  | LOCALIZAÇÃO DE INFORMAÇÕES        | EXCLUIR IMAGEM DE LOCAIS                        | Como operador ou administrador, eu quero excluir uma imagem para remover informações incorretas ou desatualizadas.                      |
 
-
-### Definition of Ready (DoR)
-A Definição de Preparado (DoR) é o conjunto de critérios que determina quando um item de trabalho está pronto para ser iniciado pela equipe. Ela estabelece a clareza e as informações necessárias para que a equipe possa iniciar suas atividades com eficiência. Seja em histórias do usuário ou tarefas de desenvolvimento, o DoR visa proporcionar um entendimento claro e completo do que precisa ser feito antes que o trabalho comece.
-
-#### Definition of Ready (DoR) do PBI
-Para que um item do Product Backlog Item seja candidato para entrar na esteria do processo de desenvolvimento, os seguintes elementos devem ser considerados: 
-
-- O item é independente de outros PBIs ou recursos externos? 
-- O valor do item está claramente especificado?
-- A equipe conseguiu estimar o esforço necessário?
-- O item é pequeno o suficiente para ser concluído na Sprint?
-- Os critérios de aceitação são claros e testáveis?
-- Protótipo pronto e validado pelo cliente?
-
-### Definition of Done (DoD)
-A Definição de Pronto (DoD), é uma lista de critérios que estabelece quando uma determinada tarefa ou trabalho atende aos requisitos para ser considerado pronto. Esses critérios podem abranger desde desenvolvimento e testes até revisões e aprovações, garantindo que a qualidade e integridade do produto final sejam atingidas. Por meio do DoD, as equipes de projeto podem ter uma compreensão clara do que é esperado em cada entrega, promovendo a transparência e a eficiência em todo o processo.
-
-#### Definition of Done (DoD) do PBI
-Para que um Product Backlog Item seja considerado finalizado após o processo de desenvolvimento, os seguintes elementos devem ser avaliados:
-
-- O código foi revisado e atende aos padrões?
-- Os testes foram desenvolvidos e aprovados?
-- O cliente/PO validou o item? 
-- A documentação foi atualizada?
-- A funcionalidade foi integrada ao sistema principal?
-- Os critérios de aceitação foram cumpridos?
-
-
-## Priorização do Backlog do Produto
+## Priorização do Backlog Geral
 O grupo realizou a priorização do backlog do projeto com base em três critérios principais: **valor de negócio**, **complexidade técnica** e i**ndependência de funcionalidades**.  Essa abordagem visa maximizar os resultados e otimizar o uso dos recursos disponíveis.
 
 ### Valor de negócio 
@@ -141,11 +111,9 @@ Abaixo segue a tabela de priorização conforme os pontos avaliados anteriorment
 | US-35  | 3                 | 5                    | 3             | 2        | 13           |
 | US-36  | 3                 | 5                    | 3             | 2        | 13           |
 
-### Minimum Viable Product
+## MVP do projeto Microdata 
 MVP (Minimum Viable Product, ou Produto Mínimo Viável) é uma versão inicial de um produto que contém apenas as funcionalidades essenciais para resolver o problema principal dos usuários. Seu objetivo é validar hipóteses e obter feedback do mercado de maneira rápida e econômica, antes de investir em desenvolvimento completo. O MVP permite que equipes de desenvolvimento entendam o que realmente gera valor para o cliente e ajustem o produto com base em dados reais, minimizando riscos e desperdícios.
 
-
-## MVP do projeto Microdata 
 Foi levado em consideração o quadro de priorização para a definição do MVP do projeto. As hisorias de Usuário que tiveram o somatório de pontos de avaliação igual ou superior a 14 (>=14) são candidatas para o MVP do projeto; as hisorias com somatório inferior a 14 (<14) permanecem como backlog do projeto e poderão ser desenvolvidas em ocasiões futuras. São as histórias do MVP do projeto Microdata:
 
 | INDEX  | US                                                                                                      |

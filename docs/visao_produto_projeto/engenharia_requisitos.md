@@ -1,13 +1,15 @@
-# Estratégias de Engenharia de Requisitos
+# ENGENHARIA DE REQUISITOS
 
-## 1. Elicitação e Descoberta
+## Atividades e técnicas de ER
+
+### 1. Elicitação e Descoberta
 **Análise Documental**: Utilizar para revisar documentos existentes que fornecem informações sobre o domínio do problema, requisitos anteriores ou projetos similares, a fim de identificar necessidades e soluções já propostas.
 
 **Entrevista**: Realizar para obter informações diretamente dos stakeholders, identificando necessidades, expectativas e limitações iniciais para o produto, com perguntas estruturadas e semi-estruturadas para capturar dados relevantes.
 
 ---
 
-## 2. Análise e Consenso
+### 2. Análise e Consenso
 **Brainstorming**: Facilitar a geração rápida de ideias entre os stakeholders, promovendo a identificação de possíveis requisitos e soluções inovadoras em um ambiente colaborativo.
 
 **Priorização**: Utilizar para classificar os requisitos conforme sua importância e urgência, garantindo que as funcionalidades mais críticas sejam tratadas primeiro.
@@ -22,7 +24,7 @@
 
 ---
 
-## 3. Declaração
+### 3. Declaração de Requisitos
 **Priorização**: Aplicar para garantir que os requisitos sejam organizados de acordo com seu impacto e valor para o projeto, permitindo que a equipe foque nas necessidades mais importantes.
 
 **User Stories**: Representar cada requisito como uma história do usuário, descrevendo o papel, a necessidade e o benefício esperado, facilitando a comunicação clara entre as partes interessadas.
@@ -31,7 +33,7 @@
 
 ---
 
-## 4. Representação
+### 4. Representação de Requisitos
 **User Stories**: Utilizar para descrever os requisitos do sistema de forma simples e compreensível, focando nas necessidades e benefícios esperados dos usuários finais.
 
 **Cenários**: Aplicar para detalhar as histórias do usuário em situações específicas, descrevendo como o sistema deve se comportar em diferentes contextos de uso, ajudando a esclarecer os requisitos e validar as funcionalidades.
@@ -41,21 +43,21 @@
 
 ---
 
-## 5. Verificação e Validação
+### 5. Verificação e Validação de Requisitos
 **Revisão por Pares e Checklists**: Utilizar para verificar se os requisitos estão completos, consistentes e livres de erros, com a colaboração de membros da equipe para garantir a qualidade.
 
 **Walkthrough**: Conduzir sessões de walkthrough para apresentar os requisitos e protótipos aos stakeholders, recebendo feedback para ajustes antes do desenvolvimento.
 
 ---
 
-## 6. Organização e Atualização
+### 6. Organização e Atualização de Requisitos
 **Revisões de Lista de Requisitos**: Realizar para manter a lista de requisitos atualizada e garantir que todos os requisitos foram revisados e aprovados antes da implementação.
 
 **Grooming do Backlog**: Realizar sessões de grooming para revisar, refinar e priorizar os itens no backlog, garantindo que ele esteja alinhado com os objetivos do projeto e as expectativas dos stakeholders.
 
 **Reunião de Encerramento**: Conduzir uma reunião final para revisar o trabalho realizado, garantir que todos os requisitos foram atendidos e fechar oficialmente a fase de requisitos do projeto.
 
-### Quadro das Atividades da Engenharia de Requisitos no RAD
+## ENgenharia de Requisitos e o RAD
 
 <table border="1" cellspacing="0" cellpadding="5">
   <thead>

@@ -19,10 +19,6 @@ O problema enfrentado pelo setor responsável pela garantia da Qualidade é a di
 **Causa do Problema**  
 A causa do problema é a falta de clareza das informações de monitoramento microbiológico.
 
-![](../assets/diagrama.png)
-
-Figura 1: Diagrama de Ishikawa.
-
 ## Objetivos do Produto
 
 **Objetivo Principal: Centralizar os dados de monitoramento microbiológico**
@@ -93,9 +89,9 @@ Em relação à viabilidade de mercado: é alta, pois o sistema, ao atender às 
 
 ## Impacto da Solução 
 
-A implementação para o monitoramento microbiológico do LAQ traz diversos benefícios esperados, entre os quais se destacam a centralização dos dados em uma plataforma digital segura e a facilidade de acesso a análises em tempo real sobre a qualidade ambiental da produção. Isso permitirá à equipe operacional monitorar com precisão os dados microbiológicos e identificar rapidamente áreas que precisam de atenção, minimizando riscos de não conformidade nas auditorias. Além disso, a visualização simplificada das informações será uma ferramenta fundamental para que o LAQ tome decisões rápidas e informadas, reforçando a segurança e a consistência do processo de produção. 
+A implementação para o monitoramento microbiológico do Laboratório traz diversos benefícios esperados, entre os quais se destacam a centralização dos dados em uma plataforma digital segura e a facilidade de acesso a análises em tempo real sobre a qualidade ambiental da produção. Isso permitirá à equipe operacional monitorar com precisão os dados microbiológicos e identificar rapidamente áreas que precisam de atenção, minimizando riscos de não conformidade nas auditorias. Além disso, a visualização simplificada das informações será uma ferramenta fundamental para que o LAQ tome decisões rápidas e informadas, reforçando a segurança e a consistência do processo de produção. 
 
-O impacto no negócio da indústria de refrigerantes será significativo, pois a nova solução tornará o processo de monitoramento mais eficiente e menos suscetível a erros manuais, reduzindo o tempo e o esforço investido nas atividades de controle e geração de relatórios. Com um sistema mais alinhado às normas de auditoria da indústria de refrigerantes LATAM, o LAQ se tornará ainda mais ágil e preparado para responder às demandas de auditorias internas e externas, mantendo um elevado padrão de qualidade. Em longo prazo, esse ganho de eficiência e precisão fortalecerá a imagem da indústria de refrigerantes como uma parceira comprometida com a qualidade e a conformidade, posicionando-a de maneira competitiva e alinhada com as melhores práticas do mercado. 
+O impacto no negócio da indústria será significativo, pois a nova solução tornará o processo de monitoramento mais eficiente e menos suscetível a erros manuais, reduzindo o tempo e o esforço investido nas atividades de controle e geração de relatórios. Com um sistema mais alinhado às normas de auditoria,a indústria se tornará ainda mais ágil e preparado para responder às demandas de auditorias internas e externas, mantendo um elevado padrão de qualidade. Em longo prazo, esse ganho de eficiência e precisão fortalecerá a imagem da empresa como uma parceira comprometida com a qualidade e a conformidade, posicionando-a de maneira competitiva e alinhada com as melhores práticas do mercado. 
  
 
 ##  Histórico de Versão
