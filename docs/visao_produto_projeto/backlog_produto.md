@@ -60,14 +60,17 @@ A especificação de funcionalidades segue o framework de User Stories (Históri
 O grupo realizou a priorização do backlog do projeto com base em três critérios principais: **valor de negócio**, **complexidade técnica** e i**ndependência de funcionalidades**.  Essa abordagem visa maximizar os resultados e otimizar o uso dos recursos disponíveis.
 
 ### Valor de negócio 
-Foi considerado para assegurar que as entregas mais importantes para os objetivos do sistema fossem priorizadas. Cada funcionalidade foi classificada com esser parâmetro em uma escala de 1 a 5, onde 1 é considerado com baixo valor para o negócio e 5 alto valor para o negócio.
+Foi considerado para assegurar que as entregas mais importantes para os objetivos do sistema fossem priorizadas. Cada funcionalidade foi classificada com esse parâmetro em uma escala de 1 a 5, onde 1 é considerado com baixo valor para o negócio e 5 alto valor para o negócio.
 
 ### Complexidade técnica
-Foi avaliada para equilibrar o esforço necessário com os prazos disponíveis, garantindo a viabilidade do desenvolvimento. Cada funcionalidade foi classificada com esser parâmetro em uma escala de 1 a 5, onde 1 é considerado com baixa complecidade técnica e 5 alta complexidade técnica.
+Foi avaliada para equilibrar o esforço necessário com os prazos disponíveis, garantindo a viabilidade do desenvolvimento. Cada funcionalidade foi classificada com esse parâmetro em uma escala de 1 a 5, onde 1 é considerado com baixa complecidade técnica e 5 alta complexidade técnica.
 
 ### Independência
 Foi analisada para otimizar o fluxo de trabalho, priorizando tarefas que não dependem de outras entregas e que podem ser desenvolvidas de forma mais ágil e eficiente. Cada requisito foi confeccionado de forma a ser avaliado a característica de independência de requisitos e funionalidades, mas tratando-se do MVP do projeto, um pequeno conjunto de funcionalidades foi levantado de forma a garantir um fluxo de informações relacionadas e que fizesse sentido para o negócio do cliente ao passo que foi necessário o uso dessa classificação para priorização do MVP.
-Cada funcionalidade foi classificada com esser parâmetro em uma escala de 1 a 5, onde 1 é considerado "muito dependente de funcionalidades anteriores" e e 5 "pouco dependente de funcionalidades anteriores".
+Cada funcionalidade foi classificada com esse parâmetro em uma escala de 1 a 5, onde 1 é considerado "muito dependente de funcionalidades anteriores" e e 5 "pouco dependente de funcionalidades anteriores".
+
+### Urgência
+Foi avaliada a urgência de implementação das US's do projeto levando em consideração as ponderações do cliente sobre o quão agregador para o processo seria a possível implementação a nível de software. Cada funcionalidade foi classificada com esse parâmetro em uma escala de 1 a 5, onde 1 é considerado "pouco urgente" e e 5 "muito urgente".
 
 ### Quadro de priorização
 Abaixo segue a tabela de priorização conforme os pontos avaliados anteriormente. A complexidade total é o resultado da soma das classificações levantadas pelo grupo:
@@ -114,7 +117,11 @@ Abaixo segue a tabela de priorização conforme os pontos avaliados anteriorment
 ## MVP do projeto Microdata 
 MVP (Minimum Viable Product, ou Produto Mínimo Viável) é uma versão inicial de um produto que contém apenas as funcionalidades essenciais para resolver o problema principal dos usuários. Seu objetivo é validar hipóteses e obter feedback do mercado de maneira rápida e econômica, antes de investir em desenvolvimento completo. O MVP permite que equipes de desenvolvimento entendam o que realmente gera valor para o cliente e ajustem o produto com base em dados reais, minimizando riscos e desperdícios.
 
-Foi levado em consideração o quadro de priorização para a definição do MVP do projeto. As hisorias de Usuário que tiveram o somatório de pontos de avaliação igual ou superior a 14 (>=14) são candidatas para o MVP do projeto; as hisorias com somatório inferior a 14 (<14) permanecem como backlog do projeto e poderão ser desenvolvidas em ocasiões futuras. São as histórias do MVP do projeto Microdata:
+Foi levado em consideração o quadro de priorização para a definição do MVP do projeto. As hisorias de Usuário que tiveram o somatório de pontos de avaliação igual ou superior a 14 (>=14) são candidatas para o MVP do projeto; as hisorias com somatório inferior a 14 (<14) permanecem como backlog do projeto e poderão ser desenvolvidas em ocasiões futuras.
+
+O valor de 14 foi levado como clivo para definição das funcionalidades candidatas ao MVP após uma avaliação comparativa do grupo acerca das funcionalidades de alta prioridade (maior urgência de implementação) e baixa prioridade (menor urgência de implementação). As funcionalidades elencadas com maior urgência apresentaram valores que giraram em tordo de 11 e 13; em contrapartida, as que foram consideradas de alta prioridade e maior urgência de impelentação apresentaram valores que giraram em torno de 14 e 20. Desse modo, o valor do somatório foi delimitado 14 para o estabelecimento do MVP do projeto.
+
+São as histórias do MVP do projeto Microdata:
 
 | INDEX  | US                                                                                                      |
 |--------|-------------------------------------------------------------------------------------------------------------|
