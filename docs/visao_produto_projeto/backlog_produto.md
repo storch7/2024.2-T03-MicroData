@@ -119,7 +119,7 @@ MVP (Minimum Viable Product, ou Produto Mínimo Viável) é uma versão inicial 
 
 Foi levado em consideração o quadro de priorização para a definição do MVP do projeto. As hisorias de Usuário que tiveram o somatório de pontos de avaliação igual ou superior a 14 (>=14) são candidatas para o MVP do projeto; as hisorias com somatório inferior a 14 (<14) permanecem como backlog do projeto e poderão ser desenvolvidas em ocasiões futuras.
 
-O valor de 14 foi levado como clivo para definição das funcionalidades candidatas ao MVP após uma avaliação comparativa do grupo acerca das funcionalidades de alta prioridade (maior urgência de implementação) e baixa prioridade (menor urgência de implementação). As funcionalidades elencadas com maior urgência apresentaram valores que giraram em tordo de 11 e 13; em contrapartida, as que foram consideradas de alta prioridade e maior urgência de impelentação apresentaram valores que giraram em torno de 14 e 20. Desse modo, o valor do somatório foi delimitado 14 para o estabelecimento do MVP do projeto.
+O valor de 14 foi estabelecido como clivo para definição das funcionalidades candidatas ao MVP após uma avaliação comparativa do grupo acerca das funcionalidades de alta prioridade (maior urgência de implementação) e baixa prioridade (menor urgência de implementação). As funcionalidades elencadas com menor urgência apresentaram valores que giraram em tordo de 11 e 13; em contrapartida, as que foram consideradas de alta prioridade e maior urgência de impelentação apresentaram valores que giraram em torno de 14 e 20. Desse modo, o valor do somatório foi delimitado em 14 para o estabelecimento do MVP do projeto.
 
 São as histórias do MVP do projeto Microdata:
 
