@@ -10,11 +10,9 @@
 ---
 
 ### 2. Análise e Consenso
-**Brainstorming**: Facilitar a geração rápida de ideias entre os stakeholders, promovendo a identificação de possíveis requisitos e soluções inovadoras em um ambiente colaborativo.
-
 **Priorização**: Utilizar para classificar os requisitos conforme sua importância e urgência, garantindo que as funcionalidades mais críticas sejam tratadas primeiro.
 
-**Entrevista**: Aplicar novamente para aprofundar a compreensão das necessidades dos stakeholders e obter mais informações detalhadas sobre os requisitos.
+**Entrevista**: Fazer entrevistas para identificar com os stakeholders quais requisitos devem entrar ou sair, promovendo um consenso sobre o que é essencial para o sistema.
 
 **Análise de Viabilidade**: Realizar para avaliar a viabilidade técnica e econômica das funcionalidades propostas, garantindo que os requisitos sejam realistas dentro dos recursos disponíveis.
 
@@ -29,17 +27,12 @@
 
 **User Stories**: Representar cada requisito como uma história do usuário, descrevendo o papel, a necessidade e o benefício esperado, facilitando a comunicação clara entre as partes interessadas.
 
-**Prototipagem**: Criar modelos de baixa fidelidade para validar rapidamente com os stakeholders se as funcionalidades propostas estão alinhadas às expectativas.
+**Cenários**: Aplicar para detalhar as histórias do usuário em situações específicas, descrevendo como o sistema deve se comportar em diferentes contextos de uso, ajudando a esclarecer os requisitos e validar as funcionalidades.
 
 ---
 
 ### 4. Representação de Requisitos
-**User Stories**: Utilizar para descrever os requisitos do sistema de forma simples e compreensível, focando nas necessidades e benefícios esperados dos usuários finais.
-
-**Cenários**: Aplicar para detalhar as histórias do usuário em situações específicas, descrevendo como o sistema deve se comportar em diferentes contextos de uso, ajudando a esclarecer os requisitos e validar as funcionalidades.
-
-
-**Prototipagem**: Criar protótipos de baixa fidelidade, permitindo testes rápidos com os stakeholders e ajustes nas funcionalidades antes do desenvolvimento.
+**Prototipagem**: Criar protótipos, permitindo testes rápidos com os stakeholders e ajustes nas funcionalidades antes do desenvolvimento.
 
 ---
 
@@ -51,11 +44,9 @@
 ---
 
 ### 6. Organização e Atualização de Requisitos
-**Revisões de Lista de Requisitos**: Realizar para manter a lista de requisitos atualizada e garantir que todos os requisitos foram revisados e aprovados antes da implementação.
-
 **Grooming do Backlog**: Realizar sessões de grooming para revisar, refinar e priorizar os itens no backlog, garantindo que ele esteja alinhado com os objetivos do projeto e as expectativas dos stakeholders.
 
-**Reunião de Encerramento**: Conduzir uma reunião final para revisar o trabalho realizado, garantir que todos os requisitos foram atendidos e fechar oficialmente a fase de requisitos do projeto.
+**Atualiazação do Backlog**: Conduzir uma reunião final para revisar o trabalho realizado, garantir que todos os requisitos foram atendidos e fechar oficialmente a fase de requisitos do projeto.
 
 ## Engenharia de Requisitos e o RAD
 
@@ -81,7 +72,7 @@
     <tr>
       <td style="text-align: center; vertical-align: middle;">Análise e Consenso</td>
       <td style="text-align: center; vertical-align: middle;">Priorização de Requisitos</td>
-      <td style="text-align: center; vertical-align: middle;">Brainstorming, Priorização, Entrevista, Análise de Viabilidade e Negociação</td>
+      <td style="text-align: center; vertical-align: middle;">Priorização, Entrevista, Análise de Viabilidade e Negociação</td>
       <td style="text-align: center; vertical-align: middle;">Escopo e funcionalidades priorizadas e acordadas</td>
     </tr>
     <tr>
@@ -89,6 +80,12 @@
       <td style="text-align: center; vertical-align: middle;">Descrição dos Requisitos</td>
       <td style="text-align: center; vertical-align: middle;">Priorização e User Stories</td>
       <td style="text-align: center; vertical-align: middle;">Documentação de Requisitos de software</td>
+    </tr>
+    <tr>
+      <td style="text-align: center; vertical-align: middle;">Representação</td>
+      <td style="text-align: center; vertical-align: middle;">Confecção de artefatos</td>
+      <td style="text-align: center; vertical-align: middle;">Prototipação</td>
+      <td style="text-align: center; vertical-align: middle;">Representações formais</td>
     </tr>
     <tr>
       <td style="text-align: center; vertical-align: middle;" rowspan="2">Verificação e validação</td>
@@ -101,15 +98,9 @@
       <td style="text-align: center; vertical-align: middle;">Walkthrough</td>
     </tr>
     <tr>
-      <td style="text-align: center; vertical-align: middle;">Representação</td>
-      <td style="text-align: center; vertical-align: middle;">Confecção de artefatos</td>
-      <td style="text-align: center; vertical-align: middle;">User Stories e Cenários</td>
-      <td style="text-align: center; vertical-align: middle;">Representações formais</td>
-    </tr>
-    <tr>
       <td style="text-align: center; vertical-align: middle;">Organização e Atualização</td>
       <td style="text-align: center; vertical-align: middle;">Revisões periódicas</td>
-      <td style="text-align: center; vertical-align: middle;">Revisões de lista de requisitos</td>
+      <td style="text-align: center; vertical-align: middle;">Atualização do Bakclog</td>
       <td style="text-align: center; vertical-align: middle;">Backlog atualizado e alinhado</td>
     </tr>
     <!-- User Design -->
@@ -122,20 +113,20 @@
     </tr>
     <tr>
       <td style="text-align: center; vertical-align: middle;">Declaração</td>
-      <td style="text-align: center; vertical-align: middle;">Prototipação de Baixa fidelidade</td>
-      <td style="text-align: center; vertical-align: middle;">Prototipagem</td>
-      <td style="text-align: center; vertical-align: middle;">Ideia do fluxo de telas desejado pelo cliente e como isso refletirá no protótipo de alta fidelidade</td>
+      <td style="text-align: center; vertical-align: middle;">Especificação dos Requisitos</td>
+      <td style="text-align: center; vertical-align: middle;">Cenários</td>
+      <td style="text-align: center; vertical-align: middle;">Requisitos Especificados</td>
     </tr>
     <tr>
       <td style="text-align: center; vertical-align: middle;">Representação</td>
-      <td style="text-align: center; vertical-align: middle;">Prototipação de Alta Fidelidade</td>
+      <td style="text-align: center; vertical-align: middle;">Prototipação</td>
       <td style="text-align: center; vertical-align: middle;">Prototipagem</td>
       <td style="text-align: center; vertical-align: middle;">Protótipos de alta fidelidade e fluxo de telas da aplicação</td>
     </tr>
     <tr>
       <td style="text-align: center; vertical-align: middle;">Verificação e validação</td>
       <td style="text-align: center; vertical-align: middle;">Revisão Iterativa</td>
-      <td style="text-align: center; vertical-align: middle;">Walkthroughs, Checklists</td>
+      <td style="text-align: center; vertical-align: middle;">Walkthroughs e  Checklists</td>
       <td style="text-align: center; vertical-align: middle;">Protótipo ajustado para refletir melhor os objetivos</td>
     </tr>
     <!-- Desenvolvimento e Testes -->
@@ -150,8 +141,8 @@
     <tr>
       <td style="text-align: center; vertical-align: middle;"><strong>Finalização e entrega</strong></td>
       <td style="text-align: center; vertical-align: middle;">Organização e Atualização</td>
-      <td style="text-align: center; vertical-align: middle;">Atualização do Backlog</td>
-      <td style="text-align: center; vertical-align: middle;">Reunião de Encerramento</td>
+      <td style="text-align: center; vertical-align: middle;">Revisão Final do Backlog</td>
+      <td style="text-align: center; vertical-align: middle;">Atualização do Bakclog</td>
       <td style="text-align: center; vertical-align: middle;">Backlog encerrado, rastreabilidade completa dos requisitos, deploy da aplicação e implementação do MVP1</td>
     </tr>
   </tbody>
@@ -161,5 +152,6 @@
 
 | **Data** | **Versão** | **Descrição** | **Autor** |
 | :--------: | :--------: | :--------:  | :--------: | 
-|      15/12/2024      |      1.0      |      Criação do documento       |     Renan Vieira     |
+|      15/12/2024      |      1.0      |      Criação do documento                                       |     Renan Vieira     |
 |      15/12/2024      |      1.1      |      Texto sobre as ténicas escolhidas para cada atividade      |     Renan Vieira     |
+|      21/12/2024      |      1.2      |      Ajustes e alterações sugeridas pelo professor              |     Renan Vieira     |
