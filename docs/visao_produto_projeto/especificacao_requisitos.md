@@ -299,6 +299,49 @@ Abaixo estão os cartões e as confirmações das histórias selecionadas para o
 
 ---
 
+## Épico 10: Desativar Microorganismos Observados
+
+**US-10:** Eu como usuário quero poder desativar algum microorganismo cadastrado no sistema a fim de tornar obsoleto um microorganismo observado pelo programa.
+
+### Cenário 1: O Usuário é Notificado Sobre a Desativação do Microorganismo
+- **Dado que** o usuário acessa os registros de microorganismos observados,
+- **Quando** o usuário realiza a desativação,
+- **Então** o sistema deverá:
+  - Notificar o usuário sobre a ação realizada com a mensagem: "Tem certeza que deseja realizar essa ação? A desativação deste registro implica informar para o sistema que este microorganismo não é mais observado pelo programa."
+
+---
+
+### Cenário 2: O Usuário Desativa um Microorganismo Ativo
+- **Dado que** o usuário acessa os registros de microorganismos observados,
+- **Quando** o usuário realiza a desativação,
+- **Então** o sistema deverá proceder com a desativação do microorganismo observado pelo sistema.
+
+---
+
+## Épico 11: Inserir Níveis de Alerta da Contagem de Microorganismos
+
+**US-11:** Eu como usuário, quero poder ver níveis de alerta a respeito da contagem de microorganismos a fim de ser notificado quando a contagem não está de acordo com o resultado esperado.
+
+### Cenário 1: O Usuário Insere os Níveis de Alerta do Microorganismo no Sistema
+- **Dado que** o usuário cadastra um microorganismo,
+- **Quando** tenta realizar um registro,
+- **Então** o sistema deverá:
+  - Permitir que ele insira os níveis de alerta de contagem do microorganismo conforme os possíveis limites de contagem.
+
+---
+
+## Épico 12: Buscar Microorganismos Observados
+
+**US-12:** Eu como usuário, quero buscar microorganismos cadastrados no sistema para encontrar rapidamente o local desejado de forma eficiente.
+
+### Cenário 1: O Usuário Busca um Registro de Microorganismo Específico
+- **Dado que** o usuário acessa os registros de microorganismos observados,
+- **Quando** realiza uma busca,
+- **Então** o sistema deverá:
+  - Apresentar o registro informado na base de dados.
+
+---
+
 ## Épico 13: Cadastrar Locais de Coleta Avaliados
 
 **US-13:** Eu como usuário, quero cadastrar os locais de coleta microbiológica a fim de acompanhar as contagens de microrganismos presentes.
@@ -328,10 +371,349 @@ Abaixo estão os cartões e as confirmações das histórias selecionadas para o
 - **Dado** que um usuário acessa a página de registros
 - **Quando** tenta buscar por um ponto de coleta
 - **Então** o sistema deve apresentar uma listagem com todos os pontos registrados ativos até então.
+
 ---
+
+## Épico 15: Editar Locais de Coleta Avaliados
+
+**US-15:** Eu como usuário, quero editar os locais de coleta cadastrados no sistema a fim de adicionar ou retirar dados pertinentes para a análise microbiológica.
+
+### Cenário 1: Edição Bem-Sucedida
+- **Dado que** o usuário esteja autenticado e na página de edição de locais de coleta avaliados,
+- **Quando** realiza alterações nos dados do local e clicar em "Salvar",
+- **Então** o sistema deverá:
+  - Salvar as alterações realizadas,
+  - Exibir a mensagem de confirmação: "Local de coleta atualizado com sucesso".
+
+---
+
+### Cenário 2: Dados Inválidos na Edição
+- **Dado que** o usuário esteja autenticado e na página de edição de locais de coleta,
+- **Quando** inserir dados inválidos (ex.: Local inexistente) e clicar em "Salvar",
+- **Então** o sistema deverá:
+  - Exibir uma mensagem de erro específica para o campo inválido,
+  - Não salvar as alterações.
+
+---
+
+### Cenário 3: Cancelamento da Edição
+- **Dado que** o usuário esteja autenticado e na página de edição de locais de coleta avaliados,
+- **Quando** realiza alterações nos dados e clicar no botão "Cancelar",
+- **Então** o sistema deverá descartar as alterações realizadas e retornar o usuário para a página anterior sem modificar os dados existentes.
+
+---
+
+## Épico 16: Desativar Locais de Coleta Avaliados
+
+**US-16:** Eu como usuário, quero desativar locais de coleta cadastrados no sistema para remover aqueles que não serão mais utilizados na coleta microbiológica.
+
+### Cenário 1: Desativação Bem-Sucedida
+- **Dado que** o usuário esteja autenticado e na página de desativar local de coleta,
+- **Quando** ele selecionar um local de coleta e clicar no botão "Desativar",
+- **Então** o sistema deverá:
+  - Atualizar o status do local de coleta para "Desativado",
+  - Exibir a mensagem de confirmação: "Local de coleta desativado com sucesso".
+
+---
+
+### Cenário 2: Cancelar a Desativação
+- **Dado que** o usuário esteja autenticado e na página de desativar um local de coleta avaliado,
+- **Quando** ele clicar no botão "Cancelar" antes de confirmar a desativação,
+- **Então** o sistema deverá:
+  - Manter o status do local de coleta como "Ativo",
+  - Retornar à página anterior sem efetuar nenhuma alteração.
+
+---
+
+## Épico 17: Buscar Locais de Coleta Avaliados
+
+**US-17:** Eu como usuário, quero buscar locais cadastrados no sistema para encontrar rapidamente o local desejado de forma eficiente.
+
+### Cenário 1: O Usuário Busca um Registro de Local de Coleta Específico
+- **Dado que** o usuário acessa os registros de locais de coleta observados,
+- **Quando** realiza uma busca,
+- **Então** o sistema deverá apresentar o registro informado na base de dados.
+
+---
+
+## Épico 18: Adicionar a Contagem de Microorganismos
+
+**US-18:** Eu como usuário, quero registrar a contagem de microrganismos de uma dada coleta para que eu possa registrar informações detalhadas e manter um histórico organizado para análise.
+
+### Cenário 1: Registro Bem-Sucedido da Contagem
+- **Dado que** o usuário está na página de adicionar resultados do monitoramento,
+- **Quando** preencher os campos obrigatórios (ex.: Data, Local de Coleta, Contagem de Microrganismos) e clicar em "Salvar",
+- **Então** o sistema deverá:
+  - Registrar a contagem,
+  - Exibir a mensagem de sucesso: "Contagem registrada com sucesso."
+
+---
+
+### Cenário 2: Falha no Preenchimento de Campos Obrigatórios
+- **Dado que** o usuário tenta adicionar uma contagem de microrganismos,
+- **Quando** deixar de preencher algum campo obrigatório,
+- **Então** o sistema deverá exibir mensagens de erro específicas indicando os campos que precisam ser preenchidos.
+
+---
+
+### Cenário 3: Tentativa de Registrar Contagem Duplicada
+- **Dado que** o usuário já registrou uma contagem para o mesmo Local e Data,
+- **Quando** tentar adicionar uma nova contagem com essas mesmas informações,
+- **Então** o sistema deverá exibir a mensagem de erro: "Já existe uma contagem registrada para este local e data."
+
+---
+
+### Cenário 4: Validação de Valores Inválidos
+- **Dado que** o usuário está preenchendo o campo de contagem de microrganismos,
+- **Quando** informar um valor fora do intervalo permitido ou inválido (ex.: texto, números negativos),
+- **Então** o sistema deverá exibir a mensagem de erro: "Informe uma contagem válida."
+
+---
+
+## Épico 19: Listar a Contagem de Microorganismos
+
+**US-19:** Eu como usuário, quero listar as contagens de microrganismos registradas para que eu possa visualizar e analisar os dados coletados de forma organizada e detalhada.
+
+### Cenário 1: Listagem Bem-Sucedida
+- **Dado que** o usuário acessa a página de resultados do monitoramento,
+- **Quando** clicar na aba "Contagens Registradas",
+- **Então** o sistema deverá exibir uma lista contendo os registros de contagem de microrganismos com campos como:
+  - Data,
+  - Local de Coleta,
+  - Microrganismo,
+  - Contagem.
+
+---
+
+### Cenário 2: Nenhum Registro Encontrado
+- **Dado que** o usuário acessa a página de resultados do monitoramento,
+- **Quando** não houver registros disponíveis,
+- **Então** o sistema deverá exibir a mensagem: "Nenhuma contagem de microrganismos registrada até o momento."
+
+---
+
+### Cenário 3: Paginação da Listagem
+- **Dado que** o usuário acessa a página de contagens registradas,
+- **Quando** houver mais registros do que o limite exibido por página,
+- **Então** o sistema deverá oferecer opções para navegar entre as páginas de resultados.
+
+---
+
+### Cenário 4: Ordenação Personalizada
+- **Dado que** o usuário acessa a lista de contagens registradas,
+- **Quando** selecionar um critério de ordenação (ex.: Data, Local ou Contagem),
+- **Então** o sistema deverá exibir os registros ordenados conforme o critério selecionado.
+
+---
+
+## Épico 20: Editar o Registro de Contagem de Microorganismos
+
+**US-20:** Eu como usuário, quero editar o registro de contagem de microrganismos já existente para que eu possa corrigir erros ou atualizar informações relevantes para manter os dados precisos e confiáveis.
+
+### Cenário 1: Edição Bem-Sucedida
+- **Dado que** o usuário acessa o registro de uma contagem existente,
+- **Quando** modificar os campos necessários e clicar em "Salvar",
+- **Então** o sistema deverá:
+  - Atualizar o registro,
+  - Exibir a mensagem: "Registro atualizado com sucesso."
+
+---
+
+### Cenário 2: Falha ao Salvar Alterações
+- **Dado que** o usuário tenta editar um registro,
+- **Quando** ocorrer uma falha na atualização dos dados,
+- **Então** o sistema deverá exibir a mensagem de erro: "Erro ao salvar as alterações. Tente novamente mais tarde."
+
+---
+
+### Cenário 3: Cancelamento da Edição
+- **Dado que** o usuário acessa a página de edição de um registro,
+- **Quando** clicar em "Cancelar" antes de salvar as alterações,
+- **Então** o sistema deverá:
+  - Descartar as alterações,
+  - Retornar para a página de visualização do registro sem realizar nenhuma modificação.
+
+---
+
+## Épico 21: Inserir Ações Corretivas de Resultados Acima do Limite de Contagem Estabelecido
+
+**US-21:** Eu como usuário, quero inserir as ações corretivas para os resultados acima do limite de contagem de microrganismos para o registro de ações de controle mais efetivo e um processo de tomada de decisão mais eficiente.
+
+### Cenário 1: Adição de Ação Corretiva com Sucesso
+- **Dado que** o usuário acessa um registro com resultados acima do limite de contagem,
+- **Quando** preencher a descrição da ação corretiva e clicar em "Salvar",
+- **Então** o sistema deverá:
+  - Registrar a ação corretiva,
+  - Exibir a mensagem: "Ação corretiva registrada com sucesso."
+
+---
+
+### Cenário 2: Falha no Preenchimento de Informações
+- **Dado que** o usuário tenta adicionar uma ação corretiva,
+- **Quando** não preencher o campo obrigatório de descrição,
+- **Então** o sistema deverá exibir a mensagem de erro: "Descrição da ação corretiva é obrigatória."
+
+---
+
+### Cenário 3: Atualização de uma Ação Corretiva Existente
+- **Dado que** o usuário acessa uma ação corretiva já registrada,
+- **Quando** modificar a descrição ou os detalhes da ação e clicar em "Salvar",
+- **Então** o sistema deverá:
+  - Atualizar as informações da ação corretiva,
+  - Exibir a mensagem: "Ação corretiva atualizada com sucesso."
+
+---
+
+## Épico 22: Filtrar um Resultado de Coleta Microbiológica
+
+**US-22:** Eu como usuário, quero aplicar filtros aos resultados de coleta microbiológica para que eu possa localizar informações específicas de forma eficiente e realizar análises mais detalhadas.
+
+### Cenário 1: Filtro Aplicado com Sucesso
+- **Dado que** o usuário acessa a página de resultados do monitoramento,
+- **Quando** selecionar critérios como Data ou Local de Coleta e clicar em "Filtrar",
+- **Então** o sistema deverá exibir apenas os registros que correspondem aos critérios selecionados.
+
+---
+
+### Cenário 2: Nenhum Resultado Encontrado
+- **Dado que** o usuário aplica um filtro na página de resultados do monitoramento,
+- **Quando** não houver registros que atendam aos critérios selecionados,
+- **Então** o sistema deverá exibir a mensagem: "Nenhum resultado encontrado para os filtros aplicados."
+
+---
+
+### Cenário 3: Aplicação de Múltiplos Filtros
+- **Dado que** o usuário deseja localizar resultados específicos,
+- **Quando** combinar vários critérios de filtro (ex.: Local, Data e Contagem maior que um valor específico),
+- **Então** o sistema deverá exibir os registros que atendem a todos os critérios selecionados.
+
+---
+
+### Cenário 4: Limpeza de Filtros Aplicados
+- **Dado que** o usuário aplicou filtros na página de resultados do monitoramento,
+- **Quando** clicar em "Limpar Filtros",
+- **Então** o sistema deverá:
+  - Remover todos os filtros,
+  - Exibir novamente a lista completa de registros.
+
+---
+
+## Épico 23: Visualizar Resultados da Coleta dos Pontos no Dashboard
+
+**US-23:** Como usuário, quero visualizar no dashboard os resultados de coleta para cada ponto, a fim de acompanhar a situação microbiológica de forma consolidada.
+
+### Cenário 1: O Usuário Quer Visualizar o Resultado de Coleta dos Pontos Avaliados
+- **Dado que** o usuário acessa o dashboard,
+- **Quando** quer acessar os resultados da coleta em determinado ponto,
+- **Então** o sistema deverá apresentar todas as informações de coleta no ponto desejado pelo usuário.
+
+---
+
+### Cenário 2: O Ponto Avaliado Não Está com os Resultados Disponíveis
+- **Dado que** o usuário acessa o dashboard,
+- **Quando** quer acessar os resultados da coleta em determinado ponto, mas não possui resultados naquele momento,
+- **Então** o sistema não deverá apresentar o ponto em questão como opção válida para visualização de resultados.
+
+---
+
+## Épico 24: Visualizar Pontos Acima do Limite de Contagem no Dashboard
+
+**US-24:** Como usuário, quero que o dashboard destaque os pontos que excederem o limite de contagem, para priorizar ações corretivas.
+
+### Cenário 1: O Usuário Deseja Visualizar Pontos Acima do Limite de Contagem no Dashboard
+- **Dado que** o usuário acessa o dashboard,
+- **Quando** um ou mais valores excedem o limite de contagem pré-definido,
+- **Então** o dashboard deverá destacar visualmente esses pontos (por exemplo, com cores, ícones ou marcadores).
+
+---
+
+### Cenário 2: Ação Corretiva Sugerida para Pontos Acima do Limite
+- **Dado que** o usuário acessa o dashboard,
+- **Quando** o usuário seleciona um ponto acima do limite de contagem,
+- **Então** o sistema deverá apresentar a ação corretiva cadastrada baseada no registro apresentado.
+
+---
+
+## Épico 25: Visualizar Resultados em Função do Nível de Alerta no Dashboard
+
+**US-25:** Como usuário, quero visualizar os resultados agrupados por nível de alerta (normal, atenção, crítico), para facilitar a análise dos dados críticos.
+
+### Cenário 1: O Usuário Deseja Visualizar Resultados de Acordo com os Níveis de Alerta
+- **Dado que** o usuário acessa o dashboard,
+- **Quando** visualiza os dados no dashboard,
+- **Então** o sistema deverá exibir os resultados agrupados por nível de alerta, diferenciados por cores ou indicadores distintos.
+
+---
+
+## Épico 26: Filtrar Resultados por Microorganismo Observado
+
+**US-26:** Como usuário, quero filtrar no dashboard os resultados por tipo de microorganismo, para avaliar padrões de contagem específicos.
+
+### Cenário 1: O Usuário Filtra os Resultados por Microorganismo
+- **Dado que** o usuário acessa o dashboard,
+- **Quando** filtra os resultados por microorganismo,
+- **Então** o sistema deverá:
+  - Organizar a base de dados de referência,
+  - Apresentar todas as informações de coleta do microorganismo escolhido para análise das contagens registradas.
+
+---
+
+## Épico 27: Filtrar Resultados por Local de Coleta
+
+**US-27:** Como usuário, quero filtrar no dashboard os resultados por local de coleta, para analisar os dados de uma área específica.
+
+### Cenário 1: O Usuário Filtra os Resultados por Local de Coleta
+- **Dado que** o usuário acessa o dashboard,
+- **Quando** filtra os resultados por local de coleta,
+- **Então** o sistema deverá:
+  - Organizar a base de dados de referência,
+  - Apresentar todas as informações de coleta do ponto escolhido para análise das contagens registradas.
+
+---
+
+## Épico 28: Filtrar Resultados por Período de Tempo Estudado
+
+**US-28:** Como usuário, quero filtrar os resultados no dashboard por período de tempo, para entender as variações ao longo de diferentes intervalos.
+
+### Cenário 1: O Usuário Informa a Data Referencial de Início
+- **Dado que** o usuário acessa o dashboard,
+- **Quando** informa uma data de referência para início da filtragem,
+- **Então** o sistema deverá:
+  - Organizar a base de dados de referência,
+  - Apresentar todas as informações de registros a partir da data informada em diante para análise das contagens registradas.
+
+---
+
+### Cenário 2: O Usuário Informa a Data Referencial de Fim
+- **Dado que** o usuário acessa o dashboard,
+- **Quando** informa uma data de referência para o final da filtragem,
+- **Então** o sistema deverá:
+  - Organizar a base de dados de referência,
+  - Apresentar todas as informações de registros até a data informada para análise das contagens registradas.
+
+---
+
+### Cenário 3: O Usuário Filtra os Resultados por Intervalo de Tempo
+- **Dado que** o usuário acessa o dashboard,
+- **Quando** filtra os resultados por intervalo de tempo (data de início e fim),
+- **Então** o sistema deverá:
+  - Organizar a base de dados de referência,
+  - Apresentar todas as informações no intervalo de tempo escolhido para análise das contagens registradas.
+
+---
+
+### Cenário 4: Limpeza de Filtros Aplicados
+- **Dado que** o usuário aplicou filtros na página de resultados do monitoramento,
+- **Quando** clicar em "Limpar Filtros",
+- **Então** o sistema deverá:
+  - Remover todos os filtros,
+  - Exibir novamente a lista completa de registros.
+
+
 
 ##  Histórico de Versão
 
 | **Data** | **Versão** | **Descrição** | **Autor** |
 | :--------: | :--------: | :--------:  | :--------: | 
 |      15/12/2024      |      1.0      |      Criação do documento       |     Breno Fernandes     |
+|      23/12/2024      |      1.1      |      Adicionando especificações de requisitos       |     Breno Fernandes, Guilherme, Rafael, Renan, Breno Lucena e João     |
