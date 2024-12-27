@@ -14,7 +14,7 @@ Para que um item do Product Backlog Item seja candidato para entrar na esteria d
 ## Definition of Done (DoD)
 A Definição de Pronto (DoD), é uma lista de critérios que estabelece quando uma determinada tarefa ou trabalho atende aos requisitos para ser considerado pronto. Esses critérios podem abranger desde desenvolvimento e testes até revisões e aprovações, garantindo que a qualidade e integridade do produto final sejam atingidas. Por meio do DoD, as equipes de projeto podem ter uma compreensão clara do que é esperado em cada entrega, promovendo a transparência e a eficiência em todo o processo.
 
-### Definition of Done (DoD) do PBI
+### Definition of Done (DoD)
 Para que um Product Backlog Item seja considerado finalizado após o processo de desenvolvimento, os seguintes elementos devem ser avaliados:
 
 - O código foi revisado e atende aos padrões?
