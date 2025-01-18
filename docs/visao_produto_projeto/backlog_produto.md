@@ -135,7 +135,7 @@ Abaixo segue a tabela de priorização conforme os pontos avaliados anteriorment
 | US-29  | 3                | 3            | 3            | 1       | 10           |
 | US-30  | 3                | 3            | 3            | 2       | 11           |
 | US-31  | 3                | 4            | 2            | 1       | 10           |
-| US-32  | 3                | 3            | 4            | 3       | 13           |
+| US-32  | 3                | 3            | 3            | 3       | 12           |
 | US-33  | 4                | 3            | 4            | 3       | 14           |
 | US-34  | 4                | 1            | 3            | 4       | 12           |
 | US-35  | 2                | 2            | 4            | 3       | 11           |
@@ -179,7 +179,6 @@ São as histórias do MVP do projeto Microdata e seus respectivos valores na pri
 | US-22  | 13    |
 | US-27  | 13    |
 | US-28  | 13    |
-| US-32  | 13    |
 
 Em contrapartida, as funcionalidades que foram consideradas Incrementos são:
 
@@ -193,6 +192,7 @@ Em contrapartida, as funcionalidades que foram consideradas Incrementos são:
 | US-05  | 10    |
 | US-29  | 10    |
 | US-31  | 10    |
+| US-32  | 13    |
 | US-36  | 9     |
 
  
