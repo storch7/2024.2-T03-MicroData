@@ -38,7 +38,7 @@ services:
       DB_PASSWORD: ${POSTGRES_PASSWORD}
       DB_NAME: ${POSTGRES_DB}
     ports:
-      - "4000:4000"
+      - "5000:5000"
     volumes:
       - ./backend:/app
       - /app/node_modules

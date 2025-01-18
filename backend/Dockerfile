@@ -9,9 +9,10 @@ RUN npm install
 COPY . .
 
 RUN npm install -g nodemon
+RUN npx prisma generate
 
-EXPOSE 4000
+EXPOSE 5000
 
-CMD ["nodemon", "src/server.js"]
+CMD ["node", "src/server.js"]
 
  
