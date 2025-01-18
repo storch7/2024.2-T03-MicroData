@@ -17,53 +17,87 @@ A **Confirmação** refere-se aos critérios que determinam se a história foi i
 ## Backlog do projeto Microdata
 A especificação de funcionalidades segue o framework de User Stories (Histórias de usuário); cada épico levantado no backlog deu origem a uma história de usuário e seu respectivo índice. Segue abaixo a tabela com os temas, épicos e suas respectivas user stories:
 
-| INDEX  | TEMA                                       | ÉPICO                                               | US |
-|--------|-------------------------------------------|-----------------------------------------------------|----|
-| RF-01  | ACESSO E LOGIN                           | CADASTRAR USUÁRIO                                  | Eu como usuário quero cadastrar uma conta para de minhas informações no sistema. |
-| RF-02  | ACESSO E LOGIN                           | LOGAR USUÁRIO                                      | Eu como usuário quero realizar login na conta cadastrada para ter acesso aos recursos e funcionalidades da plataforma. |
-| RF-03  | ACESSO E LOGIN                           | VISUALIZAR USUÁRIO                                 | Eu como usuário quero visualizar meus dados cadastrais para verificar as informações imputadas no sistema. |
-| RF-04  | ACESSO E LOGIN                           | EDITAR USUÁRIO                                    | Eu como usuário poderia editar meus dados cadastrais para gerenciamento de erros de registro e atualização de informações. |
-| RF-05  | ACESSO E LOGIN                           | DESATIVAR USUÁRIO                                 | Eu como usuário poderia desativar o meu cadastro no sistema para os casos de desligamento com a empresa / área. |
-| RF-06  | ACESSO E LOGIN                           | RECUPERAR SENHA DE USUÁRIO                        | Eu como usuário devo conseguir recuperar uma senha cadastrada para eventuais situações de esquecimento das informações de acesso. |
-| RF-07  | MICROORGANISMOS                          | CADASTRAR MICROORGANISMOS OBSERVADOS              | Eu como usuário, quero cadastrar no sistema um microrganismo observado pelo programa para que eu possa registrar informações detalhadas e manter um histórico organizado para análise. |
-| RF-08  | MICROORGANISMOS                          | LISTAR MICROORGANISMOS OBSERVADOS                 | Eu como usuário, quero listar os microorganismos observados pelo programa a fim de visualizar os microrganismos cadastrados no sistema. |
-| RF-09  | MICROORGANISMOS                          | EDITAR MICROORGANISMOS OBSERVADOS                 | Eu como usuário, quero editar os registros de microorganismos cadastrados a fim de gerenciamento de erros de registro e atualização de informações. |
-| RF-10  | MICROORGANISMOS                          | DESATIVAR MICROORGANISMOS OBSERVADOS              | Eu como usuário quero poder desativar algum microorganismo cadastrado no sistema a fim de remover aqueles que já tiveram seus dados adquiridos pela análise microbiológica. |
-| RF-11  | MICROORGANISMOS                          | INSERIR NÍVEIS DE ALERTA DA CONTAGEM DE MICROORGANISMOS | Eu como usuário, quero poder ver níveis de alerta a respeito da contagem de microorganismos a fim de ser notificado quando a contagem não está de acordo com o resultado esperado. |
-| RF-12  | MICROORGANISMOS                          | BUSCAR MICROORGANISMOS OBSERVADOS                 | Eu como usuário, quero buscar microoranismos cadastrados no sistema para encontrar rapidamente o local desejado de forma eficiente. |
-| RF-13  | PONTOS (LOCAIS) AVALIADOS                | CADASTRAR LOCAIS DE COLETA AVALIADOS              | Eu como usuário, quero cadastrar no sistema os locais de realização de coleta microbiológica a fim de acompanhar as contagens de microrganismos presentes em cada local. |
-| RF-14  | PONTOS (LOCAIS) AVALIADOS                | LISTAR LOCAIS DE COLETA AVALIADOS                 | Eu como usuário, quero poder listar todos os locais de coleta cadastrados no sistema a fim de visualizar os registros de pontos do monitoramento. |
-| RF-15  | PONTOS (LOCAIS) AVALIADOS                | EDITAR LOCAIS DE COLETA AVALIADOS                 | Eu como usuário, quero poder editar os locais de coleta cadastrados no sistema a fim de adicionar ou retirar dados pertinentes para a análise microbiológica. |
-| RF-16  | PONTOS (LOCAIS) AVALIADOS                | DESATIVAR LOCAIS DE COLETA AVALIADOS              | Eu como usuário, quero desativar locais de coleta cadastrados no sistema para remover aqueles que não serão mais utilizados na coleta microbiológica. |
-| RF-17  | PONTOS (LOCAIS) AVALIADOS                | BUSCAR LOCAIS DE COLETA AVALIADOS                 | Eu como usuário, quero buscar locais cadastrados no sistema para encontrar rapidamente o local desejado de forma eficiente. |
-| RF-18  | RESULTADOS DO MONITORAMENTO              | ADICIONAR A CONTAGEM DE MICROORGANISMOS           | Eu como usuário, quero registrar a contagem de microrganismos de uma dada coleta para que eu possa registrar informações detalhadas e manter um histórico organizado para análise. |
-| RF-19  | RESULTADOS DO MONITORAMENTO              | LISTAR A CONTAGEM DE MICROORGANISMOS              | Eu como um usuário, quero listar as contagens de microrganismos registradas para que eu possa visualizar e analisar os dados coletados de forma organizada e detalhada. |
-| RF-20  | RESULTADOS DO MONITORAMENTO              | EDITAR O REGISTRO DE CONTAGEM DE MICROORGANISMOS  | Eu como um usuário quero editar o registro de contagem de microrganismos já existente para que eu possa corrigir erros ou atualizar informações relevantes para manter os dados precisos e confiáveis. |
-| RF-21  | RESULTADOS DO MONITORAMENTO              | INSERIR AÇÕES CORRETIVAS DE RESULTADOS ACIMA DO LIMITE DE CONTAGEM ESTABELECIDO | Eu como usuário devo inserir as ações corretivas para os resultados acima do limite de contagem de microrganismos para o registro de ações de controle mais efetivo e um processo de tomada de decisão mais eficiente. |
-| RF-22  | RESULTADOS DO MONITORAMENTO              | FILTRAR UM RESULTADO DE COLETA MICROBIOLÓGICA     | Eu como um usuário, quero aplicar filtros aos resultados de coleta microbiológica para que eu possa localizar informações específicas de forma eficiente e realizar análises mais detalhadas. |
+| INDEX  | TEMA  | ÉPICO | US |
+|--------|--------|-------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| US-01  | MICRODATA | MICROORGANISMOS | Eu como usuário, quero cadastrar no sistema um microrganismo observado pelo programa para que eu possa registrar informações detalhadas e manter um histórico organizado para análise. |
+| US-02  | MICRODATA | MICROORGANISMOS | Eu como usuário, quero listar os microorganismos observados pelo programa a fim de visualizar os microrganismos cadastrados no sistema. |
+| US-03  | MICRODATA | MICROORGANISMOS | Eu como usuário, quero editar os registros de microorganismos cadastrados a fim de gerenciamento de erros de registro e atualização de informações. |
+| US-04  | MICRODATA | MICROORGANISMOS | Eu como usuário quero poder desativar algum microorganismo cadastrado no sistema a fim de remover aqueles que já tiveram seus dados adquiridos pela análise microbiológica. |
+| US-05  | MICRODATA | MICROORGANISMOS | Eu como usuário, quero poder ver níveis de alerta a respeito da contagem de microorganismos a fim de ser notificado quando a contagem não está de acordo com o resultado esperado. |
+| US-06  | MICRODATA | MICROORGANISMOS | Eu como usuário, quero buscar microoranismos cadastrados no sistema para encontrar rapidamente o local desejado de forma eficiente. |
+| US-07  | MICRODATA | PONTOS (LOCAIS) AVALIADOS | Eu como usuário, quero cadastrar no sistema os locais de realização de coleta microbiológica a fim de acompanhar as contagens de microrganismos presentes em cada local. |
+| US-08  | MICRODATA | PONTOS (LOCAIS) AVALIADOS | Eu como usuário, quero poder listar todos os locais de coleta cadastrados no sistema a fim de visualizar os registros de pontos do monitoramento. |
+| US-09  | MICRODATA | PONTOS (LOCAIS) AVALIADOS | Eu como usuário, quero poder editar os locais de coleta cadastrados no sistema a fim de adicionar ou retirar dados pertinentes para a análise microbiológica. |
+| US-10  | MICRODATA | PONTOS (LOCAIS) AVALIADOS | Eu como usuário, quero desativar locais de coleta cadastrados no sistema para remover aqueles que não serão mais utilizados na coleta microbiológica. |
+| US-11  | MICRODATA | PONTOS (LOCAIS) AVALIADOS | Eu como usuário, quero buscar locais cadastrados no sistema para encontrar rapidamente o local desejado de forma eficiente. |
+| US-12  | MICRODATA | RESULTADOS DO MONITORAMENTO | CREATE |
+| US-13  | MICRODATA | RESULTADOS DO MONITORAMENTO | READ |
+| US-14  | MICRODATA | RESULTADOS DO MONITORAMENTO | UPDATE |
+| US-15  | MICRODATA | RESULTADOS DO MONITORAMENTO | DELETE |
+| US-16  | MICRODATA | RESULTADOS DO MONITORAMENTO | LIST |
+| US-17  | MICRODATA | RESULTADOS DO MONITORAMENTO | FILTER |
+| US-18  | MICRODATA | RESULTADOS DO MONITORAMENTO | Eu como usuário, quero registrar a contagem de microrganismos de uma dada coleta para que eu possa registrar informações detalhadas e manter um histórico organizado para análise. |
+| US-19  | MICRODATA | RESULTADOS DO MONITORAMENTO | Eu como um usuário, quero listar as contagens de microrganismos registradas para que eu possa visualizar e analisar os dados coletados de forma organizada e detalhada. |
+| US-20  | MICRODATA | RESULTADOS DO MONITORAMENTO | Eu como um usuário quero editar o registro de contagem de microrganismos já existente para que eu possa corrigir erros ou atualizar informações relevantes para manter os dados precisos e confiáveis. |
+| US-21  | MICRODATA | RESULTADOS DO MONITORAMENTO | Eu como usuário devo inserir as ações corretivas para os resultados acima do limite de contagem de microrganismos para o registro de ações de controle mais efetivo e um processo de tomada de decisão mais eficiente. |
+| US-22  | MICRODATA | RESULTADOS DO MONITORAMENTO | Eu como um usuário, quero aplicar filtros aos resultados de coleta microbiológica para que eu possa localizar informações específicas de forma eficiente e realizar análises mais detalhadas. |
+| US-23  | MICRODATA | DASHBOARD | Como usuário, quero visualizar no dashboard os resultados de coleta para cada ponto, a fim de acompanhar a situação microbiológica de forma consolidada. |
+| US-24  | MICRODATA | DASHBOARD | Como usuário, quero que o dashboard destaque os pontos que excederem o limite de contagem, para priorizar ações corretivas. |
+| US-25  | MICRODATA | DASHBOARD | Como usuário, quero visualizar os resultados agrupados por nível de alerta (normal, atenção, crítico), para facilitar a análise dos dados críticos. |
+| US-26  | MICRODATA | DASHBOARD | Como usuário, quero filtrar no dashboard os resultados por tipo de micro-organismo, para avaliar padrões de contagem específicos. |
+| US-27  | MICRODATA | DASHBOARD | Como usuário, quero filtrar no dashboard os resultados por local de coleta, para analisar os dados de uma área específica. |
+| US-28  | MICRODATA | DASHBOARD | Como usuário, quero filtrar os resultados no dashboard por período de tempo, para entender as variações ao longo de diferentes intervalos. |
+| US-29  | MICRODATA | LOCALIZAÇÃO DE INFORMAÇÕES E RASTREABILIDADE | Como usuário do sistema, eu quero inserir a planta baixa do processo para que os usuários possam utilizá-la como referência para os locais de coleta. |
+| US-30  | MICRODATA | LOCALIZAÇÃO DE INFORMAÇÕES E RASTREABILIDADE | Como usuário do sistema, eu quero excluir uma planta baixa cadastrada para que eu possa atualizar ou remover informações desatualizadas do sistema. |
+| US-31  | MICRODATA | LOCALIZAÇÃO DE INFORMAÇÕES E RASTREABILIDADE | Como usuário eu quero delimitar os locais de coleta avaliados na planta baixa da área para que as coletas sejam realizadas em pontos específicos previamente definidos. |
+| US-32  | MICRODATA | LOCALIZAÇÃO DE INFORMAÇÕES E RASTREABILIDADE | Como usuário do sistema, eu quero visualizar os locais de coleta ativos em um determinado período de tempo na planta baixa para que eu possa acompanhar e analisar os dados coletados historicamente. |
+| US-33  | MICRODATA | LOCALIZAÇÃO DE INFORMAÇÕES E RASTREABILIDADE | Como usuário, eu quero listar a contagem de microrganismos identificados por operador para que seja possível avaliar a conformidade e desempenho de cada operador individualmente. |
+| US-34  | MICRODATA | LOCALIZAÇÃO DE INFORMAÇÕES E RASTREABILIDADE | Como auditor ou usuário, eu quero visualizar o histórico de modificações de resultados para que haja rastreabilidade e transparência nas alterações realizadas no sistema. |
+| US-35  | MICRODATA | LOCALIZAÇÃO DE INFORMAÇÕES E RASTREABILIDADE | Como operador ou administrador do sistema, eu quero inserir uma imagem do local de coleta cadastrado para que as coletas possam ser identificadas visualmente e facilitadas no dia a dia. |
+| US-36  | MICRODATA | LOCALIZAÇÃO DE INFORMAÇÕES E RASTREABILIDADE | Como operador ou administrador do sistema, eu quero excluir a imagem de um local de coleta cadastrado para que eu possa remover imagens incorretas ou desatualizadas. |
+
 
 ## Priorização do Backlog Geral
 O grupo realizou a priorização do backlog do projeto com base em três critérios principais: **valor de negócio**, **complexidade técnica** e i**ndependência de funcionalidades**.  Essa abordagem visa maximizar os resultados e otimizar o uso dos recursos disponíveis.
 
 ### Valor de negócio 
 Foi considerado para assegurar que as entregas mais importantes para os objetivos do sistema fossem priorizadas. Cada funcionalidade foi classificada com esse parâmetro em uma escala de 1 a 5, onde:
-- 1:
-- 2:
-- 3:
-- 4:
-- 5:
 
- 1 é considerado com baixo valor para o negócio e 5 alto valor para o negócio.
+- 1: pouquíssimo valor para o negócio;
+- 2: pouco valor para o negócio;
+- 3: médio valor para o negócio;
+- 4: valor mediano para o negócio;
+- 5: alto valor para o negócio;
+
 
 ### Complexidade técnica
-Foi avaliada para equilibrar o esforço necessário com os prazos disponíveis, garantindo a viabilidade do desenvolvimento. Cada funcionalidade foi classificada com esse parâmetro em uma escala de 1 a 5, onde 1 é considerado com baixa complecidade técnica e 5 alta complexidade técnica.
+Foi avaliada para equilibrar o esforço necessário com os prazos disponíveis, garantindo a viabilidade do desenvolvimento. Cada funcionalidade foi classificada com esse parâmetro em uma escala de 1 a 5, onde:
+
+- 1: baixíssima complexidade técnica;
+- 2: baixa complexidade técnica;
+- 3: média complexidade técnica;
+- 4: complexidade técnica mediana;
+- 5: alta complexidade técnica;
+
 
 ### Independência
-Foi analisada para otimizar o fluxo de trabalho, priorizando tarefas que não dependem de outras entregas e que podem ser desenvolvidas de forma mais ágil e eficiente. Cada requisito foi confeccionado de forma a ser avaliado a característica de independência de requisitos e funionalidades, mas tratando-se do MVP do projeto, um pequeno conjunto de funcionalidades foi levantado de forma a garantir um fluxo de informações relacionadas e que fizesse sentido para o negócio do cliente ao passo que foi necessário o uso dessa classificação para priorização do MVP.
-Cada funcionalidade foi classificada com esse parâmetro em uma escala de 1 a 5, onde 1 é considerado "muito dependente de funcionalidades anteriores" e e 5 "pouco dependente de funcionalidades anteriores".
+Foi analisada para otimizar o fluxo de trabalho, priorizando tarefas que não dependem de outras entregas e que podem ser desenvolvidas de forma mais ágil e eficiente. Cada requisito foi confeccionado de forma a ser avaliado a característica de independência de requisitos e funionalidades, mas tratando-se do MVP do projeto, um pequeno conjunto de funcionalidades foi levantado de forma a garantir um fluxo de informações relacionadas e que fizesse sentido para o negócio do cliente ao passo que foi necessário o uso dessa classificação para priorização do MVP. Cada funcionalidade foi classificada com esse parâmetro em uma escala de 1 a 5, onde:
+
+- 1: altamente dependente de funcionalidades anteriores;
+- 2: dependente de funcionalidades anteriores;
+- 3: relativamente dependente de funcionalidades anteriores;
+- 4: pouco dependente de funcionalidades anteriores;
+- 5: independente de funcionalidades anteriores.
 
 ### Urgência
-Foi avaliada a urgência de implementação das US's do projeto levando em consideração as ponderações do cliente sobre o quão agregador para o processo seria a possível implementação a nível de software. Cada funcionalidade foi classificada com esse parâmetro em uma escala de 1 a 5, onde 1 é considerado "pouco urgente" e e 5 "muito urgente".
+Foi avaliada a urgência de implementação das US's do projeto levando em consideração as ponderações do cliente sobre o quão agregador para o processo seria a possível implementação a nível de software. Cada funcionalidade foi classificada com esse parâmetro em uma escala de 1 a 5, onde:
+
+- 1: pouco urgente;
+- 2: relativamente urgente;
+- 3: urgência mediana;
+- 4: urgente;
+- 5: muito urgente;
+ 1 é considerado "pouco urgente" e e 5 "muito urgente".
 
 ### Quadro de priorização
 Abaixo segue a tabela de priorização conforme os pontos avaliados anteriormente. A complexidade total é o resultado da soma das classificações levantadas pelo grupo:
@@ -185,3 +219,4 @@ Em contrapartida, as funcionalidades que foram consideradas Incrementos são:
 | :------: | :--------: | :----------:  | :-------: |
 | 20/11/2024| 2.0| Criação do documento | Breno Lucena, Breno Fernandes, Storch, João, Rafael e Renan |
 | 26/11/2024| 2.0| retirada da tabela TEMA e substituição do texto de ÉPICO | Breno Lucena, Breno Fernandes, Storch, João, Rafael e Renan |
+| 17/01/2025| 2.0| Modificalções gerais | Storch |
