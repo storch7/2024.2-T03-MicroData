@@ -217,6 +217,6 @@ Em contrapartida, as funcionalidades que foram consideradas Incrementos são:
 
 | **Data** | **Versão** | **Descrição** | **Autor** |
 | :------: | :--------: | :----------:  | :-------: |
-| 20/11/2024| 2.0| Criação do documento | Breno Lucena, Breno Fernandes, Storch, João, Rafael e Renan |
-| 26/11/2024| 2.0| retirada da tabela TEMA e substituição do texto de ÉPICO | Breno Lucena, Breno Fernandes, Storch, João, Rafael e Renan |
-| 17/01/2025| 2.0| Modificalções gerais | Storch |
+| 20/11/2024| 2.0 | Criação do documento | Breno Lucena, Breno Fernandes, Storch, João, Rafael e Renan |
+| 26/11/2024| 2.1 | retirada da tabela TEMA e substituição do texto de ÉPICO | Breno Lucena, Breno Fernandes, Storch, João, Rafael e Renan |
+| 17/01/2025| 2.2 | Modificalções gerais | Storch |
