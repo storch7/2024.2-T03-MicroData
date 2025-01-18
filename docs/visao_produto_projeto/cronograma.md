@@ -2,23 +2,20 @@
 
 ## Cronograma
 
-| Sprints              | Início          | Fim            | Descrição                          | Atividade              | Status        |
-|----------------------|-----------------|----------------|------------------------------------|-------------------------|---------------|
-| Semana 1             | 06/11           | 13/11         | Primeiro Contato com o Cliente     |                   | Concluído     |
-| Semana 2             | 13/11           | 20/11         | Ajuste de Documentação             |                    | Concluído     |
-| Semana 3             | 20/11           | 27/11         |Levantamento de Funcionalidades     |                    | Concluído     |
-| Semana 4             | 27/11           | 04/12         |Verificação e Validação de Funcionalidades Levantadas|        | Concluído      |
-| Semana 5             | 04/12           | 11/12         |Declaração de Requisitos            |                    | Concluído      |
-| Semana 6             | 11/12           | 18/12         |Delimitação do MVP, Entrega do MVP e início do processo de protipação             |                | Concluído      |
-| Semana 07            | 18/12           | 25/12         | Prototipação | DER do Banco de Dados, Protótipos de Telas: <br>1. US-01<br>2. US-02<br>3. US-03<br>4. US-04<br>5. US-05<br>6. US-06<br><br>7. US-07<br>8. US-08<br>9. US-09<br>10. US-10<br>11. US-11<br>12. US-12<br><br>13. US-13<br>14. US-14<br>15. US-15<br>16. US-16<br>17. US-17<br> |Pendente      |
-| Semana 08            | 25/12           | 01/01         | Prototipação | Protótipos de Telas: <br>1. US-18<br>2. US-19<br>3. US-20<br>4. US-21<br>5. US-22<br><br>6. US-23<br>7. US-24<br>8. US-25<br>9. US-26<br>10. US-27<br>11. US-28 |Pendente
-| Semana 09            | 01/01           | 08/01         | Validar prototipação e ajustes |   | Pendente
-| Semana 10            | 08/01           | 14/01         |CADASTRO E LOGIN + MICROORGANISMOS + PONTOS (LOCAIS) AVALIADOS  |1. US-01<br>2. US-02<br>3. US-03<br><br>4. US-07<br>5. US-08<br>6. US-09<br><br><br>7. US-13<br> 8. US-14<br>9. US-15<br> |Pendente      |
-| Semana 11            | 14/01           | 22/01         |CADASTRO E LOGIN + MICROORGANISMOS + PONTOS (LOCAIS) AVALIADOS        |1. US-04<br>2. US-05<br>3. US-06<br><br>4. US-09<br> 5. US-10<br>6. US-11<br> 7. US-12<br><br>8. US-16<br>9. US-17  | Pendente      |
-| Semana 12            | 22/01           | 29/01         | RESULTADOS |1. US-18<br>2. US-19<br> 3. US-20<br> 4. US-21<br> 5. US-22<br>| Pendente      |
-| Semana 13            | 29/01           | 05/02         |DASHBOARD                        |1. US-23<br>2. US-24<br>3. US-25<br>4. US-26<br> 5. US-27<br> 6. US-28 | Pendente      |
-| Semana 14            | 05/02           | 12/02         |Testes de Aceitação e Ajustes Finais                || Pendente      |
-| Semana 15            | 12/02           | 19/02         |Entrega Final                           |  | Pendente      |
+| Iteração | Fase RAD                  | Processo de Engenharia                                                                 | Produto (Entrega)                                      | Data Início  | Data Fim    | Status    |
+|----------|---------------------------|--------------------------------------------------------------------------------------|------------------------------------------------------|--------------|------------|-----------|
+| 0        | Levantamento de Requisitos | Primeiro contato com o cliente, acordos entre as partes, alinhamentos de compliance e com o jurídico e kickoff do projeto | Início do GitHub Pages e do processo de documentação | 06/11/2024   | 20/11/2024 | Concluído |
+| 1        | Levantamento de Requisitos | Reuniões com o cliente, levantamento de escopo e atividades, cenário atual do cliente e do negócio, definição da solução; verificação e validação das funcionalidades levantadas | Documentação do GitHub Pages                          | 20/11/2024   | 04/12/2024 | Concluído |
+| 2        | Levantamento de Requisitos | Declaração de requisitos e definição do MVP                                          | Backlog do projeto, definição de DoR e DoD, priorização do backlog | 04/12/2024   | 18/12/2024 | Concluído |
+| 3        | Prototipação               | Prototipação das US's do backlog                                                     | Protótipo das US's: 01, 02, 07, 08, 03, 04, 09, 10, 11, 12, 13, 14, 15, 16, 17, 18 | 18/12/2024   | 01/01/2025 | Concluído |
+| 5        | Prototipação               | Prototipação das US's do backlog                                                     | Protótipo das US's: 19, 20, 21, 22, 23, 24, 25, 26, 22, 27, 28 | 01/01/2025   | 08/01/2025 | Concluído |
+| 6        | Desenvolvimento e testes   | Validação do protótipo e aplicação de correções pedidas pelo cliente e refatoração do backlog | Protótipo do MVP e backlog corrigido e atualizado    | 08/01/2025   | 15/01/2025 | Concluído |
+| 7        | Desenvolvimento e testes   | Desenvolvimento e testes das US's: 01, 02, 07, 08 e 03                                | Sem entrega prevista para o cliente                  | 15/01/2025   | 22/01/2025 | Pendente  |
+| 8        | Desenvolvimento e testes   | Desenvolvimento e testes das US's: 04, 09, 10, 11, 12 e 13                            | Entrega parcial 1                                    | 22/01/2025   | 29/01/2025 | Pendente  |
+| 9        | Desenvolvimento e testes   | Desenvolvimento e testes das US's: 14, 15, 16, 17, 18                                 | Sem entrega prevista para o cliente                  | 29/01/2025   | 05/02/2025 | Pendente  |
+| 10       | Desenvolvimento e testes   | Desenvolvimento e testes das US's: 19, 20, 21, 22, 23                                 | Sem entrega prevista para o cliente                  | 05/02/2025   | 12/02/2025 | Pendente  |
+| 11       | Desenvolvimento e testes   | Desenvolvimento e testes das US's: 24, 25, 26, 22, 27, 28                             | Entrega parcial 2                                    | 12/02/2025   | 19/02/2025 | Pendente  |
+
 
 
 
