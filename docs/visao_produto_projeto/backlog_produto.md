@@ -17,7 +17,7 @@ A **Confirmação** refere-se aos critérios que determinam se a história foi i
 ## Backlog do projeto Microdata
 A especificação de funcionalidades segue o framework de User Stories (Histórias de usuário); cada épico levantado no backlog deu origem a uma história de usuário e seu respectivo índice. Segue abaixo a tabela com os temas, épicos e suas respectivas user stories:
 
-|| INDEX  | TEMA                                       | ÉPICO                                               | US |
+| INDEX  | TEMA                                       | ÉPICO                                               | US |
 |--------|-------------------------------------------|-----------------------------------------------------|----|
 | RF-01  | ACESSO E LOGIN                           | CADASTRAR USUÁRIO                                  | Eu como usuário quero cadastrar uma conta para de minhas informações no sistema. |
 | RF-02  | ACESSO E LOGIN                           | LOGAR USUÁRIO                                      | Eu como usuário quero realizar login na conta cadastrada para ter acesso aos recursos e funcionalidades da plataforma. |
@@ -46,7 +46,14 @@ A especificação de funcionalidades segue o framework de User Stories (Históri
 O grupo realizou a priorização do backlog do projeto com base em três critérios principais: **valor de negócio**, **complexidade técnica** e i**ndependência de funcionalidades**.  Essa abordagem visa maximizar os resultados e otimizar o uso dos recursos disponíveis.
 
 ### Valor de negócio 
-Foi considerado para assegurar que as entregas mais importantes para os objetivos do sistema fossem priorizadas. Cada funcionalidade foi classificada com esse parâmetro em uma escala de 1 a 5, onde 1 é considerado com baixo valor para o negócio e 5 alto valor para o negócio.
+Foi considerado para assegurar que as entregas mais importantes para os objetivos do sistema fossem priorizadas. Cada funcionalidade foi classificada com esse parâmetro em uma escala de 1 a 5, onde:
+- 1:
+- 2:
+- 3:
+- 4:
+- 5:
+
+ 1 é considerado com baixo valor para o negócio e 5 alto valor para o negócio.
 
 ### Complexidade técnica
 Foi avaliada para equilibrar o esforço necessário com os prazos disponíveis, garantindo a viabilidade do desenvolvimento. Cada funcionalidade foi classificada com esse parâmetro em uma escala de 1 a 5, onde 1 é considerado com baixa complecidade técnica e 5 alta complexidade técnica.
