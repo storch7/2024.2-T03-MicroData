@@ -17,44 +17,30 @@ A **Confirmação** refere-se aos critérios que determinam se a história foi i
 ## Backlog do projeto Microdata
 A especificação de funcionalidades segue o framework de User Stories (Histórias de usuário); cada épico levantado no backlog deu origem a uma história de usuário e seu respectivo índice. Segue abaixo a tabela com os temas, épicos e suas respectivas user stories:
 
-| INDEX  | ÉPICO                               | US                                                                                                                                         |
-|--------|------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------|
-| RF-01  | ACESSO E LOGIN                    | Eu como usuário quero cadastrar uma conta para de minhas informações no sistema.                                                         |
-| RF-02  | ACESSO E LOGIN                    | Eu como usuário quero realizar login na conta cadastrada para ter acesso aos recursos e funcionalidades da plataforma.                    |
-| RF-03  | ACESSO E LOGIN                    | Eu como usuário quero visualizar meus dados cadastrais para verificar as informações imputadas no sistema.                                |
-| RF-04  | ACESSO E LOGIN                    | Eu como usuário poderia editar meus dados cadastrais para gerenciamento de erros de registro e atualização de informações.                |
-| RF-05  | ACESSO E LOGIN                    | Eu como usuário poderia desativar o meu cadastro no sistema para os casos de desligamento com a empresa / área.                          |
-| RF-06  | ACESSO E LOGIN                    | Eu como usuário devo conseguir recuperar uma senha cadastrada para eventuais situações de esquecimento das informações de acesso.         |
-| RF-07  | MICROORGANISMOS                   | Eu como usuário, quero cadastrar no sistema um microrganismo observado pelo programa para que eu possa registrar informações detalhadas. |
-| RF-08  | MICROORGANISMOS                   | Eu como usuário, quero listar os microorganismos observados pelo programa a fim de visualizar os microrganismos cadastrados no sistema.  |
-| RF-09  | MICROORGANISMOS                   | Eu como usuário, quero editar os registros de microorganismos cadastrados a fim de gerenciamento de erros de registro.                   |
-| RF-10  | MICROORGANISMOS                   | Eu como usuário quero poder desativar algum microorganismo cadastrado no sistema a fim de remover aqueles que já tiveram seus dados adquiridos. |
-| RF-11  | MICROORGANISMOS                   | Eu como usuário, quero poder ver níveis de alerta a respeito da contagem de microorganismos a fim de ser notificado de resultados inesperados. |
-| RF-12  | MICROORGANISMOS                   | Eu como usuário, quero buscar microoranismos cadastrados no sistema para encontrar rapidamente o local desejado de forma eficiente.       |
-| RF-13  | PONTOS (LOCAIS) AVALIADOS         | Eu como usuário, quero cadastrar os locais de coleta microbiológica a fim de acompanhar as contagens de microrganismos presentes.         |
-| RF-14  | PONTOS (LOCAIS) AVALIADOS         | Eu como usuário, quero listar todos os locais de coleta cadastrados no sistema a fim de visualizar os registros de pontos do monitoramento. |
-| RF-15  | PONTOS (LOCAIS) AVALIADOS         | Eu como usuário, quero editar os locais de coleta cadastrados no sistema a fim de adicionar ou retirar dados pertinentes.                 |
-| RF-16  | PONTOS (LOCAIS) AVALIADOS         | Eu como usuário, quero desativar locais de coleta cadastrados no sistema para remover aqueles que não serão mais utilizados.              |
-| RF-17  | PONTOS (LOCAIS) AVALIADOS         | Eu como usuário, quero buscar locais cadastrados no sistema para encontrar rapidamente o local desejado de forma eficiente.               |
-| RF-18  | RESULTADOS DO MONITORAMENTO       | Eu como usuário, quero registrar a contagem de microrganismos de uma dada coleta para registrar informações detalhadas.                   |
-| RF-19  | RESULTADOS DO MONITORAMENTO       | Eu como usuário, quero listar as contagens de microrganismos registradas para análise organizada.                                         |
-| RF-20  | RESULTADOS DO MONITORAMENTO       | Eu como usuário quero editar o registro de contagem de microrganismos para corrigir erros ou atualizar informações relevantes.           |
-| RF-21  | RESULTADOS DO MONITORAMENTO       | Eu como usuário devo inserir ações corretivas para resultados acima do limite de contagem para registro de controle mais efetivo.        |
-| RF-22  | RESULTADOS DO MONITORAMENTO       | Eu como usuário, quero aplicar filtros aos resultados de coleta microbiológica para localizar informações específicas.                   |
-| RF-23  | DASHBOARD                         | Como usuário, quero visualizar no dashboard os resultados de coleta para cada ponto.                                                     |
-| RF-24  | DASHBOARD                         | Como usuário, quero que o dashboard destaque os pontos que excederem o limite de contagem.                                               |
-| RF-25  | DASHBOARD                         | Como usuário, quero visualizar os resultados agrupados por nível de alerta para facilitar a análise.                                     |
-| RF-26  | DASHBOARD                         | Como usuário, quero filtrar os resultados por micro-organismo, para avaliar padrões específicos.                                         |
-| RF-27  | DASHBOARD                         | Como usuário, quero filtrar os resultados por local de coleta, para analisar os dados de uma área específica.                            |
-| RF-28  | DASHBOARD                         | Como usuário, quero filtrar os resultados por período de tempo, para entender variações ao longo de intervalos.                          |
-| RF-29  | LOCALIZAÇÃO DE INFORMAÇÕES        | Como usuário, eu quero inserir a planta baixa para referência dos locais de coleta.                                                     |
-| RF-30  | LOCALIZAÇÃO DE INFORMAÇÕES        | Como usuário, eu quero excluir uma planta baixa cadastrada para atualizar ou remover informações desatualizadas.                        |
-| RF-31  | LOCALIZAÇÃO DE INFORMAÇÕES        | Como usuário eu quero delimitar os locais de coleta na planta baixa.                                                                     |
-| RF-32  | LOCALIZAÇÃO DE INFORMAÇÕES        | Como usuário, eu quero visualizar locais ativos em um determinado período na planta baixa.                                               |
-| RF-33  | LOCALIZAÇÃO DE INFORMAÇÕES        | Como usuário, eu quero listar a contagem de microrganismos identificados por operador.                                                   |
-| RF-34  | LOCALIZAÇÃO DE INFORMAÇÕES        | Como auditor ou usuário, eu quero visualizar o histórico de modificações para rastreabilidade.                                           |
-| RF-35  | LOCALIZAÇÃO DE INFORMAÇÕES        | Como operador ou administrador, eu quero inserir uma imagem do local de coleta para facilitar o dia a dia.                              |
-| RF-36  | LOCALIZAÇÃO DE INFORMAÇÕES        | Como operador ou administrador, eu quero excluir uma imagem para remover informações incorretas ou desatualizadas.                      |
+|| INDEX  | TEMA                                       | ÉPICO                                               | US |
+|--------|-------------------------------------------|-----------------------------------------------------|----|
+| RF-01  | ACESSO E LOGIN                           | CADASTRAR USUÁRIO                                  | Eu como usuário quero cadastrar uma conta para de minhas informações no sistema. |
+| RF-02  | ACESSO E LOGIN                           | LOGAR USUÁRIO                                      | Eu como usuário quero realizar login na conta cadastrada para ter acesso aos recursos e funcionalidades da plataforma. |
+| RF-03  | ACESSO E LOGIN                           | VISUALIZAR USUÁRIO                                 | Eu como usuário quero visualizar meus dados cadastrais para verificar as informações imputadas no sistema. |
+| RF-04  | ACESSO E LOGIN                           | EDITAR USUÁRIO                                    | Eu como usuário poderia editar meus dados cadastrais para gerenciamento de erros de registro e atualização de informações. |
+| RF-05  | ACESSO E LOGIN                           | DESATIVAR USUÁRIO                                 | Eu como usuário poderia desativar o meu cadastro no sistema para os casos de desligamento com a empresa / área. |
+| RF-06  | ACESSO E LOGIN                           | RECUPERAR SENHA DE USUÁRIO                        | Eu como usuário devo conseguir recuperar uma senha cadastrada para eventuais situações de esquecimento das informações de acesso. |
+| RF-07  | MICROORGANISMOS                          | CADASTRAR MICROORGANISMOS OBSERVADOS              | Eu como usuário, quero cadastrar no sistema um microrganismo observado pelo programa para que eu possa registrar informações detalhadas e manter um histórico organizado para análise. |
+| RF-08  | MICROORGANISMOS                          | LISTAR MICROORGANISMOS OBSERVADOS                 | Eu como usuário, quero listar os microorganismos observados pelo programa a fim de visualizar os microrganismos cadastrados no sistema. |
+| RF-09  | MICROORGANISMOS                          | EDITAR MICROORGANISMOS OBSERVADOS                 | Eu como usuário, quero editar os registros de microorganismos cadastrados a fim de gerenciamento de erros de registro e atualização de informações. |
+| RF-10  | MICROORGANISMOS                          | DESATIVAR MICROORGANISMOS OBSERVADOS              | Eu como usuário quero poder desativar algum microorganismo cadastrado no sistema a fim de remover aqueles que já tiveram seus dados adquiridos pela análise microbiológica. |
+| RF-11  | MICROORGANISMOS                          | INSERIR NÍVEIS DE ALERTA DA CONTAGEM DE MICROORGANISMOS | Eu como usuário, quero poder ver níveis de alerta a respeito da contagem de microorganismos a fim de ser notificado quando a contagem não está de acordo com o resultado esperado. |
+| RF-12  | MICROORGANISMOS                          | BUSCAR MICROORGANISMOS OBSERVADOS                 | Eu como usuário, quero buscar microoranismos cadastrados no sistema para encontrar rapidamente o local desejado de forma eficiente. |
+| RF-13  | PONTOS (LOCAIS) AVALIADOS                | CADASTRAR LOCAIS DE COLETA AVALIADOS              | Eu como usuário, quero cadastrar no sistema os locais de realização de coleta microbiológica a fim de acompanhar as contagens de microrganismos presentes em cada local. |
+| RF-14  | PONTOS (LOCAIS) AVALIADOS                | LISTAR LOCAIS DE COLETA AVALIADOS                 | Eu como usuário, quero poder listar todos os locais de coleta cadastrados no sistema a fim de visualizar os registros de pontos do monitoramento. |
+| RF-15  | PONTOS (LOCAIS) AVALIADOS                | EDITAR LOCAIS DE COLETA AVALIADOS                 | Eu como usuário, quero poder editar os locais de coleta cadastrados no sistema a fim de adicionar ou retirar dados pertinentes para a análise microbiológica. |
+| RF-16  | PONTOS (LOCAIS) AVALIADOS                | DESATIVAR LOCAIS DE COLETA AVALIADOS              | Eu como usuário, quero desativar locais de coleta cadastrados no sistema para remover aqueles que não serão mais utilizados na coleta microbiológica. |
+| RF-17  | PONTOS (LOCAIS) AVALIADOS                | BUSCAR LOCAIS DE COLETA AVALIADOS                 | Eu como usuário, quero buscar locais cadastrados no sistema para encontrar rapidamente o local desejado de forma eficiente. |
+| RF-18  | RESULTADOS DO MONITORAMENTO              | ADICIONAR A CONTAGEM DE MICROORGANISMOS           | Eu como usuário, quero registrar a contagem de microrganismos de uma dada coleta para que eu possa registrar informações detalhadas e manter um histórico organizado para análise. |
+| RF-19  | RESULTADOS DO MONITORAMENTO              | LISTAR A CONTAGEM DE MICROORGANISMOS              | Eu como um usuário, quero listar as contagens de microrganismos registradas para que eu possa visualizar e analisar os dados coletados de forma organizada e detalhada. |
+| RF-20  | RESULTADOS DO MONITORAMENTO              | EDITAR O REGISTRO DE CONTAGEM DE MICROORGANISMOS  | Eu como um usuário quero editar o registro de contagem de microrganismos já existente para que eu possa corrigir erros ou atualizar informações relevantes para manter os dados precisos e confiáveis. |
+| RF-21  | RESULTADOS DO MONITORAMENTO              | INSERIR AÇÕES CORRETIVAS DE RESULTADOS ACIMA DO LIMITE DE CONTAGEM ESTABELECIDO | Eu como usuário devo inserir as ações corretivas para os resultados acima do limite de contagem de microrganismos para o registro de ações de controle mais efetivo e um processo de tomada de decisão mais eficiente. |
+| RF-22  | RESULTADOS DO MONITORAMENTO              | FILTRAR UM RESULTADO DE COLETA MICROBIOLÓGICA     | Eu como um usuário, quero aplicar filtros aos resultados de coleta microbiológica para que eu possa localizar informações específicas de forma eficiente e realizar análises mais detalhadas. |
 
 ## Priorização do Backlog Geral
 O grupo realizou a priorização do backlog do projeto com base em três critérios principais: **valor de negócio**, **complexidade técnica** e i**ndependência de funcionalidades**.  Essa abordagem visa maximizar os resultados e otimizar o uso dos recursos disponíveis.
@@ -75,98 +61,98 @@ Foi avaliada a urgência de implementação das US's do projeto levando em consi
 ### Quadro de priorização
 Abaixo segue a tabela de priorização conforme os pontos avaliados anteriormente. A complexidade total é o resultado da soma das classificações levantadas pelo grupo:
 
-| INDEX  | VALOR DE NEGÓCIO | COMPLEXIDADE TÉCNICA | INDEPENDÊNCIA | URGÊNCIA | TOTAL (SOMA) |
-|--------|-------------------|----------------------|---------------|----------|--------------|
-| US-01  | 4                 | 5                    | 5             | 4        | 18           |
-| US-02  | 4                 | 5                    | 4             | 4        | 17           |
-| US-03  | 3                 | 5                    | 4             | 4        | 16           |
-| US-04  | 2                 | 5                    | 4             | 3        | 14           |
-| US-05  | 3                 | 5                    | 3             | 4        | 15           |
-| US-06  | 3                 | 5                    | 4             | 4        | 16           |
-| US-07  | 5                 | 5                    | 5             | 5        | 20           |
-| US-08  | 5                 | 4                    | 4             | 5        | 19           |
-| US-09  | 5                 | 4                    | 3             | 4        | 16           |
-| US-10  | 5                 | 5                    | 3             | 3        | 16           |
-| US-11  | 5                 | 5                    | 2             | 4        | 16           |
-| US-12  | 5                 | 3                    | 2             | 1        | 11           |
-| US-13  | 5                 | 5                    | 5             | 4        | 19           |
-| US-14  | 5                 | 4                    | 4             | 4        | 17           |
-| US-15  | 4                 | 4                    | 3             | 4        | 15           |
-| US-16  | 4                 | 3                    | 3             | 4        | 14           |
-| US-17  | 5                 | 4                    | 3             | 4        | 16           |
-| US-18  | 5                 | 5                    | 3             | 4        | 17           |
-| US-19  | 5                 | 5                    | 2             | 5        | 17           |
-| US-20  | 4                 | 4                    | 2             | 4        | 14           |
-| US-21  | 5                 | 5                    | 1             | 5        | 16           |
-| US-22  | 5                 | 4                    | 2             | 3        | 14           |
-| US-23  | 5                 | 5                    | 1             | 5        | 16           |
-| US-24  | 5                 | 5                    | 1             | 5        | 16           |
-| US-25  | 5                 | 5                    | 1             | 3        | 14           |
-| US-26  | 5                 | 4                    | 1             | 3        | 13           |
-| US-27  | 5                 | 5                    | 1             | 3        | 14           |
-| US-28  | 5                 | 5                    | 1             | 5        | 16           |
-| US-29  | 2                 | 5                    | 3             | 1        | 11           |
-| US-30  | 2                 | 5                    | 2             | 1        | 10           |
-| US-31  | 2                 | 5                    | 2             | 1        | 10           |
-| US-32  | 2                 | 5                    | 2             | 1        | 10           |
-| US-33  | 4                 | 2                    | 2             | 2        | 10           |
-| US-34  | 3                 | 5                    | 3             | 2        | 13           |
-| US-35  | 3                 | 5                    | 3             | 2        | 13           |
-| US-36  | 3                 | 5                    | 3             | 2        | 13           |
+|| INDEX  | VALOR DE NEGÓCIO | COMPLEXIDADE | INDEPENDÊNCIA | URGÊNCIA | TOTAL (SOMA) |
+|--------|------------------|--------------|--------------|---------|--------------|
+| US-01  | 3                | 5            | 5            | 4       | 17           |
+| US-02  | 3                | 5            | 5            | 4       | 17           |
+| US-03  | 3                | 4            | 5            | 4       | 16           |
+| US-04  | 3                | 4            | 5            | 4       | 16           |
+| US-05  | 4                | 5            | 1            | 3       | 10           |
+| US-06  | 1                | 3            | 5            | 2       | 11           |
+| US-07  | 4                | 5            | 5            | 3       | 17           |
+| US-08  | 3                | 5            | 5            | 4       | 17           |
+| US-09  | 3                | 4            | 5            | 4       | 16           |
+| US-10  | 3                | 4            | 5            | 4       | 16           |
+| US-11  | 3                | 4            | 5            | 3       | 15           |
+| US-12  | 4                | 4            | 3            | 3       | 14           |
+| US-13  | 4                | 4            | 3            | 3       | 14           |
+| US-14  | 4                | 4            | 3            | 3       | 14           |
+| US-15  | 4                | 4            | 3            | 3       | 14           |
+| US-16  | 4                | 4            | 3            | 3       | 14           |
+| US-17  | 4                | 4            | 3            | 3       | 14           |
+| US-18  | 4                | 3            | 3            | 4       | 14           |
+| US-19  | 4                | 3            | 3            | 4       | 14           |
+| US-20  | 4                | 3            | 3            | 4       | 14           |
+| US-21  | 4                | 3            | 3            | 4       | 14           |
+| US-22  | 4                | 3            | 2            | 4       | 13           |
+| US-23  | 5                | 4            | 1            | 4       | 14           |
+| US-24  | 5                | 5            | 1            | 3       | 14           |
+| US-25  | 5                | 5            | 1            | 3       | 14           |
+| US-26  | 5                | 5            | 1            | 3       | 14           |
+| US-27  | 5                | 5            | 1            | 2       | 13           |
+| US-28  | 5                | 5            | 1            | 2       | 13           |
+| US-29  | 3                | 3            | 3            | 1       | 10           |
+| US-30  | 3                | 3            | 3            | 2       | 11           |
+| US-31  | 3                | 4            | 2            | 1       | 10           |
+| US-32  | 3                | 3            | 4            | 3       | 13           |
+| US-33  | 4                | 3            | 4            | 3       | 14           |
+| US-34  | 4                | 1            | 3            | 4       | 12           |
+| US-35  | 2                | 2            | 4            | 3       | 11           |
+| US-36  | 2                | 1            | 4            | 2       | 9            |
 
 ## MVP do projeto Microdata 
 MVP (Minimum Viable Product, ou Produto Mínimo Viável) é uma versão inicial de um produto que contém apenas as funcionalidades essenciais para resolver o problema principal dos usuários. Seu objetivo é validar hipóteses e obter feedback do mercado de maneira rápida e econômica, antes de investir em desenvolvimento completo. O MVP permite que equipes de desenvolvimento entendam o que realmente gera valor para o cliente e ajustem o produto com base em dados reais, minimizando riscos e desperdícios.
 
-Foi levado em consideração o quadro de priorização para a definição do MVP do projeto. As hisorias de Usuário que tiveram o somatório de pontos de avaliação igual ou superior a 14 (>=14) são candidatas para o MVP do projeto; as hisorias com somatório inferior a 14 (<14) permanecem como backlog do projeto e poderão ser desenvolvidas em ocasiões futuras.
+Foi levado em consideração o quadro de priorização para a definição do MVP do projeto. As hisorias de Usuário que tiveram o somatório de pontos de avaliação igual ou superior a 14 (>=14) são candidatas para o MVP do projeto; as hisorias com somatório inferior a 13 (<13) permanecem como backlog do projeto e poderão ser desenvolvidas em ocasiões futuras.
 
-O valor de 14 foi estabelecido como clivo para definição das funcionalidades candidatas ao MVP após uma avaliação comparativa do grupo acerca das funcionalidades de alta prioridade (maior urgência de implementação) e baixa prioridade (menor urgência de implementação). As funcionalidades elencadas com menor urgência apresentaram valores que giraram em tordo de 11 e 13; em contrapartida, as que foram consideradas de alta prioridade e maior urgência de impelentação apresentaram valores que giraram em torno de 14 e 20. Desse modo, o valor do somatório foi delimitado em 14 para o estabelecimento do MVP do projeto.
+O valor de 12 foi estabelecido como clivo para definição das funcionalidades candidatas ao MVP após uma avaliação comparativa do grupo acerca das funcionalidades de alta prioridade (maior urgência de implementação) e baixa prioridade (menor urgência de implementação). As funcionalidades elencadas com menor urgência apresentaram valores que giraram em tordo de 9 e 11; em contrapartida, as que foram consideradas de alta prioridade e maior urgência de impelentação apresentaram valores que giraram em torno de 14 e 20. Desse modo, o valor do somatório foi delimitado em 13 para o estabelecimento do MVP do projeto.
 
-São as histórias do MVP do projeto Microdata:
+São as histórias do MVP do projeto Microdata e seus respectivos valores na priorização:
 
-| INDEX  | US                                                                                                      |
-|--------|-------------------------------------------------------------------------------------------------------------|
-| US-01  | Eu como usuário quero cadastrar uma conta para de minhas informações no sistema.                             |
-| US-02  | Eu como usuário quero realizar login na conta cadastrada para ter acesso aos recursos e funcionalidades da plataforma. |
-| US-03  | Eu como usuário quero visualizar meus dados cadastrais para verificar as informações imputadas no sistema.   |
-| US-04  | Eu como usuário poderia editar meus dados cadastrais para gerenciamento de erros de registro e atualização de informações. |
-| US-05  | Eu como usuário poderia desativar o meu cadastro no sistema para os casos de desligamento com a empresa / área. |
-| US-06  | Eu como usuário devo conseguir recuperar uma senha cadastrada para eventuais situações de esquecimento das informações de acesso. |
-| US-07  | Eu como usuário, quero cadastrar no sistema um microrganismo observado pelo programa para que eu possa registrar informações detalhadas e manter um histórico organizado para análise. |
-| US-08  | Eu como usuário, quero listar os microrganismos observados pelo programa a fim de visualizar os microrganismos cadastrados no sistema. |
-| US-09  | Eu como usuário, quero editar os registros de microrganismos cadastrados a fim de gerenciamento de erros de registro e atualização de informações. |
-| US-10  | Eu como usuário quero poder desativar algum microrganismo cadastrado no sistema a fim de remover aqueles que já tiveram seus dados adquiridos pela análise microbiológica. |
-| US-11  | Eu como usuário, quero poder ver níveis de alerta a respeito da contagem de microrganismos a fim de ser notificado quando a contagem não está de acordo com o resultado esperado. |
-| US-13  | Eu como usuário, quero cadastrar no sistema os locais de realização de coleta microbiológica a fim de acompanhar as contagens de microrganismos presentes em cada local. |
-| US-14  | Eu como usuário, quero poder listar todos os locais de coleta cadastrados no sistema a fim de visualizar os registros de pontos do monitoramento. |
-| US-15  | Eu como usuário, quero poder editar os locais de coleta cadastrados no sistema a fim de adicionar ou retirar dados pertinentes para a análise microbiológica. |
-| US-16  | Eu como usuário, quero desativar locais de coleta cadastrados no sistema para remover aqueles que não serão mais utilizados na coleta microbiológica. |
-| US-17  | Eu como usuário, quero buscar locais cadastrados no sistema para encontrar rapidamente o local desejado de forma eficiente. |
-| US-18  | Eu como usuário, quero registrar a contagem de microrganismos de uma dada coleta para que eu possa registrar informações detalhadas e manter um histórico organizado para análise. |
-| US-19  | Eu como um usuário, quero listar as contagens de microrganismos registradas para que eu possa visualizar e analisar os dados coletados de forma organizada e detalhada. |
-| US-20  | Eu como um usuário quero editar o registro de contagem de microrganismos já existente para que eu possa corrigir erros ou atualizar informações relevantes para manter os dados precisos e confiáveis. |
-| US-21  | Eu como usuário devo inserir as ações corretivas para os resultados acima do limite de contagem de microrganismos para o registro de ações de controle mais efetivo e um processo de tomada de decisão mais eficiente. |
-| US-22  | Eu como um usuário, quero aplicar filtros aos resultados de coleta microbiológica para que eu possa localizar informações específicas de forma eficiente e realizar análises mais detalhadas. |
-| US-23  | Como usuário, quero visualizar no dashboard os resultados de coleta para cada ponto, a fim de acompanhar a situação microbiológica de forma consolidada. |
-| US-24  | Como usuário, quero que o dashboard destaque os pontos que excederem o limite de contagem, para priorizar ações corretivas. |
-| US-25  | Como usuário, quero visualizar os resultados agrupados por nível de alerta (normal, atenção, crítico), para facilitar a análise dos dados críticos. |
-| US-26  | Como usuário, quero filtrar no dashboard os resultados por tipo de micro-organismo, para avaliar padrões de contagem específicos. |
-| US-27  | Como usuário, quero filtrar no dashboard os resultados por local de coleta, para analisar os dados de uma área específica. |
-| US-28  | Como usuário, quero filtrar os resultados no dashboard por período de tempo, para entender as variações ao longo de diferentes intervalos. |
+| INDEX  | TOTAL |
+|--------|-------|
+| US-01  | 17    |
+| US-02  | 17    |
+| US-07  | 17    |
+| US-08  | 17    |
+| US-03  | 16    |
+| US-04  | 16    |
+| US-09  | 16    |
+| US-10  | 16    |
+| US-11  | 15    |
+| US-12  | 14    |
+| US-13  | 14    |
+| US-14  | 14    |
+| US-15  | 14    |
+| US-16  | 14    |
+| US-17  | 14    |
+| US-18  | 14    |
+| US-19  | 14    |
+| US-20  | 14    |
+| US-21  | 14    |
+| US-23  | 14    |
+| US-24  | 14    |
+| US-25  | 14    |
+| US-26  | 14    |
+| US-33  | 14    |
+| US-22  | 13    |
+| US-27  | 13    |
+| US-28  | 13    |
+| US-32  | 13    |
 
 Em contrapartida, as funcionalidades que foram consideradas Incrementos são:
 
 
-| US    | Descrição                                                                                                      |
-|-------|--------------------------------------------------------------------------------------------------------------|
-| US-12 | Eu como usuário, quero buscar microrganismos cadastrados no sistema para encontrar rapidamente o local desejado de forma eficiente. |
-| US-29 | Como usuário do sistema, eu quero inserir a planta baixa do processo para que os usuários possam utilizá-la como referência para os locais de coleta. |
-| US-30 | Como usuário do sistema, eu quero excluir uma planta baixa cadastrada para que eu possa atualizar ou remover informações desatualizadas do sistema. |
-| US-31 | Como usuário eu quero delimitar os locais de coleta avaliados na planta baixa da área para que as coletas sejam realizadas em pontos específicos previamente definidos. |
-| US-32 | Como usuário do sistema, eu quero visualizar os locais de coleta ativos em um determinado período de tempo na planta baixa para que eu possa acompanhar e analisar os dados coletados historicamente. |
-| US-33 | Como usuário, eu quero listar a contagem de microrganismos identificados por operador para que seja possível avaliar a conformidade e desempenho de cada operador individualmente. |
-| US-34 | Como auditor ou usuário, eu quero visualizar o histórico de modificações de resultados para que haja rastreabilidade e transparência nas alterações realizadas no sistema. |
-| US-35 | Como operador ou administrador do sistema, eu quero inserir uma imagem do local de coleta cadastrado para que as coletas possam ser identificadas visualmente e facilitadas no dia a dia. |
-| US-36 | Como operador ou administrador do sistema, eu quero excluir a imagem de um local de coleta cadastrado para que eu possa remover imagens incorretas ou desatualizadas. |
+| INDEX  | TOTAL |
+|--------|-------|
+| US-34  | 12    |
+| US-06  | 11    |
+| US-30  | 11    |
+| US-35  | 11    |
+| US-05  | 10    |
+| US-29  | 10    |
+| US-31  | 10    |
+| US-36  | 9     |
 
  
 
