@@ -136,7 +136,7 @@ Abaixo segue a tabela de priorização conforme os pontos avaliados anteriorment
 | US-30  | 3                | 3            | 3            | 2       | 11           |
 | US-31  | 3                | 4            | 2            | 1       | 10           |
 | US-32  | 3                | 3            | 3            | 3       | 12           |
-| US-33  | 4                | 3            | 4            | 3       | 14           |
+| US-33  | 4                | 3            | 4            | 1       | 12           |
 | US-34  | 4                | 1            | 3            | 4       | 12           |
 | US-35  | 2                | 2            | 4            | 3       | 11           |
 | US-36  | 2                | 1            | 4            | 2       | 9            |
@@ -175,7 +175,6 @@ São as histórias do MVP do projeto Microdata e seus respectivos valores na pri
 | US-24  | 14    |
 | US-25  | 14    |
 | US-26  | 14    |
-| US-33  | 14    |
 | US-22  | 13    |
 | US-27  | 13    |
 | US-28  | 13    |
@@ -185,6 +184,7 @@ Em contrapartida, as funcionalidades que foram consideradas Incrementos são:
 
 | INDEX  | TOTAL |
 |--------|-------|
+| US-33  | 12    |
 | US-34  | 12    |
 | US-06  | 11    |
 | US-30  | 11    |
