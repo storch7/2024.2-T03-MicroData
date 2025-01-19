@@ -1,4 +1,5 @@
 // Importa o módulo Express, que é um framework para construir aplicativos web e APIs no Node.js
+require("dotenv").config({path: '../../.env'});
 const express = require('express');
 
 // Cria uma instância da aplicação Express
@@ -18,6 +19,10 @@ const microorganismosRoutes = require('./routes/microorganismosRoutes');
 // Todas as rotas definidas no arquivo microorganismosRoutes serão acessíveis a partir deste caminho base.
 // Exemplo: uma rota GET definida como "/" no arquivo microorganismosRoutes será acessada como "/api/microorganismos".
 app.use('/api/microorganismos', microorganismosRoutes);
+
+app.get('/', (req, res) => {
+  res.send("Está funcionando!");
+});
 
 // Exporta a instância do aplicativo Express para que ela possa ser utilizada em outro arquivo
 // Geralmente, este arquivo é importado no "server.js" para inicializar o servidor.

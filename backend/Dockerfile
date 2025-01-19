@@ -1,5 +1,8 @@
 FROM node:18
 
+ARG DATABASE_URL
+ENV DATABASE_URL=$DATABASE_URL
+
 WORKDIR /app
 
 COPY package*.json ./
@@ -13,6 +16,6 @@ RUN npx prisma generate
 
 EXPOSE 5000
 
-CMD ["node", "src/server.js"]
+CMD ["npm", "start"]
 
  
