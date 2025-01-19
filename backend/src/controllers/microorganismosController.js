@@ -1,4 +1,5 @@
 // Importa o Prisma Client configurado no arquivo database.js
+const { get } = require('../app');
 const prisma = require('../utils/database');
 
 // Função assíncrona para criar um microorganismo no banco de dados
@@ -35,5 +36,20 @@ const createMicroorganismo = async (req, res) => {
   }
 };
 
+// Função assíncrona para buscar todos os microorganismos no banco de dados
+const getMicroorganismos = async (req, res) => {
+  try {
+    // Busca todos os registros da tabela 'microorganismos'
+    const microorganismos = await prisma.microorganismos.findMany();
+
+    // Retorna os microorganismos encontrados em formato JSON
+    res.status(200).json(microorganismos);
+  } catch (error) {
+    // Em caso de erro, exibe o erro no console e retorna um erro 500 (Internal Server Error)
+    console.error('Erro ao buscar microorganismos:', error);
+    res.status(500).json({ error: 'Erro ao buscar microorganismos.' });
+  }
+};
+
 // Exporta a função para ser usada em outros módulos (como nas rotas)
-module.exports = { createMicroorganismo };
+module.exports = { createMicroorganismo, getMicroorganismos };
