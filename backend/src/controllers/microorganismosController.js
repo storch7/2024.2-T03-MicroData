@@ -59,5 +59,28 @@ const getMicroorganismos = async (req, res) => {
   }
 };
 
+// Função assíncrona para editar um microorganismo no banco de dados
+const updateMicroorganismo = async (req, res) => {
+  try {
+    const { id } = req.params;
+    const { nome, descricao, ativo, data_desativacao } = req.body;
+
+    const updatedMicroorganismo = await prisma.microorganismos.update({
+      where: { id: parseInt(id) },
+      data: {
+        nome,
+        descricao,
+        ativo,
+        data_desativacao: data_desativacao ? new Date(data_desativacao) : null,
+      },
+    });
+
+    res.status(200).json(updatedMicroorganismo);
+  } catch (error) {
+    console.error('Erro ao editar microorganismo:', error);
+    res.status(500).json({ error: 'Erro ao editar microorganismo.' });
+  }
+};
+
 // Exporta a função para ser usada em outros módulos (como nas rotas)
-module.exports = { createMicroorganismo, getMicroorganismos };
+module.exports = { createMicroorganismo, getMicroorganismos, updateMicroorganismo};
