@@ -25,8 +25,8 @@ const MicroorganismTable = ({ data, onEdit, onDelete }) => {
                 <TableBody>
                     {data.map((item, index) => (
                         <TableRow key={index}>
-                            <TableCell sx={{ textAlign: 'center' }}>{item.name}</TableCell>
-                            <TableCell sx={{ textAlign: 'center' }}>{item.description}</TableCell>
+                            <TableCell sx={{ textAlign: 'center' }}>{item.nome}</TableCell>
+                            <TableCell sx={{ textAlign: 'center' }}>{item.descricao}</TableCell>
                             <TableCell sx={{ textAlign: 'center' }}>
                                 <IconButton onClick={() => onEdit(item)} color="info">
                                     <EditIcon />

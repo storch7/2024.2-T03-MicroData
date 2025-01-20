@@ -1,14 +1,37 @@
-import React, { useState } from 'react';
-import CustomTable from '../components/MicroorganismTable';
+import React, { useState, useEffect } from 'react';
 import Container from '@mui/material/Container';
 import Typography from '@mui/material/Typography';
 import MicroorganismForm from '../components/MicroorganismForm';
+import MicroorganismTable from '../components/MicroorganismTable';
+import { createMicroorganism, getMicroorganism } from '../services/microorganismAPI';
+
 
 const MicroorganismPage = () => {
     const [data, setData] = useState([]);
+    const [loading, setLoading] = useState(true);
 
-    const handleAdd = (item) => {
-        setData([...data, item]);
+    useEffect(() => {
+        const fechtData = async () => {
+            try {
+                const response = await getMicroorganism();
+                setData(response);
+            } catch (error) {
+                console.error('Erro ao buscar microorganismos:', error);
+            } finally {
+                setLoading(false);
+            }
+        };
+
+        fechtData();
+    }, []);
+
+    const handleAdd = async (item) => {
+        try {
+            const newMicroorganism = await createMicroorganism(item);
+            setData([...data, newMicroorganism]);
+        } catch (error) {
+            console.error('Erro ao criar microorganismo:', error);
+        }
     };
 
     const handleEdit = (item) => {
@@ -25,8 +48,12 @@ const MicroorganismPage = () => {
                 Gerenciar Microorganismos
             </Typography>
             <MicroorganismForm onAdd={handleAdd} />
-            <CustomTable data={data} onEdit={handleEdit} onDelete={handleDelete} />
-        </Container>
+            {loading ? (
+                <Typography variant="body1">Carregando...</Typography>
+            ) : (
+                <MicroorganismTable data={data} onEdit={handleEdit} onDelete={handleDelete} />
+            )}
+      </Container>
     );
 };
 

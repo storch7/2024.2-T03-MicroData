@@ -6,12 +6,20 @@ import Box from '@mui/material/Box';
 const MicroorganismForm = ({ onAdd }) => {
     const [name, setName] = useState('');
     const [description, setDescription] = useState('');
+    const [active, setActive] = useState(false);
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        onAdd({ name, description });
+        const data = {
+            nome: name, 
+            descricao: description, 
+            ativo: active,
+            data_cadastro: new Date().toISOString(), // Enviar a data atual no formato ISO
+        };
+        onAdd(data);
         setName('');
         setDescription('');
+        setActive(false);
     };
 
     return (
