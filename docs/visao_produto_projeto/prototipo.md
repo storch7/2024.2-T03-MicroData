@@ -1,5 +1,7 @@
 # Estrutura de interface e navegabilidade do MVP1
 
+O manual de indetidade visual e o protótipo da aplicação podem ser encontrados no [link](https://www.figma.com/team_invite/redeem/AUF2N2W7M3ki8gKMvS9HXg).
+
 ## Manual de identidade visual
 
 Para o processo de prototipação, foi definido um conjunto de práticas de prototipação, concentrados no manual de indetidade visual do projeto.
