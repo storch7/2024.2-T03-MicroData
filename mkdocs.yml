@@ -22,8 +22,11 @@ nav:
     - Backlog do Produto: visao_produto_projeto/backlog_produto.md
     - Lições Aprendidas: visao_produto_projeto/licoes.md
     - Especificação dos Requisitos: visao_produto_projeto/especificacao_requisitos.md
+  - Iterações: 
+    - Iteração 5: visao_produto_projeto/iteracoes/iteracao5.md
   - PBB: pbb/pbb.md
   - USM: usm/userStoryMap.md
   - Entregas: entregas/entregas.md
+
 
 
