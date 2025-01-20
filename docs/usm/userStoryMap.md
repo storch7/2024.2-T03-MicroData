@@ -1,4 +1,46 @@
+# Definições
 
+## User Story Mapping
+É uma técnica de planejamento e visualização de requisitos utilizada no desenvolvimento ágil para organizar e priorizar funcionalidades do produto com base na jornada do usuário. A técnica foi criada por Jeff Patton e consiste em mapear as atividades do usuário em um fluxo narrativo (de ponta a ponta), organizando-as em diferentes níveis de detalhe. Isso permite que a equipe compreenda melhor o contexto das funcionalidades e priorize o desenvolvimento das mais importantes primeiro.
+
+# Estudo de caso
+ara aplicação dos conceitos anteriormente abordados, foi realizado o estudo de caso da empresa fictícia EduConnect.
+
+## Personas, Objetivos, Atividades e User Stories
+
+Persona 1:
+
+![](../assets/usm/1%20-%20PERSONA%201.png)
+
+Persona 2:
+
+![](../assets/usm/2%20-%20PERSONA%202.png)
+
+Persona 3:
+
+![](../assets/usm/3%20-%20PERSONA%203.png)
+
+Persona 4:
+
+![](../assets/usm/4%20-%20PERSONA%204.png)
+
+Persona 5:
+
+![](../assets/usm/5%20-%20PERSONA%205.png)
+
+Persona 6:
+
+![](../assets/usm/6%20-%20PERSONA%206.png)
+
+## USM - Canvas
+O acesso ao USM Canvas do estudo de caso pode ser feito no [link](https://miro.com/app/board/uXjVLwUoLlY=/?share_link_id=695284761771).
+
+## Especificação da atividade
+
+Fazer o USM de todas as atividades e histórias identificadas na descrição do estudo de caso. A partir disso, ao menos 15 histórias, devem conter critérios de aceitação. Sendo assim, gerou-se a seguinte relação de histórias, Critérios de Aceitação:
+
+- Quantidade de histórias levantadas a partir do estudo de caso: 74;
+- Quantidade de histórias redigidas com cenários: 15.
 
 
 ### Tabela com a Atividades, Histórias de usuário e critérios de Aceitação

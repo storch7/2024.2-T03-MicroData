@@ -23,7 +23,7 @@ O BDD estende o Test-Driven Development (TDD), focando na especificação de req
 Para aplicação dos conceitos anteriormente abordados, foi realizado o estudo de caso da empresa fictícia TechFix.
 
 ## Canvas PBB
-O acesso ao PBB Canvas do estudo de caso pode ser feito no [link](https://miro.com/app/board/uXjVLr5J0PU=/?share_link_id=506084747667)
+O acesso ao PBB Canvas do estudo de caso pode ser feito no [link](https://miro.com/app/board/uXjVLr5J0PU=/?share_link_id=506084747667).
 
 ### Problemas
 
