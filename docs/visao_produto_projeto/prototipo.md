@@ -4,7 +4,7 @@ A interface está majoriatiamente organizada com 5 telas principais, sendo:
 
 - (i) Uma página de manutenção de informações de microorganismos;
 - (ii) Uma página de manutençaõ de informações de pontos (locais) avaliados;
-- (iii) Uma pagían de manutenção de informações de limites de contagem;
+- (iii) Uma página de manutenção de informações de limites de contagem;
 - (iv) Uma página de manutenção de informações de resutados do monitoramento;
 - (v) Uma página de Home com o dashboard do sistema.
 
