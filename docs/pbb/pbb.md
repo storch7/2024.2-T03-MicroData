@@ -10,6 +10,8 @@ PBB é representado por um canvas chamado de PBB Canvas que tem um fluxo bem sim
 
 ## Critérios de Aceitação
 
+Os critérios de aceitação são um conjunto de condições específicas que um produto, funcionalidade ou requisito deve atender para ser considerado completo e aceito pelo cliente ou pela equipe de qualidade. Eles definem o escopo, os limites e as expectativas de um requisito, garantindo que todas as partes envolvidas tenham um entendimento claro sobre o que deve ser entregue.
+
 ## BDD's
 
 Behavior-Driven Development (BDD) é uma metodologia ágil de desenvolvimento de software que enfatiza a colaboração entre desenvolvedores, testadores e stakeholders não técnicos para definir o comportamento esperado de um sistema.
