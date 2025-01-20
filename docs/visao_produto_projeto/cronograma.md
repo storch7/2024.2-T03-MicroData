@@ -10,11 +10,11 @@
 | 3        | Prototipação               | Prototipação das US's do backlog                                                     | Protótipo das US's: 01, 02, 07, 08, 03, 04, 09, 10, 11, 12, 13, 14, 15, 16, 17, 18 | 18/12/2024   | 01/01/2025 | Concluído |
 | 4        | Prototipação               | Prototipação das US's do backlog                                                     | Protótipo das US's: 19, 20, 21, 22, 23, 24, 25, 26, 22, 27, 28 | 01/01/2025   | 08/01/2025 | Concluído |
 | 5        | Desenvolvimento e testes   | Validação do protótipo e aplicação de correções pedidas pelo cliente e refatoração do backlog | Protótipo do MVP e backlog corrigido e atualizado    | 08/01/2025   | 15/01/2025 | Concluído |
-| 6        | Desenvolvimento e testes   | Desenvolvimento e testes das US's: 01, 02, 07, 08 e 03                                | Sem entrega prevista para o cliente                  | 15/01/2025   | 22/01/2025 | Pendente  |
-| 7        | Desenvolvimento e testes   | Desenvolvimento e testes das US's: 04, 09, 10, 11, 12 e 13                            | Entrega parcial 1                                    | 22/01/2025   | 29/01/2025 | Pendente  |
-| 8        | Desenvolvimento e testes   | Desenvolvimento e testes das US's: 14, 15, 16, 17, 18                                 | Sem entrega prevista para o cliente                  | 29/01/2025   | 05/02/2025 | Pendente  |
-| 9       | Desenvolvimento e testes   | Desenvolvimento e testes das US's: 19, 20, 21, 22, 23                                 | Sem entrega prevista para o cliente                  | 05/02/2025   | 12/02/2025 | Pendente  |
-| 10       | Desenvolvimento e testes   | Desenvolvimento e testes das US's: 24, 25, 26, 22, 27, 28                             | Entrega parcial 2                                    | 12/02/2025   | 19/02/2025 | Pendente  |
+| 6        | Desenvolvimento e testes   | Desenvolvimento e testes das US's: 07, 08, 09, 13 e 14                                | Sem entrega prevista para o cliente                  | 15/01/2025   | 22/01/2025 | Pendente  |
+| 7        | Desenvolvimento e testes   | Desenvolvimento e testes das US's: 10, 15, 16, 17, 18 e 19                            | Entrega parcial 1                                    | 22/01/2025   | 29/01/2025 | Pendente  |
+| 8        | Desenvolvimento e testes   | Desenvolvimento e testes das US's: 20, 21, 22, 23, 24                                 | Sem entrega prevista para o cliente                  | 29/01/2025   | 05/02/2025 | Pendente  |
+| 9       | Desenvolvimento e testes   | Desenvolvimento e testes das US's: 25, 26, 27, 28, 29                                 | Sem entrega prevista para o cliente                  | 05/02/2025   | 12/02/2025 | Pendente  |
+| 10       | Desenvolvimento e testes   | Desenvolvimento e testes das US's: 30, 31, 32, 33 e 34                             | Entrega parcial 2                                    | 12/02/2025   | 19/02/2025 | Pendente  |
 
 
 
