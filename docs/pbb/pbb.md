@@ -422,3 +422,8 @@ O tempo estimado deve ser baseado no SLA definido.
 
 AGUIAR, Fábio. Product Backlog Building. Fábio Aguiar, 14 jun. 2021. Disponível em: https://fabiogr.com/2021/06/14/pbb/. Acesso em: 20 jan. 2025.
 
+##  Histórico de Versão
+
+| **Data** | **Versão** | **Descrição** | **Autor** |
+| :------: | :--------: | :----------:  | :-------: |
+| 20/01/2025 | 1.0| Correções da avaliação | Guilherme Storch |
