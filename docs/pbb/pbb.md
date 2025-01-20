@@ -37,13 +37,23 @@ O acesso ao PBB Canvas do estudo de caso pode ser feito no [link](https://miro.c
 
 ### Personas
 
+Persona 1:
+
 ![](../assets/pbb/5%20-%20PERSONA%201.png)
+
+Persona 2:
 
 ![](../assets/pbb/6%20-%20PRESONA%202.png)
 
+Persona 3:
+
 ![](../assets/pbb/7%20-%20PERSONA%203.png)
 
+Persona 4:
+
 ![](../assets/pbb/8%20-%20PERSONA%204.png)
+
+Persona 5:
 
 ![](../assets/pbb/9%20-%20PERSONA%205.png)
 
