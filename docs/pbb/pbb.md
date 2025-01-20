@@ -1,11 +1,75 @@
-# Definições 
+# Definições
+
 ## Product Backlog Building
-## Canvas PBB
+
+É uma sigla para Product Backlog Building (PBB). É uma técnica para criar e manter uma lista de itens de trabalho para um projeto de software. O PBB tem como objetivo principal construir um backlog de forma colaborativa, de modo que todos os envolvidos no projeto compreendam o contexto do negócio.  É um processo contínuo que começa antes do início do projeto e continua durante todo o ciclo de vida do projeto.
+
+## PBB Canvas
+
+PBB é representado por um canvas chamado de PBB Canvas que tem um fluxo bem simples e de fácil compreensão, principalmente para facilitar o entendimento do cliente, pois sua participação é de suma importância nesse processo de construção.
+
 ## Critérios de Aceitação
+
 ## BDD's
 
+Behavior-Driven Development (BDD) é uma metodologia ágil de desenvolvimento de software que enfatiza a colaboração entre desenvolvedores, testadores e stakeholders não técnicos para definir o comportamento esperado de um sistema.
+
+O BDD estende o Test-Driven Development (TDD), focando na especificação de requisitos por meio de cenários escritos em linguagem natural, geralmente utilizando a estrutura Given-When-Then (Dado-Quando-Então).
+
 # Estudo de caso
+
+Para aplicação 
+
 ## Canvas PBB
+O acesso ao PBB Canvas do estudo de caso pode ser feito no link.
+
+### Problemas
+
+![](../assets/pbb/1%20-%20PROBLEMAS%20CLIENTES.png)
+
+![](../assets/pbb/2%20-%20PROBLEMAS%20INTERNOS.png)
+
+### Expectativas
+
+![](../assets/pbb/3%20-%20EXPECTATIVAS%20CLIENTES.png)
+
+![](../assets/pbb/4%20-%20EXPECTATIVAS%20INTERNAS.png)
+
+### Personas
+
+![](../assets/pbb/5%20-%20PERSONA%201.png)
+
+![](../assets/pbb/6%20-%20PRESONA%202.png)
+
+![](../assets/pbb/7%20-%20PERSONA%203.png)
+
+![](../assets/pbb/8%20-%20PERSONA%204.png)
+
+![](../assets/pbb/9%20-%20PERSONA%205.png)
+
+### Features
+
+![](../assets/pbb/10%20-%20FEATURES%20PERSONA%201.png)
+
+![](../assets/pbb/11%20-%20FEATURES%20PERSONA%202.png)
+
+![](../assets/pbb/12%20-%20FEATURES%20PERSONA%203.png)
+
+![](../assets/pbb/13%20-%20FEATURES%20PERSONA%204.png)
+
+![](../assets/pbb/14%20-%20FEATURES%20PERSONA%205.png)
+
+### PBI's
+
+![](../assets/pbb/15%20-%20PBI%20PERSONA%201.png)
+
+![](../assets/pbb/16%20-%20PBI%20PERSONA%202.png)
+
+![](../assets/pbb/17%20-%20PBI%20PERSONA%203.png)
+
+![](../assets/pbb/18%20-%20PBI%20PERSONA%204.png)
+
+![](../assets/pbb/19%20-%20PBI%20PERSONA%205.png)
 
 ## Solicitações da atividade
 Do total de PBI's identificados, 100% das histórias precisavam estar redigidas, 50% das hitórias precisavam de critérios de aceitação definidos e ao menos 5 histórias com BDD's redigidos. Sendo assim, gerou-se a seguinte relação de histórias, Critérios de Aceitação e BDD's:
@@ -322,3 +386,8 @@ O tempo estimado deve ser baseado no SLA definido.
 - US-32 Eu como diretora de operações, quero gerar relatórios de consumo de material utilizado nos atendimentos para facilitar a identificação de problemas e possíveis melhorias.
 - US-33 Eu como diretora de operações, quero visualizar as respostas das pesquisas de satisfação de atendimento, para identificação de problemas e possíveis melhorias.
 - US-34 Eu como diretora de operações quero gerar relatórios dos resultados das pesquisas de satisfação, para identificação de problemas e possíveis melhorias.
+
+## Referências
+
+AGUIAR, Fábio. Product Backlog Building. Fábio Aguiar, 14 jun. 2021. Disponível em: https://fabiogr.com/2021/06/14/pbb/. Acesso em: 20 jan. 2025.
+
