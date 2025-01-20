@@ -12,7 +12,7 @@ const createMicroorganismo = async (req, res) => {
     }
 
     // Verifica se o microrganismo já existe
-    const existingMicroorganismo = await prisma.microorganismos.findUnique({ where: { nome } });
+    const existingMicroorganismo = await prisma.microorganismos.findFirst({ where: { nome } });
 
     if (existingMicroorganismo) {
       if (!existingMicroorganismo.ativo) {
