@@ -3,12 +3,15 @@ import Container from '@mui/material/Container';
 import Typography from '@mui/material/Typography';
 import MicroorganismForm from '../components/MicroorganismForm';
 import MicroorganismTable from '../components/MicroorganismTable';
-import { createMicroorganism, getMicroorganism } from '../services/microorganismAPI';
+import { createMicroorganism, getMicroorganism, updateMicroorganism } from '../services/microorganismAPI';
 
 
-const MicroorganismPage = () => {
+function MicroorganismPage () {
     const [data, setData] = useState([]);
     const [loading, setLoading] = useState(true);
+    const [selectedMicroorganism, setSelectedMicroorganism] = useState(null);
+    const [isEditing, setIsEditing] = useState(false);
+
 
     useEffect(() => {
         const fechtData = async () => {
@@ -35,8 +38,16 @@ const MicroorganismPage = () => {
     };
 
     const handleEdit = (item) => {
-        console.log('Edit:', item);
+        setSelectedMicroorganism(item);
+        setIsEditing(true);
     };
+
+    const handleUpdate = async (updatedData) => {
+        await updateMicroorganism(selectedMicroorganism.id, updatedData);
+        setIsEditing(false);
+        setSelectedMicroorganism(null);
+        // Atualize a lista se necessário
+      };
 
     const handleDelete = (item) => {
         setData(data.filter((i) => i !== item));
@@ -47,7 +58,13 @@ const MicroorganismPage = () => {
             <Typography variant="h4" component="h1" gutterBottom>
                 Gerenciar Microorganismos
             </Typography>
-            <MicroorganismForm onAdd={handleAdd} />
+            <MicroorganismForm 
+                onAdd={handleAdd}
+                isEditing={isEditing}
+                initialData={selectedMicroorganism}
+                onUpdate={handleUpdate}
+                onCancel={() => { setIsEditing(false); setSelectedMicroorganism(null); }}
+            />
             {loading ? (
                 <Typography variant="body1">Carregando...</Typography>
             ) : (

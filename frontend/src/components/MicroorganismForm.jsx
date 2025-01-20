@@ -1,25 +1,39 @@
-import React, {useState} from "react";
+import React, {useEffect, useState} from "react";
 import CustomButton from '../components/Button';
 import TextField from '@mui/material/TextField';
 import Box from '@mui/material/Box';
 
-const MicroorganismForm = ({ onAdd }) => {
-    const [name, setName] = useState('');
-    const [description, setDescription] = useState('');
-    const [active, setActive] = useState(false);
+
+function MicroorganismForm  ({ isEditing, setIsEditing, initialData, onUpdate, onCancel,  onAdd }) {
+    const [name, setName] = useState(initialData?.nome || "");
+    const [description, setDescription] = useState(initialData?.descricao || "");
+
+    useEffect(() => {
+        if(initialData) {
+            setName(initialData.nome);
+            setDescription(initialData.descricao);
+        }
+    }, [initialData]);
 
     const handleSubmit = (e) => {
         e.preventDefault();
+        if (!name.trim() || !description.trim()) {
+            alert("Preencha todos os campos obrigatórios.");
+            return;
+        }
         const data = {
             nome: name, 
             descricao: description, 
-            ativo: active,
+            ativo: true,
             data_cadastro: new Date().toISOString(), // Enviar a data atual no formato ISO
         };
-        onAdd(data);
+        if(isEditing) {
+            onUpdate(data);
+        } else {
+            onAdd(data);
+        }
         setName('');
         setDescription('');
-        setActive(false);
     };
 
     return (
@@ -38,13 +52,22 @@ const MicroorganismForm = ({ onAdd }) => {
                 rows={4} 
                 fullWidth
             />
-            <Box sx={{ display: 'flex', justifyContent: 'space-between' }}>
-                <CustomButton text="Limpar" type="button" color="#B83226" variant="outlined" onClick={() => {
-                    setName('');
-                    setDescription('');
-                }} />
-                <CustomButton text="Cadastrar" type="submit" color="#B83226" variant="contained" />
-            </Box>
+            {isEditing ? (
+                <Box sx={{ display: 'flex', justifyContent: 'space-between' }}>
+                    <CustomButton text="Cancelar" type="button" color="#B83226" variant="outlined" onClick={() => {
+                        onCancel();
+                    }} />
+                    <CustomButton text="Atualizar" type="submit" color="#B83226" variant="contained" />
+                </Box>
+            ) : (
+                <Box sx={{ display: 'flex', justifyContent: 'space-between' }}>
+                    <CustomButton text="Limpar" type="button" color="#B83226" variant="outlined" onClick={() => {
+                        setName('');
+                        setDescription('');
+                    }} />
+                    <CustomButton text="Cadastrar" type="submit" color="#B83226" variant="contained" />
+                </Box>
+            )}
         </Box>
     );
 };
