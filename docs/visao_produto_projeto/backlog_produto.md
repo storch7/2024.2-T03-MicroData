@@ -26,16 +26,16 @@ A especificação de funcionalidades segue o framework de User Stories (Históri
 | US-05  | MICRODATA | MICROORGANISMOS | Eu como usuário, quero poder ver níveis de alerta a respeito da contagem de microorganismos a fim de ser notificado quando a contagem não está de acordo com o resultado esperado. |
 | US-06  | MICRODATA | MICROORGANISMOS | Eu como usuário, quero buscar microoranismos cadastrados no sistema para encontrar rapidamente o local desejado de forma eficiente. |
 | US-07  | MICRODATA | PONTOS (LOCAIS) AVALIADOS | Eu como usuário, quero cadastrar no sistema os locais de realização de coleta microbiológica a fim de acompanhar as contagens de microrganismos presentes em cada local. |
-| US-08  | MICRODATA | PONTOS (LOCAIS) AVALIADOS | Eu como usuário, quero poder listar todos os locais de coleta cadastrados no sistema a fim de visualizar os registros de pontos do monitoramento. |
-| US-09  | MICRODATA | PONTOS (LOCAIS) AVALIADOS | Eu como usuário, quero poder editar os locais de coleta cadastrados no sistema a fim de adicionar ou retirar dados pertinentes para a análise microbiológica. |
+| US-08  | MICRODATA | PONTOS (LOCAIS) AVALIADOS | Eu como usuário, quero poder listar todos os locais de coleta cadastrados no sistema para visualizar os registros de pontos do monitoramento. |
+| US-09  | MICRODATA | PONTOS (LOCAIS) AVALIADOS | Eu como usuário, quero poder editar os locais de coleta cadastrados no sistema para adicionar ou retirar dados pertinentes para a análise microbiológica. |
 | US-10  | MICRODATA | PONTOS (LOCAIS) AVALIADOS | Eu como usuário, quero desativar locais de coleta cadastrados no sistema para remover aqueles que não serão mais utilizados na coleta microbiológica. |
 | US-11  | MICRODATA | PONTOS (LOCAIS) AVALIADOS | Eu como usuário, quero buscar locais cadastrados no sistema para encontrar rapidamente o local desejado de forma eficiente. |
-| US-12  | MICRODATA | RESULTADOS DO MONITORAMENTO | CREATE |
-| US-13  | MICRODATA | RESULTADOS DO MONITORAMENTO | READ |
-| US-14  | MICRODATA | RESULTADOS DO MONITORAMENTO | UPDATE |
-| US-15  | MICRODATA | RESULTADOS DO MONITORAMENTO | DELETE |
-| US-16  | MICRODATA | RESULTADOS DO MONITORAMENTO | LIST |
-| US-17  | MICRODATA | RESULTADOS DO MONITORAMENTO | FILTER |
+| US-12  | MICRODATA | RESULTADOS DO MONITORAMENTO | Eu como usuário quero cadastrar um limite de contagem no sistema para uma gestão de informações mais consistente. |
+| US-13  | MICRODATA | RESULTADOS DO MONITORAMENTO | Eu como usuário quero visualizar os limites de contagem cadastrados para que eu possa verificar valores inseridos e visualizar as informações da base de dados. |
+| US-14  | MICRODATA | RESULTADOS DO MONITORAMENTO | Eu como usuário quero editar os limites de contagem cadastrados para melhor controle e gestão de informações |
+| US-15  | MICRODATA | RESULTADOS DO MONITORAMENTO | Eu como usuário quero deletar um limite de contagem cadastrado para melhor controle e gestão de informações. |
+| US-16  | MICRODATA | RESULTADOS DO MONITORAMENTO | Eu como usuário quero visualizar uma listagem dos limites de contagem cadastrados para para encontrar rapidamente o local desejado de forma eficiente.  |
+| US-17  | MICRODATA | RESULTADOS DO MONITORAMENTO | EU como usuário quero filtrar os limites de contagem por ponto, microorganismo e zona para facilitar a localização de uma informação anteriormente cadastrada. |
 | US-18  | MICRODATA | RESULTADOS DO MONITORAMENTO | Eu como usuário, quero registrar a contagem de microrganismos de uma dada coleta para que eu possa registrar informações detalhadas e manter um histórico organizado para análise. |
 | US-19  | MICRODATA | RESULTADOS DO MONITORAMENTO | Eu como um usuário, quero listar as contagens de microrganismos registradas para que eu possa visualizar e analisar os dados coletados de forma organizada e detalhada. |
 | US-20  | MICRODATA | RESULTADOS DO MONITORAMENTO | Eu como um usuário quero editar o registro de contagem de microrganismos já existente para que eu possa corrigir erros ou atualizar informações relevantes para manter os dados precisos e confiáveis. |
