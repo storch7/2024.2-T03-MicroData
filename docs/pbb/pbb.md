@@ -21,7 +21,7 @@ O BDD estende o Test-Driven Development (TDD), focando na especificação de req
 Para aplicação 
 
 ## Canvas PBB
-O acesso ao PBB Canvas do estudo de caso pode ser feito no link.
+O acesso ao PBB Canvas do estudo de caso pode ser feito no [link](https://miro.com/app/board/uXjVLr5J0PU=/?share_link_id=506084747667)
 
 ### Problemas
 
@@ -49,25 +49,44 @@ O acesso ao PBB Canvas do estudo de caso pode ser feito no link.
 
 ### Features
 
+Features Persona 1:
+
 ![](../assets/pbb/10%20-%20FEATURES%20PERSONA%201.png)
+
+Features Persona 2:
 
 ![](../assets/pbb/11%20-%20FEATURES%20PERSONA%202.png)
 
+Features Persona 3:
+
 ![](../assets/pbb/12%20-%20FEATURES%20PERSONA%203.png)
 
+Features Persona 4:
+
 ![](../assets/pbb/13%20-%20FEATURES%20PERSONA%204.png)
+
+Features Persona 5:
 
 ![](../assets/pbb/14%20-%20FEATURES%20PERSONA%205.png)
 
 ### PBI's
 
+PBI's Persona 1:
 ![](../assets/pbb/15%20-%20PBI%20PERSONA%201.png)
+
+PBI's Persona 2:
 
 ![](../assets/pbb/16%20-%20PBI%20PERSONA%202.png)
 
+PBI's Persona 3:
+
 ![](../assets/pbb/17%20-%20PBI%20PERSONA%203.png)
 
+PBI's Persona 4:
+
 ![](../assets/pbb/18%20-%20PBI%20PERSONA%204.png)
+
+PBI's Persona 5:
 
 ![](../assets/pbb/19%20-%20PBI%20PERSONA%205.png)
 
