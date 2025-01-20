@@ -108,100 +108,110 @@ Foi avaliada a urgência de implementação das US's do projeto levando em consi
 ### Quadro de priorização
 Abaixo segue a tabela de priorização conforme os pontos avaliados anteriormente. A complexidade total é o resultado da soma das classificações levantadas pelo grupo:
 
-| INDEX  | VALOR DE NEGÓCIO | COMPLEXIDADE | INDEPENDÊNCIA | URGÊNCIA | TOTAL (SOMA) |
-|--------|------------------|--------------|--------------|---------|--------------|
-| US-01  | 3                | 5            | 5            | 4       | 17           |
-| US-02  | 3                | 5            | 5            | 4       | 17           |
-| US-03  | 3                | 4            | 5            | 4       | 16           |
-| US-04  | 3                | 4            | 5            | 4       | 16           |
-| US-05  | 4                | 5            | 1            | 3       | 10           |
-| US-06  | 1                | 3            | 5            | 2       | 11           |
-| US-07  | 4                | 5            | 5            | 3       | 17           |
-| US-08  | 3                | 5            | 5            | 4       | 17           |
-| US-09  | 3                | 4            | 5            | 4       | 16           |
-| US-10  | 3                | 4            | 5            | 4       | 16           |
-| US-11  | 3                | 4            | 5            | 3       | 15           |
-| US-12  | 4                | 4            | 3            | 3       | 14           |
-| US-13  | 4                | 4            | 3            | 3       | 14           |
-| US-14  | 4                | 4            | 3            | 3       | 14           |
-| US-15  | 4                | 4            | 3            | 3       | 14           |
-| US-16  | 4                | 4            | 3            | 3       | 14           |
-| US-17  | 4                | 4            | 3            | 3       | 14           |
-| US-18  | 4                | 3            | 3            | 4       | 14           |
-| US-19  | 4                | 3            | 3            | 4       | 14           |
-| US-20  | 4                | 3            | 3            | 4       | 14           |
-| US-21  | 4                | 3            | 3            | 4       | 14           |
-| US-22  | 4                | 3            | 2            | 4       | 13           |
-| US-23  | 5                | 4            | 1            | 4       | 14           |
-| US-24  | 5                | 5            | 1            | 3       | 14           |
-| US-25  | 5                | 5            | 1            | 3       | 14           |
-| US-26  | 5                | 5            | 1            | 3       | 14           |
-| US-27  | 5                | 5            | 1            | 2       | 13           |
-| US-28  | 5                | 5            | 1            | 2       | 13           |
-| US-29  | 3                | 3            | 3            | 1       | 10           |
-| US-30  | 3                | 3            | 3            | 2       | 11           |
-| US-31  | 3                | 4            | 2            | 1       | 10           |
-| US-32  | 3                | 3            | 3            | 3       | 12           |
-| US-33  | 4                | 3            | 4            | 1       | 12           |
-| US-34  | 4                | 1            | 3            | 4       | 12           |
-| US-35  | 2                | 2            | 4            | 3       | 11           |
-| US-36  | 2                | 1            | 4            | 2       | 9            |
+| INDEX  | VALOR DE NEGÓCIO | COMPLEXIDADE | INDEPENDÊNCIA | URGÊNCIA | TOTAL |
+|--------|------------------|--------------|---------------|----------|-------|
+| RF-01  | 1                | 5            | 5             | 1        | 12    |
+| RF-02  | 1                | 4            | 5             | 2        | 12    |
+| RF-03  | 1                | 4            | 5             | 2        | 12    |
+| RF-04  | 1                | 3            | 5             | 2        | 11    |
+| RF-05  | 1                | 3            | 5             | 2        | 11    |
+| RF-06  | 1                | 5            | 5             | 1        | 12    |
+| RF-07  | 3                | 5            | 5             | 4        | 17    |
+| RF-08  | 3                | 5            | 5             | 4        | 17    |
+| RF-09  | 3                | 4            | 5             | 4        | 16    |
+| RF-10  | 3                | 4            | 5             | 4        | 16    |
+| RF-11  | 4                | 5            | 1             | 3        | 10    |
+| RF-12  | 1                | 3            | 5             | 2        | 11    |
+| RF-13  | 4                | 5            | 5             | 3        | 17    |
+| RF-14  | 3                | 5            | 5             | 4        | 17    |
+| RF-15  | 3                | 4            | 5             | 4        | 16    |
+| RF-16  | 3                | 4            | 5             | 4        | 16    |
+| RF-17  | 3                | 4            | 5             | 3        | 15    |
+| RF-18  | 4                | 4            | 3             | 3        | 14    |
+| RF-19  | 4                | 4            | 3             | 3        | 14    |
+| RF-20  | 4                | 4            | 3             | 3        | 14    |
+| RF-21  | 4                | 4            | 3             | 3        | 14    |
+| RF-22  | 4                | 4            | 3             | 3        | 14    |
+| RF-23  | 4                | 4            | 3             | 3        | 14    |
+| RF-24  | 4                | 3            | 3             | 4        | 14    |
+| RF-25  | 4                | 3            | 3             | 4        | 14    |
+| RF-26  | 4                | 3            | 3             | 4        | 14    |
+| RF-27  | 4                | 3            | 3             | 4        | 14    |
+| RF-28  | 4                | 3            | 2             | 4        | 13    |
+| RF-29  | 5                | 4            | 1             | 4        | 14    |
+| RF-30  | 5                | 5            | 1             | 3        | 14    |
+| RF-31  | 5                | 5            | 1             | 3        | 14    |
+| RF-32  | 5                | 5            | 1             | 3        | 14    |
+| RF-33  | 5                | 5            | 1             | 2        | 13    |
+| RF-34  | 5                | 5            | 1             | 2        | 13    |
+| RF-35  | 3                | 3            | 3             | 1        | 10    |
+| RF-36  | 3                | 3            | 3             | 2        | 11    |
+| RF-37  | 3                | 4            | 2             | 1        | 10    |
+| RF-38  | 3                | 3            | 4             | 3        | 13    |
+| RF-39  | 4                | 3            | 4             | 3        | 14    |
+| RF-40  | 4                | 1            | 3             | 4        | 12    |
+| RF-41  | 2                | 2            | 4             | 3        | 11    |
+| RF-42  | 2                | 1            | 4             | 2        | 9     |
+
 
 ## MVP do projeto Microdata 
 MVP (Minimum Viable Product, ou Produto Mínimo Viável) é uma versão inicial de um produto que contém apenas as funcionalidades essenciais para resolver o problema principal dos usuários. Seu objetivo é validar hipóteses e obter feedback do mercado de maneira rápida e econômica, antes de investir em desenvolvimento completo. O MVP permite que equipes de desenvolvimento entendam o que realmente gera valor para o cliente e ajustem o produto com base em dados reais, minimizando riscos e desperdícios.
 
-Foi levado em consideração o quadro de priorização para a definição do MVP do projeto. As hisorias de Usuário que tiveram o somatório de pontos de avaliação igual ou superior a 14 (>=14) são candidatas para o MVP do projeto; as hisorias com somatório inferior a 13 (<13) permanecem como backlog do projeto e poderão ser desenvolvidas em ocasiões futuras.
+Foi levado em consideração o quadro de priorização para a definição do MVP do projeto. As hisorias de Usuário que tiveram o somatório de pontos de avaliação igual ou superior a 13 (>=13) são candidatas para o MVP do projeto; as hisorias com somatório inferior a 13 (<13) permanecem como backlog do projeto e poderão ser desenvolvidas em ocasiões futuras.
 
-O valor de 12 foi estabelecido como clivo para definição das funcionalidades candidatas ao MVP após uma avaliação comparativa do grupo acerca das funcionalidades de alta prioridade (maior urgência de implementação) e baixa prioridade (menor urgência de implementação). As funcionalidades elencadas com menor urgência apresentaram valores que giraram em tordo de 9 e 11; em contrapartida, as que foram consideradas de alta prioridade e maior urgência de impelentação apresentaram valores que giraram em torno de 14 e 20. Desse modo, o valor do somatório foi delimitado em 13 para o estabelecimento do MVP do projeto.
+O valor de 12 foi estabelecido como clivo para definição das funcionalidades candidatas ao MVP após uma avaliação comparativa do grupo acerca das funcionalidades de alta prioridade (maior urgência de implementação) e baixa prioridade (menor urgência de implementação). As funcionalidades elencadas com menor urgência apresentaram valores que giraram em tordo de 9 e 12; em contrapartida, as que foram consideradas de alta prioridade e maior urgência de impelentação apresentaram valores que giraram em torno de 13 e 18. Desse modo, o valor do somatório foi delimitado em 13 para o estabelecimento do MVP do projeto.
 
 São as histórias do MVP do projeto Microdata e seus respectivos valores na priorização:
 
 | INDEX  | TOTAL |
 |--------|-------|
-| US-01  | 17    |
-| US-02  | 17    |
-| US-07  | 17    |
-| US-08  | 17    |
-| US-03  | 16    |
-| US-04  | 16    |
-| US-09  | 16    |
-| US-10  | 16    |
-| US-11  | 15    |
-| US-12  | 14    |
-| US-13  | 14    |
-| US-14  | 14    |
-| US-15  | 14    |
-| US-16  | 14    |
-| US-17  | 14    |
-| US-18  | 14    |
-| US-19  | 14    |
-| US-20  | 14    |
-| US-21  | 14    |
-| US-23  | 14    |
-| US-24  | 14    |
-| US-25  | 14    |
-| US-26  | 14    |
-| US-22  | 13    |
-| US-27  | 13    |
-| US-28  | 13    |
+| RF-07  | 17    |
+| RF-08  | 17    |
+| RF-09  | 16    |
+| RF-10  | 16    |
+| RF-13  | 17    |
+| RF-14  | 17    |
+| RF-15  | 16    |
+| RF-16  | 16    |
+| RF-17  | 15    |
+| RF-18  | 14    |
+| RF-19  | 14    |
+| RF-20  | 14    |
+| RF-21  | 14    |
+| RF-22  | 14    |
+| RF-23  | 14    |
+| RF-24  | 14    |
+| RF-25  | 14    |
+| RF-26  | 14    |
+| RF-27  | 14    |
+| RF-28  | 13    |
+| RF-29  | 14    |
+| RF-30  | 14    |
+| RF-31  | 14    |
+| RF-32  | 14    |
+| RF-33  | 13    |
+| RF-34  | 13    |
+| RF-38  | 13    |
+| RF-39  | 14    |
 
 Em contrapartida, as funcionalidades que foram consideradas Incrementos são:
 
-
 | INDEX  | TOTAL |
 |--------|-------|
-| US-33  | 12    |
-| US-34  | 12    |
-| US-06  | 11    |
-| US-30  | 11    |
-| US-35  | 11    |
-| US-05  | 10    |
-| US-29  | 10    |
-| US-31  | 10    |
-| US-32  | 13    |
-| US-36  | 9     |
-
- 
+| RF-01  | 12    |
+| RF-02  | 12    |
+| RF-03  | 12    |
+| RF-04  | 11    |
+| RF-05  | 11    |
+| RF-06  | 12    |
+| RF-11  | 10    |
+| RF-12  | 11    |
+| RF-35  | 10    |
+| RF-36  | 11    |
+| RF-37  | 10    |
+| RF-40  | 12    |
+| RF-41  | 11    |
+| RF-42  | 9     |
 
 ## REFERÊNCIAS
 
