@@ -305,9 +305,9 @@ Então o sistema deve exibir uma mensagem de erro "Todos os campos obrigatórios
 
 > Critérios de aceitação:
 
-O sistema deve exibir um contador regressivo até a conclusão do atendimento.
-O cliente e o atendente devem poder visualizar essa informação em tempo real.
-O tempo estimado deve ser baseado no SLA definido.
+- O sistema deve exibir um contador regressivo até a conclusão do atendimento.
+- O cliente e o atendente devem poder visualizar essa informação em tempo real.
+- O tempo estimado deve ser baseado no SLA definido.
 
 ### US-07 Eu como atendente ou cliente, quero acompanhar o período de tempo do SLA extrapolado para priorizar a realização de um serviço atrasado.
 
