@@ -1,6 +1,7 @@
 # Estrutura de interface e navegabilidade do MVP1
 
 A interface está majoriatiamente organizada com 5 telas principais, sendo:
+
 - (i) Uma página de manutenção de informações de microorganismos;
 - (ii) Uma página de manutençaõ de informações de pontos (locais) avaliados;
 - (iii) Uma pagían de manutenção de informações de limites de contagem;
