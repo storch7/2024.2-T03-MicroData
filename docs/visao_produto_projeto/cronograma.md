@@ -34,6 +34,8 @@
 
 O cronograma acima poderá sofrer alterações ao longo do desenvolvimento do projeto.
 
+<!--
+
 # Avaliação dos Requisitos - Primeira Entrega
 
 ## Processo de Avaliação pelo Definition of Ready (DoR)
@@ -116,6 +118,7 @@ Todos os requisitos foram avaliados positivamente para cada critério do DoR, co
 
 Todos os requisitos (User Stories) passaram pelos critérios do Definition of Ready (DoR), com seus valores de negócio documentados, esforços estimados e critérios de aceitação validados. Para que se dê o início das atividades de desenvolvimento, o projeto precisa do desenvolvimento dos protótipos e das devidas validações com o cliente.
 
+-->
 
 ##  Histórico de Versão
 

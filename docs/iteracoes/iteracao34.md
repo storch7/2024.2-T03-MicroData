@@ -29,3 +29,9 @@ Prototipação.
 | Protótipo de alta fidelidade   | Protótipo navegável contendo o fluxo de telas e informações               |
 
 Protótipo acessível neste [link](https://mdsreq-fga-unb.github.io/2024.2-T03-MicroData/visao_produto_projeto/prototipo/).
+
+##  Histórico de Versão
+
+| **Data**    | **Versão** | **Descrição** | **Autor** |
+| :--------: | :--------: | :--------:  | :--------: | 
+|      20/11/2024      |      1.0       |      Criação do documento       |    Storch     |

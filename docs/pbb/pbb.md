@@ -424,6 +424,6 @@ AGUIAR, Fábio. Product Backlog Building. Fábio Aguiar, 14 jun. 2021. Disponív
 
 ##  Histórico de Versão
 
-| **Data** | **Versão** | **Descrição** | **Autor** |
-| :------: | :--------: | :----------:  | :-------: |
-| 20/01/2025 | 1.0| Correções da avaliação | Guilherme Storch |
+| **Data**    | **Versão** | **Descrição** | **Autor** |
+| :--------: | :--------: | :--------:  | :--------: | 
+|      20/11/2024      |      1.0       |      Criação do documento       |     Breno Fernandes, Breno Lucena, Storch, João, Rafael e Renan     |
