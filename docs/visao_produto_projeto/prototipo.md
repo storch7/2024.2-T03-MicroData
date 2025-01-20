@@ -9,7 +9,6 @@ A interface está majoriatiamente organizada com 5 telas principais, sendo:
 
 ![](../assets/prototipo/1%20-%20PROTÓTIPO%20NAVEGAVEL.png)
 
-
 ## (i) Tela de manutenção de informações de microorganismos
 
 ![](../assets/prototipo/2%20-%20TELA%20MICROORGANISMOS.png)
