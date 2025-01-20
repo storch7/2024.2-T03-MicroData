@@ -28,6 +28,7 @@ Do total de PBI's identificados, 100% das histórias precisavam estar redigidas,
 - As partes envolvidas devem ser notificadas no ícone do chat no aplicativo móvel;
 
 > Cenários (BDD’s):
+
 **Cenário 1: Cliente acessa o chat de dúvidas do aplicativo**
 
 Dado que o cliente acessa o chat de dúvidas do aplicativo
@@ -77,6 +78,7 @@ Quando preenche todas as informações do formulário
 Então o sistema deve notificar o usuário com a informação “Aparelho cadastrado com sucesso” e realizar o registro dos dados no sistema.
 
 ### US-03 Eu como atendente ou cliente quero registrar a solicitação de reparo para garantir que haja o correto registro de uma ocorrência.
+
 > Critérios de Aceitação:
 
 - O sistema deve permitir que atendentes e clientes registrem solicitações de reparo.
@@ -85,22 +87,27 @@ Então o sistema deve notificar o usuário com a informação “Aparelho cadast
 - As solicitações registradas devem ser visíveis para os atendentes e técnicos.
 
 > Cenários (BDD’s):
+
 **Cenário 1: Preenchimento do formulário de solicitação de reparo**
+
 Dado que o cliente ou atendente querem realizar a solicitação de reparo de um equipamento
 Quando acessam a interface do sistema
 Então o sistema deve apresentar um formulário com os campos de “Aparelho cadastrado”, “Decrição do ocorrido” e “Imagem do ocorrido”.
 
 **Cenário 2: Registro bem-sucedido da solicitação**
+
 Dado que o atendente ou cliente deseja registrar uma solicitação de reparo E insere todas as informações obrigatórias (Aparelho: “Roteador Wi-Fi 6 Dual band W6-1500 Intelbras”, descrição: "Roteador não liga ao ser conectado na tomada") 
 Quando ele confirma o registro 
 Então o sistema deve criar a solicitação com um número único E exibir uma mensagem de confirmação "Solicitação registrada com sucesso!" E notificar o usuário sobre o registro.
 
 **Cenário 3: Atribuição de número único à solicitação**
+
 Dado que um atendente ou cliente registra uma solicitação de reparo 
 Quando a solicitação é salva no sistema 
 Então o sistema deve gerar um identificador único para a solicitação.
 
 **Cenário 4: Tentativa de registro sem preencher o campo de aparelho cadastrado**
+
 Dado que o atendente ou cliente acessa o formulário de solicitação de reparo E não seleciona o aparelho cadastrado
 Quando ele tenta confirmar o registro 
 Então o sistema deve exibir uma mensagem de erro "DEve haver um aparelho cadastrado no sistema para registrar uma solicitação de reparo." E não deve registrar a solicitação.
@@ -111,6 +118,7 @@ Quando ele tenta confirmar o registro
 Então o sistema deve exibir uma mensagem de erro "A descrição do problema é obrigatória." E não deve registrar a solicitação.
 
 **Cenário 6: Falha no registro por erro no sistema**
+
 Dado que o atendente ou cliente preenche corretamente todos os campos obrigatórios E tenta confirmar o registro 
 Quando ocorre uma falha no sistema 
 Então o sistema deve exibir uma mensagem "Erro ao registrar solicitação. Tente novamente mais tarde." E não deve registrar a solicitação.
@@ -118,6 +126,7 @@ Então o sistema deve exibir uma mensagem "Erro ao registrar solicitação. Tent
 ### US-04 Eu como atendente ou cliente quero acessar o histórico de solicitações de registros de reparo para facilitar a obtenção de informação.
 
 > Critérios de Aceitação:
+
 - O sistema deve permitir que atendentes e clientes acessem o histórico de agendamentos realizados.
 - O histórico deve exibir detalhes como data, horário, status e técnico responsável.
 - O usuário deve poder filtrar e ordenar os agendamentos por data e status.
@@ -179,6 +188,7 @@ Quando a alteração é confirmada
 Então o sistema deve notificar as partes envolvidas sobre a modificação.
 
 **Cenário 3: Alteração da data do reparo**
+
 Dado que o atendente ou cliente deseja alterar a data de um reparo agendado E a solicitação ainda não foi inciada pelo operador
 Quando ele alterar a data para a realização do reparo
 Então o sistema deve atualizar a solicitação com a nova data E registrar a mudança no histórico de alterações.
@@ -206,7 +216,7 @@ O tempo estimado deve ser baseado no SLA definido.
 
 ### US-07 Eu como atendente ou cliente, quero acompanhar o período de tempo do SLA extrapolado para priorizar a realização de um serviço atrasado.
 
-> Critérios de aceiração:
+> Critérios de aceitação:
 
 - O sistema deve destacar solicitações com SLA ultrapassado.
 - Deve ser possível filtrar e priorizar esses atendimentos.
