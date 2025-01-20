@@ -30,6 +30,8 @@ services:
     build:
       context: ./backend
       dockerfile: Dockerfile
+      args:
+        DATABASE_URL: ${DATABASE_URL}
     container_name: microdata_backend
     environment:
       NODE_ENV: development
@@ -38,7 +40,7 @@ services:
       DB_PASSWORD: ${POSTGRES_PASSWORD}
       DB_NAME: ${POSTGRES_DB}
     ports:
-      - "4000:4000"
+      - "5000:5000"
     volumes:
       - ./backend:/app
       - /app/node_modules
@@ -46,6 +48,7 @@ services:
       - postgres
     networks:
       - microdata_network
+    entrypoint: ["/bin/sh", "-c", "npx prisma migrate dev && npm start"]
 
   frontend:
     build:

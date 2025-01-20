@@ -1,4 +1,7 @@
-FROM node:16
+FROM node:18
+
+ARG DATABASE_URL
+ENV DATABASE_URL=$DATABASE_URL
 
 WORKDIR /app
 
@@ -9,8 +12,10 @@ RUN npm install
 COPY . .
 
 RUN npm install -g nodemon
+RUN npx prisma generate
 
-EXPOSE 4000
+EXPOSE 5000
 
-CMD ["nodemon", "index.js"]
+CMD ["npm", "start"]
 
+ 
