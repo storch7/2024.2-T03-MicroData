@@ -7,6 +7,9 @@
 
 Para aplicação dos conceitos anteriormente abordados, foi realizado o estudo de caso da empresa fictícia EduConnect.
 
+## USM - Canvas
+O acesso ao USM Canvas do estudo de caso pode ser feito no [link](https://miro.com/app/board/uXjVLwUoLlY=/?share_link_id=695284761771).
+
 ## Personas, Objetivos, Atividades e User Stories
 
 Persona 1:
@@ -32,9 +35,6 @@ Persona 5:
 Persona 6:
 
 ![](../assets/usm/6%20-%20PERSONA%206.png)
-
-## USM - Canvas
-O acesso ao USM Canvas do estudo de caso pode ser feito no [link](https://miro.com/app/board/uXjVLwUoLlY=/?share_link_id=695284761771).
 
 ## Especificação da atividade
 
