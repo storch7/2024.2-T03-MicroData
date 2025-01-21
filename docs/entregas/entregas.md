@@ -15,7 +15,7 @@
 ## Unidade 3
 
 - **Vídeo de Apresentação**: O vídeo de apresentação da **Unidade 3** pode ser acessado em:
-[Vídeo da Apresentação da Unidade 3](---)
+[Vídeo da Apresentação da Unidade 3](https://youtu.be/-i6j4YdqzDM)
 
 
 ##  Histórico de Versão
