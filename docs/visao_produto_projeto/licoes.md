@@ -34,10 +34,26 @@ As definições de Pronto (DoD) e de Preparado (DoR) foram fundamentais para gar
 Considerar aspectos técnicos, como uso de tecnologias específicas (Node.js, SQLite), e atender a requisitos organizacionais, como criptografia de dados e uso de servidores internos, garantiram a viabilidade técnica e de conformidade com os processos da empresa.
 ---
 
+## Unidade 3 - Lições Aprendidas
+
+### 1. Estruturação e Priorização com PBB
+- **Desafio**: Traduzir as necessidades das personas em histórias de usuário claras e priorizáveis mostrou-se mais complexo do que o esperado.  
+- **Ação de Melhoria**: O uso do PBB auxiliou o grupo a organizar requisitos de forma lógica, garantindo que os itens prioritários fossem os mais alinhados às dores dos usuários.
+
+### 2. Visão Colaborativa com USM
+- **Desafio**: Criar um mapeamento que englobasse o ponto de vista de todos os stakeholders (exemplo de caso) sem perder o foco no MVP.  
+- **Ação de Melhoria**: A utilização do User Story Mapping ajudou a decompor o produto em etapas, permitindo a priorização do que seria entregue no primeiro lançamento e promovendo maior clareza na entrega de valor.
+
+### 3. Validação e Alinhamento com BDD
+- **Desafio**: A escrita de cenários de teste no formato Given-When-Then demandou um alinhamento mais detalhado entre os membros da equipe e os stakeholders (exemplo de caso).  
+- **Ação de Melhoria**: O BDD facilitou a validação de comportamentos esperados do sistema, ajudando a equipe a evitar ambiguidades e garantindo que os critérios de aceitação fossem claros e objetivos.
+---
+
 ##  Histórico de Versão
 
 | **Data** | **Versão** | **Descrição** | **Autor** |
 | :------: | :--------: | :----------:  | :-------: |
 | 20/11/2024| 1.0| Adição das lições | João Lucas Araujo |
+| 20/01/2025| 1.1| Adição da lição | Rafael Matuda |
 
 
