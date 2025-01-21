@@ -347,7 +347,7 @@ Abaixo estão os cartões e as confirmações das histórias selecionadas para o
 
 ---
 
-### **US-13(CADASTRAR LOCAIS DE COLETA AVALIADOS):** Eu como usuário, quero cadastrar os locais de coleta microbiológica a fim de acompanhar as contagens de microrganismos presentes.
+### **US-13:**
 
 ### Cenário 1:  usuário cadastra um ponto de coleta pela primeira vez
 - **Dado** que o usuário cadastra um local de coleta
@@ -367,7 +367,7 @@ Abaixo estão os cartões e as confirmações das histórias selecionadas para o
 ---
 
 
-### **US-14(LISTAR LOCAIS DE COLETA AVALIADOS):** Eu como usuário, quero listar todos os locais de coleta cadastrados no sistema a fim de visualizar os registros de pontos do monitoramento.
+### **US-14:** 
 
 ### Cenário 1: O usuário acessa a página de registros para procurar por um ponto em específico
 - **Dado** que um usuário acessa a página de registros
@@ -378,7 +378,7 @@ Abaixo estão os cartões e as confirmações das histórias selecionadas para o
 
 
 
-### **US-15(EDITAR LOCAIS DE COLETA AVALIADOS):** Eu como usuário, quero editar os locais de coleta cadastrados no sistema a fim de adicionar ou retirar dados pertinentes para a análise microbiológica.
+### **US-15**
 
 ### Cenário 1: Edição Bem-Sucedida
 - **Dado que** o usuário esteja autenticado e na página de edição de locais de coleta avaliados,
@@ -407,7 +407,7 @@ Abaixo estão os cartões e as confirmações das histórias selecionadas para o
 
 
 
-### **US-16(DESATIVAR LOCAIS DE COLETA AVALIADOS):** Eu como usuário, quero desativar locais de coleta cadastrados no sistema para remover aqueles que não serão mais utilizados na coleta microbiológica.
+### **US-16:** 
 
 ### Cenário 1: Desativação Bem-Sucedida
 - **Dado que** o usuário esteja autenticado e na página de desativar local de coleta,
@@ -429,7 +429,7 @@ Abaixo estão os cartões e as confirmações das histórias selecionadas para o
 
 
 
-### **US-17(BUSCAR LOCAIS DE COLETA AVALIADOS):** Eu como usuário, quero buscar locais cadastrados no sistema para encontrar rapidamente o local desejado de forma eficiente.
+### **US-17:** 
 
 ### Cenário 1: O Usuário Busca um Registro de Local de Coleta Específico
 - **Dado que** o usuário acessa os registros de locais de coleta observados,
@@ -438,9 +438,7 @@ Abaixo estão os cartões e as confirmações das histórias selecionadas para o
 
 ---
 
-## Épico 4: RESULTADOS DO MONITORAMENTO
-
-### **US-18(ADICIONAR A CONTAGEM DE MICROORGANISMOS):** Eu como usuário, quero registrar a contagem de microrganismos de uma dada coleta para que eu possa registrar informações detalhadas e manter um histórico organizado para análise.
+### **US-18** 
 
 ### Cenário 1: Registro Bem-Sucedido da Contagem
 - **Dado que** o usuário está na página de adicionar resultados do monitoramento,
@@ -474,7 +472,7 @@ Abaixo estão os cartões e as confirmações das histórias selecionadas para o
 
 
 
-### **US-19(LISTAR A CONTAGEM DE MICROORGANISMOS):** Eu como usuário, quero listar as contagens de microrganismos registradas para que eu possa visualizar e analisar os dados coletados de forma organizada e detalhada.
+### **US-19:** 
 
 ### Cenário 1: Listagem Bem-Sucedida
 - **Dado que** o usuário acessa a página de resultados do monitoramento,
@@ -509,8 +507,7 @@ Abaixo estão os cartões e as confirmações das histórias selecionadas para o
 ---
 
 
-
-### **US-20(EDITAR O REGISTRO DE CONTAGEM):** Eu como usuário, quero editar o registro de contagem de microrganismos já existente para que eu possa corrigir erros ou atualizar informações relevantes para manter os dados precisos e confiáveis.
+### **US-20:** 
 
 ### Cenário 1: Edição Bem-Sucedida
 - **Dado que** o usuário acessa o registro de uma contagem existente,
@@ -537,36 +534,11 @@ Abaixo estão os cartões e as confirmações das histórias selecionadas para o
 
 ---
 
-
-
-### **US-21(INSERIR AÇÕES CORRETIVAS):** Eu como usuário, quero inserir as ações corretivas para os resultados acima do limite de contagem de microrganismos para o registro de ações de controle mais efetivo e um processo de tomada de decisão mais eficiente.
-
-### Cenário 1: Adição de Ação Corretiva com Sucesso
-- **Dado que** o usuário acessa um registro com resultados acima do limite de contagem,
-- **Quando** preencher a descrição da ação corretiva e clicar em "Salvar",
-- **Então** o sistema deverá:
-  - Registrar a ação corretiva,
-  - Exibir a mensagem: "Ação corretiva registrada com sucesso."
+<!--
+### **US-21:** Eu como usuário quero deletar um limite de contagem cadastrado para melhor controle e gestão de informações
+------------------------------------------------------------------------
 
 ---
-
-### Cenário 2: Falha no Preenchimento de Informações
-- **Dado que** o usuário tenta adicionar uma ação corretiva,
-- **Quando** não preencher o campo obrigatório de descrição,
-- **Então** o sistema deverá exibir a mensagem de erro: "Descrição da ação corretiva é obrigatória."
-
----
-
-### Cenário 3: Atualização de uma Ação Corretiva Existente
-- **Dado que** o usuário acessa uma ação corretiva já registrada,
-- **Quando** modificar a descrição ou os detalhes da ação e clicar em "Salvar",
-- **Então** o sistema deverá:
-  - Atualizar as informações da ação corretiva,
-  - Exibir a mensagem: "Ação corretiva atualizada com sucesso."
-
----
-
-
 
 ### **US-22(FILTRAR UM RESULTADO DE COLETA):** Eu como usuário, quero aplicar filtros aos resultados de coleta microbiológica para que eu possa localizar informações específicas de forma eficiente e realizar análises mais detalhadas.
 
@@ -597,6 +569,35 @@ Abaixo estão os cartões e as confirmações das histórias selecionadas para o
 - **Então** o sistema deverá:
   - Remover todos os filtros,
   - Exibir novamente a lista completa de registros.
+
+---
+
+### **US-21(INSERIR AÇÕES CORRETIVAS):** Eu como usuário, quero inserir as ações corretivas para os resultados acima do limite de contagem de microrganismos para o registro de ações de controle mais efetivo e um processo de tomada de decisão mais eficiente.
+
+### Cenário 1: Adição de Ação Corretiva com Sucesso
+- **Dado que** o usuário acessa um registro com resultados acima do limite de contagem,
+- **Quando** preencher a descrição da ação corretiva e clicar em "Salvar",
+- **Então** o sistema deverá:
+  - Registrar a ação corretiva,
+  - Exibir a mensagem: "Ação corretiva registrada com sucesso."
+
+---
+
+### Cenário 2: Falha no Preenchimento de Informações
+- **Dado que** o usuário tenta adicionar uma ação corretiva,
+- **Quando** não preencher o campo obrigatório de descrição,
+- **Então** o sistema deverá exibir a mensagem de erro: "Descrição da ação corretiva é obrigatória."
+
+---
+
+### Cenário 3: Atualização de uma Ação Corretiva Existente
+- **Dado que** o usuário acessa uma ação corretiva já registrada,
+- **Quando** modificar a descrição ou os detalhes da ação e clicar em "Salvar",
+- **Então** o sistema deverá:
+  - Atualizar as informações da ação corretiva,
+  - Exibir a mensagem: "Ação corretiva atualizada com sucesso."
+
+---
 
 ---
 
@@ -710,6 +711,7 @@ Abaixo estão os cartões e as confirmações das histórias selecionadas para o
   - Remover todos os filtros,
   - Exibir novamente a lista completa de registros.
 
+-->
 
 
 ##  Histórico de Versão
