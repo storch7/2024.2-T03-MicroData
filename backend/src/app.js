@@ -1,6 +1,7 @@
 // Importa o módulo Express, que é um framework para construir aplicativos web e APIs no Node.js
 require("dotenv").config({path: '../../.env'});
 const express = require('express');
+const cors = require('cors');
 
 // Cria uma instância da aplicação Express
 const app = express();
@@ -10,6 +11,15 @@ const app = express();
 // Ele transforma o corpo da requisição em um objeto JavaScript acessível via req.body.
 // Exemplo: uma requisição com um JSON no body será transformada em um objeto para fácil manipulação.
 app.use(express.json());
+
+const corsOptions = {
+  origin: process.env.CORS_ORIGIN,
+  methods: ['GET', 'POST', 'PUT', 'DELETE'],
+  allowedHeaders: ['Content-Type', 'Authorization'],
+};
+
+console.log('CORS_ORIGIN:', process.env.CORS_ORIGIN);
+app.use(cors(corsOptions));
 
 // Importa as rotas relacionadas a "microorganismos" do arquivo de rotas
 // Este arquivo define todas as rotas e lógicas para manipular dados de microorganismos (ex.: criar, listar, etc.).

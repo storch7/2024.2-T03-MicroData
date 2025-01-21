@@ -35,6 +35,7 @@ services:
     container_name: microdata_backend
     environment:
       NODE_ENV: development
+      CORS_ORIGIN: ${CORS_ORIGIN}
       DB_HOST: postgres
       DB_USER: ${POSTGRES_USER}
       DB_PASSWORD: ${POSTGRES_PASSWORD}
