@@ -1,7 +1,17 @@
 # Especificação dos Requisitos
 
-Abaixo estão os cartões e as confirmações das histórias selecionadas para o primeiro ciclo de desenvolvimento do projeto:
+## Critérios de Aceitação:
+A declaração de histórias pode ser encontrada na página de [Backlog do produto](https://mdsreq-fga-unb.github.io/2024.2-T03-MicroData/visao_produto_projeto/backlog_produto/). Abaixo segue a relação de Histórias de usuário e critérios de aceitação:
+![](../assets/criteriosAceitacao/1.png)
+![](../assets/criteriosAceitacao/2.png)
+![](../assets/criteriosAceitacao/3.png)
+![](../assets/criteriosAceitacao/4.png)
+![](../assets/criteriosAceitacao/5.png)
 
+## Cenários BDD's:
+
+Abaixo estão os cartões e as confirmações das histórias selecionadas para o primeiro ciclo de desenvolvimento do projeto:
+<!--
 ## Épico 1: ACESSO E LOGIN
 
 ### **US-01(CADASTRAR USUÁRIO):** Eu como usuário quero cadastrar uma conta para de minhas informações no sistema.
@@ -231,8 +241,9 @@ Abaixo estão os cartões e as confirmações das histórias selecionadas para o
 ---
 
 ## Épico 2: MICROORGANISMOS
+-->
 
-### **US-07(CADASTRAR MICROORGANISMOS OBSERVADOS):** Eu como usuário, quero cadastrar no sistema um microrganismo observado pelo programa para que eu possa registrar informações detalhadas e manter um histórico organizado para análise.
+### **US-07:** 
 
 ### Cenário 1: O Usuário Realiza o Primeiro Cadastro de um Microorganismo no Banco
 - **Dado que** um usuário deseja cadastrar um microorganismo no banco,
@@ -260,7 +271,7 @@ Abaixo estão os cartões e as confirmações das histórias selecionadas para o
 
 
 
-### **US-08(LISTAR MICROORGANISMOS OBSERVADOS):** Eu como usuário, quero listar os microorganismos observados pelo programa a fim de visualizar os microrganismos cadastrados no sistema.
+### **US-08:** 
 
 ### Cenário 1: O Usuário Acessa os Registros de Microorganismos
 - **Dado que** um usuário deseja acessar os registros de microorganismos,
@@ -275,9 +286,7 @@ Abaixo estão os cartões e as confirmações das histórias selecionadas para o
 
 ---
 
-
-
-### **US-09(EDITAR MICROORGANISMOS OBSERVADOS):** Eu como usuário, quero editar os registros de microorganismos cadastrados a fim de gerenciamento de erros de registro e atualização de informações.
+### **US-09:**
 
 ### Cenário 1: O Usuário Tenta Editar uma Informação de um Microorganismo Cadastrado
 - **Dado que** um usuário acessa a informação de um microorganismo,
@@ -299,9 +308,7 @@ Abaixo estão os cartões e as confirmações das histórias selecionadas para o
 
 ---
 
-
-
-### **US-10(DESATIVAR MICROORGANISMOS OBSERVADOS):** Eu como usuário quero poder desativar algum microorganismo cadastrado no sistema a fim de tornar obsoleto um microorganismo observado pelo programa.
+### **US-10:**
 
 ### Cenário 1: O Usuário é Notificado Sobre a Desativação do Microorganismo
 - **Dado que** o usuário acessa os registros de microorganismos observados,
@@ -320,7 +327,7 @@ Abaixo estão os cartões e as confirmações das histórias selecionadas para o
 
 
 
-### **US-11(INSERIR NIVEIS DE ALERTA DA CONTAGEM):** Eu como usuário, quero poder ver níveis de alerta a respeito da contagem de microorganismos a fim de ser notificado quando a contagem não está de acordo com o resultado esperado.
+### **US-11:**
 
 ### Cenário 1: O Usuário Insere os Níveis de Alerta do Microorganismo no Sistema
 - **Dado que** o usuário cadastra um microorganismo,
@@ -330,9 +337,7 @@ Abaixo estão os cartões e as confirmações das histórias selecionadas para o
 
 ---
 
-
-
-### **US-12(BUSCAR MICROORGANISMOS OBSERVADOS):** Eu como usuário, quero buscar microorganismos cadastrados no sistema para encontrar rapidamente o local desejado de forma eficiente.
+### **US-12:**
 
 ### Cenário 1: O Usuário Busca um Registro de Microorganismo Específico
 - **Dado que** o usuário acessa os registros de microorganismos observados,
@@ -341,8 +346,6 @@ Abaixo estão os cartões e as confirmações das histórias selecionadas para o
   - Apresentar o registro informado na base de dados.
 
 ---
-
-## Épico 3: PONTOS(LOCAIS) AVALIADOS
 
 ### **US-13(CADASTRAR LOCAIS DE COLETA AVALIADOS):** Eu como usuário, quero cadastrar os locais de coleta microbiológica a fim de acompanhar as contagens de microrganismos presentes.
 
