@@ -205,7 +205,7 @@ Então o sistema deve gerar um identificador único para a solicitação.
 
 Dado que o atendente ou cliente acessa o formulário de solicitação de reparo E não seleciona o aparelho cadastrado
 Quando ele tenta confirmar o registro 
-Então o sistema deve exibir uma mensagem de erro "DEve haver um aparelho cadastrado no sistema para registrar uma solicitação de reparo." E não deve registrar a solicitação.
+Então o sistema deve exibir uma mensagem de erro "Deve haver um aparelho cadastrado no sistema para registrar uma solicitação de reparo." E não deve registrar a solicitação.
 
 **Cenário 5: Tentativa de registro sem preencher o campo de descrição do ocorrido**
 Dado que o atendente ou cliente acessa o formulário de solicitação de reparo E não preenche a descrição do problema 
@@ -231,8 +231,8 @@ Então o sistema deve exibir uma mensagem "Erro ao registrar solicitação. Tent
 
 **Cenário 1: O clliente ou atendente acessa o histórico de solicitações de reparo**
 
-Dado que o atendente ou cliente acessa o histórico de solicitações E existem solicitações múltiplas solicitações
-Quando ele acessa o histórico de solicitações
+Dado que o atendente ou cliente  acessa o histórico de solicitações de reparo E existem solicitações múltiplas solicitações reparo
+Quando ele acessa o histórico de solicitações de reparo
 Então o sistema deve exibir a lista de registros de reparo com data, horário, status e técnico responsável.
 
 **Cenário 2: O cliente ou atendente filtra uma determinada solicitação por período de tempo**
@@ -243,20 +243,20 @@ Então o sistema deve exibir somente as solicitações dentro do período seleci
 
 **Cenário 3: O cliente ou atendente filtra um registro de reparo por técnico de campo**
 
-Dado que o atendente ou cliente acessa o histórico de solicitações E existem solicitações múltiplas solicitações
+Dado que o atendente ou cliente acessa o histórico de solicitações de reparo E existem solicitações múltiplas solicitações reparo
 Quando ele seleciona o nome de um dado operador
 Então o sistema deve exibir somente registros de atendimento encerrados pelo operador em questão.
 
 **Cenário 4: Sem Agendamentos registrados**
 
-Dado que o atendente ou cliente acessa a interface do sistema E não há nenhum agendamento registrado 
-Quando ele tenta visualizar o histórico 
-Então o sistema deve exibir a mensagem "Nenhum agendamento encontrado."
+Dado que o atendente ou cliente acessa a interface do sistema E não há nenhum agendamento de reparo registrado 
+Quando ele tenta visualizar o histórico de reparo
+Então o sistema deve exibir a mensagem "Nenhum agendamento de reparo encontrado."
 
 **Cenário 5: Erro ao carregar histórico**
 
 Dado que o atendente ou cliente acessa a interface do sistema E ocorre uma falha no carregamento dos dados 
-Quando ele tenta visualizar o histórico de agendamentos 
+Quando ele tenta visualizar o histórico de agendamentos de reparo
 Então o sistema deve exibir uma mensagem de erro "Falha ao carregar histórico. Tente novamente mais tarde."
 
 
@@ -290,7 +290,7 @@ Então o sistema deve atualizar a solicitação com a nova data E registrar a mu
 
 **Cenário 4: Tentativa de alteração de uma solicitação em atendimento**
 
-Dado que o atendente ou cliente acessa uma solicitação em andamento
+Dado que o atendente ou cliente acessa uma solicitação de reparo em andamento
 Quando ele tenta modificar a data de agendamento
 Então o sistema deve exibir uma mensagem de erro "Não é possível modificar esta solicitação" E não deve registrar nenhuma alteração.
 
