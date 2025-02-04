@@ -61,3 +61,5 @@ Considerar aspectos técnicos, como uso de tecnologias específicas (Node.js, SQ
 | :------: | :--------: | :----------:  | :-------: |
 | 20/11/2024| 1.0| Adição das lições | João Lucas Araujo |
 | 20/01/2025| 1.1| Adição da lição | Rafael Matuda |
+
+
