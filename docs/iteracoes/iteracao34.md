@@ -2,12 +2,9 @@
 
 04/12/2024 à 08/01/2025
 
-### Fase do RAD equivalente
-
-Prototipação.
-
 ### Expectativas de realização de acordo com o cronograma
 
+- Complemento das histórias de usuário com os critérios de aceitação.
 - Protótipo de alta fidelidade da aplicação;
 - Validação do protótipo confeccionado junto ao cliente.
 
@@ -21,10 +18,16 @@ Prototipação.
 | 13/01/2025 | Correções do protótipo               | Modificação do protótipo após sugestões do cliente             |
 | 15/01/2025 | Correções do Git Pages               | Modificação do GitHub Pages da disciplina                      |
 
+## Decisões
+Foi realizado um alinhamento junto à equipe de TI da empresa em questão e foi verificado que as telas de login e cadastro poderiam ser desenvolvidas internamente, conectadas à própria base de dados do cliente. Foram os ajustes de documentação realizados após o alinhamento: 
+- Ajuste das funcionalidades levantadas para organização do novo escopo; 
+- Foi realizada a priorização de funcionalidades junto às expectativas do cliente.
+
 ## Entregas
 
 | Entrega                        | Descrição                                                                 |
 |---------------------------------|---------------------------------------------------------------------------|
+| Critérios de aceitação   | Complemento da documentação do projeto com os critérios de aceitação das histórias. |
 | Manual de identidade           | Manual de identidade visual da aplicação, com informações de tipografia, paleta de cores, etc. |
 | Protótipo de alta fidelidade   | Protótipo navegável contendo o fluxo de telas e informações               |
 
@@ -34,4 +37,5 @@ Protótipo acessível neste [link](https://mdsreq-fga-unb.github.io/2024.2-T03-M
 
 | **Data**    | **Versão** | **Descrição** | **Autor** |
 | :--------: | :--------: | :--------:  | :--------: | 
-|      20/11/2024      |      1.0       |      Criação do documento       |    Storch     |
+|      20/01/2025      |      1.0       |      Criação do documento       |    Storch     |
+|      03/02/2024      |      1.1       |      Modificações com as considerações do professor (#issue41)       |    Storch     |
