@@ -24,3 +24,4 @@
 | :--------: | :--------: | :--------:  | :--------: | 
 |      11/11/2024      |      1.0      |      Criação do documento       |     Guilherme Storch     |
 |      17/12/2024      |      2.0      |      Atualização do documento   |     Guilherme Storch     |
+>>>>>>> main
