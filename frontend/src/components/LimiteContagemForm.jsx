@@ -12,7 +12,7 @@ function LimiteContagemForm() {
 
     return(
         <div>
-            <Box component="form" sx={{display: 'flex', flexDirection: 'column'}}>
+            <Box component="form" sx={{marginTop: '2rem',display: 'flex', flexDirection: 'column', alignItems: 'center', margin: '1px solid black'}}>
                 <Select
                     label="Microorganismo"
                     value={microorganismo}
@@ -45,7 +45,12 @@ function LimiteContagemForm() {
                     sx={{marginTop: '15px'}} 
                     fullWidth
                 />
-                
+
+            <Box style = {{marginTop: '15px', display: 'flex',justifyContent: 'space-around', width: '100%' }}>
+                <CustomButton text="Limpar" type="submit" color="blue" variant="contained" />
+                <CustomButton text="Cadastrar" type="submit" color="#B83226" variant="contained" />
+            </Box>
+
             </Box>
         </div>
     );
