@@ -12,11 +12,12 @@ function LimiteContagemForm() {
 
     return(
         <div>
-            <Box component="form" >
+            <Box component="form" sx={{display: 'flex', flexDirection: 'column'}}>
                 <Select
                     label="Microorganismo"
                     value={microorganismo}
                     onChange={(event: SelectChangeEvent) => setMicroorganismo(event.target.value)}
+                    sx={{marginTop: '15px'}}
                     fullWidth
                 >
                     <MenuItem>M1</MenuItem>
@@ -28,6 +29,7 @@ function LimiteContagemForm() {
                     label="Local"
                     value={local}
                     onChange={(event: SelectChangeEvent) => setLocal(event.target.value)}
+                    sx={{marginTop: '15px'}}
                     fullWidth
                 >
                     <MenuItem>TESTE</MenuItem>
@@ -39,7 +41,8 @@ function LimiteContagemForm() {
                 <TextField
                     label="Limite de Contagem" 
                     value={LimiteContagem} 
-                    onChange={(e) => setLimiteContagem(e.target.value)} 
+                    onChange={(e) => setLimiteContagem(e.target.value)}
+                    sx={{marginTop: '15px'}} 
                     fullWidth
                 />
                 
