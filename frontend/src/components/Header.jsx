@@ -1,43 +1,28 @@
 import React from "react";
 import { AppBar, Toolbar, Button, Box } from "@mui/material";
-import { makeStyles } from "@mui/styles";
-
-const useStyles = makeStyles({
-  logo: {
-    height: 25,
-    marginRight: 10,
-  },
-  navLink: {
-    color: "#fff",
-    margin: "0 10px",
-    textTransform: "none",
-  },
-});
 
 const Header = () => {
-  const classes = useStyles();
-
   return (
-    <AppBar position="static" style={{ backgroundColor: "#000" }}>
+    <AppBar position="static" sx={{ backgroundColor: "#000" }}>
       <Toolbar>
-        {/* Logo e Nome */}
+        {/* Logo and Name */}
         <Box display="flex" alignItems="center">
           <img
-            src={process.env.PUBLIC_URL + "/assets/logo.png"} // Ou caminho específico
+            src="/logo.png"
             alt="MicroData Logo"
-            className={classes.logo}
+            style={{ height: 25, marginRight: 10 }}
           />
         </Box>
 
-        {/* Links de Navegação */}
+        {/* Navigation Links */}
         <Box flexGrow={1} />
 
         <Box>
-          <Button className={classes.navLink}>Home</Button>
-          <Button className={classes.navLink}>Microrganismos</Button>
-          <Button className={classes.navLink}>Pontos de Coleta</Button>
-          <Button className={classes.navLink}>Limites de Contagem</Button>
-          <Button className={classes.navLink}>Resultados de Coleta</Button>
+          <Button sx={{ color: "#fff", margin: "0 10px", textTransform: "none" }}>Home</Button>
+          <Button sx={{ color: "#fff", margin: "0 10px", textTransform: "none" }}>Microrganismos</Button>
+          <Button sx={{ color: "#fff", margin: "0 10px", textTransform: "none" }}>Pontos de Coleta</Button>
+          <Button sx={{ color: "#fff", margin: "0 10px", textTransform: "none" }}>Limites de Contagem</Button>
+          <Button sx={{ color: "#fff", margin: "0 10px", textTransform: "none" }}>Resultados de Coleta</Button>
         </Box>
       </Toolbar>
     </AppBar>
