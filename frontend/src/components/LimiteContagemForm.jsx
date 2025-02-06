@@ -12,7 +12,7 @@ function LimiteContagemForm() {
 
     return(
         <div>
-            <Box component="form" sx={{marginTop: '2rem',display: 'flex', flexDirection: 'column', alignItems: 'center', margin: '1px solid black'}}>
+            <Box component="form" sx={{marginTop: '2rem',display: 'flex', flexDirection: 'column', alignItems: 'center', padding: '1rem', border: '1px solid blue', borderRadius: '1rem'}}>
                 <Select
                     label="Microorganismo"
                     value={microorganismo}
@@ -20,9 +20,9 @@ function LimiteContagemForm() {
                     sx={{marginTop: '15px'}}
                     fullWidth
                 >
-                    <MenuItem>M1</MenuItem>
-                    <MenuItem>M2</MenuItem>
-                    <MenuItem>M3</MenuItem>
+                    <MenuItem value = {10}>M1</MenuItem>
+                    <MenuItem value = {20}>M2</MenuItem>
+                    <MenuItem value = {30}>M3</MenuItem>
                 </Select>
 
                 <Select
@@ -32,9 +32,9 @@ function LimiteContagemForm() {
                     sx={{marginTop: '15px'}}
                     fullWidth
                 >
-                    <MenuItem>TESTE</MenuItem>
-                    <MenuItem>TESTE1</MenuItem>
-                    <MenuItem>TESTE2</MenuItem>
+                    <MenuItem value = {10}>TESTE</MenuItem>
+                    <MenuItem value = {20}>TESTE1</MenuItem>
+                    <MenuItem value = {30}>TESTE2</MenuItem>
                 </Select>
 
 

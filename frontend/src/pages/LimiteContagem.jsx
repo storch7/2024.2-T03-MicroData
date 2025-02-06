@@ -8,7 +8,7 @@ function LimiteContagem () {
         <section>
             <Container>
                 <Typography variant="h4" component="h1" gutterBottom>
-                    Novo Limite de Contagem
+                    Gerenciar limite de Contagem
                 </Typography>
 
                 <LimiteContagemForm />
