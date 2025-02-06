@@ -10,6 +10,9 @@ function LimiteContagemForm() {
     const [local, setLocal] = useState('');
     const [LimiteContagem, setLimiteContagem] = useState("");
 
+    
+
+
     return(
         <div>
             <Box component="form" sx={{marginTop: '2rem',display: 'flex', flexDirection: 'column', alignItems: 'center', padding: '1rem', border: '1px solid blue', borderRadius: '1rem'}}>
@@ -46,8 +49,8 @@ function LimiteContagemForm() {
                     fullWidth
                 />
 
-            <Box style = {{marginTop: '15px', display: 'flex',justifyContent: 'space-around', width: '100%' }}>
-                <CustomButton text="Limpar" type="submit" color="blue" variant="contained" />
+            <Box style = {{marginTop: '15px', display: 'flex',justifyContent: 'space-between', width: '100%' }}>
+                <CustomButton text="Limpar" type="submit" color="#B83226" variant="outlined" />
                 <CustomButton text="Cadastrar" type="submit" color="#B83226" variant="contained" />
             </Box>
 
