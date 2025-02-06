@@ -25,10 +25,14 @@ app.use(cors(corsOptions));
 // Este arquivo define todas as rotas e lógicas para manipular dados de microorganismos (ex.: criar, listar, etc.).
 const microorganismosRoutes = require('./routes/microorganismosRoutes');
 
+const pontosAvaliadosRoutes = require('./routes/pontosAvaliadosRoutes');
+
 // Associa as rotas importadas ao caminho base "/api/microorganismos"
 // Todas as rotas definidas no arquivo microorganismosRoutes serão acessíveis a partir deste caminho base.
 // Exemplo: uma rota GET definida como "/" no arquivo microorganismosRoutes será acessada como "/api/microorganismos".
 app.use('/api/microorganismos', microorganismosRoutes);
+
+app.use('/api/pontosavaliados', pontosAvaliadosRoutes);
 
 app.get('/', (req, res) => {
   res.send("Está funcionando!");
