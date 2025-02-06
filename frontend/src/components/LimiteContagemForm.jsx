@@ -5,6 +5,8 @@ import Box from '@mui/material/Box';
 import Select, { SelectChangeEvent } from '@mui/material/Select';
 import MenuItem from '@mui/material/MenuItem';
 import { getMicroorganism } from '../services/microorganismAPI';
+import FormControl from '@mui/material/FormControl';
+import InputLabel from '@mui/material/InputLabel';
 
 function LimiteContagemForm() {
     const [microorganismo, setMicroorganismo] = useState('');
@@ -52,37 +54,36 @@ function LimiteContagemForm() {
                     borderRadius: '1rem'
                 }}
             >
-                {/* Select de Microorganismos preenchido dinamicamente */}
-                <Select
-                    label="Microorganismo"
-                    value={microorganismo}
-                    onChange={(event: SelectChangeEvent) => setMicroorganismo(event.target.value)}
-                    sx={{ marginTop: '15px' }}
-                    fullWidth
-                >
-                    {dataMicro.length > 0 ? (
-                        dataMicro.map((micro) => (
-                            <MenuItem key={micro.id} value={micro.id}>
-                                {micro.nome}
-                            </MenuItem>
-                        ))
-                    ) : (
-                        <MenuItem disabled>Carregando...</MenuItem>
-                    )}
-                </Select>
+                <FormControl sx={{ marginTop: '15px' }} fullWidth>
+                    <InputLabel>Microorganismo</InputLabel>
+                    <Select
+                        value={microorganismo}
+                        onChange={(event: SelectChangeEvent) => setMicroorganismo(event.target.value)}
+                    >
+                        {dataMicro.length > 0 ? (
+                            dataMicro.map((micro) => (
+                                <MenuItem key={micro.id} value={micro.id}>
+                                    {micro.nome}
+                                </MenuItem>
+                            ))
+                        ) : (
+                            <MenuItem disabled>Nenhum microorganismo disponível</MenuItem>
+                        )}
+                    </Select>
+                </FormControl>
 
-                {/* Select de Local (mantido estático) */}
-                <Select
-                    label="Local"
-                    value={local}
-                    onChange={(event: SelectChangeEvent) => setLocal(event.target.value)}
-                    sx={{ marginTop: '15px' }}
-                    fullWidth
-                >
-                    <MenuItem value="TESTE">TESTE</MenuItem>
-                    <MenuItem value="TESTE1">TESTE1</MenuItem>
-                    <MenuItem value="TESTE2">TESTE2</MenuItem>
-                </Select>
+                {/* Select de Local */}
+                <FormControl sx={{ marginTop: '15px' }} fullWidth>
+                    <InputLabel>Local</InputLabel>
+                    <Select
+                        value={local}
+                        onChange={(event: SelectChangeEvent) => setLocal(event.target.value)}
+                    >
+                        <MenuItem value="10">TESTE</MenuItem>
+                        <MenuItem value="20">TESTE1</MenuItem>
+                        <MenuItem value="30">TESTE2</MenuItem>
+                    </Select>
+                </FormControl>
 
                 {/* Campo de texto para limite de contagem */}
                 <TextField
