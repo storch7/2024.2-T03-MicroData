@@ -16,7 +16,7 @@ function LimiteContagemForm() {
                 <Select
                     label="Microorganismo"
                     value={microorganismo}
-                    onChange={(event: SelectChangeEvent) => setMicroorganismo(event.target.value)}
+                    onChange={(event) => setMicroorganismo(event.target.value)}
                     sx={{marginTop: '15px'}}
                     fullWidth
                 >
@@ -28,7 +28,7 @@ function LimiteContagemForm() {
                 <Select
                     label="Local"
                     value={local}
-                    onChange={(event: SelectChangeEvent) => setLocal(event.target.value)}
+                    onChange={(event) => setLocal(event.target.value)}
                     sx={{marginTop: '15px'}}
                     fullWidth
                 >
