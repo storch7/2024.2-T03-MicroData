@@ -1,9 +1,13 @@
+import { useState } from 'react';
 import Container from '@mui/material/Container';
 import Typography from '@mui/material/Typography';
 import LimiteContagemForm from '../components/LimiteContagemForm';
+import LimiteContagemTable from '../components/LimiteContagemTable';
 
 
 function LimiteContagem () {
+    const [loading, setLoading] = useState(true);
+
     return(
         <section>
             <Container>
@@ -12,6 +16,12 @@ function LimiteContagem () {
                 </Typography>
 
                 <LimiteContagemForm />
+                
+                {loading ? (
+                <Typography variant="body1">Carregando...</Typography>
+            ) : (
+                <LimiteContagemTable />
+            )}
             </Container>
 
         </section>
