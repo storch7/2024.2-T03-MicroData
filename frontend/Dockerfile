@@ -4,6 +4,8 @@ WORKDIR /app
 
 COPY package*.json ./
 
+# Adicione a instalação do react-router-dom
+RUN npm install react-router-dom
 
 RUN npm install
 
