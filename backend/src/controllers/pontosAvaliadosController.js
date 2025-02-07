@@ -59,9 +59,9 @@ const createPontoAvaliado = async (req, res) => {
           area,
           local_processo,
           metodo,
-          frequencia,
-          zona_proximidade,
-          zona_higienico,
+          frequencia: frequencia.toUpperCase(), // Converte para maiúsculas antes de salvar
+          zona_proximidade: zona_proximidade.toUpperCase(), // Converte para maiúsculas antes de salvar
+          zona_higienico: zona_higienico.toUpperCase(), // Converte para maiúsculas antes de salvar
           ativo: true, // Definindo ativo como true por padrão
           data_cadastro: new Date(), // Gerando automaticamente a data atual
           data_desativacao: data_desativacao ? new Date(data_desativacao) : null,
@@ -76,7 +76,7 @@ const createPontoAvaliado = async (req, res) => {
 };
   
 // Função assíncrona para buscar todos os pontos avaliados com ativo = true
-const getPontosAvaliados = async (req, res) => {
+const getPontoAvaliado = async (req, res) => {
     try {
       // Recupera apenas os pontos avaliados que estão ativos
       const pontos = await prisma.pontosAvaliados.findMany({
@@ -144,11 +144,13 @@ const updatePontoAvaliado = async (req, res) => {
       console.error('Erro ao editar ponto avaliado:', error);
       res.status(500).json({ error: 'Erro ao editar ponto avaliado.' });
     }
-  };
+};
+
+  
   
   // Exporta as funções
   module.exports = {
     createPontoAvaliado,
-    getPontosAvaliados,
+    getPontoAvaliado,
     updatePontoAvaliado,
   };

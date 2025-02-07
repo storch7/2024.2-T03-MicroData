@@ -47,7 +47,7 @@ const createMicroorganismo = async (req, res) => {
 };
 
 // Função assíncrona para buscar todos os microorganismos ativos no banco de dados
-const getMicroorganismos = async (req, res) => {
+const getMicroorganismo = async (req, res) => {
   try {
     // Busca apenas os microorganismos que estão ativos
     const microorganismos = await prisma.microorganismos.findMany({
@@ -107,4 +107,4 @@ const updateMicroorganismo = async (req, res) => {
 };
 
 // Exporta a função para ser usada em outros módulos (como nas rotas)
-module.exports = { createMicroorganismo, getMicroorganismos, updateMicroorganismo};
+module.exports = { createMicroorganismo, getMicroorganismo, updateMicroorganismo};
