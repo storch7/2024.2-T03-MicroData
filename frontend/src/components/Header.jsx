@@ -1,6 +1,7 @@
 import React from "react";
 import { AppBar, Toolbar, Button, Box } from "@mui/material";
 import { makeStyles } from "@mui/styles";
+import { Link } from 'react-router-dom';
 
 const useStyles = makeStyles({
   logo: {
@@ -32,12 +33,45 @@ const Header = () => {
         {/* Links de Navegação */}
         <Box flexGrow={1} />
 
+        {/* Links de Navegação */}
+        <Box flexGrow={1} />
+
         <Box>
-          <Button className={classes.navLink}>Home</Button>
-          <Button className={classes.navLink}>Microrganismos</Button>
-          <Button className={classes.navLink}>Pontos de Coleta</Button>
-          <Button className={classes.navLink}>Limites de Contagem</Button>
-          <Button className={classes.navLink}>Resultados de Coleta</Button>
+          <Button
+            component={Link}
+            to="/"
+            className={classes.navLink}
+          >
+            Home
+          </Button>
+          <Button
+            component={Link}
+            to="/microorganism"
+            className={classes.navLink}
+          >
+            Microrganismos
+          </Button>
+          <Button
+            component={Link}
+            to="/pontosavaliados"
+            className={classes.navLink}
+          >
+            Pontos de Coleta
+          </Button>
+          <Button
+            component={Link}
+            to="/limites-contagem"
+            className={classes.navLink}
+          >
+            Limites de Contagem
+          </Button>
+          <Button
+            component={Link}
+            to="/resultados-coleta"
+            className={classes.navLink}
+          >
+            Resultados de Coleta
+          </Button>
         </Box>
       </Toolbar>
     </AppBar>

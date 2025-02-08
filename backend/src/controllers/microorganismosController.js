@@ -1,11 +1,11 @@
 // Importa o Prisma Client configurado no arquivo database.js
-const { get } = require('../app');
 const prisma = require('../utils/database');
 
 // Função assíncrona para criar um microorganismo no banco de dados
 const createMicroorganismo = async (req, res) => {
   try {
     const { nome, descricao } = req.body;
+
     // Validação de campos obrigatórios
     if (!nome) {
       return res.status(400).json({ error: 'O campo nome é obrigatório.' });
@@ -47,7 +47,7 @@ const createMicroorganismo = async (req, res) => {
 };
 
 // Função assíncrona para buscar todos os microorganismos ativos no banco de dados
-const getMicroorganismo = async (req, res) => {
+const getMicroorganismos = async (req, res) => {
   try {
     // Busca apenas os microorganismos que estão ativos
     const microorganismos = await prisma.microorganismos.findMany({
@@ -64,6 +64,32 @@ const getMicroorganismo = async (req, res) => {
     res.status(500).json({ error: 'Erro ao buscar microorganismos.' });
   }
 };
+
+// Função assíncrona para buscar um microrganismo específico pelo ID
+const getMicroorganismoById = async (req, res) => {
+  try {
+    const { id } = req.params; // Obtém o ID dos parâmetros da requisição
+
+    // Recupera o microrganismo correspondente ao ID e verifica se está ativo
+    const microorganismo = await prisma.microorganismos.findFirst({
+      where: {
+        id: parseInt(id), // Converte o ID para inteiro
+        ativo: true, // Garante que o microrganismo está ativo
+      },
+    });
+
+    // Verifica se o microrganismo foi encontrado e está ativo
+    if (!microorganismo) {
+      return res.status(404).json({ error: 'Microrganismo não encontrado ou inativo' });
+    }
+
+    res.status(200).json(microorganismo);
+  } catch (error) {
+    console.error('Erro ao buscar microrganismo:', error);
+    res.status(500).json({ error: 'Erro ao buscar microrganismo.' });
+  }
+};
+
 
 // Função assíncrona para editar um microrganismo no banco de dados
 const updateMicroorganismo = async (req, res) => {
@@ -107,4 +133,9 @@ const updateMicroorganismo = async (req, res) => {
 };
 
 // Exporta a função para ser usada em outros módulos (como nas rotas)
-module.exports = { createMicroorganismo, getMicroorganismo, updateMicroorganismo};
+module.exports = { 
+  createMicroorganismo, 
+  getMicroorganismos, 
+  updateMicroorganismo,
+  getMicroorganismoById
+};

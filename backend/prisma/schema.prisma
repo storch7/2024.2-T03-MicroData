@@ -46,9 +46,6 @@ model LimitesContagem {
   pontos_avaliados_id Int
   microorganismos     Microorganismos @relation(fields: [microorganismos_id], references: [id])
   microorganismos_id  Int
-  ativo               Boolean         @default(true)
-  data_cadastro       DateTime
-  data_desativacao    DateTime?
   resultados          Resultados[]
 }
 
