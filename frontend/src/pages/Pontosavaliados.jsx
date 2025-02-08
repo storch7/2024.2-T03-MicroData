@@ -29,6 +29,7 @@ function PontosavaliadosPage() {
     const handleAdd = async (item) => {
         try {
             const newPontosAvaliados = await createPontoAvaliado(item);
+            console.log('Ponto avaliado criado:', newPontosAvaliados);
             setData([...data, newPontosAvaliados]);
         } catch (error) {
             console.error('Erro ao criar pontos avaliados:', error);
