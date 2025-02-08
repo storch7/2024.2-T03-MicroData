@@ -18,7 +18,7 @@ const ResultadosTable = ({ data, onEdit, onDelete }) => {
                     <TableRow>
                         <TableCell sx={{ textAlign: 'center', fontWeight: 'bold' }}>Local de Coleta</TableCell>
                         <TableCell sx={{ textAlign: 'center', fontWeight: 'bold' }}>Microgravismo</TableCell>
-                        <TableCell sx={{ textAlign: 'center', fontWeight: 'bold' }}>Corrigem</TableCell>
+                        <TableCell sx={{ textAlign: 'center', fontWeight: 'bold' }}>Contagem</TableCell>
                         <TableCell sx={{ textAlign: 'center', fontWeight: 'bold' }}>Data da Coleta</TableCell>
                         <TableCell sx={{ textAlign: 'center', fontWeight: 'bold' }}>Ações</TableCell>
                     </TableRow>
@@ -28,7 +28,7 @@ const ResultadosTable = ({ data, onEdit, onDelete }) => {
                         <TableRow key={index}>
                             <TableCell sx={{ textAlign: 'center' }}>{item.localColeta}</TableCell>
                             <TableCell sx={{ textAlign: 'center' }}>{item.microgravismo}</TableCell>
-                            <TableCell sx={{ textAlign: 'center' }}>{item.corrigem}</TableCell>
+                            <TableCell sx={{ textAlign: 'center' }}>{item.contagem}</TableCell>
                             <TableCell sx={{ textAlign: 'center' }}>{item.dataColeta}</TableCell>
                             <TableCell sx={{ textAlign: 'center' }}>
                                 <IconButton onClick={() => onEdit(item)} color="info">

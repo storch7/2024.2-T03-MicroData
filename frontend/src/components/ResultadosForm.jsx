@@ -5,12 +5,12 @@ import CustomButton from './Button';
 function ResultadosForm({ isEditing, setIsEditing, initialData, onUpdate, onCancel, onAdd }) {
     const [localColeta, setLocalColeta] = useState(initialData?.localColeta || "");
     const [microgravismo, setMicrogravismo] = useState(initialData?.microgravismo || "");
-    const [corrigem, setCorrigem] = useState(initialData?.corrigem || "");
+    const [contagem, setContagem] = useState(initialData?.contagem || "");
     const [dataColeta, setDataColeta] = useState(initialData?.dataColeta || "");
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        const data = { localColeta, microgravismo, corrigem, dataColeta };
+        const data = { localColeta, microgravismo, contagem, dataColeta };
         if (isEditing) {
             onUpdate(data);
         } else {
@@ -27,15 +27,15 @@ function ResultadosForm({ isEditing, setIsEditing, initialData, onUpdate, onCanc
                 fullWidth
             />
             <TextField
-                label="Microgravismo"
+                label="Microgranismo"
                 value={microgravismo}
                 onChange={(e) => setMicrogravismo(e.target.value)}
                 fullWidth
             />
             <TextField
-                label="Corrigem"
-                value={corrigem}
-                onChange={(e) => setCorrigem(e.target.value)}
+                label="Contagem"
+                value={contagem}
+                onChange={(e) => setContagem(e.target.value)}
                 fullWidth
             />
             <TextField
@@ -56,7 +56,7 @@ function ResultadosForm({ isEditing, setIsEditing, initialData, onUpdate, onCanc
                     <CustomButton text="Limpar" type="button" color="#B83226" variant="outlined" onClick={() => {
                         setLocalColeta('');
                         setMicrogravismo('');
-                        setCorrigem('');
+                        setContagem('');
                         setDataColeta('');
                     }} />
                     <CustomButton text="Cadastrar" type="submit" color="#B83226" variant="contained" />
