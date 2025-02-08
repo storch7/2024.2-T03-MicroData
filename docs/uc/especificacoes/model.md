@@ -13,7 +13,7 @@ VERSÃO 1.0
 
 ## 4. FLUXOS DE EXCEÇÃO
 
-### 4.1. FLUXO DE EXSCEÇÃO 1
+### 4.1. FLUXO DE EXCEÇÃO 1
 
 [...]
 
