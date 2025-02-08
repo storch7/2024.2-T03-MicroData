@@ -5,6 +5,7 @@ import PontosavaliadosForm from '../components/PontosavaliadosForm';
 import PontosavaliadosTable from '../components/PontosavaliadosTable';
 import { createPontoAvaliado, getPontosAvaliados, updatePontoAvaliado } from '../services/pontosavaliadosAPI';
 
+
 function PontosavaliadosPage() {
     const [data, setData] = useState([]);
     const [loading, setLoading] = useState(true);

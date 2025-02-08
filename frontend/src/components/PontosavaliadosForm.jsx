@@ -1,7 +1,11 @@
 import React, { useEffect, useState } from "react";
 import TextField from '@mui/material/TextField';
 import Box from '@mui/material/Box';
-import CustomButton from './Button'; 
+import CustomButton from './Button';
+import FormControl from '@mui/material/FormControl';
+import InputLabel from '@mui/material/InputLabel';
+import MenuItem from '@mui/material/MenuItem';
+import Select, { SelectChangeEvent } from '@mui/material/Select';
 
 function PontosavaliadosForm({ isEditing, setIsEditing, initialData, onUpdate, onCancel, onAdd }) {
     // Estados corretamente declarados
@@ -90,24 +94,44 @@ function PontosavaliadosForm({ isEditing, setIsEditing, initialData, onUpdate, o
                 onChange={(e) => setLocal(e.target.value)}
                 fullWidth
             />
-            <TextField
-                label="Frequência"
-                value={frequencia}
-                onChange={(e) => setFrequencia(e.target.value)}
-                fullWidth
-            />
-            <TextField
-                label="Zona"
-                value={zona}
-                onChange={(e) => setZona(e.target.value)}
-                fullWidth
-            />
-            <TextField
-                label="Zona Higiênica"
-                value={zonahigienica}
-                onChange={(e) => setZonahigienica(e.target.value)}
-                fullWidth
-            />
+
+            <FormControl sx={{ marginTop: '' }} fullWidth>
+                <InputLabel>Frequência</InputLabel>
+                <Select
+                    value={frequencia}
+                    onChange={(event: SelectChangeEvent) => setFrequencia(event.target.value)}
+                >
+                    <MenuItem value={"SEMANAL"}>Semanal</MenuItem>
+                    <MenuItem value={"QUINZENAL"}>Quinzenal</MenuItem>
+                    <MenuItem value={"MENSAL"}>Mensal</MenuItem>
+                </Select>
+            </FormControl>
+
+           <FormControl sx={{ marginTop: '' }} fullWidth>
+                <InputLabel>Zona</InputLabel>
+                <Select
+                    value={zona}
+                    onChange={(event: SelectChangeEvent) => setZona(event.target.value)}
+                >
+                    <MenuItem value={"ZONA_1"}>Zona 1</MenuItem>
+                    <MenuItem value={"ZONA_2"}>Zona 2</MenuItem>
+                    <MenuItem value={"ZONA_3"}>Zona 3</MenuItem>
+                    <MenuItem value={"ZONA_4"}>Zona 4</MenuItem>
+                </Select>
+            </FormControl>
+
+            <FormControl sx={{ marginTop: '' }} fullWidth>
+                <InputLabel>Zona Higiênica</InputLabel>
+                <Select
+                    value={zonahigienica}
+                    onChange={(event: SelectChangeEvent) => setZonahigienica(event.target.value)}
+                >
+                    <MenuItem value={"ALTO_RISCO"}>Alto Risco</MenuItem>
+                    <MenuItem value={"MEDIO_RISCO"}>Médio Risco</MenuItem>
+                    <MenuItem value={"BAIXO_RISCO"}>Baixo Risco</MenuItem>
+                </Select>
+            </FormControl>
+            
             <TextField
                 label="Método"
                 value={metodo}
