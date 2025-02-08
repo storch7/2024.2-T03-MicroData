@@ -112,7 +112,7 @@ Do total de PBI's identificados, 100% das histórias precisavam estar redigidas,
 
 ## Histórias de usuário com Critérios de Aceitação e BDD's
 
-### US-01: Eu como atendente ou cliente quero comunicar ocorridos entre as partes envolvidas, para uma comunicação mais efetiva.
+### US-01: Eu como atendente quero comunicar ocorridos entre as partes envolvidas, para uma comunicação mais efetiva.
 
 > Critérios de Aceitação:
 
@@ -142,7 +142,7 @@ Dado que o atendente entra em contato com o cliente pelo chat do aplicativo
 Quando seleciona o cliente em questão
 Então o sistema deve enviar uma mensagem ativa no aplicativo do cliente com o texto “Olá, aqui é o(a) atendente da Techfix! Gostaria de entrar em contato contigo”.
 
-### US-02 Eu como atendente ou cliente quero cadastrar o equipamento a ser reparado pelo técnico, para garantir especificações mais detalhadas.
+### US-02 Eu como atendente quero cadastrar o equipamento a ser reparado pelo técnico, para garantir especificações mais detalhadas.
 
 > Critérios de aceitação:
 
@@ -154,13 +154,13 @@ Então o sistema deve enviar uma mensagem ativa no aplicativo do cliente com o t
 
 > Cenários (BDD’s):
 
-**Cenário 1: O cliente ou atendente quer cadastrar um equipamento no sistema**
+**Cenário 1: O atendente quer cadastrar um equipamento no sistema**
 
 Dado que o cliente precisa cadastrar um equipamento a ser reparado no sistema
 Quando acessa a página de cadastro
 Então o sistema deve apresentar um formulário de cadastro com as informações de: nome, modelo, fabricante e número de série do aparelho.
 
-**Cenário 2: O cliente ou atendente tenta fazer o cadastro de aparelho não informa um dos dados do formulário**
+**Cenário 2: O atendente tenta fazer o cadastro de aparelho não informa um dos dados do formulário**
 
 Dado que o cliente ou atendente responde o formulaŕio de cadastro
 Quando não deixa informações em qualquer um dos campos
@@ -172,7 +172,7 @@ Dado que o cliente ou atendente responde o formulaŕio de cadastro
 Quando preenche todas as informações do formulário
 Então o sistema deve notificar o usuário com a informação “Aparelho cadastrado com sucesso” e realizar o registro dos dados no sistema.
 
-### US-03 Eu como atendente ou cliente quero registrar a solicitação de reparo para garantir que haja o correto registro de uma ocorrência.
+### US-03 Eu como atendente quero registrar a solicitação de reparo para garantir que haja o correto registro de uma ocorrência.
 
 > Critérios de Aceitação:
 
@@ -219,7 +219,7 @@ Dado que o atendente ou cliente preenche corretamente todos os campos obrigatór
 Quando ocorre uma falha no sistema 
 Então o sistema deve exibir uma mensagem "Erro ao registrar solicitação. Tente novamente mais tarde." E não deve registrar a solicitação.
 
-### US-04 Eu como atendente ou cliente quero acessar o histórico de solicitações de registros de reparo para facilitar a obtenção de informação.
+### US-04 Eu como atendente quero acessar o histórico de solicitações de registros de reparo para facilitar a obtenção de informação.
 
 > Critérios de Aceitação:
 
@@ -261,7 +261,7 @@ Quando ele tenta visualizar o histórico de agendamentos de reparo
 Então o sistema deve exibir uma mensagem de erro "Falha ao carregar histórico. Tente novamente mais tarde."
 
 
-### US-05 Eu como atendente ou cliente, quero modificar o a solicitaçõo de reparo para maior consistência das informações.
+### US-05 Eu como atendente quero modificar o a solicitaçõo de reparo para maior consistência das informações.
 
 > Critérios de Aceitação:
 
@@ -302,7 +302,7 @@ Quando ele deixa campos obrigatórios em branco
 Então o sistema deve exibir uma mensagem de erro "Todos os campos obrigatórios devem ser preenchidos." E não deve salvar a modificação.
 
 ## Histórias de Usuário com Critérios de Aceitação
-### US-06 Eu como atendente ou cliente, quero acompanhar o período de tempo que ainda falta para a conclusão de um atendimento para garantir que o serviço seja realizado no período de tempo adequado.
+### US-06 Eu como atendente quero acompanhar o período de tempo que ainda falta para a conclusão de um atendimento para garantir que o serviço seja realizado no período de tempo adequado.
 
 > Critérios de aceitação:
 
@@ -310,7 +310,7 @@ Então o sistema deve exibir uma mensagem de erro "Todos os campos obrigatórios
 - O cliente e o atendente devem poder visualizar essa informação em tempo real.
 - O tempo estimado deve ser baseado no SLA definido.
 
-### US-07 Eu como atendente ou cliente, quero acompanhar o período de tempo do SLA extrapolado para priorizar a realização de um serviço atrasado.
+### US-07 Eu como atendente quero acompanhar o período de tempo do SLA extrapolado para priorizar a realização de um serviço atrasado.
 
 > Critérios de aceitação:
 
@@ -418,6 +418,14 @@ Então o sistema deve exibir uma mensagem de erro "Todos os campos obrigatórios
 - US-32 Eu como diretora de operações, quero gerar relatórios de consumo de material utilizado nos atendimentos para facilitar a identificação de problemas e possíveis melhorias.
 - US-33 Eu como diretora de operações, quero visualizar as respostas das pesquisas de satisfação de atendimento, para identificação de problemas e possíveis melhorias.
 - US-34 Eu como diretora de operações quero gerar relatórios dos resultados das pesquisas de satisfação, para identificação de problemas e possíveis melhorias.
+- US-35: Eu como cliente corporativo quero comunicar ocorridos entre as partes envolvidas, para uma comunicação mais efetiva
+- US-36: Eu como cliente corporativo quero cadastrar o equipamento a ser reparado pelo técnico, para garantir especificações mais detalhadas.
+- US-37: Eu como cliente corporativo quero registrar a solicitação de reparo para garantir que haja o correto registro de uma ocorrência.
+- US-38: Eu como cliente corporativo quero acessar o histórico de solicitações de registros de reparo para facilitar a obtenção de informação.
+- US-39: Eu como cliente corporativo quero acessar o histórico de solicitações de registros de reparo para facilitar a obtenção de informação.
+- US-40: US-06 Eu como cliente corporativo quero acompanhar o período de tempo que ainda falta para a conclusão de um atendimento para garantir que o serviço seja realizado no período de tempo adequado.
+- US-41: Eu como cliente corporativo quero acompanhar o período de tempo do SLA extrapolado para priorizar a realização de um serviço atrasado.
+- US-42: Eu como cliente corporativo quero ser notificado periodicamente sobre a aproximação de tempo até o encerramento do prazo de SLA para garantir que o serviço seja realizado no período de tempo adequado.
 
 ## Referências
 
@@ -428,3 +436,4 @@ AGUIAR, Fábio. Product Backlog Building. Fábio Aguiar, 14 jun. 2021. Disponív
 | **Data**    | **Versão** | **Descrição** | **Autor** |
 | :--------: | :--------: | :--------:  | :--------: | 
 |      20/11/2024      |      1.0       |      Criação do documento       |     Breno Fernandes, Breno Lucena, Storch, João, Rafael e Renan     |
+|      08/02/2025      |      1.1       |      Correções Unidade 3       |     Storch     |
