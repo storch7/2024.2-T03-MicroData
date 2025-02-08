@@ -61,6 +61,15 @@ O digrama completo também pode ser encontrado na imagem abaixo:
 | Refugiado | Acessar mapa |
 | Refugiado | Traçar rota |
 | Refugiado | Verificar opções de transporte |
+| Agência Humanitária | Divulgar vagas de emprego |
+| Agência Humanitária | Divulgar locais de Abrigo |
+| Agência Humanitária | Divulgar programas de assistência médica |
+| Agência Humanitária | Gerenciar vagas |
+| Agência Humanitária | Anunciar vagas de trabalho |
+| Agência Humanitária | Apresentar programas de capacitação |
+| Agência Humanitária | Divulgar vagas de emprego |
+
+
 
 ## ESPECIFICAÇÕES DO CASO DE USO
 
