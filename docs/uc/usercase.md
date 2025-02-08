@@ -62,10 +62,13 @@ O digrama completo também pode ser encontrado na imagem abaixo:
 | Refugiado | Traçar rota |
 | Refugiado | Verificar opções de transporte |
 
-
-
-
 ## ESPECIFICAÇÕES DO CASO DE USO
 
 
 # REFERÊNCIAS
+
+1. **OMG (Object Management Group).** (2017). *Unified Modeling Language (UML) Specification*. Disponível em: https://www.omg.org/spec/UML/2.5/
+   
+2. **SOMMERVILLE, Ian.** (2011). *Engenharia de Software* (9ª ed.). São Paulo: Pearson Education do Brasil.
+
+3. **GOLDSCHMIDT, Marilda.** (2004). *Análise e Projeto de Sistemas Orientados a Objetos*. São Paulo: Editora Pearson.
