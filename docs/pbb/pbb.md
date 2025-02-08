@@ -412,12 +412,12 @@ Então o sistema deve exibir uma mensagem de erro "Todos os campos obrigatórios
 - US-26 Eu como técnico de campo, quero gerar um relatório com as informações dor atendimento para melhor gestão de informações.
 - US-27 Eu como diretora de operações, quero visualizar o status das atividades realizadas pelos membros da equipe de campo para maior acompanhamento das atividades em tempo real. 
 - US-28 Eu como diretora de operações, quero visualizar a contagem de SLA dos atendimentos para maior acompanhamento das atividades em tempo real. 
-- US-29 Eu como diretora de operações, quero gerar relatórios dos dados de SLA dos atendimentos, para facilitar a verificação de problemas pontuais.
-- US-30 Eu como diretora de operações, quero gerar relatórios dos detalhamentos dos atendimentos para facilitar a verificação de problemas pontuais.
-- US-31 Eu como diretora de operações, quero gerar relatórios de procedência datendimentos encerrados pelos técnicos de campo, para facilitar a verificação de problemas pontuais.
-- US-32 Eu como diretora de operações, quero gerar relatórios de consumo de material utilizado nos atendimentos para facilitar a identificação de problemas e possíveis melhorias.
+- US-29 Eu como diretora de operações, quero gerar um relatório dos dados de SLA dos atendimentos, para facilitar a verificação de problemas pontuais.
+- US-30 Eu como diretora de operações, quero gerar um relatório dos detalhamentos dos atendimentos para facilitar a verificação de problemas pontuais.
+- US-31 Eu como diretora de operações, quero gerar um relatório de procedência datendimentos encerrados pelos técnicos de campo, para facilitar a verificação de problemas pontuais.
+- US-32 Eu como diretora de operações, quero gerar um relatório de consumo de material utilizado nos atendimentos para facilitar a identificação de problemas e possíveis melhorias.
 - US-33 Eu como diretora de operações, quero visualizar as respostas das pesquisas de satisfação de atendimento, para identificação de problemas e possíveis melhorias.
-- US-34 Eu como diretora de operações quero gerar relatórios dos resultados das pesquisas de satisfação, para identificação de problemas e possíveis melhorias.
+- US-34 Eu como diretora de operações quero gerar um relatório dos resultados das pesquisas de satisfação, para identificação de problemas e possíveis melhorias.
 - US-35: Eu como cliente corporativo quero comunicar ocorridos entre as partes envolvidas, para uma comunicação mais efetiva
 - US-36: Eu como cliente corporativo quero cadastrar o equipamento a ser reparado pelo técnico, para garantir especificações mais detalhadas.
 - US-37: Eu como cliente corporativo quero registrar a solicitação de reparo para garantir que haja o correto registro de uma ocorrência.
