@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from "react";
-import CustomButton from '../components/Button';
 import TextField from '@mui/material/TextField';
 import Box from '@mui/material/Box';
+import CustomButton from './Button';
 
 
 function MicroorganismForm  ({ isEditing, setIsEditing, initialData, onUpdate, onCancel,  onAdd }) {

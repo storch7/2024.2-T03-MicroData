@@ -10,29 +10,37 @@ import EditIcon from '@mui/icons-material/Edit';
 import DeleteIcon from '@mui/icons-material/Delete';
 import Paper from '@mui/material/Paper';
 
+
 const PontosavaliadosTable = ({ data, onEdit, onDelete }) => {
     return (
         <TableContainer component={Paper} sx={{ marginTop: 2 }}>
             <Table>
                 <TableHead>
                     <TableRow>
-                        <TableCell sx={{ textAlign: 'justify', fontWeight: 'bold', textAlignLast: 'center' }}>Sala</TableCell>
-                        <TableCell sx={{ textAlign: 'justify', fontWeight: 'bold', textAlignLast: 'center' }}>Área</TableCell>
-                        <TableCell sx={{ textAlign: 'justify', fontWeight: 'bold', textAlignLast: 'center' }}>Local</TableCell>
-                        <TableCell sx={{ textAlign: 'justify', fontWeight: 'bold', textAlignLast: 'center' }}>Frequência</TableCell>
-                        <TableCell sx={{ textAlign: 'justify', fontWeight: 'bold', textAlignLast: 'center' }}>Zona</TableCell>
-                        <TableCell sx={{ textAlign: 'justify', fontWeight: 'bold', textAlignLast: 'center' }}>Zona Higiênica</TableCell>
-                        <TableCell sx={{ textAlign: 'justify', fontWeight: 'bold', textAlignLast: 'center' }}>Local ativo</TableCell>
-                        <TableCell sx={{ textAlign: 'justify', fontWeight: 'bold', textAlignLast: 'center' }}>Método</TableCell>
-                        <TableCell sx={{ textAlign: 'justify', fontWeight: 'bold', textAlignLast: 'center' }}>Descrição</TableCell>
-
+                        <TableCell sx={{ textAlign: 'center', fontWeight: 'bold' }}>Sala</TableCell>
+                        <TableCell sx={{ textAlign: 'center', fontWeight: 'bold' }}>Área</TableCell>
+                        <TableCell sx={{ textAlign: 'center', fontWeight: 'bold' }}>Local</TableCell>
+                        <TableCell sx={{ textAlign: 'center', fontWeight: 'bold' }}>Frequência</TableCell>
+                        <TableCell sx={{ textAlign: 'center', fontWeight: 'bold' }}>Zona</TableCell>
+                        <TableCell sx={{ textAlign: 'center', fontWeight: 'bold' }}>Zona Higiênica</TableCell>
+                        <TableCell sx={{ textAlign: 'center', fontWeight: 'bold' }}>Local ativo</TableCell>
+                        <TableCell sx={{ textAlign: 'center', fontWeight: 'bold' }}>Método</TableCell>
+                        <TableCell sx={{ textAlign: 'center', fontWeight: 'bold' }}>Descrição</TableCell>
+                        <TableCell sx={{ textAlign: 'center', fontWeight: 'bold' }}>Ações</TableCell>
                     </TableRow>
                 </TableHead>
                 <TableBody>
                     {data.map((item, index) => (
                         <TableRow key={index}>
-                            <TableCell sx={{ textAlign: 'center' }}>{item.nome}</TableCell>
-                            <TableCell sx={{ textAlign: 'center' }}>{item.descricao}</TableCell>
+                            <TableCell sx={{ textAlign: 'center' }}>{item.sala}</TableCell>
+                            <TableCell sx={{ textAlign: 'center' }}>{item.area}</TableCell>
+                            <TableCell sx={{ textAlign: 'center' }}>{item.local_processo}</TableCell>
+                            <TableCell sx={{ textAlign: 'center' }}>{item.frequencia}</TableCell>
+                            <TableCell sx={{ textAlign: 'center' }}>{item.zona_proximidade}</TableCell>
+                            <TableCell sx={{ textAlign: 'center' }}>{item.zona_higienico}</TableCell>
+                            <TableCell sx={{ textAlign: 'center' }}>{item.ativo ? 'Sim' : 'Não'}</TableCell>
+                            <TableCell sx={{ textAlign: 'center' }}>{item.metodo}</TableCell>
+                            <TableCell sx={{ textAlign: 'center' }}>{item.descricao || 'N/A'}</TableCell>
                             <TableCell sx={{ textAlign: 'center' }}>
                                 <IconButton onClick={() => onEdit(item)} color="info">
                                     <EditIcon />
@@ -44,6 +52,7 @@ const PontosavaliadosTable = ({ data, onEdit, onDelete }) => {
                         </TableRow>
                     ))}
                 </TableBody>
+
             </Table>
         </TableContainer>
     );
