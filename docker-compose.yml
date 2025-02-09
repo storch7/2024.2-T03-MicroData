@@ -49,7 +49,7 @@ services:
       - postgres
     networks:
       - microdata_network
-    entrypoint: ["/bin/sh", "-c", "npx prisma migrate dev && npm start"]
+    entrypoint: ["/bin/sh", "-c", "npx prisma migrate deploy && npm start"]
 
   frontend:
     build:
