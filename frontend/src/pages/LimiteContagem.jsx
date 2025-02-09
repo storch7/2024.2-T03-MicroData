@@ -60,30 +60,28 @@ function LimiteContagem() {
   };
 
   return (
-    <section>
-      <Container>
-        <Typography variant="h4" component="h1" gutterBottom>
-          Gerenciar Limite de Contagem
-        </Typography>
+    <Container sx={{ padding: 4 }}>
+      <Typography variant="h4" component="h1" gutterBottom>
+        Gerenciar Limite de Contagem
+      </Typography>
 
-        <LimiteContagemForm
-          isEditing={isEditing}
-          initialData={selectedLimite}
-          onAdd={handleAdd}
-          onUpdate={handleUpdate}
-          onCancel={() => {
-            setIsEditing(false);
-            setSelectedLimite(null);
-          }}
-        />
+      <LimiteContagemForm
+        isEditing={isEditing}
+        initialData={selectedLimite}
+        onAdd={handleAdd}
+        onUpdate={handleUpdate}
+        onCancel={() => {
+          setIsEditing(false);
+          setSelectedLimite(null);
+        }}
+      />
 
-        {loading ? (
-          <Typography variant="body1">Carregando...</Typography>
-        ) : (
-          <LimiteContagemTable data={data} onEdit={handleEdit} onDelete={handleDelete} />
-        )}
-      </Container>
-    </section>
+      {loading ? (
+        <Typography variant="body1">Carregando...</Typography>
+      ) : (
+        <LimiteContagemTable data={data} onEdit={handleEdit} onDelete={handleDelete} />
+      )}
+    </Container>
   );
 }
 
