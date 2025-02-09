@@ -29,9 +29,9 @@ function PontosavaliadosForm({ isEditing, setIsEditing, initialData, onUpdate, o
     ];
 
     const zonaHigienicaOptions = [
-        { id: "ALTO_RISCO", label: "Alto Risco" },
-        { id: "MEDIO_RISCO", label: "Médio Risco" },
         { id: "BAIXO_RISCO", label: "Baixo Risco" },
+        { id: "MEDIO_RISCO", label: "Médio Risco" },
+        { id: "ALTO_RISCO", label: "Alto Risco" },
     ];
 
     // Atualiza os estados quando initialData muda
