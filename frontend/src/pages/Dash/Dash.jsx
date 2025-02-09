@@ -11,6 +11,8 @@ function DashBoard() {
     const [dataMicro, setDataMicro] = useState([]);
     const [local, setLocal] = useState('');
     const [dataLocal, setDataLocal] = useState([]);
+    const [dataInicio, setDataInicio] = useState(null);
+    const [dataFim, setDataFim] = useState(null);
 
     const zonas = [
         { nome: "Zona 1", id: "ZONA_1" },
@@ -70,12 +72,16 @@ function DashBoard() {
                 <div className = "select">
                     <DatePicker 
                         label="Data Início"
+                        value = {dataInicio}
+                        onChange = {(e => setDataInicio(e))}
                     />
                 </div>
 
                 <div className = "select">
                     <DatePicker 
                         label="Data Fim"
+                        value = {dataFim}
+                        onChange = {(e => setDataFim(e))}
                     />
                 </div>
             </div>
