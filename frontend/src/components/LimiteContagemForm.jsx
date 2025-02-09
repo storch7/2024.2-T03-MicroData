@@ -18,16 +18,14 @@ function LimiteContagemForm() {
       // Fetch microorganisms data from API
       async function fetchMicroData() {
         const response = await getMicroorganism();
-        const data = await response.json();
-        setDataMicro(data);
+        setDataMicro(response);
       }
       fetchMicroData();
   
       // Fetch local data from API
       async function fetchLocalData() {
         const response = await getPontosAvaliados();
-        const data = await response.json();
-        setDataLocal(data);
+        setDataLocal(response);
       }
       fetchLocalData();
     }, []);
