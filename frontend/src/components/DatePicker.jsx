@@ -15,6 +15,7 @@ export default function DataSelect({ label, value, onChange, onBlur, erro }) {
         format="DD/MM/YYYY"
         onBlur={onBlur}
         error={erro}
+        sx= {{marginTop: '15px'}}
         renderInput={{
           textField: (params) => <TextField {...params} variant="filled" />,
     }}

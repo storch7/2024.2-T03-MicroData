@@ -84,13 +84,12 @@ function DashBoard() {
                         onChange = {(e => setDataFim(e))}
                     />
                 </div>
+                
+                <div className="button">
+                    <Button text="Filtrar" type="submit" color="#B83226" variant="contained" />
+                </div>
             </div>
-            <Button text="Filtrar" type="submit" color="#B83226" variant="contained" />
 
-            <div>
-
-
-            </div>
         </section>
     )
 }
