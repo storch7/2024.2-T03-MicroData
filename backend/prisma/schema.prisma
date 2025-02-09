@@ -42,7 +42,7 @@ model PontosAvaliados {
 
 model LimitesContagem {
   id                  Int             @id @default(autoincrement())
-  limites_contagem    String          @db.VarChar(45)
+  limites_contagem    Float           // Alterado de String para Float
   pontos_avaliados    PontosAvaliados @relation(fields: [pontos_avaliados_id], references: [id])
   pontos_avaliados_id Int
   microorganismos     Microorganismos @relation(fields: [microorganismos_id], references: [id])
@@ -53,13 +53,16 @@ model LimitesContagem {
   resultados          Resultados[]
 }
 
+
 model Resultados {
   idresultados        Int             @id @default(autoincrement())
   resultado_coleta    Float
   acao_corretiva      String?         @db.Text
-  data_cadastro       DateTime
   limites_contagem    LimitesContagem @relation(fields: [limites_contagem_id], references: [id])
   limites_contagem_id Int
+  ativo               Boolean
+  data_desativacao    DateTime?
+  data_cadastro       DateTime
 }
 
 enum Frequencia {

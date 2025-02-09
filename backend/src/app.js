@@ -1,48 +1,41 @@
-// Importa o módulo Express, que é um framework para construir aplicativos web e APIs no Node.js
-require("dotenv").config({path: '../../.env'});
+// Carrega variáveis de ambiente do arquivo .env
+require("dotenv").config({ path: '../../.env' });
+
 const express = require('express');
 const cors = require('cors');
 
-// Cria uma instância da aplicação Express
+// Cria a aplicação Express
 const app = express();
 
-// Middleware para parsing de JSON:
-// Este middleware integrado ao Express é usado para analisar o corpo das requisições (request body) como JSON.
-// Ele transforma o corpo da requisição em um objeto JavaScript acessível via req.body.
-// Exemplo: uma requisição com um JSON no body será transformada em um objeto para fácil manipulação.
+// Middleware para permitir JSON no corpo das requisições
 app.use(express.json());
 
+// Configuração do CORS (permite requisições de diferentes origens)
 const corsOptions = {
-  origin: process.env.CORS_ORIGIN,
-  methods: ['GET', 'POST', 'PUT', 'DELETE'],
-  allowedHeaders: ['Content-Type', 'Authorization'],
+  origin: process.env.CORS_ORIGIN, // Define a origem permitida para requisições
+  methods: ['GET', 'POST', 'PUT', 'DELETE'], // Métodos HTTP permitidos
+  allowedHeaders: ['Content-Type', 'Authorization'], // Cabeçalhos permitidos
 };
 
 console.log('CORS_ORIGIN:', process.env.CORS_ORIGIN);
 app.use(cors(corsOptions));
 
-// Importa as rotas relacionadas a "microorganismos" do arquivo de rotas
-// Este arquivo define todas as rotas e lógicas para manipular dados de microorganismos (ex.: criar, listar, etc.).
+// Importa as rotas de diferentes entidades
 const microorganismosRoutes = require('./routes/microorganismosRoutes');
-
-// Importa as rotas relacionadas a "Pontos Avaliados"
 const pontosAvaliadosRoutes = require('./routes/pontosAvaliadosRoutes');
-
 const limitesContagemRoutes = require('./routes/limitesContagemRoutes');
+const resultadosRoutes = require('./routes/resultadosRoutes');
 
-// Associa as rotas importadas ao caminho base "/api/pontosavaliados"
+// Define os caminhos base para cada grupo de rotas
 app.use('/api/pontosavaliados', pontosAvaliadosRoutes);
-// Associa as rotas importadas ao caminho base "/api/microorganismos"
-// Todas as rotas definidas no arquivo microorganismosRoutes serão acessíveis a partir deste caminho base.
-// Exemplo: uma rota GET definida como "/" no arquivo microorganismosRoutes será acessada como "/api/microorganismos".
 app.use('/api/microorganismos', microorganismosRoutes);
-
 app.use('/api/limitescontagem', limitesContagemRoutes);
+app.use('/api/resultados', resultadosRoutes);
 
+// Rota principal para testar se o servidor está rodando
 app.get('/', (req, res) => {
   res.send("Está funcionando!");
 });
 
-// Exporta a instância do aplicativo Express para que ela possa ser utilizada em outro arquivo
-// Geralmente, este arquivo é importado no "server.js" para inicializar o servidor.
+// Exporta a aplicação para ser usada no servidor principal
 module.exports = app;
