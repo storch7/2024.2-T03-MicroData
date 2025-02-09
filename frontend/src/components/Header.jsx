@@ -9,7 +9,7 @@ const useStyles = makeStyles({
     marginRight: 10,
   },
   navLink: {
-    color: "#fff",
+    color: "#fff !important",
     margin: "0 10px",
     textTransform: "none",
   },
