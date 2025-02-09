@@ -44,9 +44,6 @@ model LimitesContagem {
   limites_contagem    String          @db.VarChar(45)
   pontos_avaliados    PontosAvaliados @relation(fields: [pontos_avaliados_id], references: [id])
   pontos_avaliados_id Int
-  ativo               Boolean
-  data_cadastro       DateTime
-  data_desativacao    DateTime?
   microorganismos     Microorganismos @relation(fields: [microorganismos_id], references: [id])
   microorganismos_id  Int
   ativo               Boolean
