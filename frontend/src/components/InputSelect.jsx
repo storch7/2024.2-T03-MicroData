@@ -2,7 +2,7 @@ import React from 'react';
 import TextField from '@mui/material/TextField';
 import MenuItem from '@mui/material/MenuItem';
 
-export default function InputSelect({ label, items, value, onChange, helperText }) {
+export default function InputSelect({ label, items, value, onChange, displayField}) {
   return (
     <TextField
       select
@@ -16,7 +16,7 @@ export default function InputSelect({ label, items, value, onChange, helperText 
       {items && items.length > 0 ? (
         items.map((item) => (
           <MenuItem key={item.id} value={item.id}>
-            {item.nome}
+            {item[displayField]}
           </MenuItem>
         ))
       ) : (

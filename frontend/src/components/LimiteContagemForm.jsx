@@ -85,13 +85,15 @@ function LimiteContagemForm() {
                     value={microorganismo}
                     onChange={(event) => setMicroorganismo(event.target.value)}
                     items={dataMicro}
+                    displayField={'nome'}
                 />
 
                 <InputSelect
-                    label="Local"
+                    label="Local da Coleta"
                     value={local}
                     onChange={(event) => setLocal(event.target.value)}
                     items={dataLocal}
+                    displayField={'local_processo'}
                 />
 
                 {/* Campo de texto para limite de contagem */}
