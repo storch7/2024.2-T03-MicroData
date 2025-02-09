@@ -2,21 +2,37 @@ import React, { useEffect, useState } from "react";
 import TextField from '@mui/material/TextField';
 import Box from '@mui/material/Box';
 import CustomButton from './Button';
-import FormControl from '@mui/material/FormControl';
-import InputLabel from '@mui/material/InputLabel';
-import MenuItem from '@mui/material/MenuItem';
-import Select, { SelectChangeEvent } from '@mui/material/Select';
+import InputSelect from './InputSelect';
 
 function PontosavaliadosForm({ isEditing, setIsEditing, initialData, onUpdate, onCancel, onAdd }) {
-    // Estados corretamente declarados
     const [sala, setSala] = useState(initialData?.sala || "");
     const [area, setArea] = useState(initialData?.area || "");
-    const [local, setLocal] = useState(initialData?.local_processo || ""); // Corrigido para local_processo
+    const [local, setLocal] = useState(initialData?.local_processo || "");
     const [frequencia, setFrequencia] = useState(initialData?.frequencia || "");
-    const [zona, setZona] = useState(initialData?.zona_proximidade || ""); // Corrigido para zona_proximidade
-    const [zonahigienica, setZonahigienica] = useState(initialData?.zona_higienico || ""); // Corrigido para zona_higienico
+    const [zona, setZona] = useState(initialData?.zona_proximidade || "");
+    const [zonahigienica, setZonahigienica] = useState(initialData?.zona_higienico || "");
     const [metodo, setMetodo] = useState(initialData?.metodo || "");
-    const [descricao, setDescricao] = useState(initialData?.descricao || ""); // Corrigido para descricao
+    const [descricao, setDescricao] = useState(initialData?.descricao || "");
+
+    // Opções para os campos de seleção
+    const frequenciaOptions = [
+        { id: 'SEMANAL', label: 'Semanal' },
+        { id: 'QUINZENAL', label: 'Quinzenal' },
+        { id: 'MENSAL', label: 'Mensal' },
+    ];
+
+    const zonaOptions = [
+        { id: "ZONA_1", label: "Zona 1" },
+        { id: "ZONA_2", label: "Zona 2" },
+        { id: "ZONA_3", label: "Zona 3" },
+        { id: "ZONA_4", label: "Zona 4" },
+    ];
+
+    const zonaHigienicaOptions = [
+        { id: "ALTO_RISCO", label: "Alto Risco" },
+        { id: "MEDIO_RISCO", label: "Médio Risco" },
+        { id: "BAIXO_RISCO", label: "Baixo Risco" },
+    ];
 
     // Atualiza os estados quando initialData muda
     useEffect(() => {
@@ -37,7 +53,7 @@ function PontosavaliadosForm({ isEditing, setIsEditing, initialData, onUpdate, o
         e.preventDefault();
     
         // Validação dos campos obrigatórios
-        if (!sala.trim() || !area.trim() || !local.trim() || !frequencia.trim() || !zona.trim() || !zonahigienica.trim() || !metodo.trim()) {
+        if (!sala.trim() || !area.trim() || !local.trim() || !frequencia.trim() || !zona || !zonahigienica || !metodo.trim()) {
             alert("Preencha todos os campos obrigatórios.");
             return;
         }
@@ -94,44 +110,33 @@ function PontosavaliadosForm({ isEditing, setIsEditing, initialData, onUpdate, o
                 onChange={(e) => setLocal(e.target.value)}
                 fullWidth
             />
+            <InputSelect
+                label="Frequência"
+                items={frequenciaOptions} // e.g., [{ id: 'SEMANAL', label: 'Semanal' }, { id: 'QUINZENAL', label: 'Quinzenal' }, { id: 'MENSAL', label: 'Mensal' }]
+                value={frequencia}
+                onChange={(e) => setFrequencia(e.target.value)}
+                displayField="label"
+                margin="small"
+            />
 
-            <FormControl sx={{ marginTop: '' }} fullWidth>
-                <InputLabel>Frequência</InputLabel>
-                <Select
-                    value={frequencia}
-                    onChange={(event) => setFrequencia(event.target.value)}
-                >
-                    <MenuItem value={"SEMANAL"}>Semanal</MenuItem>
-                    <MenuItem value={"QUINZENAL"}>Quinzenal</MenuItem>
-                    <MenuItem value={"MENSAL"}>Mensal</MenuItem>
-                </Select>
-            </FormControl>
+            <InputSelect
+                label="Zona"
+                items={zonaOptions}
+                value={zona}
+                onChange={(e) => setZona(e.target.value)}
+                displayField="label"
+                margin="small"
+            />
 
-           <FormControl sx={{ marginTop: '' }} fullWidth>
-                <InputLabel>Zona</InputLabel>
-                <Select
-                    value={zona}
-                    onChange={(event) => setZona(event.target.value)}
-                >
-                    <MenuItem value={"ZONA_1"}>Zona 1</MenuItem>
-                    <MenuItem value={"ZONA_2"}>Zona 2</MenuItem>
-                    <MenuItem value={"ZONA_3"}>Zona 3</MenuItem>
-                    <MenuItem value={"ZONA_4"}>Zona 4</MenuItem>
-                </Select>
-            </FormControl>
+            <InputSelect
+                label="Zona Higiênica"
+                items={zonaHigienicaOptions}
+                value={zonahigienica}
+                onChange={(e) => setZonahigienica(e.target.value)}
+                displayField="label"
+                margin="small"
+            />
 
-            <FormControl sx={{ marginTop: '' }} fullWidth>
-                <InputLabel>Zona Higiênica</InputLabel>
-                <Select
-                    value={zonahigienica}
-                    onChange={(event) => setZonahigienica(event.target.value)}
-                >
-                    <MenuItem value={"ALTO_RISCO"}>Alto Risco</MenuItem>
-                    <MenuItem value={"MEDIO_RISCO"}>Médio Risco</MenuItem>
-                    <MenuItem value={"BAIXO_RISCO"}>Baixo Risco</MenuItem>
-                </Select>
-            </FormControl>
-            
             <TextField
                 label="Método"
                 value={metodo}
