@@ -1,16 +1,21 @@
 import React, { useState, useEffect } from 'react';
 import Container from '@mui/material/Container';
 import Typography from '@mui/material/Typography';
+import Dialog from '@mui/material/Dialog';
+import DialogTitle from '@mui/material/DialogTitle';
+import DialogContent from '@mui/material/DialogContent';
+import DialogActions from '@mui/material/DialogActions';
+import Button from '@mui/material/Button';
 import PontosavaliadosForm from '../components/PontosavaliadosForm';
 import PontosavaliadosTable from '../components/PontosavaliadosTable';
 import { createPontoAvaliado, getPontosAvaliados, updatePontoAvaliado } from '../services/pontosavaliadosAPI';
-
 
 function PontosavaliadosPage() {
     const [data, setData] = useState([]);
     const [loading, setLoading] = useState(true);
     const [isEditing, setIsEditing] = useState(false);
     const [selectedPontosAvaliados, setSelectedPontosAvaliados] = useState(null);
+    const [itemToDelete, setItemToDelete] = useState(null); // state for deletion confirmation
 
     useEffect(() => {
         const fetchData = async () => {
@@ -29,11 +34,10 @@ function PontosavaliadosPage() {
 
     const handleAdd = async (item) => {
         try {
-            const newPontosAvaliados = await createPontoAvaliado(item);
-            console.log('Ponto avaliado criado:', newPontosAvaliados);
-            setData([...data, newPontosAvaliados]);
+            const newItem = await createPontoAvaliado(item);
+            setData([...data, newItem]);
         } catch (error) {
-            console.error('Erro ao criar pontos avaliados:', error);
+            console.error('Erro ao criar ponto avaliado:', error);
         }
     };
 
@@ -53,8 +57,21 @@ function PontosavaliadosPage() {
         }
     };
 
+    // Open deletion confirmation modal instead of deleting immediately
     const handleDelete = (item) => {
-        setData(data.filter((i) => i !== item));
+        setItemToDelete(item);
+    };
+
+    // Called when user confirms deletion in the modal
+    const handleConfirmDelete = async () => {
+        try {
+            await updatePontoAvaliado(itemToDelete.id, { ativo: false });
+            setData(data.filter((i) => i.id !== itemToDelete.id));
+        } catch (error) {
+            console.error('Erro ao deletar ponto avaliado:', error);
+        } finally {
+            setItemToDelete(null);
+        }
     };
 
     return (
@@ -69,11 +86,24 @@ function PontosavaliadosPage() {
                 onUpdate={handleUpdate}
                 onCancel={() => { setIsEditing(false); setSelectedPontosAvaliados(null); }}
             />
+
             {loading ? (
                 <Typography variant="body1">Carregando...</Typography>
             ) : (
                 <PontosavaliadosTable data={data} onEdit={handleEdit} onDelete={handleDelete} />
             )}
+
+            {/* Confirmation Modal */}
+            <Dialog open={!!itemToDelete} onClose={() => setItemToDelete(null)}>
+                <DialogTitle>Confirmar Exclusão</DialogTitle>
+                <DialogContent>
+                    Tem certeza que deseja deletar este ponto avaliado?
+                </DialogContent>
+                <DialogActions>
+                    <Button onClick={() => setItemToDelete(null)}>Cancelar</Button>
+                    <Button onClick={handleConfirmDelete} color="error">Deletar</Button>
+                </DialogActions>
+            </Dialog>
         </Container>
     );
 }
