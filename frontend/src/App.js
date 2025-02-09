@@ -4,7 +4,7 @@ import Header from './components/Header';
 import MicroorganismPage from './pages/Microorganism';
 import PontosavaliadosPage from './pages/Pontosavaliados';
 import LimiteContagemPage from './pages/LimiteContagem';
-import DashBoard from './pages/Dash';
+import DashBoard from './pages/Dash/Dash';
 
 
 function App() {

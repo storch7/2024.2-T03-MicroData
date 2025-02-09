@@ -16,7 +16,7 @@ export default function InputSelect({ label, items, value, onChange, helperText 
       {items && items.length > 0 ? (
         items.map((item) => (
           <MenuItem key={item.id} value={item.id}>
-            {item.nome}
+            {item.nome || item.local_processo}
           </MenuItem>
         ))
       ) : (
