@@ -67,7 +67,12 @@ O digrama completo também pode ser encontrado na imagem abaixo:
 | Agência Humanitária | Gerenciar vagas |
 | Agência Humanitária | Anunciar vagas de trabalho |
 | Agência Humanitária | Apresentar programas de capacitação |
-
+| Empregadores Parceiros | Organizar entrevistas e processos seletivos |
+| Empregadores Parceiros | Publicar vagas de emprego e programas de capacitação|
+| Empregadores Parceiros | Receber candidaturas de refugiados |
+| Empregadores Parceiros | Acompanhar desempenho de contratados |
+| Administradores do Sistema | Manter a segurança do sistema |
+| Administradores do Sistema | Analisar métricas de desempenho e uso|
 
 ## ESPECIFICAÇÕES DO CASO DE USO
 
@@ -75,12 +80,16 @@ O digrama completo também pode ser encontrado na imagem abaixo:
 
 | **Persona** | **Caso de Uso** | **Descrição** |
 |---------|------------|-------------|
-| Agência Humanitária | Divulgar vagas de emprego | Permitir que a agência publique oportunidades de trabalho para a comunidade. |
+| Agência Humanitária | Divulgar vagas de emprego | Permitir que a agência publique oportunidades de trabalho para a comunidade.  |
 | Agência Humanitária | Divulgar locais de Abrigo | Fornecer informações sobre abrigos disponíveis para pessoas em situação de vulnerabilidade. |
 | Agência Humanitária | Divulgar programas de assistência médica | Informar a população sobre programas de saúde acessíveis. |
 | Agência Humanitária | Gerenciar vagas | Administrar e atualizar informações sobre vagas de emprego e programas sociais. |
 | Agência Humanitária | Anunciar vagas de trabalho | Publicar oportunidades de emprego para beneficiar a comunidade. |
 | Agência Humanitária | Apresentar programas de capacitação | Divulgar cursos e treinamentos para desenvolvimento profissional. |
+| Empregadores Parceiros | Organizar entrevistas e processos seletivos | Os empregadores parceiros podem organizar entrevistas e estruturar processos seletivos para candidatos refugiados dentro da plataforma.Isso torna a seleção mais ágil, melhora a experiência dos envolvidos e aumenta a taxa de contratação de refugiados|
+| Empregadores Parceiros | Publicar vagas de emprego e programas de capacitação| Os empregadores parceiros podem divulgar oportunidades de emprego e programas de capacitação voltados para refugiados, ampliando o alcance dessas iniciativas. Isso resulta em um maior preenchimento das vagas por candidatos qualificados e promove a capacitação profissional, facilitando a inclusão no mercado de trabalho.|
+| Empregadores Parceiros | Receber candidaturas de refugiados | Os empregadores parceiros podem visualizar e gerenciar as candidaturas enviadas pelos refugiados para as vagas publicadas, o que facilitará a triagem e o gerenciamento dessas candidaturas. Isso resultará em maior eficiência no recrutamento, melhor compatibilidade entre vagas e candidatos, redução do tempo para preencher as posições e aumento da transparência no processo seletivo.|
+| Empregadores Parceiros | Acompanhar desempenho de contratados | Os empregadores poderão utilizar a plataforma para monitorar o progresso dos funcionários, acompanhando seu desempenho e adaptação ao novo ambiente de trabalho. Isso contribuirá para o desenvolvimento contínuo dos colaboradores, resultando em maior satisfação tanto para os empregadores quanto para os refugiados contratados, além de fortalecer a inclusão dentro da empresa.|
 
 
 
