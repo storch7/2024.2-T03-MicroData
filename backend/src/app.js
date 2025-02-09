@@ -30,7 +30,6 @@ const pontosAvaliadosRoutes = require('./routes/pontosAvaliadosRoutes');
 
 const limitesContagemRoutes = require('./routes/limitesContagemRoutes');
 
-
 // Associa as rotas importadas ao caminho base "/api/pontosavaliados"
 app.use('/api/pontosavaliados', pontosAvaliadosRoutes);
 // Associa as rotas importadas ao caminho base "/api/microorganismos"
@@ -39,8 +38,6 @@ app.use('/api/pontosavaliados', pontosAvaliadosRoutes);
 app.use('/api/microorganismos', microorganismosRoutes);
 
 app.use('/api/limitescontagem', limitesContagemRoutes);
-
-
 
 app.get('/', (req, res) => {
   res.send("Está funcionando!");

@@ -49,6 +49,9 @@ model LimitesContagem {
   data_desativacao    DateTime?
   microorganismos     Microorganismos @relation(fields: [microorganismos_id], references: [id])
   microorganismos_id  Int
+  ativo               Boolean
+  data_cadastro       DateTime
+  data_desativacao    DateTime?
   resultados          Resultados[]
 }
 
