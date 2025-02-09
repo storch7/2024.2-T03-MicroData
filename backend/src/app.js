@@ -28,6 +28,8 @@ const microorganismosRoutes = require('./routes/microorganismosRoutes');
 // Importa as rotas relacionadas a "Pontos Avaliados"
 const pontosAvaliadosRoutes = require('./routes/pontosAvaliadosRoutes');
 
+const limitesContagemRoutes = require('./routes/limitesContagemRoutes');
+
 
 // Associa as rotas importadas ao caminho base "/api/pontosavaliados"
 app.use('/api/pontosavaliados', pontosAvaliadosRoutes);
@@ -35,6 +37,8 @@ app.use('/api/pontosavaliados', pontosAvaliadosRoutes);
 // Todas as rotas definidas no arquivo microorganismosRoutes serão acessíveis a partir deste caminho base.
 // Exemplo: uma rota GET definida como "/" no arquivo microorganismosRoutes será acessada como "/api/microorganismos".
 app.use('/api/microorganismos', microorganismosRoutes);
+
+app.use('/api/limitescontagem', limitesContagemRoutes);
 
 
 
