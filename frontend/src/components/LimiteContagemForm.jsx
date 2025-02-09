@@ -7,7 +7,7 @@ import { getPontosAvaliados } from '../services/pontosavaliadosAPI';
 import { createLimiteContagem } from '../services/limitecontagemAPI';
 import InputSelect from './InputSelect';
 
-function LimiteContagemForm() {
+function LimiteContagemForm({ onAdd, onUpdate, isEditing }) {
     const [microorganismo, setMicroorganismo] = useState('');
     const [local, setLocal] = useState('');
     const [dataMicro, setDataMicro] = useState([]);
@@ -40,7 +40,6 @@ function LimiteContagemForm() {
 
     const handleSubmit = async (e) => {
         e.preventDefault();
-        // Check if all fields are filled
         if (!microorganismo || !local || !limiteContagem) {
           alert("Por favor, preencha todos os campos.");
           return;
@@ -52,17 +51,15 @@ function LimiteContagemForm() {
           microorganismos_id: microorganismo,
         };
     
-        try {
-          await createLimiteContagem(data);
-          alert("Limite de contagem cadastrado com sucesso.");
-          // Reset form fields
-          setMicroorganismo('');
-          setLocal('');
-          setLimiteContagem('');
-        } catch (error) {
-          console.error("Erro ao criar limite de contagem", error);
-          alert("Ocorreu um erro ao criar o limite de contagem.");
+        if(isEditing) {
+          onUpdate(data);
+        } else {
+          onAdd(data);
         }
+
+        setMicroorganismo('');
+        setLocal('');
+        setLimiteContagem('');
       };
 
     return (
