@@ -99,7 +99,7 @@ function PontosavaliadosForm({ isEditing, setIsEditing, initialData, onUpdate, o
                 <InputLabel>Frequência</InputLabel>
                 <Select
                     value={frequencia}
-                    onChange={(event: SelectChangeEvent) => setFrequencia(event.target.value)}
+                    onChange={(event) => setFrequencia(event.target.value)}
                 >
                     <MenuItem value={"SEMANAL"}>Semanal</MenuItem>
                     <MenuItem value={"QUINZENAL"}>Quinzenal</MenuItem>
@@ -111,7 +111,7 @@ function PontosavaliadosForm({ isEditing, setIsEditing, initialData, onUpdate, o
                 <InputLabel>Zona</InputLabel>
                 <Select
                     value={zona}
-                    onChange={(event: SelectChangeEvent) => setZona(event.target.value)}
+                    onChange={(event) => setZona(event.target.value)}
                 >
                     <MenuItem value={"ZONA_1"}>Zona 1</MenuItem>
                     <MenuItem value={"ZONA_2"}>Zona 2</MenuItem>
@@ -124,7 +124,7 @@ function PontosavaliadosForm({ isEditing, setIsEditing, initialData, onUpdate, o
                 <InputLabel>Zona Higiênica</InputLabel>
                 <Select
                     value={zonahigienica}
-                    onChange={(event: SelectChangeEvent) => setZonahigienica(event.target.value)}
+                    onChange={(event) => setZonahigienica(event.target.value)}
                 >
                     <MenuItem value={"ALTO_RISCO"}>Alto Risco</MenuItem>
                     <MenuItem value={"MEDIO_RISCO"}>Médio Risco</MenuItem>
