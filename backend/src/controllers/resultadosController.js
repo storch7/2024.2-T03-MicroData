@@ -149,4 +149,65 @@ const updateResultado = async (req, res) => {
     }
 };
 
-module.exports = { createResultado, getResultado, updateResultado };
+// Função assíncrona para buscar resultados filtrados para o gráfico
+const getResultadosGrafico = async (req, res) => {
+    try {
+        const { pontos_avaliados_id, microorganismos_id, zona_higienico, data_inicio, data_fim } = req.body;
+
+        // Valida os campos obrigatórios
+        if (!pontos_avaliados_id || !microorganismos_id) {
+            return res.status(400).json({ error: 'Os campos pontos_avaliados_id e microorganismos_id são obrigatórios.' });
+        }
+
+        // Pelo menos uma data deve ser informada
+        if (!data_inicio && !data_fim) {
+            return res.status(400).json({ error: 'É necessário informar pelo menos uma data (data_inicio ou data_fim).' });
+        }
+
+        // Monta a condição de busca dinamicamente
+        const whereClause = {
+            ativo: true, // Apenas resultados ativos
+            limites_contagem: {
+                ativo: true, // Apenas limites de contagem ativos
+                pontos_avaliados_id,
+                microorganismos_id,
+                pontos_avaliados: {
+                    ativo: true, // Apenas pontos avaliados ativos
+                    zona_higienico: zona_higienico || undefined
+                },
+                microorganismos: {
+                    ativo: true // Apenas microrganismos ativos
+                }
+            },
+            data_cadastro: {
+                gte: data_inicio ? new Date(data_inicio) : undefined,
+                lte: data_fim ? new Date(data_fim) : undefined
+            }
+        };
+
+        // Busca os resultados aplicando os filtros
+        const resultados = await prisma.resultados.findMany({
+            where: whereClause,
+            include: {
+                limites_contagem: true
+            },
+            orderBy: {
+                data_cadastro: 'asc' // Ordena por data para criar a linha do gráfico
+            }
+        });
+
+        // Formata os dados para o gráfico
+        const dadosGrafico = resultados.map((resultado) => ({
+            data: resultado.data_cadastro.toISOString().split('T')[0], // Apenas a data (YYYY-MM-DD)
+            contagem: resultado.resultado_coleta,
+            limite_contagem: resultado.limites_contagem.limites_contagem
+        }));
+
+        res.status(200).json(dadosGrafico);
+    } catch (error) {
+        console.error('Erro ao buscar resultados para gráfico:', error);
+        res.status(500).json({ error: 'Erro ao buscar resultados.' });
+    }
+};
+
+module.exports = { createResultado, getResultado, updateResultado, getResultadosGrafico };
