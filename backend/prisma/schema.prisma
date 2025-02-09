@@ -33,6 +33,7 @@ model PontosAvaliados {
   frequencia       Frequencia
   zona_proximidade ZonaProximidade
   zona_higienico   ZonaHigienico
+  descricao        String?
   ativo            Boolean
   data_cadastro    DateTime
   data_desativacao DateTime?

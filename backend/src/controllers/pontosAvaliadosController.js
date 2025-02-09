@@ -12,7 +12,9 @@ const createPontoAvaliado = async (req, res) => {
       frequencia,
       zona_proximidade,
       zona_higienico,
+      descricao,
       data_desativacao,
+      
     } = req.body;
 
     // Validação básica para campos obrigatórios
@@ -62,6 +64,7 @@ const createPontoAvaliado = async (req, res) => {
         frequencia,
         zona_proximidade,
         zona_higienico,
+        descricao,
         ativo: true, // Definindo ativo como true por padrão
         data_cadastro: new Date(), // Gerando automaticamente a data atual
         data_desativacao: data_desativacao ? new Date(data_desativacao) : null,
@@ -84,7 +87,6 @@ const getPontosAvaliados = async (req, res) => {
         ativo: true, // Filtra apenas os pontos com ativo = true
       },
     });
-
     res.status(200).json(pontos);
   } catch (error) {
     console.error('Erro ao buscar pontos avaliados:', error);
@@ -130,6 +132,7 @@ const updatePontoAvaliado = async (req, res) => {
       frequencia,
       zona_proximidade,
       zona_higienico,
+      descricao,
       ativo,
     } = req.body;
 
@@ -160,6 +163,7 @@ const updatePontoAvaliado = async (req, res) => {
         frequencia,
         zona_proximidade,
         zona_higienico,
+        descricao,
         ativo,
         data_desativacao,
       },
