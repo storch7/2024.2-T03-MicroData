@@ -27,13 +27,17 @@ export const getResultado = async () => {
 };
 
 // GET: Obter resultados filtrados para o gráfico
-export const getResultadosGrafico = async (filters) => {
+export const getResultadosGrafico = async (data) => {
   try {
-    const response = await axios.post(API_BASE_URL + "resultados/grafico", filters);
-    return response.data;
+      const response = await axios.post(`${API_BASE_URL}resultados/grafico`, data, {
+          headers: {
+              'Content-Type': 'application/json', // Define o cabeçalho
+          },
+      });
+      return response.data;
   } catch (error) {
-    console.error('Erro ao buscar resultados para gráfico:', error);
-    throw error;
+      console.error('Erro ao buscar resultados para gráfico:', error);
+      throw error;
   }
 };
 

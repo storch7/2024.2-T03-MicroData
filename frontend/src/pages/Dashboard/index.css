@@ -44,3 +44,11 @@
     width: 80%;
     margin: 3rem
 }
+
+.dataBox{
+    width:10rem;
+    height: 10rem;
+    background-color: red;
+    border: 1px solid black;
+    border-radius: 15px;
+}

@@ -23,6 +23,11 @@ ChartJS.register(
 );
 
 const LineChart = ({ data }) => {
+  // Extrai as datas, contagens e limites do JSON recebido
+  const labels = data.map(item => item.data); // Extrai as datas para o eixo X
+  const contagens = data.map(item => item.contagem); // Extrai as contagens para o eixo Y
+  const limites = data.map(item => item.limite_contagem); // Extrai os limites para o eixo Y
+
   const options = {
     responsive: true,
     plugins: {
@@ -37,13 +42,19 @@ const LineChart = ({ data }) => {
   };
 
   const chartData = {
-    labels: data.labels,
+    labels: labels, // Usa as datas como rótulos do eixo X
     datasets: [
       {
-        label: 'Dados do Backend',
-        data: data.values,
-        borderColor: 'rgb(75, 192, 192)',
-        tension: 0.1,
+        label: 'Contagem', // Nome da primeira linha (contagem)
+        data: contagens, // Dados da contagem
+        borderColor: 'rgb(75, 192, 192)', // Cor da linha de contagem
+        tension: 0.1, // Suavização da linha
+      },
+      {
+        label: 'Limite de Contagem', // Nome da segunda linha (limite)
+        data: limites, // Dados do limite de contagem
+        borderColor: 'rgb(255, 99, 132)', // Cor da linha de limite
+        tension: 0.1, // Suavização da linha
       },
     ],
   };

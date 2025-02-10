@@ -6,6 +6,7 @@ import { getPontosAvaliados } from '../../services/pontosavaliadosAPI';
 import TextField from '@mui/material/TextField';
 import CustomButton from '../../components/Button';
 import LineChart from '../../components/LineChart';
+import { getResultadosGrafico } from '../../services/resultadosAPI';
 
 export default function Dashboard() {
     const [microorganismo, setMicroorganismo] = useState('');
@@ -40,25 +41,39 @@ export default function Dashboard() {
           fetchLocalData();
         }, []);
 
-        const handleSubmit = (event) =>{
-                event.preventDefault();
-                const data = {
-                    pontos_avaliados_id: local,
-                    microorganismos_id: microorganismo,
-                    zona_higienico: zona,
-                    data_inicio: dataInicio,
-                    data_fim: dataFim
-                }
-                alert("EVENTO DETECTADO");
-                console.log(data);
-
-                const mockData = {
-                    labels: ['Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio', 'Junho', 'Julho'],
-                    values: [65, 59, 80, 81, 56, 55, 40],
-                  };
-                  
-                setChartData(mockData);
+       // Função para buscar os dados do gráfico
+    const getDataDash = async (data) => {
+        try {
+            const dataDash = await getResultadosGrafico(data); // Envia os dados para o backend
+            setChartData(dataDash); // Atualiza o estado com os dados do gráfico
+            console.log('Dados do gráfico:', dataDash);
+        } catch (error) {
+            alert("Erro ao buscar dados do gráfico");
+            console.error('Erro ao buscar dados do gráfico:', error);
         }
+    };
+
+    // Função para lidar com o envio do formulário
+    const handleSubmit = (event) => {
+        event.preventDefault();
+        if(!local || !microorganismo || !(dataInicio || dataFim)) {
+            alert("DADOS OBRIGATÓRIOS PRECISAM ESTAR PREENCHIDOS")
+        } else {
+        // Cria o objeto com os dados do formulário
+        const data = {
+            pontos_avaliados_id: parseInt(local),
+            microorganismos_id: parseInt(microorganismo),
+            zona_higienico: zona,
+            data_inicio: dataInicio,
+            data_fim: dataFim
+        };
+
+        console.log('Dados enviados:', data);
+
+        // Chama a função para buscar os dados do gráfico
+        getDataDash(data);
+        }
+    };
 
     return(
         <section>
@@ -69,7 +84,7 @@ export default function Dashboard() {
                 <div className='filters'>
                     <div className='select'>
                         <InputSelect
-                            label="Microorganismo"
+                            label="Microorganismo *"
                             value={microorganismo}
                             onChange={(event) => setMicroorganismo(event.target.value)}
                             items={dataMicro}
@@ -79,7 +94,7 @@ export default function Dashboard() {
 
                     <div className='select'>
                         <InputSelect
-                            label="Local da Coleta"
+                            label="Local da Coleta *"
                             value={local}
                             onChange={(event) => setLocal(event.target.value)}
                             items={dataLocal}
@@ -118,6 +133,7 @@ export default function Dashboard() {
                             fullWidth
                         />
                     </div>
+
                 </div>
 
                 <div className='button'>
@@ -125,14 +141,14 @@ export default function Dashboard() {
                 </div>
             </div>
 
-            <div className='graph-area'>
+            <<div className='graph-area'>
             {/* Renderiza o gráfico apenas se chartData estiver definido */}
                 {chartData ? (
                     <div className='graph' style={{ marginTop: '20px' }}>
                         <LineChart data={chartData} />
                     </div>
                 ) : (
-                    <p>Carregando dados...</p>
+                    <p>Esperando dados...</p>
                 )}
             </div>
         </section>
