@@ -27,6 +27,14 @@ nav:
     - Iteração 3 e 4: iteracoes/iteracao34.md
   - PBB: pbb/pbb.md
   - USM: usm/userStoryMap.md
+  - UC: 
+    - Diagramação: uc/usercase.md
+    - Especificação 1: uc/especificacoes/01.md
+    - Especificação 2: uc/especificacoes/02.md
+    - Especificação 3: uc/especificacoes/03.md
+    - Especificação 4: uc/especificacoes/04.md
+    - Especificação 5: uc/especificacoes/05.md
+    - Especificação 6: uc/especificacoes/06.md
   - Entregas: entregas/entregas.md
 
 
