@@ -4,7 +4,8 @@ const prisma = require('../utils/database');
 // Função assíncrona para criar um resultado no banco de dados
 const createResultado = async (req, res) => {
     try {
-        const { resultado_coleta, limites_contagem_id } = req.body;
+        const { resultado_coleta, limites_contagem_id  } = req.body;
+
 
         // Validação de campos obrigatórios
         if (resultado_coleta === undefined || !limites_contagem_id) {
