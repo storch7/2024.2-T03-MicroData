@@ -7,7 +7,7 @@ import { getPontosAvaliados } from '../services/pontosavaliadosAPI';
 import { createLimiteContagem } from '../services/limitecontagemAPI';
 import InputSelect from './InputSelect';
 
-function LimiteContagemForm({ onAdd, onUpdate, isEditing }) {
+function LimiteContagemForm({ onAdd, onUpdate, isEditing, initialData }) {
     const [microorganismo, setMicroorganismo] = useState('');
     const [local, setLocal] = useState('');
     const [dataMicro, setDataMicro] = useState([]);
@@ -31,12 +31,12 @@ function LimiteContagemForm({ onAdd, onUpdate, isEditing }) {
     }, []);
   
     useEffect(() => {
-      console.log("Updated microorganism:", microorganismo);
-    }, [microorganismo]);
-  
-    useEffect(() => {
-      console.log("Updated local:", local);
-    }, [local]);
+      if (initialData && isEditing) {
+          setMicroorganismo(initialData.microorganismos_id);
+          setLocal(initialData.pontos_avaliados_id);
+          setLimiteContagem(initialData.limites_contagem);
+      }
+    }, [initialData, isEditing]);
 
     const handleSubmit = async (e) => {
         e.preventDefault();
@@ -45,11 +45,13 @@ function LimiteContagemForm({ onAdd, onUpdate, isEditing }) {
           return;
         }
     
-        const data = {
-          limites_contagem: limiteContagem,
-          pontos_avaliados_id: local,
-          microorganismos_id: microorganismo,
-        };
+        const data = isEditing
+            ? { limites_contagem: limiteContagem } // Apenas o campo editável
+            : {
+                limites_contagem: limiteContagem,
+                pontos_avaliados_id: local,
+                microorganismos_id: microorganismo,
+            };
     
         if(isEditing) {
           onUpdate(data);
@@ -77,21 +79,26 @@ function LimiteContagemForm({ onAdd, onUpdate, isEditing }) {
                     borderRadius: '1rem'
                 }}
             >
-                <InputSelect
-                    label="Microorganismo"
-                    value={microorganismo}
-                    onChange={(event) => setMicroorganismo(event.target.value)}
-                    items={dataMicro}
-                    displayField={'nome'}
-                />
+                {/* Campos de seleção visíveis apenas no modo de adição */}
+                {!isEditing && (
+                    <>
+                        <InputSelect
+                            label="Microorganismo"
+                            value={microorganismo}
+                            onChange={(event) => setMicroorganismo(event.target.value)}
+                            items={dataMicro}
+                            displayField={'nome'}
+                        />
 
-                <InputSelect
-                    label="Local da Coleta"
-                    value={local}
-                    onChange={(event) => setLocal(event.target.value)}
-                    items={dataLocal}
-                    displayField={'local_processo'}
-                />
+                        <InputSelect
+                            label="Local da Coleta"
+                            value={local}
+                            onChange={(event) => setLocal(event.target.value)}
+                            items={dataLocal}
+                            displayField={'local_processo'}
+                        />
+                    </>
+                )}
 
                 {/* Campo de texto para limite de contagem */}
                 <TextField
@@ -111,18 +118,45 @@ function LimiteContagemForm({ onAdd, onUpdate, isEditing }) {
                         width: '100%'
                     }}
                 >
-                    <CustomButton 
-                        text="Limpar"  
-                        type="button"  
-                        color="#B83226" 
-                        variant="outlined" 
-                        onClick={() => {
-                            setMicroorganismo('');
-                            setLocal('');
-                            setLimiteContagem('');
-                          }} 
-                     />
-                    <CustomButton text="Cadastrar" type="submit" color="#B83226" variant="contained" />
+                    {isEditing ? (
+                        <>
+                            <CustomButton
+                                text="Cancelar"
+                                type="button"
+                                color="#B83226"
+                                variant="outlined"
+                                onClick={() => {
+                                    onUpdate(null); // Cancela edição
+                                }}
+                            />
+                            <CustomButton
+                                text="Atualizar"
+                                type="submit"
+                                color="#B83226"
+                                variant="contained"
+                            />
+                        </>
+                    ) : (
+                        <>
+                            <CustomButton
+                                text="Limpar"
+                                type="button"
+                                color="#B83226"
+                                variant="outlined"
+                                onClick={() => {
+                                    setMicroorganismo('');
+                                    setLocal('');
+                                    setLimiteContagem('');
+                                }}
+                            />
+                            <CustomButton
+                                text="Cadastrar"
+                                type="submit"
+                                color="#B83226"
+                                variant="contained"
+                            />
+                        </>
+                    )}
                 </Box>
             </Box>
         </div>
