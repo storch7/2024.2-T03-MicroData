@@ -33,10 +33,11 @@ export default function Resultados () {
 
   const handleAdd = async (item) => {
     try {
-      const newItem = await updateResultado(item);
+      const newItem = await getResultados(item);
       console.log('Novo limite de contagem:', newItem);
       setData([...data, newItem]);
     } catch (error) {
+       alert("Erro ao criar");
       console.error('Erro ao criar limite de contagem:', error);
     }
   };

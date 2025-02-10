@@ -10,6 +10,7 @@ import InputSelect from './InputSelect';
 function ResultadosForm({ onAdd, onUpdate, isEditing, initialData }) {
     const [microorganismo, setMicroorganismo] = useState('');
     const [local, setLocal] = useState('');
+    const [dataColeta, setDataColeta] = useState(null);
     const [dataMicro, setDataMicro] = useState([]);
     const [dataLocal, setDataLocal] = useState([]);
     const [contagem, setContagem] = useState("");
@@ -40,17 +41,20 @@ function ResultadosForm({ onAdd, onUpdate, isEditing, initialData }) {
 
     const handleSubmit = async (e) => {
         e.preventDefault();
-        if (!microorganismo || !local || !contagem) {
+        if (!microorganismo || !local || !contagem || !dataColeta) {
           alert("Por favor, preencha todos os campos.");
           return;
         }
     
         const data = isEditing
-            ? { resultado_coleta: contagem } // Apenas o campo editável
+            ? { resultado_coleta: contagem,
+                data_cadastro: dataColeta,
+             } // Apenas os campos editáveis
             : {
                 resultado_coleta: contagem,
                 pontos_avaliados_id: local,
                 microorganismos_id: microorganismo,
+                data_cadastro: dataColeta,
             };
     
         if(isEditing) {
@@ -97,7 +101,8 @@ function ResultadosForm({ onAdd, onUpdate, isEditing, initialData }) {
                             items={dataLocal}
                             displayField={'local_processo'}
                         />
-                    </>
+
+                </>
                 )}
 
                 {/* Campo de texto para limite de contagem */}
@@ -105,6 +110,15 @@ function ResultadosForm({ onAdd, onUpdate, isEditing, initialData }) {
                     label="Contagem"
                     value={contagem}
                     onChange={(e) => setContagem(e.target.value)}
+                    sx={{ marginTop: '15px' }}
+                    fullWidth
+                />
+
+                <TextField
+                    type = "date"
+                    label="Data da Coleta"
+                    value={dataColeta}
+                    onChange={(e) => setDataColeta(e.target.value)}
                     sx={{ marginTop: '15px' }}
                     fullWidth
                 />
