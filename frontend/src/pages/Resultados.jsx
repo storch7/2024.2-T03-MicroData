@@ -8,7 +8,6 @@ import { getMicroorganism } from '../services/microorganismAPI';
 import { getPontosAvaliados } from '../services/pontosavaliadosAPI'; 
 
 
-
 function Resultados() {
     const [data, setData] = useState([]);
     const [loading, setLoading] = useState(true);
@@ -24,11 +23,12 @@ function Resultados() {
             try {
                 // Busca resultados
                 const resultados = await getResultados();
+                console.log(resultados);
                 const mappedData = resultados.map((item) => ({
                     id: item.idresultados,
-                    localColeta: item.limites_contagem.pontos_avaliados.nome,
+                    localColeta: item.limites_contagem.pontos_avaliados.local_processo,
                     microorganismo: item.limites_contagem.microorganismos.nome,
-                    contagem: item.limites_contagem.limites_contagem,
+                    contagem: item.resultado_coleta,
                     dataColeta: new Date(item.data_cadastro).toLocaleDateString(),
                 }));
                 setData(mappedData);

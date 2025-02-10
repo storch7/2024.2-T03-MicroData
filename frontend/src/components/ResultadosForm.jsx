@@ -1,7 +1,8 @@
 import React, { useState,useEffect } from 'react';
 import { TextField, Box } from '@mui/material';
 import CustomButton from './Button';
-import InputSelect from './InputSelect'; 
+import InputSelect from './InputSelect';
+import { getLimiteContagem } from '../services/limitecontagemAPI'; 
 
 
 function ResultadosForm({ isEditing, setIsEditing, initialData, onUpdate, onCancel, onAdd, microorganismos, pontosAvaliados }) {
@@ -9,20 +10,67 @@ function ResultadosForm({ isEditing, setIsEditing, initialData, onUpdate, onCanc
     const [microorganismo, setMicroorganismo] = useState(initialData?.microorganismo || "");
     const [contagem, setContagem] = useState(initialData?.contagem || "");
     const [dataColeta, setDataColeta] = useState(initialData?.dataColeta || "");
-    
+    const [dataLimite, setDataLimite] = useState('');
+    const [loading, setLoading] = useState(true);
+
+    useEffect(() => {
+        const fetchData = async () => {
+          try {
+            const response = await getLimiteContagem();
+            setDataLimite(response);
+          } catch (error) {
+            console.error('Erro ao buscar limites de contagem:', error);
+          } finally {
+            setLoading(false);
+          }
+        };
+        fetchData();
+      }, []);
+
+      useEffect(() => {console.log(dataLimite)})
+
     const handleSubmit = (e) => {
         e.preventDefault();
+
         const data = {
-        resultado_coleta: contagem,
-        pontos_avaliados_id: localColeta,
-         microorganismos_id: microorganismo,
-          data_cadastro: dataColeta
+            pontos_avaliados_id: localColeta,
+            microorganismos_id: microorganismo,
         };
-        if (isEditing) {
-            onUpdate(data);
-        } else {
-            onAdd(data);
-        }
+        
+        function buscarRegistro(date, registros) {
+                     
+            // Procura o registro que corresponde aos IDs fornecidos
+            const registroEncontrado = registros.find(
+              (registro) =>
+                registro.pontos_avaliados_id === date.pontos_avaliados_id &&
+                registro.microorganismos_id === date.microorganismos_id
+            );
+          
+            if (registroEncontrado) {
+              return registroEncontrado.id; // Retorna o ID do registro encontrado
+            } else {
+              alert("É necessário cadastrar um limite de contagem para este ponto e este microorganismo"); // Exibe um alerta se não encontrar
+              return null;
+            }
+          }
+          
+          // Chamada da função
+          const resultadoBusca = buscarRegistro(data, dataLimite);
+          
+          if(resultadoBusca != null) {
+            const dataCreateResultado = {
+                resultado_coleta: contagem,    
+                limites_contagem_id: resultadoBusca,
+            }
+            console.log(dataCreateResultado);
+            onAdd(dataCreateResultado);
+          }
+        
+        //if (isEditing) {
+        //    onUpdate(data);
+        //} else {
+        //    onAdd(data);
+        //}
     };
         
     return (
