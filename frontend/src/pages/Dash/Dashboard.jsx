@@ -15,6 +15,7 @@ export default function Dashboard() {
     const [zona, setZona] = useState('');
     const [dataInicio, setDataInicio] = useState('');
     const [dataFim, setDataFim] = useState('');
+    const [chartData, setChartData] = useState();
 
     const zonas = [
         { nome: "Zona 1", id: "ZONA_1" },
@@ -54,7 +55,8 @@ export default function Dashboard() {
                 const mockData = {
                     labels: ['Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio', 'Junho', 'Julho'],
                     values: [65, 59, 80, 81, 56, 55, 40],
-                };
+                  };
+                  
                 setChartData(mockData);
         }
 
@@ -124,10 +126,14 @@ export default function Dashboard() {
             </div>
 
             <div className='graph-area'>
-                <div className='graph'>
-                    <LineChart data={chartData} />
-                </div>
-
+            {/* Renderiza o gráfico apenas se chartData estiver definido */}
+                {chartData ? (
+                    <div className='graph' style={{ marginTop: '20px' }}>
+                        <LineChart data={chartData} />
+                    </div>
+                ) : (
+                    <p>Carregando dados...</p>
+                )}
             </div>
         </section>
     )
