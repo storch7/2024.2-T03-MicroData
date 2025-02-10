@@ -4,6 +4,7 @@ import InputSelect from '../../components/InputSelect'
 import { getMicroorganism } from '../../services/microorganismAPI';
 import { getPontosAvaliados } from '../../services/pontosavaliadosAPI';
 import TextField from '@mui/material/TextField';
+import CustomButton from '../../components/Button';
 
 export default function Dashboard() {
     const [microorganismo, setMicroorganismo] = useState('');
@@ -40,54 +41,56 @@ export default function Dashboard() {
     return(
         <section>
             <h1>DASHBOARD</h1>
+            <div className='filters-container'>
+                <div className='filters'>
+                    <div className='select'>
+                        <InputSelect
+                            label="Microorganismo"
+                            value={microorganismo}
+                            onChange={(event) => setMicroorganismo(event.target.value)}
+                            items={dataMicro}
+                            displayField={'nome'}
+                        />
+                    </div>
 
-            <div className='filters'>
-                <InputSelect
-                    label="Microorganismo"
-                    value={microorganismo}
-                    onChange={(event) => setMicroorganismo(event.target.value)}
-                    items={dataMicro}
-                    displayField={'nome'}
-                />
+                    <InputSelect
+                        label="Local da Coleta"
+                        value={local}
+                        onChange={(event) => setLocal(event.target.value)}
+                        items={dataLocal}
+                        displayField={'local_processo'}
+                    />
 
-                <InputSelect
-                    label="Local da Coleta"
-                    value={local}
-                    onChange={(event) => setLocal(event.target.value)}
-                    items={dataLocal}
-                    displayField={'local_processo'}
-                />
+                    <InputSelect
+                        label="Zona"
+                        value={zona}
+                        onChange={(event) => setZona(event.target.value)}
+                        items={zonas}
+                        displayField={'nome'}
+                    />
 
-                <InputSelect
-                    label="Zona"
-                    value={zona}
-                    onChange={(event) => setZona(event.target.value)}
-                    items={zonas}
-                    displayField={'nome'}
-                />
+                    <TextField 
+                        type = 'date'
+                        label="Data de Início"
+                        value={dataInicio}
+                        onChange={(e) => setDataInicio(e.target.value)}
+                        sx={{marginTop: '15px'}}
+                        fullWidth
+                    />
 
-                <TextField 
-                    type = 'date'
-                    label="Data de Início"
-                    value={dataInicio}
-                    onChange={(e) => setDataInicio(e.target.value)}
-                    sx={{marginTop: '15px'}}
-                    fullWidth
-                />
+                    <TextField 
+                        type = 'date'
+                        label= "Data Fim"
+                        value={dataFim}
+                        onChange={(e) => setDataFim(e.target.value)}
+                        sx={{marginTop: '15px'}}
+                        fullWidth
+                    />
+                </div>
 
-                <TextField 
-                    type = 'date'
-                    label= "Data Fim"
-                    value={dataFim}
-                    onChange={(e) => setDataFim(e.target.value)}
-                    sx={{marginTop: '15px'}}
-                    fullWidth
-                />
-
-                
-
-                
-
+                <div>
+                    <CustomButton text="Filtrar" type="submit" color="#B83226" variant="contained" />
+                </div>
             </div>
         </section>
     )
