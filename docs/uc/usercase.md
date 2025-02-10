@@ -71,7 +71,17 @@ O digrama completo também pode ser encontrado na imagem abaixo:
 
 ## ESPECIFICAÇÕES DO CASO DE USO
 
-## Personas, Caso de uso e Descrição
+## PERSONAS, CASO DE USO E DESCRIÇÃO
+
+| **Persona** | **Caso de Uso** | **Descrição** |
+|---------|------------|-------------|
+| Agência Humanitária | Divulgar vagas de emprego | Permitir que a agência publique oportunidades de trabalho para a comunidade. |
+| Agência Humanitária | Divulgar locais de Abrigo | Fornecer informações sobre abrigos disponíveis para pessoas em situação de vulnerabilidade. |
+| Agência Humanitária | Divulgar programas de assistência médica | Informar a população sobre programas de saúde acessíveis. |
+| Agência Humanitária | Gerenciar vagas | Administrar e atualizar informações sobre vagas de emprego e programas sociais. |
+| Agência Humanitária | Anunciar vagas de trabalho | Publicar oportunidades de emprego para beneficiar a comunidade. |
+| Agência Humanitária | Apresentar programas de capacitação | Divulgar cursos e treinamentos para desenvolvimento profissional. |
+
 
 
 # REFERÊNCIAS
