@@ -5,6 +5,7 @@ import { getMicroorganism } from '../../services/microorganismAPI';
 import { getPontosAvaliados } from '../../services/pontosavaliadosAPI';
 import TextField from '@mui/material/TextField';
 import CustomButton from '../../components/Button';
+import LineChart from '../../components/LineChart';
 
 export default function Dashboard() {
     const [microorganismo, setMicroorganismo] = useState('');
@@ -49,11 +50,19 @@ export default function Dashboard() {
                 }
                 alert("EVENTO DETECTADO");
                 console.log(data);
+
+                const mockData = {
+                    labels: ['Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio', 'Junho', 'Julho'],
+                    values: [65, 59, 80, 81, 56, 55, 40],
+                };
+                setChartData(mockData);
         }
 
     return(
         <section>
-            <h1>DASHBOARD</h1>
+            <div className="title">
+                <h1>Dashboard</h1>
+            </div>
             <div className='filters-container'>
                 <div className='filters'>
                     <div className='select'>
@@ -112,6 +121,13 @@ export default function Dashboard() {
                 <div className='button'>
                     <CustomButton text="Filtrar" type="submit" color="#B83226" variant="contained" onClick={handleSubmit}/>
                 </div>
+            </div>
+
+            <div className='graph-area'>
+                <div className='graph'>
+                    <LineChart data={chartData} />
+                </div>
+
             </div>
         </section>
     )

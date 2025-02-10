@@ -1,3 +1,9 @@
+.title{
+    font-size: 2rem;
+    text-transform: uppercase;
+    margin: 2rem;
+}
+
 .filters-container {
     display: flex;
     flex-direction: row;
