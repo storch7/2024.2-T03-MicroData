@@ -35,7 +35,7 @@ function ResultadosForm({ onAdd, onUpdate, isEditing, initialData }) {
       if (initialData && isEditing) {
           setMicroorganismo(initialData.microorganismos_id);
           setLocal(initialData.pontos_avaliados_id);
-          setContagem(initialData.limites_contagem);
+          setContagem(initialData.resultado_coleta);
       }
     }, [initialData, isEditing]);
 

@@ -36,12 +36,14 @@ export default function Resultados () {
     try {
       const newItem = await createResultado(item);
 
-      if(item.alerta != 0) {
-        alert("TESTE", item.alerta)
+      console.log(newItem);
+
+      if(newItem.alerta != null) {
+        alert(JSON.stringify(newItem.alerta, null, 2));
       }
       console.log('Novo limite de contagem:', newItem);
       setData([...data, newItem]);
-      window.location.reload()
+      //window.location.reload()
     } catch (error) {
        alert("Erro ao criar");
       console.error('Erro ao criar limite de contagem:', error);
