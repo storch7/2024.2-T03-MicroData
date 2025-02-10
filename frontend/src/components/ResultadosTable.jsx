@@ -27,15 +27,15 @@ const ResultadosTable = ({ data, onEdit, onDelete }) => {
           {data.map((item, index) => (
             <TableRow key={index}>
               <TableCell sx={{ textAlign: 'center' }}>
-                {item.pontos_avaliados?.local_coleta || "N/A"}
+                {item.limites_contagem.pontos_avaliados.local_processo || "N/A"}
               </TableCell>
 
               <TableCell sx={{ textAlign: 'center' }}>
-                {item.microorganismos?.nome || "N/A"}
+                {item.limites_contagem.microorganismos.nome || "N/A"}
               </TableCell>
 
               <TableCell sx={{ textAlign: 'center' }}>
-                {item.resultados_coleta}
+                {item.resultado_coleta}
               </TableCell>
 
               <TableCell sx={{ textAlign: 'center' }}>
