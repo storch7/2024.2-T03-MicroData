@@ -1,3 +1,27 @@
+.filters-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 3rem;
+}
+
+.filters{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.filters .select {
+    justify-content: space-between;
+}
+
 .select{
     width: 15rem;
+}
+
+.button {
+    display: inherit;
+    align-items: center;
+    margin: 15px
 }

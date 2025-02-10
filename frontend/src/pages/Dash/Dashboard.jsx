@@ -96,7 +96,7 @@ export default function Dashboard() {
                     </div>
                 </div>
 
-                <div>
+                <div className='button'>
                     <CustomButton text="Filtrar" type="submit" color="#B83226" variant="contained" />
                 </div>
             </div>
