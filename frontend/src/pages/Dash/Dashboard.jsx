@@ -38,6 +38,19 @@ export default function Dashboard() {
           fetchLocalData();
         }, []);
 
+        const handleSubmit = (event) =>{
+                event.preventDefault();
+                const data = {
+                    pontos_avaliados_id: local,
+                    microorganismos_id: microorganismo,
+                    zona_higienico: zona,
+                    data_inicio: dataInicio,
+                    data_fim: dataFim
+                }
+                alert("EVENTO DETECTADO");
+                console.log(data);
+        }
+
     return(
         <section>
             <h1>DASHBOARD</h1>
@@ -97,7 +110,7 @@ export default function Dashboard() {
                 </div>
 
                 <div className='button'>
-                    <CustomButton text="Filtrar" type="submit" color="#B83226" variant="contained" />
+                    <CustomButton text="Filtrar" type="submit" color="#B83226" variant="contained" onClick={handleSubmit}/>
                 </div>
             </div>
         </section>
