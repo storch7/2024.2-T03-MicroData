@@ -43,7 +43,7 @@ export default function Resultados () {
       }
       console.log('Novo limite de contagem:', newItem);
       setData([...data, newItem]);
-      //window.location.reload()
+      window.location.reload()
     } catch (error) {
        alert("Erro ao criar");
       console.error('Erro ao criar limite de contagem:', error);
