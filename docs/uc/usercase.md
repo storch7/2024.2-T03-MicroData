@@ -76,7 +76,17 @@ O digrama completo também pode ser encontrado na imagem abaixo:
 
 ## ESPECIFICAÇÕES DO CASO DE USO
 
-## PERSONAS, CASO DE USO E DESCRIÇÃO
+### ESPECIFICAÇÃO DA ATIVIDADE
+Cada membro da equipe deverá especificar um caso de uso do Estudo de caso escolhido. A equipe MicroData possui 6 membros ativos; portanto, foram especificados 6 casos de uso. odos os demais casos de uso devem ser apresentadas as suas breves descrições. São os casos de uso especificados:
+
+- [ESPECIFICAÇÃO DE CASO DE USO 1: ACESSAR MAPA](/uc/especificacoes/01/)
+- [ESPECIFICAÇÃO DE CASO DE USO 2: TRAÇAR ROTA](/uc/especificacoes/02/)
+- [ESPECIFICAÇÃO DE CASO DE USO 3: VERIFICAR OPÇÕES DE TRANSPORTE](/uc/especificacoes/03/)
+- [ESPECIFICAÇÃO DE CASO DE USO 4: ACESSAR VAGAS DE EMPREGO](/uc/especificacoes/04/)
+- [ESPECIFICAÇÃO DE CASO DE USO 5: ACESSAR BENEFÍCIOS](/uc/especificacoes/05/)
+- [ESPECIFICAÇÃO DE CASO DE USO 6: VERIFICAR ASSISTÊNCIA MÉDICA](/uc/especificacoes/06/)
+
+## DEMAIS CASO DE USO E DESCRIÇÕES POR PERSONA
 
 | **Persona** | **Caso de Uso** | **Descrição** |
 |---------|------------|-------------|
@@ -92,7 +102,6 @@ O digrama completo também pode ser encontrado na imagem abaixo:
 | Empregadores Parceiros | Acompanhar desempenho de contratados | Os empregadores poderão utilizar a plataforma para monitorar o progresso dos funcionários, acompanhando seu desempenho e adaptação ao novo ambiente de trabalho. Isso contribuirá para o desenvolvimento contínuo dos colaboradores, resultando em maior satisfação tanto para os empregadores quanto para os refugiados contratados, além de fortalecer a inclusão dentro da empresa.|
 
 
-
 # REFERÊNCIAS
 
 1. **OMG (Object Management Group).** (2017). *Unified Modeling Language (UML) Specification*. Disponível em: https://www.omg.org/spec/UML/2.5/
@@ -100,3 +109,9 @@ O digrama completo também pode ser encontrado na imagem abaixo:
 2. **SOMMERVILLE, Ian.** (2011). *Engenharia de Software* (9ª ed.). São Paulo: Pearson Education do Brasil.
 
 3. **GOLDSCHMIDT, Marilda.** (2004). *Análise e Projeto de Sistemas Orientados a Objetos*. São Paulo: Editora Pearson.
+
+##  Histórico de Versão
+
+| **Data**    | **Versão** | **Descrição** | **Autor** |
+| :--------: | :--------: | :--------:  | :--------: | 
+|      10/02/2025      |      1.0       |      Criação do documento       |     Breno Fernandes, Breno Lucena, Storch, João, Rafael e Renan     |
