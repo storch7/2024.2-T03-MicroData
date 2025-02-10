@@ -16,7 +16,7 @@ export const createResultado = async (data) => {
 };
 
 // GET: Obter todos os resultados ativos
-export const getResultados = async () => {
+export const getResultado = async () => {
   try {
     const response = await axios.get(API_BASE_URL + "resultados");
     return response.data;

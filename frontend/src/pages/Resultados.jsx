@@ -6,7 +6,7 @@ import DialogTitle from '@mui/material/DialogTitle';
 import DialogContent from '@mui/material/DialogContent';
 import DialogActions from '@mui/material/DialogActions';
 import Button from '@mui/material/Button';
-import { getResultados, createResultado, updateResultado } from '../services/resultadosAPI';
+import { getResultado, createResultado, updateResultado } from '../services/resultadosAPI';
 import ResultadosForm from '../components/ResultadosForm';
 import ResultadosTable from '../components/ResultadosTable';
 
@@ -20,8 +20,9 @@ export default function Resultados () {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await getResultados();
+        const response = await getResultado();
         setData(response);
+        console.log(response);
       } catch (error) {
         console.error('Erro ao buscar limites de contagem:', error);
       } finally {
@@ -33,7 +34,7 @@ export default function Resultados () {
 
   const handleAdd = async (item) => {
     try {
-      const newItem = await getResultados(item);
+      const newItem = await createResultado(item);
       console.log('Novo limite de contagem:', newItem);
       setData([...data, newItem]);
     } catch (error) {
@@ -78,7 +79,7 @@ export default function Resultados () {
   return (
     <Container sx={{ padding: 4 }}>
       <Typography variant="h4" component="h1" gutterBottom>
-        Gerenciar Limite de Contagem
+        Gerenciar Resultados
       </Typography>
       <ResultadosForm
         onAdd={handleAdd}

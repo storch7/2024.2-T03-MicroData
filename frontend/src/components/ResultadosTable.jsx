@@ -27,7 +27,7 @@ const ResultadosTable = ({ data, onEdit, onDelete }) => {
           {data.map((item, index) => (
             <TableRow key={index}>
               <TableCell sx={{ textAlign: 'center' }}>
-                {item.pontos_avaliados?.sala || "N/A"}
+                {item.pontos_avaliados?.local_coleta || "N/A"}
               </TableCell>
 
               <TableCell sx={{ textAlign: 'center' }}>
