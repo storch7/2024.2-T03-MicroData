@@ -53,39 +53,47 @@ export default function Dashboard() {
                         />
                     </div>
 
-                    <InputSelect
-                        label="Local da Coleta"
-                        value={local}
-                        onChange={(event) => setLocal(event.target.value)}
-                        items={dataLocal}
-                        displayField={'local_processo'}
-                    />
+                    <div className='select'>
+                        <InputSelect
+                            label="Local da Coleta"
+                            value={local}
+                            onChange={(event) => setLocal(event.target.value)}
+                            items={dataLocal}
+                            displayField={'local_processo'}
+                        />
+                    </div>
 
-                    <InputSelect
-                        label="Zona"
-                        value={zona}
-                        onChange={(event) => setZona(event.target.value)}
-                        items={zonas}
-                        displayField={'nome'}
-                    />
+                    <div className='select'>
+                        <InputSelect
+                            label="Zona"
+                            value={zona}
+                            onChange={(event) => setZona(event.target.value)}
+                            items={zonas}
+                            displayField={'nome'}
+                        />
+                    </div>
 
-                    <TextField 
-                        type = 'date'
-                        label="Data de Início"
-                        value={dataInicio}
-                        onChange={(e) => setDataInicio(e.target.value)}
-                        sx={{marginTop: '15px'}}
-                        fullWidth
-                    />
+                    <div className='select'>
+                        <TextField 
+                            type = 'date'
+                            label="Data de Início"
+                            value={dataInicio}
+                            onChange={(e) => setDataInicio(e.target.value)}
+                            sx={{marginTop: '15px'}}
+                            fullWidth
+                        />
+                    </div>
 
-                    <TextField 
-                        type = 'date'
-                        label= "Data Fim"
-                        value={dataFim}
-                        onChange={(e) => setDataFim(e.target.value)}
-                        sx={{marginTop: '15px'}}
-                        fullWidth
-                    />
+                    <div className='select'>
+                        <TextField 
+                            type = 'date'
+                            label= "Data Fim"
+                            value={dataFim}
+                            onChange={(e) => setDataFim(e.target.value)}
+                            sx={{marginTop: '15px'}}
+                            fullWidth
+                        />
+                    </div>
                 </div>
 
                 <div>
