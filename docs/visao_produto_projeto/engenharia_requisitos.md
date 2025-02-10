@@ -48,105 +48,23 @@
 
 **Atualiazação do Backlog**: Conduzir uma reunião final para revisar o trabalho realizado, garantir que todos os requisitos foram atendidos e fechar oficialmente a fase de requisitos do projeto.
 
-## Engenharia de Requisitos e o RAD
+## Engenharia de Requisitos e o Modelo Cascata
 
-<table border="1" cellspacing="0" cellpadding="5">
-  <thead>
-    <tr>
-      <th style="text-align: center; vertical-align: middle;">Fases do RAD</th>
-      <th style="text-align: center; vertical-align: middle;">Atividades da ER</th>
-      <th style="text-align: center; vertical-align: middle;">Prática</th>
-      <th style="text-align: center; vertical-align: middle;">Técnica</th>
-      <th style="text-align: center; vertical-align: middle;">Resultado Esperado</th>
-    </tr>
-  </thead>
-  <tbody>
-    <!-- Planejamento de Requisitos -->
-    <tr>
-      <td rowspan="7" style="text-align: center; vertical-align: middle;"><strong>Planejamento de Requisitos</strong></td>
-      <td style="text-align: center; vertical-align: middle;">Elicitação e Descoberta</td>
-      <td style="text-align: center; vertical-align: middle;">Levantamento de Requisitos</td>
-      <td style="text-align: center; vertical-align: middle;">Análise Documental e Entrevista</td>
-      <td style="text-align: center; vertical-align: middle;">Visão de Produto</td>
-    </tr>
-    <tr>
-      <td style="text-align: center; vertical-align: middle;">Análise e Consenso</td>
-      <td style="text-align: center; vertical-align: middle;">Priorização de Requisitos</td>
-      <td style="text-align: center; vertical-align: middle;">Priorização, Entrevista, Análise de Viabilidade e Negociação</td>
-      <td style="text-align: center; vertical-align: middle;">Escopo e funcionalidades priorizadas e acordadas</td>
-    </tr>
-    <tr>
-      <td style="text-align: center; vertical-align: middle;">Declaração</td>
-      <td style="text-align: center; vertical-align: middle;">Descrição dos Requisitos</td>
-      <td style="text-align: center; vertical-align: middle;">Priorização e User Stories</td>
-      <td style="text-align: center; vertical-align: middle;">Documentação de Requisitos de software</td>
-    </tr>
-    <tr>
-      <td style="text-align: center; vertical-align: middle;">Representação</td>
-      <td style="text-align: center; vertical-align: middle;">Confecção de artefatos</td>
-      <td style="text-align: center; vertical-align: middle;">Prototipação</td>
-      <td style="text-align: center; vertical-align: middle;">Representações formais</td>
-    </tr>
-    <tr>
-      <td style="text-align: center; vertical-align: middle;" rowspan="2">Verificação e validação</td>
-      <td style="text-align: center; vertical-align: middle;">Verificação</td>
-      <td style="text-align: center; vertical-align: middle;">Revisão por pares e Checklists</td>
-      <td style="text-align: center; vertical-align: middle;" rowspan="2">DoD, DoR e Feedback</td>
-    </tr>
-    <tr>
-      <td style="text-align: center; vertical-align: middle;">Validação</td>
-      <td style="text-align: center; vertical-align: middle;">Walkthrough</td>
-    </tr>
-    <tr>
-      <td style="text-align: center; vertical-align: middle;">Organização e Atualização</td>
-      <td style="text-align: center; vertical-align: middle;">Revisões periódicas</td>
-      <td style="text-align: center; vertical-align: middle;">Atualização do Bakclog</td>
-      <td style="text-align: center; vertical-align: middle;">Backlog atualizado e alinhado</td>
-    </tr>
-    <!-- User Design -->
-    <tr>
-      <td rowspan="4" style="text-align: center; vertical-align: middle;"><strong>User Design</strong></td>
-      <td style="text-align: center; vertical-align: middle;">Análise e Consenso</td>
-      <td style="text-align: center; vertical-align: middle;">Avaliação de funcionalidades e protótipos</td>
-      <td style="text-align: center; vertical-align: middle;">Reuniões de Alinhamento</td>
-      <td style="text-align: center; vertical-align: middle;">Feedback coletado e consenso sobre alterações no protótipo</td>
-    </tr>
-    <tr>
-      <td style="text-align: center; vertical-align: middle;">Declaração</td>
-      <td style="text-align: center; vertical-align: middle;">Especificação dos Requisitos</td>
-      <td style="text-align: center; vertical-align: middle;">Cenários</td>
-      <td style="text-align: center; vertical-align: middle;">Requisitos Especificados</td>
-    </tr>
-    <tr>
-      <td style="text-align: center; vertical-align: middle;">Representação</td>
-      <td style="text-align: center; vertical-align: middle;">Prototipação</td>
-      <td style="text-align: center; vertical-align: middle;">Prototipagem</td>
-      <td style="text-align: center; vertical-align: middle;">Protótipos de alta fidelidade e fluxo de telas da aplicação</td>
-    </tr>
-    <tr>
-      <td style="text-align: center; vertical-align: middle;">Verificação e validação</td>
-      <td style="text-align: center; vertical-align: middle;">Revisão Iterativa</td>
-      <td style="text-align: center; vertical-align: middle;">Walkthroughs e  Checklists</td>
-      <td style="text-align: center; vertical-align: middle;">Protótipo ajustado para refletir melhor os objetivos</td>
-    </tr>
-    <!-- Desenvolvimento e Testes -->
-    <tr>
-      <td style="text-align: center; vertical-align: middle;"><strong>Desenvolvimento e testes</strong></td>
-      <td style="text-align: center; vertical-align: middle;">Organização e Atualização</td>
-      <td style="text-align: center; vertical-align: middle;">Revisão Contínua</td>
-      <td style="text-align: center; vertical-align: middle;">Grooming do Backlog</td>
-      <td style="text-align: center; vertical-align: middle;">Backlog refinado com atualizações baseadas nos testes e feedback</td>
-    </tr>
-    <!-- Finalização e Entrega -->
-    <tr>
-      <td style="text-align: center; vertical-align: middle;"><strong>Finalização e entrega</strong></td>
-      <td style="text-align: center; vertical-align: middle;">Organização e Atualização</td>
-      <td style="text-align: center; vertical-align: middle;">Revisão Final do Backlog</td>
-      <td style="text-align: center; vertical-align: middle;">Atualização do Bakclog</td>
-      <td style="text-align: center; vertical-align: middle;">Backlog encerrado, rastreabilidade completa dos requisitos, deploy da aplicação e implementação do MVP1</td>
-    </tr>
-  </tbody>
-</table>
+| Fases do Cascata         | Atividades da ER           | Prática                                  | Técnica                                             | Resultado Esperado                                  |
+|--------------------------|----------------------------|------------------------------------------|-----------------------------------------------------|----------------------------------------------------|
+| **Análise de Requisitos** | Elicitação e Descoberta    | Levantamento de Requisitos               | Análise Documental e Entrevista                     | Visão de Produto                                   |
+|                          | Análise e Consenso         | Priorização de Requisitos                | Priorização, Entrevista, Análise de Viabilidade e Negociação | Escopo e funcionalidades priorizadas e acordadas   |
+|                          | Declaração                 | Descrição dos Requisitos                 | Especificação Formal e User Stories                 | Documentação de Requisitos de software             |
+|                          | Verificação e validação    | Verificação                              | Revisão por pares e Checklists                      | DoD, DoR e Feedback                               |
+|                          | Validação                  | Walkthrough                              | Walkthrough                                          | Especificação de requisitos validado junto ao cliente                                                  |
+|                          | Organização e Atualização  | Revisões periódicas                      | Atualização do Documento de Requisitos              | Documento de Requisitos atualizado e alinhado      |
+| **Projeto do Sistema**    | Análise e Consenso         | Avaliação de funcionalidades e arquitetura | Reuniões de Alinhamento                             | Feedback coletado e consenso sobre a arquitetura do sistema |
+|                          | Declaração                 | Especificação dos Requisitos Técnicos    | Diagrama de entidade e relacionamento do banco de dados  | Requisitos Técnicos Especificados                  |
+|                          | Representação              | Modelagem do Sistema                     | Protótipo de alta fidelidade dos sistema                     | Modelos de sistema detalhados                      |
+|                          | Verificação e validação    | Revisão Técnica                          | Walkthroughs e Checklists                           | Projeto ajustado para refletir melhor os requisitos |
+| **Implementação**         | Organização e Atualização  | Revisão Contínua                         | Grooming do Documento de Requisitos                 | Documento de Requisitos refinado com atualizações baseadas na implementação |
+| **Testes**                | Verificação e validação    | Testes de Requisitos                     | Testes Funcionais e de Aceitação                    | Requisitos validados e aprovados                   |
+| **Manutenção**            | Organização e Atualização  | Revisão Final do Documento de Requisitos | Atualização do Documento de Requisitos              | Documento de Requisitos encerrado, rastreabilidade completa dos requisitos, deploy da aplicação e implementação do MVP1 |
 
 ##  Histórico de Versão
 
@@ -155,3 +73,4 @@
 |      15/12/2024      |      1.0      |      Criação do documento                                       |     Renan Vieira     |
 |      15/12/2024      |      1.1      |      Texto sobre as ténicas escolhidas para cada atividade      |     Renan Vieira     |
 |      21/12/2024      |      1.2      |      Ajustes e alterações sugeridas pelo professor              |     Renan Vieira     |
+|      10/02/2025      |      1.3      |      Ajustes e alterações sugeridas pelo professor              |     Rafael Matuda    |
