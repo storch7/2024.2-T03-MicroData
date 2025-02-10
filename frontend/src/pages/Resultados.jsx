@@ -6,22 +6,23 @@ import DialogTitle from '@mui/material/DialogTitle';
 import DialogContent from '@mui/material/DialogContent';
 import DialogActions from '@mui/material/DialogActions';
 import Button from '@mui/material/Button';
-import LimiteContagemForm from '../components/LimiteContagemForm';
-import LimiteContagemTable from '../components/LimiteContagemTable';
-import { createLimiteContagem, getLimiteContagem, updateLimiteContagem } from '../services/limitecontagemAPI';
+import { getResultado, createResultado, updateResultado } from '../services/resultadosAPI';
+import ResultadosForm from '../components/ResultadosForm';
+import ResultadosTable from '../components/ResultadosTable';
 
-function LimiteContagem() {
-  const [data, setData] = useState([]);
-  const [loading, setLoading] = useState(true);
-  const [selectedLimite, setSelectedLimite] = useState(null);
-  const [isEditing, setIsEditing] = useState(false);
-  const [itemToDelete, setItemToDelete] = useState(null); // state for deletion modal
+export default function Resultados () {
+    const [data, setData] = useState([]);
+    const [loading, setLoading] = useState(true);
+    const [selectedResultado, setselectedResultado] = useState(null);
+    const [isEditing, setIsEditing] = useState(false);
+    const [itemToDelete, setItemToDelete] = useState(null); // state for deletion modal
 
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await getLimiteContagem();
+        const response = await getResultado();
         setData(response);
+        console.log(response);
       } catch (error) {
         console.error('Erro ao buscar limites de contagem:', error);
       } finally {
@@ -33,25 +34,33 @@ function LimiteContagem() {
 
   const handleAdd = async (item) => {
     try {
-      const newItem = await createLimiteContagem(item);
+      const newItem = await createResultado(item);
+
+      console.log(newItem);
+
+      if(newItem.alerta != null) {
+        alert(JSON.stringify(newItem.alerta, null, 2));
+      }
       console.log('Novo limite de contagem:', newItem);
       setData([...data, newItem]);
+      window.location.reload()
     } catch (error) {
+       alert("Erro ao criar");
       console.error('Erro ao criar limite de contagem:', error);
     }
   };
 
   const handleEdit = (item) => {
-    setSelectedLimite(item);
+    setselectedResultado(item);
     setIsEditing(true);
   };
 
   const handleUpdate = async (updatedData) => {
     try {
-      const updatedItem = await updateLimiteContagem(selectedLimite.id, updatedData);
-      setData(data.map((item) => (item.id === updatedItem.id ? updatedItem : item)));
+      const updatedItem = await updateResultado(selectedResultado.idresultado, updatedData);
+      setData(data.map((item) => (item.id === updatedItem.idresultado ? updatedItem : item)));
       setIsEditing(false);
-      setSelectedLimite(null);
+      setselectedResultado(null);
     } catch (error) {
       console.error('Erro ao atualizar limite de contagem:', error);
     } 
@@ -66,9 +75,11 @@ function LimiteContagem() {
   // When the user confirms deletion in the modal.
   const handleConfirmDelete = async () => {
     try {
-      await updateLimiteContagem(itemToDelete.id, { ativo: false });
-      setData(data.filter((i) => i.id !== itemToDelete.id));
+      await updateResultado(itemToDelete.idresultados, { ativo: false });
+      setData(data.filter((i) => i.idresultados !== itemToDelete.idresultados));
+      window.location.reload()
     } catch (error) {
+      alert("ERRO");
       console.error('Erro ao deletar limite de contagem:', error);
     } finally {
       setItemToDelete(null);
@@ -78,29 +89,28 @@ function LimiteContagem() {
   return (
     <Container sx={{ padding: 4 }}>
       <Typography variant="h4" component="h1" gutterBottom>
-        Gerenciar Limite de Contagem
+        Gerenciar Resultados
       </Typography>
-      <LimiteContagemForm
+      <ResultadosForm
         onAdd={handleAdd}
         isEditing={isEditing}
-        initialData={selectedLimite}
+        initialData={selectedResultado}
         onUpdate={handleUpdate}
         onCancel={() => {
           setIsEditing(false);
-          setSelectedLimite(null);
+          setselectedResultado(null);
         }}
       />
       {loading ? (
         <Typography variant="body1">Carregando...</Typography>
       ) : (
-        <LimiteContagemTable data={data} onEdit={handleEdit} onDelete={handleDelete} />
+        <ResultadosTable data={data} onEdit={handleEdit} onDelete={handleDelete} />
       )}
 
       {/* Confirmation Modal */}
       <Dialog open={!!itemToDelete} onClose={() => setItemToDelete(null)}>
         <DialogTitle>Confirmar Exclusão</DialogTitle>
         <DialogContent>
-          <br></br>Ao desativar este limite de contagem, todos os Resultados vinculados a ele serão desativados automaticamente.<br></br>
           <br></br>Essa ação não pode ser desfeita e poderá impactar seus registros históricos.<br></br>
           <br></br><b>Tem certeza de que deseja continuar?</b><br></br>
         </DialogContent>
@@ -112,5 +122,3 @@ function LimiteContagem() {
     </Container>
   );
 }
-
-export default LimiteContagem;
