@@ -41,14 +41,11 @@ function ResultadosForm({ onAdd, onUpdate, isEditing, initialData }) {
 
     const handleSubmit = async (e) => {
         e.preventDefault();
-        if (!microorganismo || !local || !contagem || !dataColeta) {
-          alert("Por favor, preencha todos os campos.");
-          return;
-        }
-    
+        
         const data = isEditing
             ? { resultado_coleta: contagem,
                 data_cadastro: dataColeta,
+                
              } // Apenas os campos editáveis
             : {
                 resultado_coleta: contagem,
@@ -60,7 +57,11 @@ function ResultadosForm({ onAdd, onUpdate, isEditing, initialData }) {
         if(isEditing) {
           onUpdate(data);
         } else {
-          onAdd(data);
+            if (!microorganismo || !local || !contagem || !dataColeta) {
+                alert("Por favor, preencha todos os campos.");
+                return;
+              }
+            onAdd(data);
         }
 
         setMicroorganismo('');

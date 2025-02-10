@@ -13,7 +13,7 @@ import ResultadosTable from '../components/ResultadosTable';
 export default function Resultados () {
     const [data, setData] = useState([]);
     const [loading, setLoading] = useState(true);
-    const [selectedLimite, setSelectedLimite] = useState(null);
+    const [selectedResultado, setselectedResultado] = useState(null);
     const [isEditing, setIsEditing] = useState(false);
     const [itemToDelete, setItemToDelete] = useState(null); // state for deletion modal
 
@@ -37,10 +37,11 @@ export default function Resultados () {
       const newItem = await createResultado(item);
 
       if(item.alerta != 0) {
-        alert("Alerta:", item.alerta)
+        alert("TESTE", item.alerta)
       }
       console.log('Novo limite de contagem:', newItem);
       setData([...data, newItem]);
+      window.location.reload()
     } catch (error) {
        alert("Erro ao criar");
       console.error('Erro ao criar limite de contagem:', error);
@@ -48,16 +49,16 @@ export default function Resultados () {
   };
 
   const handleEdit = (item) => {
-    setSelectedLimite(item);
+    setselectedResultado(item);
     setIsEditing(true);
   };
 
   const handleUpdate = async (updatedData) => {
     try {
-      const updatedItem = await updateResultado(selectedLimite.id, updatedData);
-      setData(data.map((item) => (item.id === updatedItem.id ? updatedItem : item)));
+      const updatedItem = await updateResultado(selectedResultado.idresultado, updatedData);
+      setData(data.map((item) => (item.id === updatedItem.idresultado ? updatedItem : item)));
       setIsEditing(false);
-      setSelectedLimite(null);
+      setselectedResultado(null);
     } catch (error) {
       console.error('Erro ao atualizar limite de contagem:', error);
     } 
@@ -91,11 +92,11 @@ export default function Resultados () {
       <ResultadosForm
         onAdd={handleAdd}
         isEditing={isEditing}
-        initialData={selectedLimite}
+        initialData={selectedResultado}
         onUpdate={handleUpdate}
         onCancel={() => {
           setIsEditing(false);
-          setSelectedLimite(null);
+          setselectedResultado(null);
         }}
       />
       {loading ? (

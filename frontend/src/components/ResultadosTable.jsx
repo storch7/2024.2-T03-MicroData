@@ -7,14 +7,16 @@ import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
 import IconButton from '@mui/material/IconButton';
 import EditIcon from '@mui/icons-material/Edit';
+import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 import DeleteIcon from '@mui/icons-material/Delete';
 import Paper from '@mui/material/Paper';
 import Pagination from '@mui/material/Pagination';
 import Stack from '@mui/material/Stack';
 import TextField from '@mui/material/TextField';
+import Button from '@mui/material/Button';
 import Box from '@mui/material/Box';
 
-const ResultadosTable = ({ data, onEdit, onDelete }) => {
+const ResultadosTable = ({ data, onEdit, onDelete, onUpdate }) => {
   const [page, setPage] = useState(1);
   const [filters, setFilters] = useState({
     local: '',
@@ -57,6 +59,16 @@ const ResultadosTable = ({ data, onEdit, onDelete }) => {
     setPage(1); // Redefine a página para 1 sempre que os filtros mudarem
   };
 
+  const clearFilters = () => {
+    setFilters({
+      local: '',
+      microorganismo: '',
+      startDate: '',
+      endDate: '',
+    });
+    setPage(1); // Redefine a página para 1 ao limpar os filtros
+  };
+
   return (
     <>
       {/* Filtros */}
@@ -97,6 +109,9 @@ const ResultadosTable = ({ data, onEdit, onDelete }) => {
           }}
           onChange={(e) => handleFilterChange('endDate', e.target.value)}
         />
+        <Button variant="contained" color="secondary" onClick={clearFilters}>
+          Limpar Filtros
+        </Button>
       </Box>
 
       {/* Tabela */}
@@ -132,6 +147,9 @@ const ResultadosTable = ({ data, onEdit, onDelete }) => {
                   </IconButton>
                   <IconButton onClick={() => onDelete(item)} color="error">
                     <DeleteIcon />
+                  </IconButton>
+                  <IconButton onClick={() => onUpdate(item)} color="primary">
+                    <ArrowForwardIcon />
                   </IconButton>
                 </TableCell>
               </TableRow>
