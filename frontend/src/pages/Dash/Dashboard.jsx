@@ -9,8 +9,14 @@ export default function Dashboard() {
     const [local, setLocal] = useState('');
     const [dataMicro, setDataMicro] = useState([]);
     const [dataLocal, setDataLocal] = useState([]);
+    const [zona, setZona] = useState('');
 
-    
+    const zonas = [
+        { nome: "Zona 1", id: "ZONA_1" },
+        { nome: "Zona 2", id: "ZONA_2" },
+        { nome: "Zona 3", id: "ZONA_3" },
+        { nome: "Zona 4", id: "ZONA_4" },
+      ];
 
     useEffect(() => {
           // Fetch microorganisms data from API
@@ -48,6 +54,15 @@ export default function Dashboard() {
                     items={dataLocal}
                     displayField={'local_processo'}
                 />
+
+                <InputSelect
+                    label="Zona"
+                    value={zona}
+                    onChange={(event) => setZona(event.target.value)}
+                    items={zonas}
+                    displayField={'nome'}
+                />
+
             </div>
         </section>
     )
