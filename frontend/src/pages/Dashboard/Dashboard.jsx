@@ -141,7 +141,7 @@ export default function Dashboard() {
                 </div>
             </div>
 
-            <<div className='graph-area'>
+            <div className='graph-area'>
             {/* Renderiza o gráfico apenas se chartData estiver definido */}
                 {chartData ? (
                     <div className='graph' style={{ marginTop: '20px' }}>
