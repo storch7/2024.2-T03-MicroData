@@ -67,22 +67,23 @@
 
 ## **5.3 Processo de Validação**
 
-O processo de validação será baseado nos princípios ágeis e iterativos do RAD, com foco em entregas rápidas e feedback contínuo. As etapas principais incluem:
+O processo de validação seguirá a abordagem sequencial do modelo Cascata, garantindo que cada fase do desenvolvimento seja revisada e aprovada antes da próxima etapa. As principais etapas incluem:
 
-1. **Definição de Prontidão (Definition of Ready - DoR)**: Antes de iniciar o desenvolvimento de qualquer funcionalidade, os requisitos serão validados com o cliente para garantir que estão claramente definidos, documentados e acompanhados de critérios de aceitação.
-2. **Validação Incremental e Prototipação**: Durante as reuniões semanais, os protótipos e funcionalidades entregues serão validados diretamente com o cliente. Ajustes rápidos poderão ser feitos, se necessário, com base no feedback recebido.
-3. **Definição de Conclusão (Definition of Done - DoD)**: Uma funcionalidade será considerada pronta apenas após:
+1. **Definição de Prontidão (Definition of Ready - DoR)**: Antes de iniciar o desenvolvimento de qualquer funcionalidade, os requisitos serão analisados e documentados com detalhes, garantindo que estejam claros, completos e aprovados.
+2. **Validação Estruturada**: A cada fase concluída (requisitos, design, implementação e testes), a equipe realizará revisões formais para assegurar que os critérios estabelecidos foram atendidos.
+3. **Definição de Conclusão (Definition of Done - DoD)**: Uma funcionalidade ou fase será considerada concluída apenas após:
 
-    1. Passar por testes internos (unitários e de integração).
+    1. Passar por testes internos (unitários, integração e sistema).
 
-    2. Obter aprovação visual e funcional por parte da equipe.
+    2. Ser aprovada nas revisões formais conduzidas pela equipe.
 
-    3. Ser validada pelo cliente como funcional e aderente aos requisitos.
+    3. Estar totalmente documentada e validada conforme os requisitos definidos.
 
-4. **Teste de Aceitação do Cliente:** Ao final de cada semana, o cliente realizará testes de aceitação com base nos critérios previamente definidos durante o DoR. Esses testes garantirão que a solução está alinhada às expectativas e requisitos do projeto.
+4. **Teste de Aceitação do Cliente:** Após a conclusão da fase de testes, o cliente realizará a validação final baseada nos requisitos previamente aprovados, garantindo que a solução atende às expectativas antes da entrega definitiva.
 
 ##  Histórico de Versão
 
 | **Data** | **Versão** | **Descrição** | **Autor** |
 | :------: | :--------: | :----------:  | :-------: |
 | 18/11/2024 | 1.0 | Criação da seção 5 | Renan Vieira |
+| 08/02/2025 | 1.1 | Alteração na seção 5.3 | Rafael Matuda |
