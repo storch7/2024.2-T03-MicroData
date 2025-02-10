@@ -1,70 +1,106 @@
-# Getting Started with Create React App
+# Projeto MicroData - Frontend
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Este repositório contém o frontend do sistema MicroData, uma aplicação desenvolvida com React e Material UI (MUI) que permite gerenciar registros de Microorganismos, Pontos Avaliados e Limite de Contagem.
 
-## Available Scripts
+## Visão Geral
 
-In the project directory, you can run:
+O sistema possui as seguintes funcionalidades:
+- **Cadastro e Edição** de registros:
+  - Microorganismos
+  - Pontos Avaliados
+  - Limite de Contagem
+- **Exclusão Lógica (Soft Delete):** Ao "deletar" um registro, o campo `ativo` é setado como `false`, de modo que os itens não são apagados do banco de dados, mas não são exibidos nas listagens.
+- **Modal de Confirmação:** Antes de realizar a exclusão, é exibido um modal para que o usuário confirme ou cancele a operação.
+- **Integração com Backend:** A comunicação com o backend é feita através de APIs, com funções separadas para cada entidade no diretório `services/`.
 
-### `npm start`
+## Estrutura do Projeto
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+A estrutura do repositório é organizada da seguinte forma:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+```markdown
+frontend/
+├── public/                # Arquivos públicos da aplicação (HTML, imagens, manifest, etc)
+├── src/
+│   ├── components/ 
+│   │   ├── MicroorganismForm.jsx
+│   │   ├── MicroorganismTable.jsx
+│   │   ├── PontosavaliadosForm.jsx
+│   │   ├── PontosavaliadosTable.jsx
+│   │   ├── LimiteContagemForm.jsx
+│   │   ├── LimiteContagemTable.jsx
+│   │   └── InputSelect.jsx
+│   ├── pages/
+│   │   ├── Microorganism.jsx
+│   │   ├── Pontosavaliados.jsx
+│   │   └── LimiteContagem.jsx
+│   └── services/
+│       ├── microorganismAPI.js
+│       ├── pontosavaliadosAPI.js
+│       └── limitecontagemAPI.js
+├── .env                   # Variáveis de ambiente (ex: REACT_APP_API_URL)
+├── package.json           # Dependências e scripts do projeto
+└── README.md              # Documentação do projeto (este arquivo)
+```
 
-### `npm test`
+## Configuração do Ambiente
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Pré-requisitos
 
-### `npm run build`
+- [Node.js](https://nodejs.org/) (versão LTS recomendada)
+- [npm](https://www.npmjs.com/)
+- Docker para executar a aplicação em container `(Opcional)`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Instalação
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1. **Clone o repositório:**
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+   ```bash
+    git clone https://seu-repositorio.com/microdata-frontend.git
+    cd microdata-frontend
+   ```
+2. **Instale as dependências:**
+    ``` 
+    npm install
+    ```
 
-### `npm run eject`
+3. **Configuração das Variáveis de Ambiente:**
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Crie um arquivo .env na raiz do projeto e defina a URL base da API, por exemplo:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+> REACT_APP_API_URL=http://localhost:5000/api/
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+4. **Execução**
+Para iniciar o projeto em modo de desenvolvimento, execute:
+    ```
+    npm start
+    ``` 
+Abra http://localhost:3000 em seu navegador para visualizar a aplicação.
 
-## Learn More
+### Scripts Principais
+- npm start
+Executa a aplicação em modo de desenvolvimento e abre a aplicação no navegador.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- npm run build
+Cria uma versão otimizada para produção na pasta build.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Principais Funcionalidades e Lógica do Projeto
+**Exclusão com Modal de Confirmação:**
+Em páginas como Microorganism.jsx, Pontosavaliados.jsx e LimiteContagem.jsx existe a lógica para exibir um modal usando o componente Dialog do MUI.
+O modal solicita a confirmação do usuário antes de realizar a exclusão lógica (soft delete), que consiste em setar o campo ativo como false.
 
-### Code Splitting
+**Atualização Imediata da Tabela:**
+Após a criação ou atualização de um registro, os dados são atualizados no estado local, refletindo a mudança na interface sem a necessidade de recarregar a página.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+**Integração com Backend:**
+Cada entidade (Microorganismo, Pontos Avaliados, Limite de Contagem) possui um arquivo de serviço dedicado no diretório src/services/.
+Estes arquivos utilizam o axios para realizar chamadas HTTP à API do backend.
 
-### Analyzing the Bundle Size
+### Tecnologias Utilizadas
+`React`: Biblioteca para criação da interface do usuário.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+`Material UI (MUI)`: Biblioteca de componentes com design responsivo.
 
-### Making a Progressive Web App
+`Axios`: Utilizado para requisições HTTP à API.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+`Create React App`: Ferramenta para bootstrapping do projeto React.
