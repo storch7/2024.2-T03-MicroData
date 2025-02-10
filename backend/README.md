@@ -9,6 +9,11 @@ backend/
 │   │   ├── pontosAvaliadosController.js
 │   │   ├── limitesContagemController.js
 │   │   └── resultadosController.js
+|   ├── routes/                  # Definição de rotas da API
+│   │   ├── microorganismosRoutes.js
+│   │   ├── pontosAvaliadosRoutes.js
+│   │   ├── limitesContagemRoutes.js
+│   │   └── resultadosRoutes.js
 │   ├── utils/                   # Utilitários gerais
 │   │   └── database.js          # Configuração do Prisma Client
 │   ├── app.js                   # Configuração do servidor Express
