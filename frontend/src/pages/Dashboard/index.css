@@ -1,0 +1,46 @@
+.title{
+    font-size: 2rem;
+    text-transform: uppercase;
+    margin: 2rem;
+}
+
+.filters-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 3rem;
+}
+
+.filters{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.filters .select {
+    justify-content: space-between;
+}
+
+.select{
+    width: 15rem;
+}
+
+.button {
+    display: inherit;
+    align-items: center;
+    margin: 15px
+}
+
+.graph-area{
+    display: flex;
+    justify-content: center;
+    width:100%;
+}
+
+.graph{
+    display:inherit;
+    justify-content: inherit;
+    width: 80%;
+    margin: 3rem
+}
