@@ -54,7 +54,7 @@ function LimiteContagem() {
       setSelectedLimite(null);
     } catch (error) {
       console.error('Erro ao atualizar limite de contagem:', error);
-    }
+    } 
   };
 
   // Instead of deleting immediately, set the item to be deleted.

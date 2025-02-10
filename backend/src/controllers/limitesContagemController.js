@@ -131,6 +131,10 @@ const updateLimiteContagem = async (req, res) => {
                 ativo: ativo !== undefined ? ativo : existingLimite.ativo,
                 data_desativacao,
             },
+            include: {
+                microorganismos: true, // Inclui dados do microorganismo relacionado
+                pontos_avaliados: true, // Inclui dados do ponto avaliado relacionado
+            },
         });
 
         res.status(200).json(updatedLimite);
@@ -139,6 +143,7 @@ const updateLimiteContagem = async (req, res) => {
         res.status(500).json({ error: 'Erro ao atualizar limite de contagem.' });
     }
 };
+
 
 
 // Exporta a função para ser utilizada nas rotas

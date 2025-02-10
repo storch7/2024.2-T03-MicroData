@@ -29,7 +29,7 @@ const LimiteContagemTable = ({ data, onEdit, onDelete }) => {
                 {item.microorganismos?.nome || "N/A"}
               </TableCell>
               <TableCell sx={{ textAlign: 'center' }}>
-                {item.pontos_avaliados?.nome || "N/A"}
+                {item.pontos_avaliados?.sala || "N/A"}
               </TableCell>
               <TableCell sx={{ textAlign: 'center' }}>
                 {item.limites_contagem}
