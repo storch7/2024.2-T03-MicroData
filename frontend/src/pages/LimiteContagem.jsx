@@ -60,6 +60,7 @@ function LimiteContagem() {
   // Instead of deleting immediately, set the item to be deleted.
   const handleDelete = (item) => {
     setItemToDelete(item);
+    console.log(itemToDelete);
   };
 
   // When the user confirms deletion in the modal.

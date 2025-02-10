@@ -35,6 +35,10 @@ export default function Resultados () {
   const handleAdd = async (item) => {
     try {
       const newItem = await createResultado(item);
+
+      if(item.alerta != 0) {
+        alert("Alerta:", item.alerta)
+      }
       console.log('Novo limite de contagem:', newItem);
       setData([...data, newItem]);
     } catch (error) {
@@ -62,14 +66,17 @@ export default function Resultados () {
   // Instead of deleting immediately, set the item to be deleted.
   const handleDelete = (item) => {
     setItemToDelete(item);
+    console.log(itemToDelete);
   };
 
   // When the user confirms deletion in the modal.
   const handleConfirmDelete = async () => {
     try {
-      await updateResultado(itemToDelete.id, { ativo: false });
-      setData(data.filter((i) => i.id !== itemToDelete.id));
+      await updateResultado(itemToDelete.idresultados, { ativo: false });
+      setData(data.filter((i) => i.idresultados !== itemToDelete.idresultados));
+      window.location.reload()
     } catch (error) {
+      alert("ERRO");
       console.error('Erro ao deletar limite de contagem:', error);
     } finally {
       setItemToDelete(null);
@@ -101,7 +108,6 @@ export default function Resultados () {
       <Dialog open={!!itemToDelete} onClose={() => setItemToDelete(null)}>
         <DialogTitle>Confirmar Exclusão</DialogTitle>
         <DialogContent>
-          <br></br>Ao desativar este limite de contagem, todos os Resultados vinculados a ele serão desativados automaticamente.<br></br>
           <br></br>Essa ação não pode ser desfeita e poderá impactar seus registros históricos.<br></br>
           <br></br><b>Tem certeza de que deseja continuar?</b><br></br>
         </DialogContent>
