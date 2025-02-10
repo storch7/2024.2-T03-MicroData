@@ -2,42 +2,42 @@
 
 ## Estratégia Priorizada
 
-**Abordagem de Desenvolvimento de Software:** Ágil
+**Abordagem de Desenvolvimento de Software:** Plano
 
-**Ciclo de vida:** Iterativo e Incremental
+**Ciclo de vida:** Sequencial e Estruturado
 
-**Processo de Engenharia de Software:** RAD
+**Processo de Engenharia de Software:** Cascata
 
 ## Quadro Comparativo  
 
-O quadro a seguir compara os processos de desenvolvimento RAD e Espiral em diversas características, com o objetivo de auxiliar na justificativa para a escolha do processo mais adequado a este projeto.  
+O quadro a seguir compara os processos de desenvolvimento Cascata e Espiral em diversas características, com o objetivo de auxiliar na justificativa para a escolha do processo mais adequado a este projeto.  
 
-| **Características**           | **RAD**                                                                                              | **Espiral**                                                                                       |
+| **Características**           | **Cascata**                                                                                         | **Espiral**                                                                                       |
 |--------------------------------|-----------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------|
-| **Abordagem Geral**            | Metodologia de desenvolvimento rápido e iterativo, com foco na criação, validação de protótipos e entregas rápidas. | Modelo baseado em ciclos iterativos, com foco em análise de riscos, planejamento, prototipagem e validação contínua. |
-| **Foco em Arquitetura**        | Menor foco inicial em arquitetura; ênfase em protótipos                                            | Maior foco na arquitetura para suportar ciclos subsequentes e gerenciar riscos.                  |
-| **Estrutura de Processos**     | Estrutura flexível, com iterações rápidas e prototipagem                                           | Estrutura baseada em ciclos, cada um contendo etapas de planejamento, prototipagem, avaliação e decisão. |
-| **Flexibilidade de Requisitos**| Alta; requisitos podem ser alterados durante o desenvolvimento                                    | Moderada; os requisitos podem ser ajustados, mas são avaliados em cada ciclo para gerenciar riscos. |
-| **Colaboração com Clientes**   | Intensa; cliente envolvido em feedback frequente e revisão de protótipos                          | Alta; o cliente é envolvido em revisões periódicas e contribui para a validação de cada ciclo.    |
-| **Complexidade do Processo**   | Baixa a moderada, com processos adaptáveis e qualidade aprimorada por feedback contínuo durante revisões e iterações. | Moderada a alta; devido ao gerenciamento de riscos e ao planejamento detalhado em cada ciclo.    |
-| **Qualidade Técnica**          | Foco em funcionalidade, com qualidade técnica aprimorada por feedback contínuo durante revisões e iterações, embora possa ser sacrificada pela velocidade. | Alta; o modelo enfatiza a mitigação de riscos técnicos e a validação em cada ciclo para assegurar qualidade. |
-| **Práticas de Desenvolvimento**| Prototipagem rápida, foco em entrega de funcionalidades principais                                | Prototipagem estruturada, com análise de riscos e validação contínua como parte do ciclo.         |
-| **Adaptação ao Projeto**       | Ideal para projetos com escopo indefinido ou requisitos em constante mudança, beneficiando-se de protótipos ágeis e flexíveis. | Adequado para projetos complexos, com alto nível de incerteza e necessidade de gerenciamento de riscos. |
-| **Documentação**               | Documentação mínima e enxuta, focada apenas nos registros essenciais para guiar o desenvolvimento, priorizando protótipos e entregas rápidas. | Documentação detalhada, com registros formais de análise de riscos, planejamento e decisões de cada ciclo. |
-| **Controle de Qualidade**      | Controle mais básico, com ênfase em entregas rápidas e testes do usuário final                    | Controle rigoroso, com testes e validações contínuas em cada ciclo para gerenciar riscos e qualidade. |
-| **Escalabilidade**             | Limitada, mais indicada para projetos pequenos e médios                                           | Alta, adaptável para projetos grandes e complexos devido à sua estrutura iterativa e análise de riscos. |
-| **Suporte a Equipes de Desenvolvimento** | Ideal para equipes menores e colaborativas, com papéis flexíveis e forte dependência de feedback do cliente e protótipos rápidos. | Alto; suporta equipes maiores e estruturadas, exigindo profissionais focados em planejamento e análise de riscos. |
-
+| **Abordagem Geral**            | Metodologia linear e sequencial, onde cada fase precisa ser concluída antes do início da próxima. | Modelo baseado em ciclos iterativos, com foco em análise de riscos, planejamento, prototipagem e validação contínua. |
+| **Foco em Arquitetura**        | Forte foco inicial na arquitetura, definido antes da implementação.                                | Maior foco na arquitetura para suportar ciclos subsequentes e gerenciar riscos.                  |
+| **Estrutura de Processos**     | Estrutura rígida, com fases bem definidas e sequenciais.                                           | Estrutura baseada em ciclos, cada um contendo etapas de planejamento, prototipagem, avaliação e decisão. |
+| **Flexibilidade de Requisitos**| Baixa; os requisitos são definidos no início e mudanças posteriores são difíceis de incorporar.    | Moderada; os requisitos podem ser ajustados, mas são avaliados em cada ciclo para gerenciar riscos. |
+| **Colaboração com Clientes**   | Menor envolvimento do cliente após a fase inicial de requisitos.                                   | Alta; o cliente é envolvido em revisões periódicas e contribui para a validação de cada ciclo.    |
+| **Complexidade do Processo**   | Baixa a moderada, devido à estrutura rígida e previsível.                                          | Moderada a alta; devido ao gerenciamento de riscos e ao planejamento detalhado em cada ciclo.    |
+| **Qualidade Técnica**          | Alta; devido à documentação extensa e ao planejamento detalhado antes da implementação.           | Alta; o modelo enfatiza a mitigação de riscos técnicos e a validação em cada ciclo para assegurar qualidade. |
+| **Práticas de Desenvolvimento**| Desenvolvimento estruturado, com cada fase concluída antes da próxima iniciar.                     | Prototipagem estruturada, com análise de riscos e validação contínua como parte do ciclo.         |
+| **Adaptação ao Projeto**       | Ideal para projetos com requisitos bem definidos e estáveis.                                       | Adequado para projetos complexos, com alto nível de incerteza e necessidade de gerenciamento de riscos. |
+| **Documentação**               | Extensa; toda a documentação é preparada antes do desenvolvimento.                                | Documentação detalhada, com registros formais de análise de riscos, planejamento e decisões de cada ciclo. |
+| **Controle de Qualidade**      | Rigoroso, mas ocorre apenas na fase final do processo.                                            | Controle rigoroso, com testes e validações contínuas em cada ciclo para gerenciar riscos e qualidade. |
+| **Escalabilidade**             | Limitada; mais adequada para projetos menores e bem estruturados.                                 | Alta, adaptável para projetos grandes e complexos devido à sua estrutura iterativa e análise de riscos. |
+| **Suporte a Equipes de Desenvolvimento** | Melhor para equipes organizadas e estruturadas, com funções bem definidas e documentação detalhada. | Alto; suporta equipes maiores e estruturadas, exigindo profissionais focados em planejamento e análise de riscos. |
 
 ## Justificativa
 
-Escolhemos o RAD (Rapid Application Development) como metodologia devido à sua forte ênfase na coleta contínua de feedbacks com o cliente, um fator essencial para o sucesso do nosso projeto. Essa abordagem nos ajuda a lidar com diversos desafios, como a flexibilidade nos requisitos, permitindo ajustes rápidos e adaptativos conforme surgem novas demandas ou mudanças durante o desenvolvimento.
+Escolhemos o modelo Cascata como metodologia devido à sua abordagem estruturada e previsível, garantindo que cada fase do desenvolvimento seja concluída antes do início da próxima. Essa característica é essencial para projetos que possuem requisitos bem definidos desde o início, evitando mudanças frequentes e garantindo um fluxo organizado de desenvolvimento.
 
-O envolvimento ativo do cliente é outro ponto central, já que o RAD promove interações frequentes por meio de protótipos iterativos. Isso nos permite validar funcionalidades em tempo real, garantindo que o projeto esteja sempre alinhado às expectativas do cliente e reduzindo o risco de mal-entendidos ou entregas desalinhadas.
+A ênfase na documentação detalhada e no planejamento robusto proporciona uma base sólida para a implementação do sistema, reduzindo incertezas e facilitando a manutenção futura. Além disso, essa abordagem ajuda a evitar problemas causados por requisitos indefinidos ou mudanças constantes, comuns em metodologias mais flexíveis.
 
-Além disso, a coleta constante de feedback reduz riscos ao identificar possíveis problemas ou lacunas ainda nas fases iniciais, facilitando correções rápidas e prevenindo retrabalho mais complexo. Essa característica é particularmente útil para projetos com escopo indefinido, onde os requisitos podem evoluir ao longo do tempo. Com o RAD, conseguimos transformar a incerteza em oportunidade, iterando de forma ágil e colaborativa.
+Outro fator importante é o controle de qualidade rigoroso, realizado ao final do processo, garantindo que o sistema atenda a todos os requisitos antes da entrega ao cliente. Isso reduz riscos de falhas e retrabalho, proporcionando um produto final mais estável e confiável.
 
-Assim, o RAD foi escolhido por sua capacidade de alinhar o processo de desenvolvimento às necessidades do cliente, promovendo entregas eficientes, adaptabilidade às mudanças e maior qualidade nos resultados.
+Portanto, o modelo Cascata foi escolhido por sua capacidade de garantir um desenvolvimento bem estruturado, previsível e documentado, sendo uma excelente opção para projetos com requisitos bem definidos e pouca necessidade de mudanças ao longo do desenvolvimento.
+
 
 ## Referências
 
@@ -56,3 +56,4 @@ Assim, o RAD foi escolhido por sua capacidade de alinhar o processo de desenvolv
 |      11/11/2024      |      1.0      |      Criação do documento       |     Guilherme Storch     |
 |      18/11/2024      |      1.1      |       realizando ajustes      |     Breno Fernandes     |
 |      27/12/2024      |      1.2      |       realizando ajustes do quadro comparativo      |     Rafael Melo Matuda     |
+|      08/02/2025      |      1.3      |       realizando ajustes      |     Rafael Melo Matuda     |
