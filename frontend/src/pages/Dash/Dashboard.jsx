@@ -3,6 +3,7 @@ import {useState, useEffect} from 'react'
 import InputSelect from '../../components/InputSelect'
 import { getMicroorganism } from '../../services/microorganismAPI';
 import { getPontosAvaliados } from '../../services/pontosavaliadosAPI';
+import TextField from '@mui/material/TextField';
 
 export default function Dashboard() {
     const [microorganismo, setMicroorganismo] = useState('');
@@ -10,6 +11,8 @@ export default function Dashboard() {
     const [dataMicro, setDataMicro] = useState([]);
     const [dataLocal, setDataLocal] = useState([]);
     const [zona, setZona] = useState('');
+    const [dataInicio, setDataInicio] = useState('');
+    const [dataFim, setDataFim] = useState('');
 
     const zonas = [
         { nome: "Zona 1", id: "ZONA_1" },
@@ -62,6 +65,28 @@ export default function Dashboard() {
                     items={zonas}
                     displayField={'nome'}
                 />
+
+                <TextField 
+                    type = 'date'
+                    label="Data de Início"
+                    value={dataInicio}
+                    onChange={(e) => setDataInicio(e.target.value)}
+                    sx={{marginTop: '15px'}}
+                    fullWidth
+                />
+
+                <TextField 
+                    type = 'date'
+                    label= "Data Fim"
+                    value={dataFim}
+                    onChange={(e) => setDataFim(e.target.value)}
+                    sx={{marginTop: '15px'}}
+                    fullWidth
+                />
+
+                
+
+                
 
             </div>
         </section>
