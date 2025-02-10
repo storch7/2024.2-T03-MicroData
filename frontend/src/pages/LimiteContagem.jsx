@@ -99,7 +99,9 @@ function LimiteContagem() {
       <Dialog open={!!itemToDelete} onClose={() => setItemToDelete(null)}>
         <DialogTitle>Confirmar Exclusão</DialogTitle>
         <DialogContent>
-          Tem certeza que deseja deletar este limite de contagem?
+          <br></br>Ao desativar este limite de contagem, todos os Resultados vinculados a ele serão desativados automaticamente.<br></br>
+          <br></br>Essa ação não pode ser desfeita e poderá impactar seus registros históricos.<br></br>
+          <br></br><b>Tem certeza de que deseja continuar?</b><br></br>
         </DialogContent>
         <DialogActions>
           <Button onClick={() => setItemToDelete(null)}>Cancelar</Button>

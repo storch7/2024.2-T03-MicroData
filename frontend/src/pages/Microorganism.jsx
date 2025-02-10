@@ -95,7 +95,10 @@ function MicroorganismPage() {
       <Dialog open={!!itemToDelete} onClose={() => setItemToDelete(null)}>
         <DialogTitle>Confirmar Exclusão</DialogTitle>
         <DialogContent>
-          Tem certeza que deseja deletar este microorganismo?
+        Ao desativar este microrganismo, todos os Limites de Contagem associados serão desativados automaticamente.<br></br>
+        <br></br>Além disso, todos os Resultados vinculados a esses limites também serão desativados.<br></br>
+        <br></br>Essa ação não pode ser desfeita e poderá impactar seus registros históricos.<br></br>
+        <br></br><b>Tem certeza de que deseja continuar?</b><br></br>
         </DialogContent>
         <DialogActions>
           <Button onClick={() => setItemToDelete(null)}>Cancelar</Button>

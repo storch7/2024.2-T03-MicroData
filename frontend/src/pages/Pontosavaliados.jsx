@@ -97,7 +97,10 @@ function PontosavaliadosPage() {
             <Dialog open={!!itemToDelete} onClose={() => setItemToDelete(null)}>
                 <DialogTitle>Confirmar Exclusão</DialogTitle>
                 <DialogContent>
-                    Tem certeza que deseja deletar este ponto avaliado?
+                    <br></br>Ao desativar este ponto avaliado, todos os Limites de Contagem associados serão desativados automaticamente.<br></br>
+                    <br></br>Isso também fará com que todos os Resultados vinculados a esses limites sejam desativados.<br></br>
+                    <br></br>Essa ação não pode ser desfeita e poderá impactar seus registros históricos.<br></br>
+                    <br></br><b>Tem certeza de que deseja continuar?</b><br></br>
                 </DialogContent>
                 <DialogActions>
                     <Button onClick={() => setItemToDelete(null)}>Cancelar</Button>
