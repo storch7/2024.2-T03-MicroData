@@ -67,11 +67,11 @@ O digrama completo também pode ser encontrado na imagem abaixo:
 | Agência Humanitária | Gerenciar vagas |
 | Agência Humanitária | Anunciar vagas de trabalho |
 | Agência Humanitária | Apresentar programas de capacitação |
-| Agência Humanitária | Divulgar vagas de emprego |
-
 
 
 ## ESPECIFICAÇÕES DO CASO DE USO
+
+## Personas, Caso de uso e Descrição
 
 
 # REFERÊNCIAS
