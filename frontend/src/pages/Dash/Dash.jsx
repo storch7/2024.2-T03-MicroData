@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
 import InputSelect from "../../components/InputSelect";
 import Button from "../../components/Button"
-import DatePicker from "../../components/DatePicker"
 import { getMicroorganism } from '../../services/microorganismAPI';
 import { getPontosAvaliados } from '../../services/pontosavaliadosAPI';
+import TextField from '@mui/material/TextField';
 import "./Dash.css"
 
 function DashBoard() {
@@ -11,6 +11,7 @@ function DashBoard() {
     const [dataMicro, setDataMicro] = useState([]);
     const [local, setLocal] = useState('');
     const [dataLocal, setDataLocal] = useState([]);
+    const [zona, setZona] = useState('')
     const [dataInicio, setDataInicio] = useState(null);
     const [dataFim, setDataFim] = useState(null);
 
@@ -36,6 +37,19 @@ function DashBoard() {
                 }
                 fetchLocalData();
         }, []);
+
+        const handleSubmit = async (e) => {
+            e.preventDefault();
+            const data = {
+                pontos_avaliados_is: local,
+                microorganismos_id: microorganismo,
+                zona_higienico: zona,
+                data_inicio: dataInicio,
+                data_fim: dataFim,
+            }
+            alert("DETECTOU O EVEEEEEEENTO");
+            console.log(data);
+        }
 
     return (
         <section>
@@ -65,28 +79,36 @@ function DashBoard() {
                 <div className="select">
                     <InputSelect
                         label="Zona"
+                        value={zona}
+                        onChange={(e) => setZona(e.target.value)}
                         items = {zonas}
                     />
                 </div>
 
                 <div className = "select">
-                    <DatePicker 
-                        label="Data Início"
-                        value = {dataInicio}
-                        onChange = {(e => setDataInicio(e))}
+                    <TextField
+                        type = "date"
+                        label="Data de Início"
+                        value={dataInicio}
+                        onChange={(e) => setDataInicio(e.target.value)}
+                        sx={{ marginTop: '15px' }}
+                        fullWidth
                     />
                 </div>
 
                 <div className = "select">
-                    <DatePicker 
+                <TextField
+                        type = "date"
                         label="Data Fim"
-                        value = {dataFim}
-                        onChange = {(e => setDataFim(e))}
+                        value={dataFim}
+                        onChange={(e) => setDataFim(e.target.value)}
+                        sx={{ marginTop: '15px' }}
+                        fullWidth
                     />
                 </div>
                 
                 <div className="button">
-                    <Button text="Filtrar" type="submit" color="#B83226" variant="contained" />
+                    <Button text="Filtrar" type="submit" color="#B83226" variant="contained" onClick={handleSubmit}/>
                 </div>
             </div>
 
