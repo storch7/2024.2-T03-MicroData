@@ -54,6 +54,41 @@ Considerar aspectos técnicos, como uso de tecnologias específicas (Node.js, SQ
 - **Desafio**: A escrita de cenários de teste no formato Given-When-Then demandou um alinhamento mais detalhado entre os membros da equipe e os stakeholders (exemplo de caso).  
 - **Ação de Melhoria**: O BDD facilitou a validação de comportamentos esperados do sistema, ajudando a equipe a evitar ambiguidades e garantindo que os critérios de aceitação fossem claros e objetivos.
 ---
+## Unidade 4 - Lições Aprendidas
+
+Durante a Unidade 4 da disciplina de requisitos de software, foram obtidos os seguintes aprendizados fundamentais no desenvolvimento do projeto:
+
+### 1. Modelagem Estruturada de Casos de Uso
+
+Desafio: A construção de casos de uso de maneira estruturada exigiu um esforço inicial maior para identificar corretamente os atores, fluxos e exceções.
+
+Ação de Melhoria: Aplicar uma abordagem sistemática para garantir que todos os cenários relevantes sejam considerados, utilizando fluxos básicos e alternativos bem definidos.
+
+### 2. Clareza na Especificação de Casos de Uso
+
+Desafio: A escrita de descrições de casos de uso que fossem compreensíveis para todas as partes envolvidas, evitando ambiguidades e redundâncias.
+
+Ação de Melhoria: Padronizar a estrutura das especificações utilizando descrições contínuas, numeradas ou particionadas, conforme apropriado ao contexto.
+
+### 3. Relação entre Requisitos e Casos de Uso
+
+Desafio: Garantir que todos os requisitos funcionais estivessem corretamente representados nos casos de uso, evitando lacunas no desenvolvimento do sistema.
+
+Ação de Melhoria: Mapear explicitamente cada requisito funcional a um ou mais casos de uso e revisar essa relação continuamente durante o processo de desenvolvimento.
+
+### 4. Benefícios da Representação Visual
+
+Desafio: A interpretação dos diagramas de casos de uso nem sempre foi intuitiva para todos os membros da equipe.
+
+Ação de Melhoria: Complementar os diagramas UML com descrições textuais detalhadas e exemplos práticos, tornando a documentação mais acessível para todos os envolvidos.
+
+### 5. Importância da Validação de Casos de Uso
+
+Desafio: Testar se os casos de uso modelados eram suficientemente robustos para cobrir todos os cenários reais de utilização do sistema.
+
+Ação de Melhoria: Realizar revisões iterativas com stakeholders e aplicar critérios como DoR (Definition of Ready) e DoD (Definition of Done) para garantir a completude e qualidade dos casos de uso antes de sua implementação.
+
+
 
 ##  Histórico de Versão
 
