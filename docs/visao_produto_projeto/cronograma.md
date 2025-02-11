@@ -2,19 +2,19 @@
 
 ## Cronograma
 
-| Iteração | Fase RAD                  | Processo de Engenharia                                                                 | Produto (Entrega)                                      | Data Início  | Data Fim    | Status    |
+| Iteração | Fase Cascata                  | Processo de Engenharia                                                                 | Produto (Entrega)                                      | Data Início  | Data Fim    | Status    |
 |----------|---------------------------|--------------------------------------------------------------------------------------|------------------------------------------------------|--------------|------------|-----------|
 | 0        | Levantamento de Requisitos | Primeiro contato com o cliente, acordos entre as partes, alinhamentos de compliance e com o jurídico e kickoff do projeto | Início do GitHub Pages e do processo de documentação | 06/11/2024   | 20/11/2024 | Concluído |
 | 1        | Levantamento de Requisitos | Reuniões com o cliente, levantamento de escopo e atividades, cenário atual do cliente e do negócio, definição da solução; verificação e validação das funcionalidades levantadas | Documentação do GitHub Pages                          | 20/11/2024   | 04/12/2024 | Concluído |
 | 2        | Levantamento de Requisitos | Declaração de requisitos e definição do MVP                                          | Backlog do projeto, definição de DoR e DoD, priorização do backlog | 04/12/2024   | 18/12/2024 | Concluído |
-| 3        | Prototipação               | Prototipação das US's do backlog                                                     | Protótipo das US's: 01, 02, 07, 08, 03, 04, 09, 10, 11, 12, 13, 14, 15, 16, 17, 18 | 18/12/2024   | 01/01/2025 | Concluído |
-| 4        | Prototipação               | Prototipação das US's do backlog                                                     | Protótipo das US's: 19, 20, 21, 22, 23, 24, 25, 26, 22, 27, 28 | 01/01/2025   | 08/01/2025 | Concluído |
-| 5        | Desenvolvimento e testes   | Validação do protótipo e aplicação de correções pedidas pelo cliente e refatoração do backlog | Protótipo do MVP e backlog corrigido e atualizado    | 08/01/2025   | 15/01/2025 | Concluído |
-| 6        | Desenvolvimento e testes   | Desenvolvimento e testes das US's: 07, 08, 09, 13 e 14                                | Sem entrega prevista para o cliente                  | 15/01/2025   | 22/01/2025 | Pendente  |
-| 7        | Desenvolvimento e testes   | Desenvolvimento e testes das US's: 10, 15, 16, 17, 18 e 19                            | Entrega parcial 1                                    | 22/01/2025   | 29/01/2025 | Pendente  |
-| 8        | Desenvolvimento e testes   | Desenvolvimento e testes das US's: 20, 21, 22, 23, 24                                 | Sem entrega prevista para o cliente                  | 29/01/2025   | 05/02/2025 | Pendente  |
-| 9       | Desenvolvimento e testes   | Desenvolvimento e testes das US's: 25, 26, 27, 28, 29                                 | Sem entrega prevista para o cliente                  | 05/02/2025   | 12/02/2025 | Pendente  |
-| 10       | Desenvolvimento e testes   | Desenvolvimento e testes das US's: 30, 31, 32, 33 e 34                             | Entrega parcial 2                                    | 12/02/2025   | 19/02/2025 | Pendente  |
+| 3        | Design               | Prototipação das US's do backlog                                                     | Protótipo das US's: 01, 02, 07, 08, 03, 04, 09, 10, 11, 12, 13, 14, 15, 16, 17, 18 | 18/12/2024   | 01/01/2025 | Concluído |
+| 4        | Design               | Prototipação das US's do backlog                                                     | Protótipo das US's: 19, 20, 21, 22, 23, 24, 25, 26, 22, 27, 28 | 01/01/2025   | 08/01/2025 | Concluído |
+| 5        | Implementação e Verificação  | Validação do protótipo e aplicação de correções pedidas pelo cliente e refatoração do backlog | Protótipo do MVP e backlog corrigido e atualizado    | 08/01/2025   | 15/01/2025 | Concluído |
+| 6        | Implementação e Verificação  | Implementação das US's: 07, 08, 09, 13 e 14                                | US's 07, 08, 09, 13 e 14 implementadas                  | 15/01/2025   | 22/01/2025 | Concluído  |
+| 7        | Implementação e Verificação   | Implementação das US's: 10, 15, 16, 17, 18 e 19                            | US's 10, 15, 16, 17, 18 e 19 implementadas                                    | 22/01/2025   | 29/01/2025 | Concluído  |
+| 8        | Implementação e Verificação  | Implementação das US's: 20, 21, 22, 23, 24                                 | US's 20, 21, 22, 23, 24 implementadas                  | 29/01/2025   | 05/02/2025 | Concluído  |
+| 9       | Implementação e Verificação  | Implementação das US's: 25, 26, 27, 28, 29, 30, 31, 32, 33 e 34                                 | US's 25, 26, 27, 28, 29,30, 31, 32, 33 e 34 implementadas e entrega do MVP                  | 05/02/2025   | 12/02/2025 | Concluído  |
+| 10       | Manutenção   |   Manutenção                           |Disponibilização da release para a equipe de TI do cliente                                      | 12/02/2025   | 19/02/2025 | Concluído  |
 
 
 
@@ -26,11 +26,11 @@
 |Entrega Unidade 1      | 12/11           |Concluído                              |
 |Avaliação Unidade 1    | 14/11           |Concluído                              |
 |Entrega Unidade 2      | 17/12           |Concluído                              |
-|Avaliação Unidade 2    | 19/12           |Pendente                               |
-|Entrega Unidade 3      | 21/01           |Pendente                               |
-|Avaliação Unidade 3    | 23/01           |Pendente                               |
-|Entrega Unidade 4      | 13/02           |Pendente                               |
-|Avaliação Unidade 4    | 18/02           |Pendente                               |
+|Avaliação Unidade 2    | 19/12           |Concluído                               |
+|Entrega Unidade 3      | 21/01           |Concluído                               |
+|Avaliação Unidade 3    | 23/01           |Concluído                               |
+|Entrega Unidade 4      | 13/02           |Concluído                               |
+|Avaliação Unidade 4    | 18/02           |Concluído                               |
 
 O cronograma acima poderá sofrer alterações ao longo do desenvolvimento do projeto.
 
@@ -127,3 +127,4 @@ Todos os requisitos (User Stories) passaram pelos critérios do Definition of Re
 |      15/11/2024      |      1.0      |      Criação do Cronograma       |     Rafael Matuda    |
 |      19/12/2024      |      2.0      |      Restruturação do Cronograma       |     Breno Fernandes    |
 |      20/12/2024      |      2.1      |      Adição do Dor e Dod       |     Breno Fernandes    |
+|      10/02/2025      |      3.0      |      Alterações no cronograma, troca de RAD por Cascata       |     João Lucas Araujo    |
