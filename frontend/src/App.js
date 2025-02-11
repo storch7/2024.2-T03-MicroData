@@ -4,7 +4,8 @@ import Header from './components/Header';
 import MicroorganismPage from './pages/Microorganism';
 import PontosavaliadosPage from './pages/Pontosavaliados';
 import LimiteContagemPage from './pages/LimiteContagem';
-import Resultados from './pages/Resultados'
+import Resultados from './pages/Resultados';
+import Dashboard from './pages/Dashboard/Dashboard';
 
 function App() {
   return (
@@ -15,7 +16,7 @@ function App() {
         <Route path="/pontosavaliados" element={<PontosavaliadosPage />} />
         <Route path="/limites-contagem" element={<LimiteContagemPage />} />
         <Route path="/resultados-coleta" element={<Resultados />} />
-        <Route path="/" element={<MicroorganismPage />} /> {/* Rota padrão */}
+        <Route path="/" element={<Dashboard />} /> {/* Rota padrão */}
       </Routes>
     </div>
   );
