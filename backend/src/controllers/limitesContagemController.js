@@ -53,7 +53,7 @@ const createLimiteContagem = async (req, res) => {
                 pontos_avaliados_id,
                 microorganismos_id,
                 ativo: true,
-                data_cadastro: new Date(), //certo, agora eu preciso pensar na logica para fazer um dashboard, no caso eu dashboard de linha sendo contagem x tempo, e eu quero meio que uma linha mostrando os resultados ao longo do tempo, e se puder tambem colocar uma li
+                data_cadastro: new Date(), 
             },
         });
 
