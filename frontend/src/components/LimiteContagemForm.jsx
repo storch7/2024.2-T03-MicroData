@@ -83,7 +83,7 @@ function LimiteContagemForm({ onAdd, onUpdate, isEditing, initialData }) {
                 {!isEditing && (
                     <>
                         <InputSelect
-                            label="Microorganismo"
+                            label="Microorganismo *"
                             value={microorganismo}
                             onChange={(event) => setMicroorganismo(event.target.value)}
                             items={dataMicro}
@@ -91,7 +91,7 @@ function LimiteContagemForm({ onAdd, onUpdate, isEditing, initialData }) {
                         />
 
                         <InputSelect
-                            label="Local da Coleta"
+                            label="Local da Coleta *"
                             value={local}
                             onChange={(event) => setLocal(event.target.value)}
                             items={dataLocal}
@@ -102,9 +102,12 @@ function LimiteContagemForm({ onAdd, onUpdate, isEditing, initialData }) {
 
                 {/* Campo de texto para limite de contagem */}
                 <TextField
-                    label="Limite de Contagem"
+                    label="Limite de Contagem (UFC)*"
                     value={limiteContagem}
-                    onChange={(e) => setLimiteContagem(e.target.value)}
+                    onChange={(e) => {
+                        const value = e.target.value.replace(/\D/g, ""); // Remove caracteres não numéricos
+                        setLimiteContagem(value);
+                    }}
                     sx={{ marginTop: '15px' }}
                     fullWidth
                 />
