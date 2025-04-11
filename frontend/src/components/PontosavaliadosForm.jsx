@@ -93,25 +93,25 @@ function PontosavaliadosForm({ isEditing, setIsEditing, initialData, onUpdate, o
     return (
         <Box component="form" onSubmit={handleSubmit} sx={{ display: 'flex', flexDirection: 'column', gap: 2, padding: 2, border: '1px solid #ddd', borderRadius: 2 }}>
             <TextField
-                label="Sala"
+                label="Sala *"
                 value={sala}
                 onChange={(e) => setSala(e.target.value)}
                 fullWidth
             />
             <TextField
-                label="Área"
+                label="Área *"
                 value={area}
                 onChange={(e) => setArea(e.target.value)}
                 fullWidth
             />
             <TextField
-                label="Local"
+                label="Local *"
                 value={local}
                 onChange={(e) => setLocal(e.target.value)}
                 fullWidth
             />
             <InputSelect
-                label="Frequência"
+                label="Frequência *"
                 items={frequenciaOptions} // e.g., [{ id: 'SEMANAL', label: 'Semanal' }, { id: 'QUINZENAL', label: 'Quinzenal' }, { id: 'MENSAL', label: 'Mensal' }]
                 value={frequencia}
                 onChange={(e) => setFrequencia(e.target.value)}
@@ -120,7 +120,7 @@ function PontosavaliadosForm({ isEditing, setIsEditing, initialData, onUpdate, o
             />
 
             <InputSelect
-                label="Zona"
+                label="Zona *"
                 items={zonaOptions}
                 value={zona}
                 onChange={(e) => setZona(e.target.value)}
@@ -129,7 +129,7 @@ function PontosavaliadosForm({ isEditing, setIsEditing, initialData, onUpdate, o
             />
 
             <InputSelect
-                label="Zona Higiênica"
+                label="Zona Higiênica *"
                 items={zonaHigienicaOptions}
                 value={zonahigienica}
                 onChange={(e) => setZonahigienica(e.target.value)}
@@ -138,13 +138,13 @@ function PontosavaliadosForm({ isEditing, setIsEditing, initialData, onUpdate, o
             />
 
             <TextField
-                label="Método"
+                label="Método *"
                 value={metodo}
                 onChange={(e) => setMetodo(e.target.value)}
                 fullWidth
             />
             <TextField
-                label="Descrição"
+                label="Descrição *"
                 value={descricao}
                 onChange={(e) => setDescricao(e.target.value)}
                 multiline

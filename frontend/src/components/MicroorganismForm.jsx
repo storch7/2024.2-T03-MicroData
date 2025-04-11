@@ -39,13 +39,13 @@ function MicroorganismForm  ({ isEditing, setIsEditing, initialData, onUpdate, o
     return (
         <Box component="form" onSubmit={handleSubmit} sx={{ display: 'flex', flexDirection: 'column', gap: 2, padding: 2, border: '1px solid #ddd', borderRadius: 2 }}>
             <TextField 
-                label="Nome" 
+                label="Nome *" 
                 value={name} 
                 onChange={(e) => setName(e.target.value)} 
                 fullWidth
             />
             <TextField 
-                label="Descrição" 
+                label="Descrição *" 
                 value={description} 
                 onChange={(e) => setDescription(e.target.value)} 
                 multiline 
