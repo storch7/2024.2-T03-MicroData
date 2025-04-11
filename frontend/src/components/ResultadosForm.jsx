@@ -7,7 +7,7 @@ import { getPontosAvaliados } from '../services/pontosavaliadosAPI';
 import { createLimiteContagem } from '../services/limitecontagemAPI';
 import InputSelect from './InputSelect';
 
-function ResultadosForm({ onAdd, onUpdate, isEditing, initialData }) {
+function ResultadosForm({ onAdd, onUpdate, isEditing, initialData, onCancel }) {
     const [microorganismo, setMicroorganismo] = useState('');
     const [local, setLocal] = useState('');
     const [dataColeta, setDataColeta] = useState(null);
@@ -144,7 +144,7 @@ function ResultadosForm({ onAdd, onUpdate, isEditing, initialData }) {
                                 color="#B83226"
                                 variant="outlined"
                                 onClick={() => {
-                                    onUpdate(null); // Cancela edição
+                                    onCancel(); // Cancela edição
                                 }}
                             />
                             <CustomButton

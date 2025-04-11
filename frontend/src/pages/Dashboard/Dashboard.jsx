@@ -103,16 +103,6 @@ export default function Dashboard() {
                     </div>
 
                     <div className='select'>
-                        <InputSelect
-                            label="Zona"
-                            value={zona}
-                            onChange={(event) => setZona(event.target.value)}
-                            items={zonas}
-                            displayField={'nome'}
-                        />
-                    </div>
-
-                    <div className='select'>
                         <TextField 
                             type = 'date'
                             label="Data de Início"
