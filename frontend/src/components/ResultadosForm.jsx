@@ -88,7 +88,7 @@ function ResultadosForm({ onAdd, onUpdate, isEditing, initialData }) {
                 {!isEditing && (
                     <>
                         <InputSelect
-                            label="Microorganismo"
+                            label="Microorganismo *"
                             value={microorganismo}
                             onChange={(event) => setMicroorganismo(event.target.value)}
                             items={dataMicro}
@@ -96,7 +96,7 @@ function ResultadosForm({ onAdd, onUpdate, isEditing, initialData }) {
                         />
 
                         <InputSelect
-                            label="Local da Coleta"
+                            label="Local da Coleta *"
                             value={local}
                             onChange={(event) => setLocal(event.target.value)}
                             items={dataLocal}
@@ -108,16 +108,19 @@ function ResultadosForm({ onAdd, onUpdate, isEditing, initialData }) {
 
                 {/* Campo de texto para limite de contagem */}
                 <TextField
-                    label="Contagem"
+                    label="Contagem *"
                     value={contagem}
-                    onChange={(e) => setContagem(e.target.value)}
+                    onChange={(e) => {
+                        const value = e.target.value.replace(/\D/g, ""); // Remove caracteres não numéricos
+                        setContagem(value);
+                    }}
                     sx={{ marginTop: '15px' }}
                     fullWidth
                 />
 
                 <TextField
                     type = "date"
-                    label="Data da Coleta"
+                    label="Data da Coleta *"
                     value={dataColeta}
                     onChange={(e) => setDataColeta(e.target.value)}
                     sx={{ marginTop: '15px' }}
