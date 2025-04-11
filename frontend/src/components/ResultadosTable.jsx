@@ -139,7 +139,11 @@ const ResultadosTable = ({ data, onEdit, onDelete, onUpdate }) => {
                   {item.resultado_coleta + " UFC"}
                 </TableCell>
                 <TableCell sx={{ textAlign: 'center' }}>
-                  {item.data_cadastro}
+                  {new Date(item.data_cadastro).toLocaleDateString('pt-BR', {
+                    day: '2-digit',
+                    month: '2-digit',
+                    year: '2-digit',
+                  })}
                 </TableCell>
                 <TableCell sx={{ textAlign: 'center' }}>
                   <IconButton onClick={() => onEdit(item)} color="info">
